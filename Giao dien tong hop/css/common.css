@@ -3,6 +3,7 @@
 }
 a {
     cursor: pointer;
+    color: #365899;
 }
 a.no-decoration:hover {
     text-decoration: none;
