@@ -1,0 +1,41 @@
+.create-ads-modal .modal-body {
+    background-color: #e9ebee;
+}
+.create-ads-modal .left-body {
+    width: 36em;
+    position: relative;
+    overflow: auto;
+    max-height: 35.583333em;
+}
+.create-ads-modal .right-body {
+    flex: 1 1 0;
+}
+.create-ads-modal .left-body__inner {
+    margin: 1em 1.333333em;
+    background-color: #fff;
+}
+.des {
+    word-break: break-word;
+}
+.ui-timepicker-wrapper {
+    width: 9.5em;
+}
+
+.time-and-fee-list {
+    display: none;
+}
+
+.ad-review {
+    position: relative;
+    padding-top: 3.333333em;
+    overflow: auto;
+    height: 30.666667em;
+}
+.select-payment-method .email-input input {
+    width: 100%;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dadcde;
+}

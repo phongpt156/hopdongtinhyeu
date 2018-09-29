@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đăng tin tuyển dụng</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/jquery-ui.css" rel="stylesheet">
+    <link href="../../css/admin.css" rel="stylesheet">
+  </head>
+  <body> 
+  <div class="container">
+    <div class="row">
+      <div class="nav-top">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Tính chất</a></li>
+          <li role="presentation"><a href="#">Loại hình</a></li>
+          <li role="presentation"><a href="#">Lĩnh vực</a></li>
+          <li role="presentation"><a href="#">Chuyên mục</a></li>
+          <li role="presentation"><a href="#">Thành viên</a></li>
+          <li role="presentation"><a href="#">Quảng cáo</a></li>
+          <li role="presentation"><a href="#">Tìm kiếm</a></li>
+          <li role="presentation"><a href="#">Cấu hình</a></li>
+          <li role="presentation"><a href="#">Thanh toán</a></li>
+          <li role="presentation"><a href="#">Lịch sử</a></li>
+          <li role="presentation"><a href="#">crawl</a></li>
+          <li role="presentation"><a href="#">Quản trị</a></li>
+        </ul>
+      </div>
+      <div class="subMenu">
+        <ul class="nav nav-pills bottom">
+          <li role="presentation"><a href="#">Tin tức</a></li>
+          <li role="presentation"><a href="#">Sách</a></li>
+          <li role="presentation"><a href="#">Truyện</a></li>
+          <li role="presentation"><a href="#">Ảnh</a></li>
+          <li role="presentation"><a href="#">Video</a></li>
+          <li role="presentation"><a href="#">Nhạc</a></li>
+          <li role="presentation"><a href="#">Raio</a></li>
+          <li role="presentation"><a href="#">Audio</a></li>
+          <li role="presentation"><a href="#">Phim</a></li>
+          <li role="presentation"><a href="#">Clip</a></li>
+          <li role="presentation"><a href="#">Khóa học</a></li>
+          <li role="presentation"><a href="#">Game</a></li>
+          <li role="presentation"><a href="#">Sản phẩm</a></li>
+          <li role="presentation"><a href="#">Dịch vụ</a></li>
+          <li role="presentation"><a href="#">Đánh giá</a></li>
+          <li role="presentation"><a href="#">Tài liệu</a></li>
+          <li role="presentation"><a href="#">Rao vặt</a></li>
+          <li role="presentation"><a href="#">Tâm sự</a></li>
+          <li role="presentation"><a href="#">Cười</a></li>
+          <li role="presentation"><a href="#">Deal</a></li>
+          <li role="presentation"><a href="#">Bài phân tích</a></li>
+          <li role="presentation"><a href="#">Thăm dò</a></li>
+          <li role="presentation" class="active"><a href="#">Tin tuyển dụng</a></li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#">Tư vấn</a></li>
+          <li role="presentation"><a href="#">Khuyến mãi</a></li>
+          <li role="presentation"><a href="#">Khác</a></li>
+          <li role="presentation"><a href="#">Thanh lý</a></li>
+          <li role="presentation"><a href="#">Chia sẻ</a></li>
+          <li role="presentation"><a href="#">Check in</a></li>
+          <li role="presentation"><a href="#">Ghi chú</a></li>
+          <li role="presentation"><a href="#">Cuộc thi</a></li>
+          <li role="presentation"><a href="#">Hồ sơ ứng viên</a></li>
+        </ul>
+      </div>
+      <div class="formSearch">
+          <form action="" method="post" class="form-inline">
+          <div class="col-xs-4">
+            <div class="form-group">
+                <label for="title">Tìm kiếm tin theo tiêu đề</label>
+                <input type="text" id="title" name="">
+            </div>
+            <div class="form-group noBottom">
+                <label for="email">Tìm kiếm tin theo Email</label>
+                <input type="text" id="email" name="">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+                <label for="id_news">Tìm kiếm tin theo ID</label>
+                <input type="text" id="id_news" name="">
+            </div>
+            <div class="form-group noBottom">
+                <label for="phoneNumber">Tìm kiếm tin theo Điện thoại</label>
+                <input type="text" id="phoneNumber" name="">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="pull-left endFr">
+              <div class="form-group">
+                  <label for="poster">Tìm kiếm tin theo người đăng</label>
+                  <input type="text" id="poster" name="">
+              </div>
+              <div class="form-group noBottom">
+                  <label for="origin">Tìm kiếm tin theo nguồn</label>
+                  <input type="text" id="origin" name="">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary pull-right">Tìm kiếm</button>
+          </div>
+          </form>
+      </div>
+      <div class="statistical">
+          <form action="" method="" class="form-inline">
+            <div class="ipDetail">
+              <div class="form-group">
+                <label for="fromDate">Từ ngày</label>
+                <input type="text" class="form-control" id="fromDate">
+              </div>
+              <div class="form-group">
+                <label for="toDate">Đến ngày</label>
+                <input type="text" class="form-control" id="toDate">
+              </div>
+              <div class="form-group">
+                <label for="">Địa điểm</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Loại hình</label>
+                <div class="select_box">
+                  <span></span>
+                  <select class="drop_sl">
+                      <option value=""></option>
+                      <option value="">Tuyển dụng</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Lĩnh vực</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Chuyên mục</label>
+                <div class="select_box">
+                  <span></span>
+                  <select class="drop_sl">
+                      <option value=""></option>
+                      <option value="">Tuyển dụng</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group noBottom">
+                <label for="">Ngành nghề</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group noBottom">
+                <label for="">Cấp bậc</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group noBottom">
+                <label for="">Mức lương</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group noBottom">
+                <label for="">Nguồn</label>
+                <div class="select_box">
+                  <span></span>
+                  <select class="drop_sl">
+                      <option value=""></option>
+                      <option value="">Tuyển dụng</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group noBottom">
+                <label for="">Người đăng</label>
+                <input type="text" class="form-control" id="">
+              </div>
+            </div>
+            <button class="btn btn-primary">Tìm kiếm và thống kê</button>
+          </form>
+      </div>
+      
+      <div class="row total_news">
+          <div class="col-xs-12">
+              <div class="col-xs-2">
+                  <p>Tổng số tin: <strong>4.000.342 tin</strong></p>
+              </div>
+              <div class="col-xs-2">
+                <div class="row">
+                  <p>Trong đó: Tổng số tin tự đăng: <strong>29.342 tin</strong></p>
+                </div>
+              </div>
+              <div class="col-xs-2">
+                  <p>Tổng số tin crawl về: <strong>234.342 tin</strong></p>
+              </div>
+              <div class="col-xs-2">
+                  <p>Tổng số tin bị báo xấu: <strong>9.342 tin</strong></p>
+              </div>
+              <div class="col-xs-2">
+                  <p>Tổng số tin tự xóa: <strong>1.342 tin</strong></p>
+              </div>
+              <div class="col-xs-2">
+                  <p>Tổng số tin tranh chấp: <strong>642 tin</strong></p>
+              </div>
+          </div>
+      </div>
+      <div class="tableBox">
+          <table class="table table-bordered">
+            <tr>
+                <th width="8%">Tiêu đề tin</th>
+                <th width="7%">Loại hình <span>198</span></th>
+                <th width="6%">Lĩnh vực <span>198</span></th>
+                <th width="9%">Chuyên mục <span>198</span></th>
+                <th width="7%">Địa điểm <span>198</span></th>
+                <th width="5%">Nguồn <span>198</span></th>
+                <th width="7%">Người đăng <span>198</span></th>
+                <th width="6%">Cấp bậc <span>198</span></th>
+                <th width="7%">Ngành nghề <span>198</span></th>
+                <th width="6%">Mức lương <span>198</span></th>
+                <th width="5%">Bắt đầu</th>
+                <th width="5%">Kết thúc</th>
+                <th width="8%">Quản lý</th>
+                <th width="14%">Tóm tắt nội dung</th>
+            </tr>
+            <tr>
+                <td>
+                  Tuyển nhân viên kinh doanh khách sạn
+                </td>
+                <td>
+                  Doanh nghiệp
+                </td>
+                <td>
+                  Khách sạn
+                </td>
+                <td>
+                  Tuyển dụng<br/>
+                  Tuyển dụng nhà <br/>
+                  hàng & khách sạn
+                </td>
+                <td>
+                  Hà Nội<br/>
+                  Đà nẵng<br/>
+                  Minh
+                </td>
+                <td>
+                  Tự đăng
+                </td>
+                <td>
+                  Công ty Hoàng Ngọc Thanh Long
+                </td>
+                <td>
+                  Nhân viên
+                </td>
+                <td>Kinh doanh</td>
+                <td>
+                  3.000.000
+                </td>
+                <td>11/01/16</td>
+                <td>
+                  12/01/16
+                </td>
+                <td>
+                    <a href=""><strong>Xem</strong></a>&nbsp;
+                    <a href=""><strong>Sửa</strong></a>&nbsp;
+                    <a href=""><strong>Xóa</strong></a>&nbsp;
+                    <a href=""><strong>Tranh chấp</strong></a>&nbsp;
+                    <a href=""><strong>Tình trạng xấu</strong></a>&nbsp;
+                    <a href=""><strong>Tự xóa</strong></a>
+                </td>
+                <td>
+                    Ngoài ra, khán giả chắc chắn sẽ chờ 
+                    đợi xem có sự thay đổi nào trong tạo 
+                    hình của các nhân vật như Thor 
+                    (Chris Hemsworth)ô ... <a href="">Mở rộng</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Tuyển nhân viên kinh doanh khách sạn
+                </td>
+                <td>
+                  Doanh nghiệp
+                </td>
+                <td>
+                  Khách sạn
+                </td>
+                <td>
+                  Tuyển dụng<br/>
+                  Tuyển dụng nhà <br/>
+                  hàng & khách sạn
+                </td>
+                <td>
+                  Hà Nội<br/>
+                  Đà nẵng<br/>
+                  Minh
+                </td>
+                <td>
+                  Tự đăng
+                </td>
+                <td>
+                  Công ty Hoàng Ngọc Thanh Long
+                </td>
+                <td>
+                  Nhân viên
+                </td>
+                <td>Kinh doanh</td>
+                <td>
+                  3.000.000
+                </td>
+                <td>11/01/16</td>
+                <td>
+                  12/01/16
+                </td>
+                <td>
+                    <a href=""><strong>Xem</strong></a>&nbsp;
+                    <a href=""><strong>Sửa</strong></a>&nbsp;
+                    <a href=""><strong>Xóa</strong></a>&nbsp;
+                    <a href=""><strong>Tranh chấp</strong></a>&nbsp;
+                    <a href=""><strong>Tình trạng xấu</strong></a>&nbsp;
+                    <a href=""><strong>Tự xóa</strong></a>
+                </td>
+                <td>
+                    Ngoài ra, khán giả chắc chắn sẽ chờ 
+                    đợi xem có sự thay đổi nào trong tạo 
+                    hình của các nhân vật như Thor 
+                    (Chris Hemsworth)ô ... <a href="">Mở rộng</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Tuyển nhân viên kinh doanh khách sạn
+                </td>
+                <td>
+                  Doanh nghiệp
+                </td>
+                <td>
+                  Khách sạn
+                </td>
+                <td>
+                  Tuyển dụng<br/>
+                  Tuyển dụng nhà <br/>
+                  hàng & khách sạn
+                </td>
+                <td>
+                  Hà Nội<br/>
+                  Đà nẵng<br/>
+                  Minh
+                </td>
+                <td>
+                  Tự đăng
+                </td>
+                <td>
+                  Công ty Hoàng Ngọc Thanh Long
+                </td>
+                <td>
+                  Nhân viên
+                </td>
+                <td>Kinh doanh</td>
+                <td>
+                  3.000.000
+                </td>
+                <td>11/01/16</td>
+                <td>
+                  12/01/16
+                </td>
+                <td>
+                    <a href=""><strong>Xem</strong></a>&nbsp;
+                    <a href=""><strong>Sửa</strong></a>&nbsp;
+                    <a href=""><strong>Xóa</strong></a>&nbsp;
+                    <a href=""><strong>Tranh chấp</strong></a>&nbsp;
+                    <a href=""><strong>Tình trạng xấu</strong></a>&nbsp;
+                    <a href=""><strong>Tự xóa</strong></a>
+                </td>
+                <td>
+                    Ngoài ra, khán giả chắc chắn sẽ chờ 
+                    đợi xem có sự thay đổi nào trong tạo 
+                    hình của các nhân vật như Thor 
+                    (Chris Hemsworth)ô ... <a href="">Mở rộng</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Tuyển nhân viên kinh doanh khách sạn
+                </td>
+                <td>
+                  Doanh nghiệp
+                </td>
+                <td>
+                  Khách sạn
+                </td>
+                <td>
+                  Tuyển dụng<br/>
+                  Tuyển dụng nhà <br/>
+                  hàng & khách sạn
+                </td>
+                <td>
+                  Hà Nội<br/>
+                  Đà nẵng<br/>
+                  Minh
+                </td>
+                <td>
+                  Tự đăng
+                </td>
+                <td>
+                  Công ty Hoàng Ngọc Thanh Long
+                </td>
+                <td>
+                  Nhân viên
+                </td>
+                <td>Kinh doanh</td>
+                <td>
+                  3.000.000
+                </td>
+                <td>11/01/16</td>
+                <td>
+                  12/01/16
+                </td>
+                <td>
+                    <a href=""><strong>Xem</strong></a>&nbsp;
+                    <a href=""><strong>Sửa</strong></a>&nbsp;
+                    <a href=""><strong>Xóa</strong></a>&nbsp;
+                    <a href=""><strong>Tranh chấp</strong></a>&nbsp;
+                    <a href=""><strong>Tình trạng xấu</strong></a>&nbsp;
+                    <a href=""><strong>Tự xóa</strong></a>
+                </td>
+                <td>
+                    Ngoài ra, khán giả chắc chắn sẽ chờ 
+                    đợi xem có sự thay đổi nào trong tạo 
+                    hình của các nhân vật như Thor 
+                    (Chris Hemsworth)ô ... <a href="">Mở rộng</a>
+                </td>
+            </tr>
+          </table>
+          <nav class="pull-right">
+            <ul class="pagination">
+              <li>
+                <a href=""><span>Đầu</span></a>
+              </li>
+              <li>
+                <a href=""><span>Trước</span></a>
+              </li>
+              <li class="active">
+                <span>1</span>
+              </li>
+              <li>
+                <a href=""><span>2</span></a>
+              </li>
+              <li>
+                <a href=""><span>3</span></a>
+              </li>
+              <li>
+                <a href=""><span>4</span></a>
+              </li>
+              <li>
+                <a href=""><span>5</span></a>
+              </li>
+              <li>
+                <a href=""><span>...</span></a>
+              </li>
+              <li>
+                <a href=""><span>102</span></a>
+              </li>
+              <li>
+                <a href=""><span>103</span></a>
+              </li>
+              <li>
+                <a href=""><span>Sau</span></a>
+              </li>
+              <li>
+                <a href=""><span>Cuối</span></a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+
+
+    </div>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".drop_sl").change(function() {
+              var str = "";
+              $(this).find( "option:selected" ).each(function() {
+                str += $( this ).text() + " ";
+              });
+              $(this).parent().find('span').text( str );
+            }).trigger( "change" );
+
+            $( "#toDate,#fromDate" ).datepicker();
+        }); 
+    </script>
+  </body>
+</html>

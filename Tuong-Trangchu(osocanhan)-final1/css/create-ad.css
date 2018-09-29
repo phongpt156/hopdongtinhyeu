@@ -1,0 +1,196 @@
+.create-ads-modal .modal-body {
+    background-color: #e9ebee;
+}
+.create-ads-modal .left-body {
+    width: 36em;
+    position: relative;
+    overflow: auto;
+    max-height: 35.583333em;
+}
+.create-ads-modal .right-body {
+    flex: 1 1 0;
+}
+.create-ads-modal .left-body__inner {
+    margin: 1em 1.333333em;
+    background-color: #fff;
+}
+.des {
+    word-break: break-word;
+}
+.ad-description-input {
+    position: relative;
+    overflow: auto;
+    max-height: 5.5em;
+    font-size: 14px;
+}
+.Data_des_ads {
+    resize: none;
+    padding-right: 2em;
+}
+.ui-timepicker-wrapper {
+    width: 9.5em;
+}
+
+.budget-container .error {
+    padding: 1em;
+    display: none;
+    background-color: #feeef0;
+}
+.budget-list {
+    position: relative;
+    padding: 1.333333em 0;
+}
+.budget-list__input {
+    width: 90%;
+    padding-left: 1.1em;
+    font-size: 1.4rem;
+}
+.budget-list__input:focus {
+    outline: none;
+}
+.budget-list__button {
+    padding: .3em 1.4em;
+    min-width: 3em;
+    border-left: none !important;
+    border: 1px solid #aaa;
+    background-color: #f5f6f7;
+}
+.budget-list__button .fa-caret-down {
+    font-size: 2rem;
+}
+.budget-list__suggest-list {
+    z-index: 9999;
+    width: 100%;
+    position: absolute;
+    padding: .833333em 0;
+    list-style-type: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    background-color: #fff;
+}
+.budget-list__suggest-list .suggest-item {
+    position: relative;
+}
+.budget-list__suggest-list .suggest-item .fa-check {
+    top: .9em;
+    position: absolute;
+    left: .9em;
+    display: none;
+}
+.budget-list__suggest-list .suggest-item.active .fa-check {
+    display: block;
+}
+.budget-list__suggest-list .suggest-item.active a .budget, .budget-list__suggest-list .suggest-item.active a .vnd {
+    font-weight: bold;
+}
+.budget-list__suggest-list .suggest-item a {
+    padding: .583333em 2.5em;
+    display: block;
+    color: #000;
+}
+.budget-list__suggest-list .suggest-item a:hover {
+    text-decoration: none;
+    background-color: #ecf3ff;
+}
+.budget-list__suggest-list .suggest-item .budget, .budget-list__suggest-list .suggest-item .vnd {
+    font-size: 1.5rem;
+}
+.budget-list__suggest-list .suggest-item .rs {
+    font-size: 1.2rem;
+    float: right;
+    color: rgb(96, 103, 112);
+}
+.CRADS_upload_video {
+    position: relative;
+}
+.CRADS_upload_video .mCS_img_loaded {
+    top: 3px;
+    right: -15px;
+    position: absolute;
+}
+.select-days {
+    padding: 0;
+    margin: 5px 15px;
+    list-style: none;
+}
+.select-days .item {
+    margin-right: -5px;
+    margin-left: 0!important;
+    display: inline-block;
+}
+.select-days .item a {
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 0px;
+    font-weight: bold;
+    display: inline-block;
+    color: #111;
+    border: 1px solid #ced0d4;
+    background-color: #f6f7f9;
+}
+.select-days .active a {
+    padding: 11px 0px;
+    display: inline-block;
+    color: #4080ff;
+    border: 1px solid #ced0d4;
+    background-color: #dddfe2;
+}
+.select-days .item:hover a, .select-days .item a:active, .select-days .item a:focus {
+    padding: 11px 0px;
+    display: inline-block;
+    color: #4080ff;
+    border: 1px solid #ced0d4;
+    background-color: #dddfe2;
+}
+.reach-progress {
+    height: .583333em;
+    box-shadow: none;
+    border-radius: .833333em;
+    background-color: #e9eaeb;
+}
+.reach-progress .progress-bar {
+    border-radius: .833333em;
+    background-color: #066cd2;
+}
+.from-time, .to-time {
+    width: 90%;
+}
+
+/* bootstrap datetime picker */
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: auto;
+}
+.bootstrap-datetimepicker-widget table td {
+    width: auto;
+    line-height: inherit;
+    height: auto;
+}
+.bootstrap-datetimepicker-widget table td span {
+    width: auto;
+    line-height: inherit;
+    height: auto;
+    font-size: 1.4rem;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+    background-color: inherit;
+}
+.bootstrap-datetimepicker-widget table td span:focus {
+    outline: none
+}
+.bootstrap-datetimepicker-widget .timepicker-hour, .bootstrap-datetimepicker-widget .timepicker-minute, .bootstrap-datetimepicker-widget .timepicker-second {
+    width: auto;
+    font-size: 1.4rem;
+}
+.to-time-wrapper {
+    position: relative;
+}
+.to-time-wrapper .bootstrap-datetimepicker-widget {
+    right: 5px !important;
+}
+
+.ad-review {
+    position: relative;
+    padding-top: 3.333333em;
+    overflow: auto;
+    height: 30.666667em;
+}
