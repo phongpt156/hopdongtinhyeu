@@ -24,6 +24,37 @@
 .time-and-fee-list {
     display: none;
 }
+.time-use-select-wrapper {
+    width: 12em;
+}
+.time-use-select {
+    width: 80%;
+}
+/* bootstrap datetime picker */
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: auto;
+}
+.bootstrap-datetimepicker-widget table td {
+    width: auto;
+    line-height: inherit;
+    height: auto;
+}
+.bootstrap-datetimepicker-widget table td span {
+    width: auto;
+    line-height: inherit;
+    height: auto;
+    font-size: 1.4rem;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+    background-color: inherit;
+}
+.bootstrap-datetimepicker-widget table td span:focus {
+    outline: none
+}
+.bootstrap-datetimepicker-widget .timepicker-hour, .bootstrap-datetimepicker-widget .timepicker-minute, .bootstrap-datetimepicker-widget .timepicker-second {
+    width: auto;
+    font-size: 1.4rem;
+}
 
 .ad-review {
     position: relative;
