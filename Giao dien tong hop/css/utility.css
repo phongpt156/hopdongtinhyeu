@@ -7,8 +7,20 @@
 .font-weight-bold {
     font-weight: bold !important;
 }
+.text-black {
+    color: #000 !important;
+}
 .text-underline {
     text-decoration: underline !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-center {
+    text-align: center !important;
 }
 .d-flex {
     display: flex !important;
@@ -31,6 +43,9 @@
 .align-items-center {
     align-items: center !important;
 }
+.align-items-end {
+    align-items: flex-end;
+}
 .justify-content-center {
     justify-content: center !important;
 }
@@ -40,8 +55,12 @@
 .flex-auto {
     flex: 1 1 auto !important;
 }
+.flex-column {
+    flex-direction: column !important;
+}
 .mx-auto {
-    margin: 0 auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 .mx-0 {
     margin-right: 0 !important;
@@ -129,17 +148,13 @@
     padding-right: 1rem !important;
     padding-left: 1rem !important;
 }
-.px-0 {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
-.px-1 {
-    padding-right: .5rem !important;
-    padding-left: .5rem !important;
-}
 .px-3 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
+}
+.px-4 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
 }
 .py-1 {
     padding-top: .5rem !important;
@@ -157,6 +172,9 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+.pt-0 {
+    padding-top: 0 !important;
+}
 .pt-1 {
     padding-top: .5rem !important;
 }
@@ -168,6 +186,9 @@
 }
 .pt-4 {
     padding-top: 2rem !important;
+}
+.pr-0 {
+    padding-right: 0 !important;
 }
 .pr-1 {
     padding-right: .5rem !important;
@@ -196,6 +217,9 @@
 .pl-4 {
     padding-left: 2rem !important;
 }
+.pb-0 {
+    padding-bottom: 0 !important;
+}
 .pb-1 {
     padding-bottom: .5rem !important;
 }
@@ -207,6 +231,9 @@
 }
 .pb-4 {
     padding-bottom: 2rem !important;
+}
+.w-100 {
+    width: 100% !important;
 }
 .h-100 {
     height: 100% !important;

@@ -1,0 +1,246 @@
+.homepage {
+    font-size: 16px;
+    --orange: #f58634;
+    --cadet-blue: #6ca0b6;
+}
+.text-orange {
+    color: var(--orange) !important;
+}
+form .form-control, form .submit-button {
+    border-radius: inherit;
+}
+form .submit-button {
+    background-color: var(--orange);
+}
+
+/*=============== header style ===============*/
+.header {
+    padding: .75em;
+    background-color: #f3f3f3;
+}
+.header .navbar-default {
+    margin-bottom: 0;
+    border: none;
+    background-color: inherit;
+}
+.header .navbar-default .navbar-collapse {
+    padding-top: .5em;
+    overflow-y: visible;
+    margin-top: .5em;
+}
+.search-form {
+    display: flex;
+}
+.search-form > * + * {
+    margin-left: .5625em;
+}
+.signup-button, .signup-button:hover {
+    color: #000;
+}
+.signin-button, .signin-button:hover {
+    color: var(--orange);
+}
+.authentication {
+    margin: .625em 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.authentication > * + * {
+    margin-left: .625em;
+}
+.authentication .border {
+    height: .75em;
+    border-left: 1px solid #000;
+}
+.affiliate-list a {
+    display: block;
+}
+.affiliate-list a, .affiliate-list a:hover {
+    color: #000;
+}
+@media screen and (min-width: 768px) {
+    .header .navbar-default {
+        display: flex;
+        align-items: flex-end;
+    }
+    .header .navbar-default .navbar-header {
+        justify-content: flex-end;
+    }
+    .header .navbar-collapse {
+        padding: 0;
+        flex-direction: column;
+        flex: 1 1 auto;
+        display: flex !important;
+        align-items: center;
+    }
+    .search-form-container {
+        padding: 0 3.3125em;
+    }
+    .authentication {
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 992px) {
+    .header .navbar-default .navbar-header {
+        text-align: right;
+    }
+    .header .navbar-collapse {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+/*=============== end header style ===============*/
+
+/*=============== body style ===============*/
+.statistic {
+    padding: 1.5625em 3em;
+    justify-content: space-between;
+    background-color: var(--orange);
+}
+.statistic h3 {
+    font-size: 2em;
+    color: #fff;
+}
+.statistic p {
+    color: #ffe6d3;
+}
+.main-body .nav-tabs {
+    border-bottom: none;
+}
+.main-body .nav-tabs > li > a {
+    font-weight: bold;
+    color: #b7b7b7;
+    border: none !important;
+}
+.main-body .nav-tabs > li > a:hover {
+    border: none !important;
+    background-color: inherit;
+}
+.main-body .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange) !important;
+}
+.main-body article {
+    padding: 0 4em;
+}
+.content-list .content-item + .content-item {
+    margin-top: 1em;
+}
+.content-list .content-item .border {
+    padding-right: 1.125em;
+    height: 3.5em;
+    border-left: 5px solid var(--cadet-blue);
+}
+.content-list .content-item .title {
+    margin-top: 0;
+}
+.content-list .content-item .content > li + li {
+    margin-top: 1em;
+}
+.content-list .content-item .content ul {
+    list-style-type: disc;
+}
+@media screen and (min-width: 992px) {
+    .statistic {
+        justify-content: space-between;
+        display: flex;
+    }
+}
+/*=============== end body style ===============*/
+
+/*=============== aside style ===============*/
+.aside {
+    display: none;
+}
+.target-item {
+    display: flex;
+}
+.target-item .info {
+    text-align: right;
+    padding: .875em;
+    font-size: .9375em;
+    flex: 1 1 auto;
+    border-bottom: 1px solid #c7cdd9;
+}
+.target-item .name {
+    font-weight: bold;
+    color: var(--orange);
+}
+.target-item .description {
+    color: #7b7b7b;
+}
+.target-item .view-detail-link, .target-item .view-detail-link:hover {
+    color: #000;
+}
+.target-item .view-detail-link {
+    border-bottom: 1px solid #a2a3a5;
+}
+.target-item .view-detail-link:hover {
+    text-decoration: none;
+}
+@media screen and (min-width: 992px) {
+    .aside {
+        display: block;
+    }
+}
+/*=============== end aside style ===============*/
+
+/*=============== footer style ===============*/
+.footer__top, .footer__bottom {
+    padding: 1.25em;
+}
+.footer__top {
+    background-color: #f3f3f3;
+}
+.footer__top .phone {
+    font-weight: bold;
+    font-size: 2em;
+}
+.register-footer-form > * + * {
+    margin-top: .875em;
+}
+.footer__bottom {
+    font-size: .875em;
+}
+.footer__bottom, .footer__bottom a {
+    color: #7b7b7b;
+}
+.footer__bottom .other-site a {
+    color: var(--orange);
+}
+.footer__bottom .other-site a + a {
+    margin-left: .857143em;
+}
+@media screen and (min-width: 992px) {
+    .register-footer-form {
+        display: flex;
+    }
+    .register-footer-form > * + * {
+        margin-top: 0;
+        margin-left: .9375em;
+    }
+}
+/*=============== end footer style ===============*/
+
+.signin-popup {
+    width: 20em;
+}
+.signin-popup form {
+    padding: .9375em;
+}
+.signin-popup label {
+    width: 100%;
+    color: #666666;
+}
+.signin-popup .join {
+    padding: .9375em;
+    display: block;
+    color: #7b7b7b;
+}
+.signin-popup .submit-button {
+    margin: 1em 0;
+}
+.signin-popup .footer {
+    background-color: #f5f6f7;
+}
