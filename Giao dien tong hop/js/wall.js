@@ -73,7 +73,7 @@ $(document).ready(function () {
   });
   $(document).on('click', '.recruitment-next-step', function () {
     $('.cover_changeBox .update-cover span').css('opacity', 1);
-    $('#upArticle').hide();
+    $('.upload-status').tab('show');
   });
   $(document).on('click', '.last-step', function () {
     $('.cover_changeBox .update-cover span').css('opacity', 0);
