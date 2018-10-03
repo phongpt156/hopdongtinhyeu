@@ -185,6 +185,12 @@ form .submit-button {
 .target-item .view-detail-link:hover {
     text-decoration: none;
 }
+.target-item img {
+    display: none !important;
+}
+.target-item img.active {
+    display: block !important;
+}
 @media screen and (min-width: 992px) {
     .aside {
         display: block;
