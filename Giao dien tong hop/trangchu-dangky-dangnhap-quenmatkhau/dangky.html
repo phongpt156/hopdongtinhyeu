@@ -1,222 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Đăng ký</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/custom.css" rel="stylesheet">
-    <link href="../css/none-responsive.css" rel="stylesheet"> 
-    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
-  </head>
-  <body> 
-    <div id="wrap">
-        <nav class="navbar navbar-default navbar-login">
-          <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="../images/logo.png" alt=""></a>
-            </div>
-            <form class="navbar-form navbar-right" id="header-form" role="form">
-                <div class="form-group">
-                  <label for="inputEmai">Email hoặc điện thoại</label>
-                  <input type="text" class="form-control input-sm" id="inputEmai">
-                </div>
-                <div class="form-group marLeft-password">
-                  <label for="inputPassword">Mật khẩu</label>
-                  <input type="password" class="form-control input-sm" id="inputPassword">
-                </div>
-                <button type="submit" class="login-btn">Đăng nhập</button>
-                <div class="forget_pass">
-                    <a href="#"><span>Quên tài khoản?</span></a>
-                </div>
-            </form>
-          </div><!-- /.container -->
-        </nav>
-        <div class="background_content">
-          <div class="container">
-              <div class="row">
-                <div class="col-xs-6">
-                  <div class="row">
-                    <div class="leftContentRegis">
-                      <div class="text-center hoverShow">
-                        <span class="glyphicon glyphicon-th multi-icon"></span>
-                        <div class="top500">
-                          <div class="rela_box">
-                            <ul class="list-group list-topwork">
-                              <li>Top 500 đối tượng có sự ảnh hưởng lớn nhất Việt Nam</li>
-                              <li>
-                                <ul class="inline">
-                                   <li>Tuyển dụng</li>
-                                   <li>PG & Model</li>
-                                   <li>Nhà hàng & Khách sạn </li>
-                                   <li>Nghệ thuật</li>
-                                   <li>Làm thêm</li>
-                                   <li>Sinh viên</li>
-                                   <li> Đào tạo</li>
-                                   <li>Công nhân</li>
-                                </ul>
-                              </li>
-                              <li>
-                                <ul class="inline">
-                                   <li>Người tìm việc</li>
-                                   <li>PG & Model</li>
-                                   <li>Nhà hàng & Khách sạn </li>
-                                   <li>Nghệ thuật</li>
-                                   <li>Làm thêm</li>
-                                   <li>Sinh viên</li>
-                                   <li> Đào tạo</li>
-                                   <li>Công nhân</li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="search-box">
-                          <form action="" method="post" class="form-inline">
-                              <div class="form-group">
-                                 <input type="text" class="form-control input-search">
-                              </div>
-                              <div class="form-group keyboard-icon">
-                                 <i class="fa fa fa-keyboard-o"></i>
-                              </div>
-                              <div class="form-group micro-icon">
-                                 <i class="fa fa-microphone"></i>
-                              </div>
-                              <button type="submit" class="btn btn-primary btn-search pull-right"><i class="fa fa-search"></i></button>
-                          </form>
-                      </div>
-                      <h4 class="text-center notable-text">Đánh giá mức độ ảnh hưởng trong xã hội</h4>
-                    </div> <!--leftContentRegis-->
-                  </div>
-                </div>
-                <div class="col-xs-5 col-xs-offset-1">
-                    <div class="row">
-                    <form action="#" method="post" class="form form-regis" role="form">
-                      <h1><strong>Đăng ký</strong></h1>
-                      <h4 class="freeTxt">Miễn phí và sẽ luôn như vậy.</h4>
-                      <div class="row">
-                        <div class="col-xs-6 ftName has-error has-feedback">
-                          <div class="form-group">
-                              <input class="form-control input-lg first-name pull-left" name="firstname" placeholder="Họ" type="text" autofocus />
-                              <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 ltName">
-                          <div class="form-group">
-                              <input class="form-control input-lg last-name pull-right" name="lastname" placeholder="Tên" type="text" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control input-lg" name="youremail" placeholder="Số di động hoặc email" type="email" />
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control input-lg" name="reenteremail" placeholder="Nhập lại số di động hoặc email" type="email" />
-                      </div>
-                      <div class="form-group">
-                        <input class="form-control input-lg" name="password" placeholder="Mật khẩu mới" type="password" />
-                      </div>
-                        <h4 class="bornDate">Ngày sinh</h4>
-                        <div class="form-group dayOfBirth has-error has-feedback">
-                            <select class="form-control pull-left day">
-                                <option value="Month">Ngày</option>
-                            </select>
-                            <select class="form-control pull-left month">
-                                <option value="Day">Tháng</option>
-                            </select>
-                            <select class="form-control pull-left year">
-                                <option value="Year">Năm</option>
-                            </select>
-                            <a href="" class="date_question pull-left">
-                              Tại sao tôi cần cung cấp ngày sinh của mình?
-                            </a>
-                          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                          </div>
-                          <div class="form-group sexChoose">
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                                Nữ
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                                Nam
-                            </label>
-                            </div>
-                            <div class="form-group">
-                              <p class="help-block">Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Các điều khoảng</a> của chúng tôi và rằng bạn đã đọc <a href="">Chính sách dữ liệu</a> của chúng tôi, bao gồm <a href="">Sử dụng cookie.</a></p>
-                            </div>
-                            <div class="form-group">
-                              <button class="btn btn-lg btn-primary signup-btn" type="submit">Đăng ký</button>
-                            </div>
-                            <div class="form-group">
-                              <p class="createPage"><a href="#">NDA Rank</a> là chỉ số xếp hạng mức độ ảnh hưởng của một đối tượng cụ thể (Bao gồm cá nhân, tập thể, sản phẩm,...) đối với xã hội. <a href="#">Chi tiết</a></p>
-                            </div>
-                          </form>
-                      </div>
-                </div>
-            </div>
-        </div> <!--container-->
-      </div>
 
-      <div id="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="language">
-                      <ul class="list-language">
-                          <li>Tiếng việt</li>
-                          <li><a href="">English (UK)</a></li>
-                          <li><a href="">中文(台灣)</a></li>
-                          <li><a href="">한국어</a></li>
-                          <li><a href="">日本語</a></li>
-                          <li><a href="">Français (France)</a></li>
-                          <li><a href="">ภาษาไทย</a></li>
-                          <li><a href="">Español</a></li>
-                          <li><a href="">Português (Brasil)</a></li>
-                          <li><a href="">Deutsch</a></li>
-                          <li><a href="">Italiano</a></li>
-                          <li><button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></li>
-                      </ul>
-                  </div>
-                  <table class="listUi">
-                      <tr>
-                        <td><a href="">Đăng ký</a></td>
-                        <td><a href="">Đăng nhập</a></td>
-                        <td><a href="">Messenger</a></td>
-                        <td><a href="">NDA Rank Lite</a></td>
-                        <td><a href="">Di động</a></td>
-                        <td><a href="">Tìm bạn bè</a></td>
-                        <td><a href="">Biểu tượng</a></td>
-                        <td><a href="">Danh bạ</a></td>
-                        <td><a href="">Trang</a></td>
-                        <td><a href="">Địa điểm</a></td>
-                        <td><a href="">Trò chơi</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="">Vị trí</a></td>
-                        <td><a href="">Người nổi tiếng</a></td>
-                        <td><a href="">Nhóm</a></td>
-                        <td><a href="">Giới thiệu</a></td>
-                        <td><a href="">Tạo quảng cáo</a></td>
-                        <td><a href="">Tạo trang</a></td>
-                        <td><a href="">Nhà phát triển</a></td>
-                        <td><a href="">Tuyển dụng</a></td>
-                        <td><a href="">Quyền riêng tư</a></td>
-                        <td><a href="">Cookie</a></td>
-                        <td><a href="">Lựa chọn quảng cáo <i class="img sp_ZLQ3QAAxbXn sx_90e325"></i></a></td>
-                      </tr>
-                      <tr>
-                          <td><a href="">Điểu khoản</a></td>
-                          <td><a href="">Trợ giúp</a></td>
-                      </tr>
-                  </table>
-                  <p class="copyRight">NDA Rank &copy; 2017</p>
-              </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Đăng ký</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  <link href="../css/none-responsive.css" rel="stylesheet" />
+  <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="../css/utility.css" rel="stylesheet" />
+  <link href="../css/register.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/register.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <nav class="navbar navbar-default navbar-login">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="../images/brand-logo2.png" alt=""></a>
+        </div>
+        <form class="navbar-form navbar-right" id="header-form" role="form">
+          <div class="form-group">
+            <label for="inputEmai">Email hoặc điện thoại</label>
+            <input type="text" class="form-control input-sm" id="inputEmai">
           </div>
+          <div class="form-group marLeft-password">
+            <label for="inputPassword">Mật khẩu</label>
+            <input type="password" class="form-control input-sm" id="inputPassword">
+          </div>
+          <button type="submit" class="login-btn">Đăng nhập</button>
+          <div class="forget_pass">
+            <a href="#"><span>Quên tài khoản?</span></a>
+          </div>
+        </form>
+      </div><!-- /.container -->
+    </nav>
+    <div class="background_content">
+      <div class="container register-page">
+        <div class="main">
+          <form class="register-form">
+            <div class="intro">
+              <h1 class="title"><b>Đăng ký</b></h1>
+              <p class="description">Miễn phí và sẽ luôn như vậy</p>
+            </div>
+            <div class="introduce-yourself">
+              <textarea class="form-control" placeholder="Giới thiệu về bản thân"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group has-error">
+                <input type="text" class="form-control input-lg" placeholder="Họ" />
+                <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Tên" />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-lg w-100" placeholder="Số di động hoặc email" />
+            </div>
+            <div class="form-group mb-0">
+              <input type="text" class="form-control input-lg w-100" placeholder="Nhập lại số di động hoặc email" />
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="mb-0"><b>Hoặc chọn trực tiếp</b></p>
+            </div>
+            <div class="password-input form-group">
+              <input type="password" class="form-control input-lg w-100" placeholder="Mật khẩu mới" />
+            </div>
+            <div class="tag-list">
+              <ul class="selected-list clearfix">
+              </ul>
+              <ul class="remain-list">
+              </ul>
+            </div>
+            <div>
+              <div class="form-group">
+                <input type="text" class="form-control input-lg w-100" placeholder="Thu nhập/ tháng của bạn" />
+              </div>
+              <div class="birthday-select mb-3">
+                <p class="select-label"><b>Ngày sinh</b></p>
+                <div class="d-flex align-items-center">
+                  <div class="form-group has-error mb-0">
+                    <select class="form-control day-list">
+                      <option value="Ngày">Ngày</option>
+                    </select>
+                  </div>
+                  <div class="form-group has-error mb-0">
+                    <select class="form-control month-list">
+                      <option value="Tháng">Tháng</option>
+                    </select>
+                  </div>
+                  <div class="form-group has-error mb-0">
+                    <select class="form-control year-list">
+                      <option value="Năm">Năm</option>
+                    </select>
+                  </div>
+                  <a class="question">Tại sao tôi cần cung cấp ngày sinh của mình?</a>
+                  <a>
+                    <span class="glyphicon glyphicon-remove remove-icon" aria-hidden="true"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="gender-select mb-3">
+                <label class="radio-inline">
+                  <input type="radio" name="gender" value="female" />
+                  Nữ
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="gender" value="female" />
+                  Nam
+                </label>
+              </div>
+              <div class="term">
+                <p>
+                  Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a>Các điều khoản</a> của chúng tôi và rằng bạn đã đọc <a>Chính
+                    sách dữ liệu</a> của chúng tôi, bao gồm <a>Sử dụng cookie</a>.
+                </p>
+              </div>
+              <div class="submit-button">
+                <button class="btn btn-lg">Đăng ký</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
+      <!--container-->
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
-  </body>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="language">
+            <ul class="list-language">
+              <li>Tiếng việt</li>
+              <li><a href="">English (UK)</a></li>
+              <li><a href="">中文(台灣)</a></li>
+              <li><a href="">한국어</a></li>
+              <li><a href="">日本語</a></li>
+              <li><a href="">Français (France)</a></li>
+              <li><a href="">ภาษาไทย</a></li>
+              <li><a href="">Español</a></li>
+              <li><a href="">Português (Brasil)</a></li>
+              <li><a href="">Deutsch</a></li>
+              <li><a href="">Italiano</a></li>
+              <li><button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button></li>
+            </ul>
+          </div>
+          <table class="listUi">
+            <tr>
+              <td><a href="">Đăng ký</a></td>
+              <td><a href="">Đăng nhập</a></td>
+              <td><a href="">Messenger</a></td>
+              <td><a href="">NDA Rank Lite</a></td>
+              <td><a href="">Di động</a></td>
+              <td><a href="">Tìm bạn bè</a></td>
+              <td><a href="">Biểu tượng</a></td>
+              <td><a href="">Danh bạ</a></td>
+              <td><a href="">Trang</a></td>
+              <td><a href="">Địa điểm</a></td>
+              <td><a href="">Trò chơi</a></td>
+            </tr>
+            <tr>
+              <td><a href="">Vị trí</a></td>
+              <td><a href="">Người nổi tiếng</a></td>
+              <td><a href="">Nhóm</a></td>
+              <td><a href="">Giới thiệu</a></td>
+              <td><a href="">Tạo quảng cáo</a></td>
+              <td><a href="">Tạo trang</a></td>
+              <td><a href="">Nhà phát triển</a></td>
+              <td><a href="">Tuyển dụng</a></td>
+              <td><a href="">Quyền riêng tư</a></td>
+              <td><a href="">Cookie</a></td>
+              <td><a href="">Lựa chọn quảng cáo <i class="img sp_ZLQ3QAAxbXn sx_90e325"></i></a></td>
+            </tr>
+            <tr>
+              <td><a href="">Điểu khoản</a></td>
+              <td><a href="">Trợ giúp</a></td>
+            </tr>
+          </table>
+          <p class="copyRight">NDA Rank &copy; 2017</p>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

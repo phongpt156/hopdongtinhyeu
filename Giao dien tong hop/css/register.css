@@ -1,0 +1,166 @@
+.register-page {
+    font-size: 16px;
+}
+.navbar-login.navbar-default {
+    padding: 1em 0;
+}
+.navbar-login .navbar-brand {
+    margin-top: 0;
+    height: auto;
+}
+.navbar-brand img {
+    width: 10em;
+    height: auto;
+}
+.background_content {
+    background: #fff;
+}
+
+.footer {
+    background-color: #f3f3f3;
+}
+
+.register-form {
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0 1.5em;
+    display: grid;
+}
+.intro {
+    grid-row: span 1;
+    grid-column: 2 / 3;
+}
+.intro .description {
+    margin: 15px 0 20px;
+    font-size: 1.1875em;
+}
+.introduce-yourself {
+    grid-row: span 3;
+}
+.introduce-yourself textarea {
+    resize: none;
+    height: 100%;
+}
+.register-form .form-row {
+    display: flex;
+}
+.register-form .form-row > * + * {
+    margin-left: 1em;
+}
+.register-form .form-group {
+    position: relative;
+}
+.register-form input.form-control {
+    width: 10.777778em;
+    height: 2.166667em;
+}
+.register-form .has-error .form-control {
+    border-color: #a94442;
+}
+.register-form .form-group .form-control-feedback {
+    width: 2.4375em;
+    height: 2.4375em;
+    line-height: 2.4375em;
+}
+.password-input {
+    margin-top: 15px;
+}
+.tag-list {
+    padding: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.tag-list ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+.tag-list ul li {
+    position: relative;
+    margin-top: .5em;
+    margin-right: .5em;
+    float: left;
+    font-size: .875em;
+}
+.tag-list ul li {
+    display: flex;
+    align-items: center;
+}
+.tag-list ul li a {
+    padding: .357143em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.tag-list ul li a:hover {
+    text-decoration: none;
+}
+.tag-list ul li a .remove-icon {
+    margin-left: .5em;
+    font-size: .857143em;
+    color: #cf1f2f;
+}
+.selected-list a {
+    color: #000;
+}
+.remain-list a {
+    color: #fff;
+}
+.birthday-select__label {
+    font-size: 1.125em;
+}
+.birthday-select select {
+    padding: .384615em;
+    height: 2.307692em;
+    font-size: .8125em;
+    color: #000;
+    border-radius: inherit;
+}
+.birthday-select .day-list {
+    width: 4.923077em;
+}
+.birthday-select .month-list {
+    width: 6.769231em
+}
+.birthday-select .year-list {
+    width: 4.923077em;
+}
+.birthday-select .question {
+    max-width: 13.636364em;
+    margin-left: .909091em;
+    font-size: 11px;
+}
+.birthday-select .remove-icon {
+    font-size: .75em;
+    color: #a94442;
+}
+.gender-select {
+    line-height: 1em;
+    font-size: 1.125em;
+}
+.term {
+    font-size: .6875em;
+    color: #777;
+}
+.submit-button {
+    margin-top: 2em;
+}
+.submit-button .btn {
+    width: 10.777778em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    text-align: center;
+    position: relative;
+    padding: .388889em 1.111111em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-radius: 5px;
+    border: 1px solid #3b6e22;
+    background-color: #69a74e;
+    background: linear-gradient(#67ae55, #578843);
+}
+.submit-button .btn:active {
+    top: .0555556em;
+}

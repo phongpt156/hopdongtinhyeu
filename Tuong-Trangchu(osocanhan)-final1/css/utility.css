@@ -79,8 +79,28 @@
     margin-left: 1.5rem !important;
 }
 .mx-4 {
-    margin-right: 2rem !important;
-    margin-left: 2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.my-1 {
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+.my-2 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.my-3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+.my-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
 }
 .mt-0 {
     margin-top: 0 !important;

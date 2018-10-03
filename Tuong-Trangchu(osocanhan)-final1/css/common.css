@@ -1,6 +1,52 @@
+:root {
+    font-size: 1rem;
+}
 a {
     cursor: pointer;
+    color: #365899;
+}
+a.no-decoration:hover {
+    text-decoration: none;
 }
 input[type="radio"] {
     cursor: pointer;
 }
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.fa-1x {
+    font-size: 1em;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.fa-3x {
+    font-size: 3em;
+}
+
+/* ========= three dot icon ========= */
+.three-dot-circle .dot {
+    width: .25em;
+    height: .25em;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #717880
+}
+.three-dot-circle .dot + .dot {
+    margin-left: .2em;
+}
+/* ========= end three dot icon ========= */

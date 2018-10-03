@@ -1,3 +1,8 @@
+body,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    min-width: auto;
+}
 .term-of-service {
     padding-top: 2.8125em;
     font-size: 16px;
@@ -10,6 +15,25 @@
 aside a, aside a:hover {
     color: #4b4f56;
 }
+.container {
+    width: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 .circle-icon-wrapper {
     display: flex;
     align-items: center;
@@ -17,6 +41,7 @@ aside a, aside a:hover {
 .circle-icon {
     width: 1.75em;
     height: 1.75em;
+    flex-shrink: 0;
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -286,7 +311,6 @@ aside a, aside a:hover {
 
 .guess-only-popup {
     padding: 2.5em;
-    height: 11.25em;
     box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
     background: rgba(255, 255, 255, .95);
 }
@@ -307,6 +331,11 @@ aside a, aside a:hover {
     color: #fff;
     border-radius: inherit;
 }
+.guess-only-poup__inner > div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
 .guess-only-poup__inner .signin-button {
     background-color: #4267b2;
 }
@@ -318,4 +347,9 @@ aside a, aside a:hover {
 }
 .guess-only-poup__inner .signup-button:hover {
     background-color: #36a420;
+}
+@media screen and (min-width: 768px) {
+    .guess-only-poup__inner > div {
+        flex-direction: row;
+    }
 }

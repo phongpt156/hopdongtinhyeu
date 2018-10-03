@@ -1,0 +1,19 @@
+header .searchUser, header .setting-menu, header .navbar-header, header .top-menu {
+    display: none;
+}
+@media screen and (min-width: 576px) {
+    header .navbar-header {
+        display: block;
+    }
+    header .top-menu{
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 992px) {
+    header .searchUser {
+        display: block;
+    }
+    header .setting-menu {
+        display: inline-block;
+    }
+}
