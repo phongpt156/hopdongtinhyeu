@@ -153,7 +153,10 @@ form .submit-button {
 
 /*=============== aside style ===============*/
 .aside {
-    display: none;
+    float: none;
+}
+.aside aside {
+    /* position: relative !important; */
 }
 .target-item {
     display: flex;
@@ -191,7 +194,15 @@ form .submit-button {
 .target-item img.active {
     display: block !important;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1199px) {
+    .aside aside {
+        position: relative !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main {
+        display: flex;
+    }
     .aside {
         display: block;
     }

@@ -134,7 +134,7 @@ aside a, aside a:hover {
     font-size: .9375em;
 }
 .term-of-service__top-nav .sub-menu > li {
-    padding: .25em 0 .25em 5.625em;
+    padding: .25em .5em .25em 5.625em;
     display: flex;
     align-items: flex-start;
 }

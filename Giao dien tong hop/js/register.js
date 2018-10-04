@@ -76,6 +76,9 @@ $(document).ready(function () {
   selectedTags.forEach(function (tag) {
     adSelectedTag(tag);
   });
+  if (selectedTags.length !== 0) {
+    $('.selected-list').css('margin-bottom', '1em');
+  }
   remainTags.forEach(function (tag) {
     adRemainTag(tag);
   });
@@ -86,6 +89,9 @@ $(document).ready(function () {
 
     tagItemElement.remove();
     const tag = selectedTags.splice(index, 1)[0];
+    if (selectedTags.length === 0) {
+      $('.selected-list').css('margin-bottom', 0);
+    }
     adRemainTag(tag);
     remainTags.push(tag);
   });
@@ -94,7 +100,9 @@ $(document).ready(function () {
     const index = $('.remain-list .tag-item').index($(this));
     $(this).remove();
     const tag = remainTags.splice(index, 1)[0];
-
+    if (selectedTags.length === 0) {
+      $('.selected-list').css('margin-bottom', '1em');
+    }
     adSelectedTag(tag);
     selectedTags.push(tag);
   });

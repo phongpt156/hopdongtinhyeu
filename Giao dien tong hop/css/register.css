@@ -1,8 +1,13 @@
+body {
+    --orange: #f58634;
+}
 .register-page {
     font-size: 16px;
 }
 .navbar-login.navbar-default {
     padding: 1em 0;
+    border: none;
+    background: #f3f3f3;
 }
 .navbar-login .navbar-brand {
     margin-top: 0;
@@ -15,9 +20,26 @@
 .background_content {
     background: #fff;
 }
+.navbar-login.navbar-default .form-group label, #header-form input, .navbar-login .forget_pass a {
+    color: var(--orange);
+}
+#header-form input {
+    border: 1px solid #ccc;
+}
+.navbar-login .login-btn {
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+}
+.navbar-login .login-btn:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
 
 .footer {
     background-color: #f3f3f3;
+}
+.footer a {
+    color: var(--orange);
 }
 
 .register-form {
@@ -25,10 +47,6 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 0 1.5em;
     display: grid;
-}
-.intro {
-    grid-row: span 1;
-    grid-column: 2 / 3;
 }
 .intro .description {
     margin: 15px 0 20px;
@@ -67,22 +85,21 @@
 }
 .tag-list {
     padding: 1em;
+    grid-row: span 3;
     border-radius: 4px;
     border: 1px solid #ccc;
     background-color: #fff;
 }
 .tag-list ul {
     padding-left: 0;
+    margin-bottom: 0;
     list-style-type: none;
 }
 .tag-list ul li {
     position: relative;
-    margin-top: .5em;
-    margin-right: .5em;
+    margin: .25em;
     float: left;
     font-size: .875em;
-}
-.tag-list ul li {
     display: flex;
     align-items: center;
 }
