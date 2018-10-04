@@ -155,9 +155,6 @@ form .submit-button {
 .aside {
     float: none;
 }
-.aside aside {
-    /* position: relative !important; */
-}
 .target-item {
     display: flex;
 }
