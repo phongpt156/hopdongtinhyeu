@@ -24,13 +24,13 @@ body {
 .background_content {
     background: #fff;
 }
-#header-form input {
+#header-form input, .navbar-login .forget_pass a {
     color: var(--orange);
 }
 #header-form input {
     border: 1px solid #ccc;
 }
-.navbar-login.navbar-default .form-group label, .navbar-login .forget_pass a {
+.navbar-login.navbar-default .form-group label {
     color: #000;
 }
 .navbar-login .login-btn {
@@ -60,7 +60,7 @@ body {
     font-size: 1.1875em;
 }
 .introduce-yourself {
-    grid-row: span 3;
+    grid-row: span 2;
 }
 .introduce-yourself textarea {
     resize: none;
@@ -128,6 +128,9 @@ body {
 }
 .remain-list a {
     color: #fff;
+}
+.left-bottom-form {
+    margin-top: .9375em;
 }
 .birthday-select__label {
     font-size: 1.125em;

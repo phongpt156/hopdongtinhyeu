@@ -7,7 +7,7 @@ $(document).ready(function () {
     { name: 'Chia sẻ', color: '#c3c4c3' },
     { name: 'Là người của công việc', color: '#c9c8c9' },
     { name: 'Năng động', color: '#c5c5c5' },
-    { name: 'Bình thường', color: 'c5c5c5' },
+    { name: 'Bình thường', color: '#c5c5c5' },
     { name: 'Dễ gần', color: '#c5c5c5' },
     { name: 'Ít nói', color: '#c5c5c5' },
     { name: 'Nghiêm túc', color: '#c5c5c5' },
