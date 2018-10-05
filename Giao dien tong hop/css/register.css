@@ -1,6 +1,9 @@
 body {
     --orange: #f58634;
 }
+.text-orange {
+    color: var(--orange);
+}
 .register-page {
     font-size: 16px;
 }
@@ -11,6 +14,7 @@ body {
 }
 .navbar-login .navbar-brand {
     margin-top: 0;
+    margin-left: 0 !important;
     height: auto;
 }
 .navbar-brand img {
@@ -20,11 +24,14 @@ body {
 .background_content {
     background: #fff;
 }
-.navbar-login.navbar-default .form-group label, #header-form input, .navbar-login .forget_pass a {
+#header-form input {
     color: var(--orange);
 }
 #header-form input {
     border: 1px solid #ccc;
+}
+.navbar-login.navbar-default .form-group label, .navbar-login .forget_pass a {
+    color: #000;
 }
 .navbar-login .login-btn {
     border: 1px solid var(--orange);
@@ -145,6 +152,7 @@ body {
     max-width: 13.636364em;
     margin-left: .909091em;
     font-size: 11px;
+    color: var(--orange);
 }
 .birthday-select .remove-icon {
     font-size: .75em;
