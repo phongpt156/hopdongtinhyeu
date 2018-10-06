@@ -27,7 +27,13 @@ $(document).ready(function () {
     { name: 'Thích đọc sách, truyện', color: '#c2c5c6' },
     { name: 'Trung thực', color: '#aba1b7' },
     { name: 'Dễ thương', color: '#c995af' },
+    { name: 'Là người của công việc', color: '#c9c8c9' },
     { name: 'Chăm chỉ', color: '#c098b2' },
+    { name: 'Bình thường', color: '#c5c5c5' },
+    { name: 'Thích đọc sách truyện', color: '#c2c5c6' },
+    { name: 'Hài hước', color: '#c5c5c5' },
+    { name: 'Chia sẻ', color: '#c3c4c3' },
+    { name: 'Thích hát', color: '#aaa1b6' },
     { name: 'Thích đi dạo công viên', color: '#6bc7df' },
     { name: 'Thích chụp ảnh', color: '#ff7b79' },
     { name: 'Thích lãng mạn', color: '#ff7b79' },
@@ -37,7 +43,7 @@ $(document).ready(function () {
     { name: 'Hòa đồng', color: '#89b695' },
     { name: 'Nóng tính', color: '#a08393' },
     { name: 'Chăm chỉ', color: '#90b797' },
-    { name: 'Bướng bỉnh', color: '#aca1b6' }
+    { name: 'Bướng bỉnh', color: '#aca1b6' },
   ];
 
   function adSelectedTag(tag) {
