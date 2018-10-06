@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     start: function () {
       const self = this;
-      $(this.container + ' img').show();
+      $(this.container + ' .target-image').show();
       setInterval(function () {
         self.next();
       }, this.displayTime);
@@ -17,8 +17,8 @@ $(document).ready(function () {
       const self = this;
 
       $(this.container).each(function () {
-        const $active = $(this).find('img.active');
-        const $next = ($active.next().length > 0) ? $active.next() : $(this).find('img').first();
+        const $active = $(this).find('.target-image.active');
+        const $next = ($active.next().length > 0) ? $active.next() : $(this).find('.target-image').first();
         $active.fadeOut(self.fadeTime, function () {
           $active.removeClass('active');
           $next.addClass('active');

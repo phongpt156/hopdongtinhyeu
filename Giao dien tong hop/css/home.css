@@ -165,9 +165,13 @@ form .submit-button {
     flex: 1 1 auto;
     border-bottom: 1px solid #c7cdd9;
 }
-.target-item img {
+.target-item .target-image {
     max-width: 70%;
     height: auto;
+}
+.target-item .target-image img {
+    max-width: 100%;
+    max-height: 100%;
 }
 .target-item .name {
     font-weight: bold;
@@ -185,10 +189,10 @@ form .submit-button {
 .target-item .view-detail-link:hover {
     text-decoration: none;
 }
-.target-item img {
+.target-item .target-image {
     display: none !important;
 }
-.target-item img.active {
+.target-item .target-image.active {
     display: block !important;
 }
 @media screen and (max-width: 1199px) {
