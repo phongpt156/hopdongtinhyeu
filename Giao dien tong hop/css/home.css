@@ -23,16 +23,16 @@ form .submit-button {
     border: none;
     background-color: inherit;
 }
-.header .navbar-default .navbar-collapse {
+.header .navbar-default .right-header {
     padding-top: .5em;
     overflow-y: visible;
     margin-top: .5em;
 }
 .search-form {
-    display: flex;
+    text-align: right;
 }
 .search-form > * + * {
-    margin-left: .5625em;
+    margin-top: .5625em;
 }
 .signup-button, .signup-button:hover {
     color: #000;
@@ -70,7 +70,7 @@ form .submit-button {
     .header .navbar-default .navbar-header {
         justify-content: flex-end;
     }
-    .header .navbar-collapse {
+    .header .right-header {
         padding: 0;
         flex-direction: column;
         flex: 1 1 auto;
@@ -83,12 +83,19 @@ form .submit-button {
     .authentication {
         justify-content: flex-start;
     }
+    .search-form {
+        display: flex;
+    }
+    .search-form > * + * {
+        margin-top: 0;
+        margin-left: .5625em;
+    }
 }
 @media screen and (min-width: 992px) {
     .header .navbar-default .navbar-header {
         text-align: right;
     }
-    .header .navbar-collapse {
+    .header .right-header {
         flex-direction: row;
         align-items: flex-end;
     }
@@ -96,6 +103,10 @@ form .submit-button {
 /*=============== end header style ===============*/
 
 /*=============== body style ===============*/
+section.body img {
+    max-width: 100%;
+    height: auto;
+}
 .statistic {
     padding: 1.5625em 4em;
     background-color: var(--orange);
