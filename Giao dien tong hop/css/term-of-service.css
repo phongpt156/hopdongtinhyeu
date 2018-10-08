@@ -209,6 +209,10 @@ aside a, aside a:hover {
     text-decoration: none;
 }
 
+.term-of-service__main-content img {
+    width: 100%;
+    height: auto;
+}
 .return-to-top:hover {
     text-decoration: none;
 }
