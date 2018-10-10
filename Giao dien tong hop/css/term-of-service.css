@@ -210,7 +210,7 @@ aside a, aside a:hover {
 }
 
 .term-of-service__main-content img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .return-to-top:hover {
