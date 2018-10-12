@@ -72,25 +72,6 @@ form .submit-button {
 .form-select-tab form > * + * {
     margin-top: .5625em;
 }
-.signup-button, .signup-button:hover {
-    color: #000;
-}
-.signin-button, .signin-button:hover {
-    color: var(--orange);
-}
-.authentication {
-    margin: .625em 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.authentication > * + * {
-    margin-left: .625em;
-}
-.authentication .border {
-    height: .75em;
-    border-left: 1px solid #000;
-}
 .affiliate-list a {
     display: block;
 }

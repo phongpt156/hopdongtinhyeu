@@ -1,16 +1,16 @@
 .homepage {
     font-size: 16px;
-    --orange: #f58634;
+    --red: #ff0000;
     --cadet-blue: #6ca0b6;
 }
-.text-orange {
-    color: var(--orange) !important;
+.text-red {
+    color: var(--red) !important;
 }
 form .form-control, form .submit-button {
     border-radius: inherit;
 }
 form .submit-button {
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 
 /*=============== header style ===============*/
@@ -22,6 +22,24 @@ form .submit-button {
     margin-bottom: 0;
     border: none;
     background-color: inherit;
+}
+.header .brand-logo {
+    font-weight: bold;
+    color: #000;
+}
+.header .brand-logo:hover {
+    text-decoration: none;
+}
+.header .brand-logo .brand-name {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 1.875em;
+}
+.header .brand-logo small {
+    font-size: 1.15625em;
+}
+.header .brand-logo .text-red {
+    color: #ff0000;
 }
 .header .navbar-default .right-header {
     padding-top: .5em;
@@ -43,8 +61,8 @@ form .submit-button {
     align-items: center;
 }
 .form-select-tab .nav-tabs li.active a {
-    color: var(--orange);
-    border-bottom: 2px solid var(--orange);
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
 }
 .form-select-tab .nav-tabs li:first-child, .form-select-tab .nav-tabs li:last-child, .form-select-tab .nav-tabs li:last-child a::before {
     margin-right: .5em;
@@ -64,38 +82,13 @@ form .submit-button {
     margin-left: 0;
 }
 .form-select-tab .nav-tabs.tab-1 li:first-child a::after, .form-select-tab .nav-tabs.tab-2 li:first-child a::after, .form-select-tab .nav-tabs.tab-2 li:last-child a::before, .form-select-tab .nav-tabs.tab-3 li:last-child a::before {
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 .form-select-tab form {
     text-align: right;
 }
 .form-select-tab form > * + * {
     margin-top: .5625em;
-}
-.signup-button, .signup-button:hover {
-    color: #000;
-}
-.signin-button, .signin-button:hover {
-    color: var(--orange);
-}
-.authentication {
-    margin: .625em 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.authentication > * + * {
-    margin-left: .625em;
-}
-.authentication .border {
-    height: .75em;
-    border-left: 1px solid #000;
-}
-.affiliate-list a {
-    display: block;
-}
-.affiliate-list a, .affiliate-list a:hover {
-    color: #000;
 }
 @media screen and (min-width: 768px) {
     .header {
@@ -148,14 +141,14 @@ section.body img {
 }
 .statistic {
     padding: 1.5625em 4em;
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 .statistic h3 {
     font-size: 2em;
     color: #fff;
 }
 .statistic p {
-    color: #ffe6d3;
+    color: #ffe2e2;
 }
 .main-body .nav-tabs {
     border-bottom: none;
@@ -170,8 +163,8 @@ section.body img {
     background-color: inherit;
 }
 .main-body .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
-    color: var(--orange);
-    border-bottom: 2px solid var(--orange) !important;
+    color: var(--red);
+    border-bottom: 2px solid var(--red) !important;
 }
 .main-body article {
     padding: 0 4em;
@@ -225,7 +218,7 @@ section.body img {
 }
 .target-item .name {
     font-weight: bold;
-    color: var(--orange);
+    color: var(--red);
 }
 .target-item .description {
     color: #7b7b7b;
@@ -281,7 +274,7 @@ section.body img {
     color: #7b7b7b;
 }
 .footer__bottom .other-site a {
-    color: var(--orange);
+    color: var(--red);
 }
 .footer__bottom .other-site a + a {
     margin-left: .857143em;
