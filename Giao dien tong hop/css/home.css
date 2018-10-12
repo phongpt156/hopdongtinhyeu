@@ -28,10 +28,45 @@ form .submit-button {
     overflow-y: visible;
     margin-top: .5em;
 }
-.search-form {
+.form-select-tab .nav-tabs {
+    border-bottom: none;
+}
+.form-select-tab .nav-tabs li a, .form-select-tab .nav-tabs li:hover a, .form-select-tab .nav-tabs li a:focus {
+    border: none;
+    background-color: transparent;
+}
+.form-select-tab .nav-tabs li a {
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    color: #000;
+    align-items: center;
+}
+.form-select-tab .nav-tabs li.active a {
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+.form-select-tab .nav-tabs li:first-child {
+    margin-right: .5em;
+}
+.form-select-tab .nav-tabs li:first-child a::after, .form-select-tab .nav-tabs li:last-child a::before {
+    width: .125em;
+    margin-left: .5em;
+    height: .875em;
+    display: inline-block;
+    content: "";
+    background-color: #000;
+}
+.form-select-tab .nav-tabs li:last-child a::before {
+    margin-right: .5em;
+}
+.form-select-tab .nav-tabs.tab-1 li:first-child a::after, .form-select-tab .nav-tabs.tab-2 li:first-child a::after, .form-select-tab .nav-tabs.tab-2 li:last-child a::before, .form-select-tab .nav-tabs.tab-3 li:last-child a::before {
+    background-color: var(--orange);
+}
+.form-select-tab form {
     text-align: right;
 }
-.search-form > * + * {
+.form-select-tab form > * + * {
     margin-top: .5625em;
 }
 .signup-button, .signup-button:hover {
@@ -77,16 +112,16 @@ form .submit-button {
         display: flex !important;
         align-items: center;
     }
-    .search-form-container {
+    .form-select-tab {
         padding: 0 3.3125em;
     }
     .authentication {
         justify-content: flex-start;
     }
-    .search-form {
+    .form-select-tab form {
         display: flex;
     }
-    .search-form > * + * {
+    .form-select-tab form > * + * {
         margin-top: 0;
         margin-left: .5625em;
     }

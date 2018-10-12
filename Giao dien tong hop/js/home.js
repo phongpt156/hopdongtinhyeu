@@ -27,4 +27,12 @@ $(document).ready(function () {
     }
   };
   SlideCrossFade.start();
+
+  const formSelectTabs = $('.form-select-tab .nav-tabs');
+  $('.form-select-tab .nav-tabs a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    const index = $(this).attr('data-index');
+    const indexBefore = $(e.relatedTarget).attr('data-index');
+    formSelectTabs.removeClass('tab-' + indexBefore);
+    formSelectTabs.addClass('tab-' + index);
+  });
 });
