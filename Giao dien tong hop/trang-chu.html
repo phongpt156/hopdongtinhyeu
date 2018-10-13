@@ -28,8 +28,8 @@
         </div>
         <div class="right-header">
           <div class="form-select-tab">
-            <ul class="nav nav-tabs mb-2 tab-1" id="myTabs" role="tablist">
-              <li role="presentation" class="active">
+            <ul class="nav nav-tabs mb-2 tab-3 has-login" id="myTabs" role="tablist">
+              <li role="presentation">
                 <a href="#signup-form" role="tab" data-toggle="tab" data-index="1">
                   Đăng ký
                 </a>
@@ -37,12 +37,12 @@
               <li role="presentation">
                 <a href="#signin-form" role="tab" data-toggle="tab" data-index="2">Đăng nhập</a>
               </li>
-              <li role="presentation">
+              <li role="presentation" class="active">
                 <a href="#search-form" role="tab" data-toggle="tab" data-index="3">Tìm kiếm</a>
               </li>
             </ul>
             <div class="tab-content">
-              <div class="tab-pane fade active in" id="signup-form">
+              <div class="tab-pane fade" id="signup-form">
                 <form>
                   <input type="text" class="form-control" placeholder="Họ tên" />
                   <input type="text" class="form-control" placeholder="Email" />
@@ -57,7 +57,7 @@
                   <button class="btn btn-warning submit-button">Đăng nhập</button>
                 </form>
               </div>
-              <div class="tab-pane fade form-container" role="tabpanel" id="search-form">
+              <div class="tab-pane fade form-container active in" role="tabpanel" id="search-form">
                 <form>
                   <select class="form-control" placeholder="Giới tính">
                     <option value="">Giới tính</option>

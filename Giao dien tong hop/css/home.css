@@ -72,6 +72,15 @@ form .submit-button {
 .form-select-tab form > * + * {
     margin-top: .5625em;
 }
+.form-select-tab .nav-tabs.has-login li:not(:last-child) {
+    display: none;
+}
+.form-select-tab .nav-tabs.has-login li:last-child {
+    margin: 0;
+}
+.form-select-tab .nav-tabs.has-login li:last-child a::before {
+    display: none;
+}
 .affiliate-list a {
     display: block;
 }
