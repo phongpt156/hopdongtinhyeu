@@ -208,6 +208,7 @@ section.body img {
 .target-item .target-image {
     max-width: 70%;
     height: auto;
+    flex-shrink: 0;
 }
 .target-item .target-image img {
     max-width: 100%;
