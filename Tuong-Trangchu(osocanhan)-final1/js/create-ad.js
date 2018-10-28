@@ -71,10 +71,6 @@ $(document).ready(function () {
     }
   });
 
-  $('.Modal_select_img_des .modal-body').scroll(function (e) {
-    // e.stopPropagation();
-    console.log(123);
-  });
   // budget list event
   let adDuration = 7;
   let currentBudget = 600;
