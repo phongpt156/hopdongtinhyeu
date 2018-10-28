@@ -71,6 +71,7 @@ $(document).ready(function () {
   let adDuration = 7;
   let currentBudget = 600;
   let adEndDate = new Date();
+  const now = new Date();
 
   const budgets = [
   { value: 600 },
@@ -83,8 +84,8 @@ $(document).ready(function () {
   updateBudgetSuggestList(budgets);
   updateBudget(currentBudget);
   updateAdEndDateInputValue(adEndDate);
-  updateAdEndDate(adEndDate);
   updateAdDuration(adDuration);
+  updateCalendar(adDuration);
 
   $('.budget-list__input').change(function () {
     let value = Number.parseInt($(this).val());
@@ -135,6 +136,7 @@ $(document).ready(function () {
       $('.budget-list__suggest-list').addClass('d-none');
     }
   });
+
   $('.select-days > .item').click(function () {
     adDuration = $(this).attr('value');
     let value = $('.budget-list__input').val();
@@ -144,21 +146,34 @@ $(document).ready(function () {
       validateBudget(value);
     }
 
-    $('.select-days > .item').each(function () {
-      $(this).removeClass('active');
-    });
-
-    $(this).addClass('active');
+    updateSelectDayList(adDuration);
     updateReachProgressBar(adDuration);
     updateBudget(currentBudget);
     updateAdDuration(adDuration);
+    updateCalendar(adDuration);
   });
   updateReachProgressBar(adDuration);
 
   $('.wpBoxdate > input').change(function () {
     adEndDate = new Date($(this).val());
-    updateAdEndDate(adEndDate);
+    if (adEndDate.getTime() <= now.getTime()) {
+      adEndDate = new Date(now);
+      adEndDate.setDate(adEndDate.getDate() + 1);
+    }
+
+    const duration = getDiffDays(adEndDate, now);
+    updateSelectDayList(duration);
+    updateReachProgressBar(duration);
+    updateAdDuration(duration);
+    updateCalendar(duration);
   });
+
+  function getDiffDays(date1, date2) {
+    const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+    return diffDays;
+  }
 
   function updateBudgetSuggestList(budgets) {
     $('.budget-list__suggest-list').html('');
@@ -238,5 +253,26 @@ $(document).ready(function () {
 
   function updateAdDuration(duration) {
     $('.ad-duration').text(duration);
+  }
+
+  function updateSelectDayList(duration) {
+    $('.select-days > .item').each(function () {
+      if ($(this).val() === Number(duration)) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
+  }
+
+  function updateCalendar(duration) {
+    const date = new Date(now.getTime());
+    date.setDate(date.getDate() + Number(duration));
+
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1 <= 9 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
+    const day = date.getDate() <= 9 ? `0${date.getDate()}` : date.getDate();
+    $('.wpBoxdate > input').val(`${year}-${month}-${day}`);
+    updateAdEndDate(date);
   }
 });
