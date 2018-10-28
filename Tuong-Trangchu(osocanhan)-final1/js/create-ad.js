@@ -24,6 +24,10 @@ $(document).ready(function () {
     }
   });
 
+  $('.close_modal_select-img-des').click(function () {
+    $('.Modal_select_img_des').modal('hide');
+  });
+
   // advertisement title and description event
   const maxAdTitleChar = 60;
   const maxAdDescriptionChar = 240;
@@ -67,6 +71,10 @@ $(document).ready(function () {
     }
   });
 
+  $('.Modal_select_img_des .modal-body').scroll(function (e) {
+    // e.stopPropagation();
+    console.log(123);
+  });
   // budget list event
   let adDuration = 7;
   let currentBudget = 600;
