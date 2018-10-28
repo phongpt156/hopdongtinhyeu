@@ -1,3 +1,6 @@
+.create-ads-modal .modal-title {
+    font-size: 14px;
+}
 .create-ads-modal .modal-body {
     background-color: #e9ebee;
 }
@@ -13,6 +16,170 @@
 .create-ads-modal .left-body__inner {
     margin: 1em 1.333333em;
     background-color: #fff;
+}
+.create-ads-modal .left-body__inner .title_des {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.create-ads-modal .left-body__inner .wpInput .Data {
+    border: 0;
+    border-bottom: 1px solid #e9e9e9;
+    outline: none;
+    width: 100%;
+}
+.create-ads-modal .left-body__inner .wpInput .limit {
+    float: right;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.create-ads-modal .CRADS_upload_photo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3054ab;
+    text-decoration: none;
+}
+.create-ads-modal .CRADS_upload_video {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3054ab;
+    text-decoration: none;
+}
+.create-ads-modal .contentOb .item {
+    margin-left: -15px;
+}
+.create-ads-modal .contentOb .listBp .item:not(:last-child) {
+    border-bottom: 1px solid #cecece;
+}
+.create-ads-modal .contentOb .listBp .radio {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.create-ads-modal .contentOb .listBp .inputbox {
+    width: 98%;
+    height: 30px;
+    resize: none;
+    outline: 0;
+    padding-top: 5px;
+    background-color: #f5f7f8;
+    border: 0;
+    margin-top: 3px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 10px;
+}
+.create-ads-modal .contentOb .listBp .inputbox::placeholder {
+    color: #b5b3b3;
+}
+.create-ads-modal .contentOb .listBp .boxRadio {
+    display: inline-block;
+    width: 30%;
+}
+.create-ads-modal .contentOb .listBp .boxSelect {
+    display: inline-block;
+    width: 69%;
+}
+.create-ads-modal .contentOb .listBp .boxSelect .FormSelect {
+    border: 1px solid #cecece;
+    padding: 8px 5px;
+    width: 77%;
+    outline: 0;
+    margin: 0;
+    width: 97%;
+}
+
+.create-ads-modal .contentOb .listBp .boxSelect .btn-select {
+    border: 1px solid #cecece;
+    padding: 8px 5px;
+    padding: 8px 10px;
+}
+.create-ads-modal .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    height: 36px;
+    padding: 0 5px;
+    line-height: 13px;
+    border-radius: 0;
+    background-image: url(../images/icon-down-select.png);
+    background-repeat: no-repeat;
+    background-position: 103% center;
+}
+.create-ads-modal .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .create-ads-modal .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,.create-ads-modal .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    background-image: url(../images/icon-down-select.png);
+    background-color: transparent;
+}
+.create-ads-modal .contentOb .listBp .View_boxSelect {
+    display: none;
+}
+.create-ads-modal .TwoboxSelect .bs-caret {
+    display: none;
+}
+.MainModal .myModal .modal-body .left-body__inner {
+    text-align: justify;
+}
+.MainModal .myModal .modal-body .left-body__inner .title {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 15px 30px 0 15px;
+}
+.modal-body .left-body__inner  p {
+    font-size: 12px;
+    color: #a2a2a2;
+    padding: 0 15px;
+}
+.MainModal .Modal-service .modal-body .left-body__inner {
+    text-align: justify;
+}
+.MainModal .Modal-service .modal-body .left-body__inner .title {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 10px; 
+    padding: 15px 30px 0 15px;
+}
+.modal-body .left-body__inner  p {
+    font-size: 12px; 
+    color: #a2a2a2;
+    padding: 0 15px;
+}
+.left-body__inner .benefit-package .titleBp{
+    background-color: #f5f7f8;
+    margin-top: 15px;
+    padding: 11px 0;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dadcde;
+}
+.left-body__inner .contentBp .listBp {
+    list-style: none;
+    padding: 0;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+.left-body__inner .contentBp .wpInfo {
+    margin: 15px;
+}
+.left-body__inner .contentBp .wpInfo .titleif {
+    font-size: 13px;
+    font-weight: bold;
+    width: 20%;
+    display: inline-block; 
+    position: relative;
+    padding: 10px 0;
+    line-height: 48px;
+}
+.left-body__inner .contentBp .wpInfo .titleif .fix {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left-body__inner .contentBp .wpInfo .InputF {
+    width: 70%;
+    display: inline-block;
+    margin-left: 15px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #eaeaea;
 }
 .des {
     word-break: break-word;
