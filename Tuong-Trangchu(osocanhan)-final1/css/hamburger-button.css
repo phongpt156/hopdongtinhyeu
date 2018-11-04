@@ -1,0 +1,43 @@
+.hamburger-button {
+    padding: 8px 12px;
+    transition: background-color 150ms cubic-bezier(.4, 0, .2, 1) 0ms;
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    background-color: inherit;
+}
+.hamburger-button:focus {
+    outline: none;
+}
+.hamburger-button:hover {
+    background-color: rgba(0, 0, 0, .08);
+}
+.hamburger-button .fa-bars {
+    font-size: 1.5em;
+}
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+.ripple:after {
+    width: 100%;
+    transition: transform .5s, opacity 1s;
+    transform: scale(10, 10);
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    left: 0;
+    height: 100%;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+}
+.ripple:active:after {
+    transition: 0s;
+    transform: scale(0, 0);
+    opacity: .3;
+}

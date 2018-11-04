@@ -1,3 +1,26 @@
+body,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    min-width: auto;
+}
+.container {
+    width: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
 header .searchUser, header .setting-menu, header .navbar-header, header .top-menu {
     display: none;
 }
