@@ -193,4 +193,9 @@ $(document).ready(function () {
 
   const ctx = $('.ad-statistic-chart')[0].getContext('2d');
   const adStatisticChart = new Chart(ctx, adStatisticChartConfig);
+
+  // chat area
+  new PerfectScrollbar('.right-aside__main', {
+    suppressScrollX: true
+  });
 });

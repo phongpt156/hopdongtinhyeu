@@ -244,14 +244,26 @@ body {
 /*======= Right aside =======*/
 .right-aside {
     width: 12.8125em;
-    top: 2.625em;
+    top: 2.75em;
     right: 0;
     position: fixed;
-    padding: .625em;
+    padding: .625em 0 0;
+    display: none;
+    bottom: 0;
     border-left: 1px solid #d2d3d7;
 }
+.right-aside__inner {
+    position: relative;
+}
+.right-aside__main {
+    max-height: calc(100vh - 3.375em);
+    height: 100%;
+}
+.right-aside__main .ps__rail-y {
+    z-index: 1000;
+}
 .contact-list {
-    padding-left: 0;
+    padding: 0 .625em;
     list-style-type: none;
 }
 .contact-list > .contact-item + .contact-item {
@@ -260,12 +272,42 @@ body {
 .contact-list .contact-item a:hover {
     text-decoration: none;
 }
-.contact-list .contact-item .cover {
+.contact-list .contact-item .cover-container {
     width: 2em;
     height: 2em;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
 }
-.contact-list .contact-item .cover img {
+.contact-list .contact-item .cover-container img {
+    width: 2em;
     object-fit: cover;
+    height: 2em;
+}
+.contact-list .contact-item .cover-container .cover {
+    width: 2em;
+    overflow: hidden;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover, .contact-list .contact-item .cover-container.cover-container--3 .cover {
+    width: 1em;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:first-child, .contact-list .contact-item .cover-container.cover-container--3 .cover:first-child {
+    grid-column: 1 / 2;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:last-child {
+    grid-column: 2 / 3;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:last-child img, .contact-list .contact-item .cover-container.cover-container--3 .cover:nth-child(2) img, .contact-list .contact-item .cover-container.cover-container--3 .cover:last-child img {
+    margin-left: -1em;
+}
+.contact-list .contact-item .cover-container.cover-container--3 .cover:not(:first-child) {
+    grid-row: span 1;
+    grid-column: 2 / 3;
+}
+.contact-list .contact-item .cover-container.cover-container--3 .cover:last-child img {
+    margin-top: -1em;
 }
 .contact-list .contact-item .name {
     margin-left: .75em;
@@ -280,7 +322,7 @@ body {
     display: flex;
 }
 .contact-list .contact-item .online-status.is-online .fa-circle {
-    font-size: .5rem;
+    font-size: .4rem;
     
 }
 .contact-list .contact-item .online-status.is-online .fa-circle path {
@@ -288,6 +330,7 @@ body {
 }
 .group-conversation .title {
     text-transform: uppercase;
+    padding: 0 .833333em;
     font-size: .75rem;
     color: #4b4c4e;
 }
@@ -297,11 +340,9 @@ body {
     align-items: center;
 }
 .create-group-button-container {
-    padding: .4375em;
-    margin-right: 1em;
-    display: inline-flex;
-    border-radius: 50%;
-    background-color: #fff;
+    top: 3px;
+    position: relative;
+    display: inline-block;
 }
 .create-group-button {
     width: 18px;
@@ -309,8 +350,32 @@ body {
     display: inline-block;
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: 0 -542px;
+    background-position: 0 -525px;
     background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/Yx7NlaKiLp6.png);
+}
+
+.right-aside--footer {
+    right: 0;
+    position: absolute;
+    padding: .714286em;
+    left: 0;
+    height: 2.142857em;
+    font-size: .875rem;
+    display: flex;
+    color: #bdc2c8;
+    bottom: 0;
+    background-color: #f6f7f9;
+    align-items: center;
+}
+.right-aside--footer .search-input {
+    width: 5.571429em;
+    padding: 0 .357143em;
+    outline: none;
+    font-size: .875rem;
+    flex-grow: 1;
+    color: #000;
+    border: none;
+    background-color: transparent;
 }
 /*======= End right aside =======*/
 
@@ -375,7 +440,7 @@ body {
     }
     .left-aside {
         width: 12.8125em;
-        top: 2.625em;
+        top: 2.75em;
         position: fixed;
     }
     .left-aside .navbar-nav {
@@ -397,5 +462,8 @@ body {
     .ad-statistic-column {
         margin-top: 0;
         margin-left: 2.5em;
+    }
+    .right-aside {
+        display: block;
     }
 }
