@@ -377,6 +377,20 @@ body {
     border: none;
     background-color: transparent;
 }
+.right-aside--footer .clear-search-input {
+    margin-right: .5em;
+    cursor: pointer;
+}
+.right-aside--footer .action-list {
+    display: flex;
+    align-items: center;
+}
+.right-aside--footer .action-list > * {
+    cursor: pointer;
+}
+.right-aside--footer .action-list > * + * {
+    margin-left: .5em;
+}
 /*======= End right aside =======*/
 
 /*======= Footer =======*/

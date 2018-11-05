@@ -198,4 +198,17 @@ $(document).ready(function () {
   new PerfectScrollbar('.right-aside__main', {
     suppressScrollX: true
   });
+  $('.right-aside--footer .search-input').on('input', function () {
+    const clearElement = $('.right-aside--footer .clear-search-input');
+    if ($(this).val().length) {
+      clearElement.removeClass('d-none');
+    } else {
+      clearElement.addClass('d-none');
+    }
+  });
+  $('.right-aside--footer .clear-search-input').click(function () {
+    $(this).addClass('d-none');
+    $('.right-aside--footer .search-input').val('');
+    $('.right-aside--footer .search-input').focus();
+  });
 });
