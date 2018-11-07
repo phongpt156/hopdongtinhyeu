@@ -196,19 +196,63 @@ $(document).ready(function () {
 
   // chat area
   new PerfectScrollbar('.right-aside__main', {
-    suppressScrollX: true
+    suppressScrollX: true,
+    wheelPropagation: false
   });
-  $('.right-aside--footer .search-input').on('input', function () {
-    const clearElement = $('.right-aside--footer .clear-search-input');
+  $('.search-input').on('input', function () {
+    const clearElement = $('.clear-search-input');
+
     if ($(this).val().length) {
       clearElement.removeClass('d-none');
     } else {
       clearElement.addClass('d-none');
     }
   });
-  $('.right-aside--footer .clear-search-input').click(function () {
+  $('.clear-search-input').click(function () {
     $(this).addClass('d-none');
-    $('.right-aside--footer .search-input').val('');
-    $('.right-aside--footer .search-input').focus();
+    $('.search-input').val('');
+    $('.search-input').focus();
+  });
+
+  // add keyword
+  $('.add-keyword-button').click(function (e) {
+    e.stopPropagation();
+    $('.add-keyword-button-dialog').toggleClass('d-none');
+
+    if (!$('.add-keyword-button-dialog').hasClass('d-none')) {
+      $('.add-keyword-button-dialog .form-group:first-child textarea').focus();
+    }
+  });
+  $('.add-keyword-button-dialog').click(function (e) {
+    e.stopPropagation();
+  });
+  $(document).click(function () {
+    $('.add-keyword-button-dialog').addClass('d-none');
+  });
+
+  // conversation list
+  new PerfectScrollbar($('.contact-list-container__body')[0], {
+    suppressScrollX: true,
+    wheelPropagation: false
+  });
+  $('.contact-list-container--collapse').click(function () {
+    $('.contact-list-container--open').toggleClass('d-none');
+    $(this).toggleClass('d-none');
+  });
+  $('.conversation__action-list').click(function (e) {
+    e.stopPropagation();
+  });
+  $('.contact-list-container--open .contact-list-container__header').click(function () {
+    $('.contact-list-container--collapse').toggleClass('d-none');
+    $('.contact-list-container--open').toggleClass('d-none');
+  });
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $(window).resize(function () {
+    if (window.innerWidth < 1200) {
+      $('.contact-list-container--open').addClass('d-none');
+      $('.contact-list-container--collapse').removeClass('d-none');
+    }
   });
 });
