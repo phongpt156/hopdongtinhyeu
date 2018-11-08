@@ -226,9 +226,6 @@ $(document).ready(function () {
   $('.add-keyword-button-dialog').click(function (e) {
     e.stopPropagation();
   });
-  $(document).click(function () {
-    $('.add-keyword-button-dialog').addClass('d-none');
-  });
 
   // conversation list
   new PerfectScrollbar($('.contact-list-container__body')[0], {
@@ -254,5 +251,75 @@ $(document).ready(function () {
       $('.contact-list-container--open').addClass('d-none');
       $('.contact-list-container--collapse').removeClass('d-none');
     }
+  });
+  autosize($('.autosize'));
+  $('.delete-message').tooltip({
+    placement: 'top',
+    title: 'Xóa',
+    trigger: 'manual',
+    template: `
+      <div class="tooltip" role="tooltip">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner py-1 px-2 cursor-pointer"></div>
+      </div>'
+    `,
+  });
+  $(document).on('click', '.delete-message', function (e) {
+    e.stopPropagation();
+    $('.message-reaction').popover('hide');
+    $('.delete-message').tooltip('show');
+  });
+
+  $('.message-reaction').popover({
+    placement: 'top',
+    template: `
+      <div class="popover popover-reaction-list" role="tooltip">
+        <div class="popover-content"></div>
+      </div>
+    `,
+    trigger: 'manual',
+    html: true,
+    content: `
+      <ul class="reaction-list">
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/heart-eyes.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/laughing.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/hushed.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/cry.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/angry.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/thumbsup.png" class="sn-emoji" /></a>
+        </li>
+        <li class="reaction-item">
+          <a><img src="./../../images/social-network/emojis/thumbsdown.png" class="sn-emoji" /></a>
+        </li>
+      </ul>
+    `
+  });
+  $(document).on('click', '.message-reaction', function (e) {
+    e.stopPropagation();
+    $('.delete-message').tooltip('hide');
+    $('.message-reaction').popover('show');
+  });
+  $(document).on('click', '.message-action .popover-reaction-list', function (e) {
+    e.stopPropagation();
+  });
+  $(document).on('click', '.popover-reaction-list .reaction-item a', function (e) {
+    $('.message-reaction').popover('hide');
+  });
+
+  $(document).click(function () {
+    $('.add-keyword-button-dialog').addClass('d-none');
+    $('.delete-message').tooltip('hide');
+    $('.message-reaction').popover('hide');
   });
 });

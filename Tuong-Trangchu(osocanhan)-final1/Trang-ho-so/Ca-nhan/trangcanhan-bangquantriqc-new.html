@@ -13,14 +13,14 @@
   <link href="./../../css/common.css" rel="stylesheet" />
   <link href="./../../css/utility.css" rel="stylesheet" />
   <link href="./../../css/manage-ads.css" rel="stylesheet" />
+  <link href="./../../css/social-network-icon.css" rel="stylesheet" />
   <link href="./../../../Giao dien tong hop/css/header.css" rel="stylesheet" />
-  <!-- <link href="./css/term-of-service.css" rel="stylesheet" /> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="./../../js/bootstrap.min.js"></script>
   <script src="../../js/Chart.bundle.min.js"></script>
+  <script src="../../js/autosize.js"></script>
   <script src="https://rawgit.com/utatti/perfect-scrollbar/master/dist/perfect-scrollbar.js"></script>
   <script src="../../js/manage-ads.js"></script>
-  <!-- <script src="./js/term-of-service.js"></script> -->
 </head>
 
 <body>
@@ -1736,53 +1736,194 @@
           <span><i class="fa fa-search"></i></span>
           <input type="text" placeholder="Tìm kiếm" class="search-input" />
           <span class="clear-search-input d-none">&#x2715;</span>
-          <div class="conversation__action-list">
-            <span data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></span>
-            <span data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></span>
-            <span class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-              <div class="create-group-button"></div>
-            </span>
-          </div>
+          <ul class="action-list">
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
+            </li>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
+            </li>
+            <li class="action-item">
+              <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
+                <div class="create-group-button"></div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </aside>
     <section class="conversation-list-container">
-      <ul class="conversation-list">
+      <ul class="conversation-list conversation-dialog">
         <li class="conversation">
-          
+          <div class="conversation__header layout-title-bar">
+            <div class="d-flex align-items-center">
+              <span class="online-status">
+                <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+              </span>
+              <a class="conversation__name">Trần Thị Thùy Linh</a>
+              <ul class="action-list ml-auto">
+                <li class="action-item">
+                  <a data-toggle="tooltip" title="Bắt đầu video chat với Linh" class="action-button">
+                    <i class="sn-icon sn-icon--2x sn-video"></i>
+                  </a>
+                </li>
+                <li class="action-item">
+                  <a data-toggle="tooltip" title="Bắt đầu voice chat với Linh" class="action-button">
+                    <i class="sn-icon sn-icon--2x sn-phone"></i>
+                  </a>
+                </li>
+                <li class="action-item">
+                  <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
+                    <i class="sn-icon sn-icon--2x sn-setting"></i>
+                  </a>
+                </li>
+                <li class="action-item">
+                  <a data-toggle="tooltip" title="Đóng tab" class="action-button">
+                    <i class="sn-icon sn-icon--2x sn-close"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>    
+          </div>
+          <div class="conversation__body">
+            <div class="message-list">
+              <div class="message yours">
+                <a data-toggle="tooltip" title="Trần Thị Thùy Linh Thứ Sáu 21:00" class="cover">
+                  <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-1/p32x32/28058986_1827455387547562_8872842699022212702_n.jpg?_nc_cat=107&_nc_ht=scontent.fhan5-6.fna&oh=2f36dcb686c41db4f1f9542f24d01708&oe=5C437A2A" />
+                </a>
+                <div class="content-list">
+                  <div class="content-item">
+                    <div class="content">
+                      <span>Demo text 2</span>
+                    </div>
+                    <div class="message-action">
+                      <div class="dropdown d-flex align-items-center">
+                        <a id="message-reaction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="message-reaction d-flex align-items-center" data-placement="top">
+                          <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="message-reaction">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                        </ul> -->
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a class="delete-message d-flex align-items-center">
+                          <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-item">
+                    <div class="content">
+                      <span>Demo text</span>
+                    </div>
+                  </div>
+                  <div class="sent-time">
+                    T3 18:06
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="conversation__footer">
+            <div class="chat-input">
+              <textarea placeholder="Nhập tin nhắn..." class="autosize" rows="1"></textarea>
+            </div>
+            <ul class="action-list">
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Add photos" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-photo"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Choose a sticker" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-sticker"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Choose a gif" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-gif"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Choose an emoji" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-emoji"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Add files" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-attachment"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Take a picture using quick cam" class="action-button">
+                  <i class="sn-icon sn-icon--1x sn-camera"></i>
+                </a>
+              </li>
+              <li class="ml-auto action-item">
+                <a data-toggle="tooltip" title="Thumbs Up Sign" class="action-button">
+                  <svg width="16" height="16" viewBox="0 0 32 32">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect fill="transparent" width="32" height="32"></rect>
+                      <g style="fill: transparent; stroke: rgb(0, 132, 255); opacity: 0.2;">
+                        <path d="M670.93,460a0.08,0.08,0,0,0,0,.15,1.75,1.75,0,0,1,1.29,1.66c0,1.45-1.2,1.66-2,1.75a0.06,0.06,0,0,0,0,.12,1.54,1.54,0,0,1,.88,1.68C671,467,669.17,467,668,467H658a5.63,5.63,0,0,1-5-2.5V455l2.19-1.59a4.39,4.39,0,0,0,1.21-1.75l1.48-5.59v-0.43l-0.41-3.81a0.45,0.45,0,0,1,.16-0.41c1.34-1,3.07-.23,4,2.6a12.83,12.83,0,0,1,0,6.33,0.55,0.55,0,0,0,.54.66c1.77,0,6.77,0,6.77,0,2,0,3.31.62,3.54,2.5a2.39,2.39,0,0,1-1.23,2.4,0.08,0.08,0,0,0,0,.14,1.87,1.87,0,0,1,1.71,2A2,2,0,0,1,670.93,460Zm-20.13-7h-5.6a0.2,0.2,0,0,0-.2.2v15.6a0.2,0.2,0,0,0,.2.2h5.6a0.2,0.2,0,0,0,.2-0.2V453.2A0.2,0.2,0,0,0,650.8,453Z" transform="translate(-643 -439)"></path>
+                      </g>
+                      <g transform="translate(1.000000, 0.000000)">
+                        <path d="M7.195,29.2559 L0.804,29.2559 C0.362,29.2559 0,28.8939 0,28.4509 L0,13.0609 C0,12.6179 0.362,12.2559 0.804,12.2559 L7.195,12.2559 C7.637,12.2559 8,12.6179 8,13.0609 L8,28.4509 C8,28.8939 7.637,29.2559 7.195,29.2559 Z" stroke="#0084ff" stroke-width="2"></path>
+                        <path d="M15.9694,0 L15.9694,0 C14.6414,0 13.5214,0.568 13.0414,1.097 L12.4654,1.732 L12.5184,2.63 L12.8154,6.635 C12.8204,6.692 12.8074,6.749 12.7804,6.8 L9.5534,12.791 L8.1544,13.443 L6.9994,13.982 L6.9994,15.256 L6.9994,25.256 L6.9994,27.256 L8.5914,27.256 C8.7024,27.35 8.8354,27.47 8.9364,27.562 C9.1404,27.747 9.3424,27.928 9.5324,28.078 C10.4784,28.825 11.8634,29.174 12.8444,29.25 L12.9214,29.256 L12.9994,29.256 L23.3374,29.256 C25.3594,29.256 26.7824,28.521 27.5704,27.072 C28.0124,26.258 28.1384,25.438 28.0904,24.695 C28.9084,24.168 29.5624,23.33 29.7984,22.148 C29.9184,21.549 29.8984,20.985 29.7854,20.474 C30.4514,19.814 30.9374,18.865 30.9374,17.581 C30.9374,16.549 30.6654,15.739 30.2574,15.123 C30.4314,14.637 30.5364,14.081 30.5364,13.459 C30.5364,10.906 28.4954,9.256 25.3374,9.256 L21.0124,9.256 C21.1474,8.379 21.2494,7.521 21.2494,6.931 C21.2494,4.646 20.4484,1.775 18.2014,0.569 C17.4974,0.191 16.7464,0 15.9694,0 M15.9694,2 C16.3574,2 16.7974,2.085 17.2564,2.332 C18.6054,3.056 19.2494,5.021 19.2494,6.931 C19.2494,7.863 18.8974,9.829 18.7254,10.731 C18.6784,10.978 18.8684,11.256 19.1184,11.256 L25.3374,11.256 C26.2704,11.256 28.5364,11.456 28.5364,13.459 C28.5364,14.979 27.5584,15.534 27.5584,15.534 C27.5584,15.534 28.9374,15.673 28.9374,17.581 C28.9374,19.489 27.0854,19.682 27.0854,19.682 C27.0854,19.682 28.0924,20.481 27.8374,21.756 C27.5284,23.3 26.0264,23.391 25.6764,23.391 C25.6294,23.391 25.6044,23.389 25.6044,23.389 C25.6044,23.389 26.5714,24.723 25.8124,26.118 C25.5674,26.57 25.0414,27.256 23.3374,27.256 L12.9994,27.256 C12.2824,27.2 11.3154,26.937 10.7734,26.51 C10.1994,26.056 9.5134,25.256 8.9994,25.256 L8.9994,15.256 L10.6304,14.494 C10.8704,14.383 11.0674,14.197 11.1934,13.965 L14.5404,7.748 C14.7494,7.362 14.8424,6.924 14.8104,6.486 L14.5124,2.482 C14.5114,2.465 14.5114,2.453 14.5234,2.44 C14.5964,2.359 15.1744,2 15.9694,2" fill="#0084ff"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
-      <div class="contact-list-container contact-list-container--collapse">
+      <div class="contact-list-container contact-list-container--collapse d-none layout-title-bar">
         <div class="d-flex align-items-center">
           <span class="online-status">
             <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
           </span>
           <span class="online-count">Chat (76)</span>
         </div>
-        <div class="conversation__action-list ml-auto">
-          <span data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></span>
-          <span data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></span>
-          <span class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-            <div class="create-group-button"></div>
-          </span>
-        </div>
+        <ul class="action-list ml-auto">
+          <li class="action-item">
+            <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
+          </li>
+          <li class="action-item">
+            <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
+          </li>
+          <li class="action-item">
+            <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
+              <div class="create-group-button"></div>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="contact-list-container contact-list-container--open d-none">
-        <div class="contact-list-container__header">
+        <div class="contact-list-container__header layout-title-bar">
           <div class="d-flex align-items-center">
             <span class="online-status">
               <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
             </span>
             <span class="online-count">Chat</span>
           </div>
-          <div class="conversation__action-list ml-auto">
-            <span data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></span>
-            <span data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></span>
-            <span class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-              <div class="create-group-button"></div>
-            </span>
-          </div>
+          <ul class="action-list ml-auto">
+            <li>
+              <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
+            </li>
+            <li>
+              <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
+            </li>
+            <li>
+              <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
+                <div class="create-group-button"></div>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="contact-list-container__body">
           <ul class="contact-list">

@@ -1,3 +1,6 @@
+.cursor-pointer {
+    cursor: pointer !important;
+}
 .nowrap {
     white-space: nowrap !important;
 }
@@ -125,6 +128,9 @@
 }
 .mr-4 {
     margin-left: 2rem !important;
+}
+.ml-auto {
+    margin-left: auto !important;
 }
 .ml-0 {
     margin-left: 0 !important;

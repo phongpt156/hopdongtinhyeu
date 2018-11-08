@@ -1,0 +1,66 @@
+i.sn-icon {
+    display: inline-block;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+i.sn-icon--1x {
+    width: 16px;
+    height: 16px;
+}
+i.sn-icon--2x {
+    width: 22px;
+    height: 26px;
+}
+
+i.sn-video {
+    background-position: -1px -323px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-phone {
+    background-position: -49px -323px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-setting {
+    background-position: -25px -323px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-close {
+    background-position: -1px -119px;
+    background-image: url(./../images/social-network/list-icon-2.png);
+}
+i.sn-photo {
+    background-position: -68px -556px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-sticker {
+    background-position: 0 -277px;
+    background-image: url(./../images/social-network/list-icon-3.png);
+}
+i.sn-gif {
+    background-position: -34px -243px;
+    background-image: url(./../images/social-network/list-icon-3.png);
+}
+i.sn-emoji {
+    background-position: 0 -243px;
+    background-image: url(./../images/social-network/list-icon-3.png);
+}
+i.sn-attachment {
+    background-position: -17px -260px;
+    background-image: url(./../images/social-network/list-icon-3.png);
+}
+i.sn-camera {
+    background-position: -36px -208px;
+    background-image: url(./../images/social-network/list-icon-3.png);
+}
+i.sn-reaction {
+    background-position: -34px -488px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-three-dot {
+    background-image: url(./../images/social-network/list-icon-4.png);
+}
+
+.sn-emoji {
+    width: 30px;
+    height: 30px;
+}
