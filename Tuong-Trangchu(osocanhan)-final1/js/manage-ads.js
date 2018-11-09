@@ -253,73 +253,245 @@ $(document).ready(function () {
     }
   });
   autosize($('.autosize'));
-  $('.delete-message').tooltip({
-    placement: 'top',
-    title: 'Xóa',
-    trigger: 'manual',
-    template: `
-      <div class="tooltip" role="tooltip">
-        <div class="tooltip-arrow"></div>
-        <div class="tooltip-inner py-1 px-2 cursor-pointer"></div>
-      </div>'
-    `,
-  });
-  $(document).on('click', '.delete-message', function (e) {
-    e.stopPropagation();
-    $('.message-reaction').popover('hide');
-    $('.delete-message').tooltip('show');
-  });
 
-  $('.message-reaction').popover({
-    placement: 'top',
-    template: `
-      <div class="popover popover-reaction-list" role="tooltip">
-        <div class="popover-content"></div>
-      </div>
-    `,
-    trigger: 'manual',
-    html: true,
-    content: `
-      <ul class="reaction-list">
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/heart-eyes.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/laughing.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/hushed.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/cry.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/angry.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/thumbsup.png" class="sn-emoji" /></a>
-        </li>
-        <li class="reaction-item">
-          <a><img src="./../../images/social-network/emojis/thumbsdown.png" class="sn-emoji" /></a>
-        </li>
-      </ul>
-    `
-  });
-  $(document).on('click', '.message-reaction', function (e) {
-    e.stopPropagation();
-    $('.delete-message').tooltip('hide');
-    $('.message-reaction').popover('show');
-  });
-  $(document).on('click', '.message-action .popover-reaction-list', function (e) {
-    e.stopPropagation();
-  });
-  $(document).on('click', '.popover-reaction-list .reaction-item a', function (e) {
-    $('.message-reaction').popover('hide');
-  });
+  function initConversationEvent()
+  {
+    function documentClickEvent() {
+      $('.add-keyword-button-dialog').addClass('d-none');
+      $('.delete-message').tooltip('hide');
+      $('.message-reaction').popover('hide');
+      $('.message-action').removeClass('d-flex');
+    }
 
-  $(document).click(function () {
-    $('.add-keyword-button-dialog').addClass('d-none');
-    $('.delete-message').tooltip('hide');
-    $('.message-reaction').popover('hide');
-  });
+    $('.delete-message').tooltip({
+      placement: 'top',
+      title: 'Xóa',
+      trigger: 'manual',
+      template: `
+        <div class="tooltip" role="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner py-1 px-2 cursor-pointer"></div>
+        </div>'
+      `,
+    });
+    $('.message-reaction').popover({
+      placement: 'top',
+      template: `
+        <div class="popover popover-reaction-list" role="tooltip">
+          <div class="popover-content"></div>
+        </div>
+      `,
+      trigger: 'manual',
+      html: true,
+      content: `
+        <ul class="reaction-list">
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/heart-eyes.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/laughing.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/hushed.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/cry.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/angry.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/thumbsup.png" class="sn-emoji" /></a>
+          </li>
+          <li class="reaction-item">
+            <a><img src="./../../images/social-network/emojis/thumbsdown.png" class="sn-emoji" /></a>
+          </li>
+        </ul>
+      `
+    });
+    $('.choose-emoji-button').popover({
+      placement: 'top',
+      template: `
+        <div class="popover popover-reaction-list" role="tooltip">
+          <div class="popover-arrow"></div>
+          <div class="popover-content"></div>
+        </div>
+      `,
+      trigger: 'manual',
+      html: true,
+      content: `
+        <ul class="emoji-list">
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f600.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f62c.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f601.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f602.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f603.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f604.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f605.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f606.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f607.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f609.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60a.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f642.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/263a.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60b.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60c.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60d.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f618.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f617.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f619.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f61a.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f61c.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f61d.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f61b.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60e.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f60f.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f610.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+          <li class="emoji-item">
+            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+          </li>
+        </ul>
+      `
+    });
+
+    $(document).on('click', '.conversation', function (e) {
+      e.stopPropagation();
+      $(this).addClass('conversation--focus');
+      documentClickEvent();
+    });
+    $(document).on('click', '.conversation__header', function (e) {
+      e.stopPropagation();
+      const conversationElement = $(this).closest('.conversation');
+      conversationElement.toggleClass('conversation--collapsed');
+      documentClickEvent();
+
+      if (conversationElement.hasClass('conversation--collapsed')) {
+        conversationElement.removeClass('conversation--focus');
+      } else {
+        conversationElement.addClass('conversation--focus');
+        conversationElement.find('.chat-input > textarea').focus();
+      }
+      
+    });
+    $(document).on('click', '.close-tab', function () {
+      $(this).closest('.conversation').remove();
+    });
+
+    $(document).on('click', '.delete-message', function (e) {
+      const element = $(this);
+
+      e.stopPropagation();
+      element.closest('.conversation').addClass('conversation--focus');
+      $('.message-reaction').popover('hide');
+      $('.message-action').removeClass('d-flex');
+      element.closest('.message-action').addClass('d-flex');
+      $('.message-reaction').tooltip('hide');
+      element.tooltip('show');
+    });  
+    $(document).on('click', '.message-reaction', function (e) {
+      const element = $(this);
+
+      e.stopPropagation();
+      element.closest('.conversation').addClass('conversation--focus');
+      $('.delete-message').tooltip('hide');
+      $('.message-action').removeClass('d-flex');
+      element.closest('.message-action').addClass('d-flex');
+      $('.message-reaction').not(element).popover('hide');
+      element.popover('show');
+    });
+    $(document).on('click', '.message-action .popover-reaction-list', function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('click', '.popover-reaction-list .reaction-item a', function () {
+      $(this).closest('.message-action').removeClass('d-flex');
+      $('.message-reaction').popover('hide');
+    });
+  
+    $('.conversation__body').scrollTop($('.conversation__body').height());
+    $(document).click(function () {
+      $('.conversation').removeClass('conversation--focus');
+      documentClickEvent();
+    });
+
+    $(document).on('click', '.choose-emoji-button', function () {
+      $(this).popover('show');
+    })
+  }
+  initConversationEvent();
 });

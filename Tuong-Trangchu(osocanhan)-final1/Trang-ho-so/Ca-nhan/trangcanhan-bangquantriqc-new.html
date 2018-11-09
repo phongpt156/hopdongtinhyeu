@@ -1777,7 +1777,7 @@
                     <i class="sn-icon sn-icon--2x sn-setting"></i>
                   </a>
                 </li>
-                <li class="action-item">
+                <li class="action-item close-tab">
                   <a data-toggle="tooltip" title="Đóng tab" class="action-button">
                     <i class="sn-icon sn-icon--2x sn-close"></i>
                   </a>
@@ -1787,41 +1787,182 @@
           </div>
           <div class="conversation__body">
             <div class="message-list">
-              <div class="message yours">
-                <a data-toggle="tooltip" title="Trần Thị Thùy Linh Thứ Sáu 21:00" class="cover">
-                  <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-1/p32x32/28058986_1827455387547562_8872842699022212702_n.jpg?_nc_cat=107&_nc_ht=scontent.fhan5-6.fna&oh=2f36dcb686c41db4f1f9542f24d01708&oe=5C437A2A" />
-                </a>
-                <div class="content-list">
-                  <div class="content-item">
-                    <div class="content">
-                      <span>Demo text 2</span>
-                    </div>
-                    <div class="message-action">
-                      <div class="dropdown d-flex align-items-center">
-                        <a id="message-reaction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="message-reaction d-flex align-items-center" data-placement="top">
-                          <i class="msn-icon sn-icon--1x sn-reaction"></i>
-                        </a>
-                        <!-- <ul class="dropdown-menu" aria-labelledby="message-reaction">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                        </ul> -->
+              <div class="message message--yours">
+                <div class="d-flex">
+                  <a data-toggle="tooltip" title="Trần Thị Thùy Linh Thứ Sáu 21:00" class="cover">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-1/p32x32/28058986_1827455387547562_8872842699022212702_n.jpg?_nc_cat=107&_nc_ht=scontent.fhan5-6.fna&oh=2f36dcb686c41db4f1f9542f24d01708&oe=5C437A2A" />
+                  </a>
+                  <div class="content-list">
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text 2</span>
                       </div>
-                      <div class="d-flex align-items-center">
-                        <a class="delete-message d-flex align-items-center">
-                          <i class="sn-icon sn-icon--1x sn-three-dot"></i>
-                        </a>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="1">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="1">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="content-item">
-                    <div class="content">
-                      <span>Demo text</span>
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="2">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="2">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="sent-time">
-                    T3 18:06
+                </div>
+                <div class="sent-time">
+                  T3 18:06
+                </div>
+              </div>
+              <div class="message message--my">
+                <div class="d-flex">
+                  <div class="content-list">
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text 2</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="1">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="1">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="2">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="2">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="sent-time">
+                  T3 18:06
+                </div>
+              </div>
+              <div class="message message--yours">
+                <div class="d-flex">
+                  <a data-toggle="tooltip" title="Trần Thị Thùy Linh Thứ Sáu 21:00" class="cover">
+                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-1/p32x32/28058986_1827455387547562_8872842699022212702_n.jpg?_nc_cat=107&_nc_ht=scontent.fhan5-6.fna&oh=2f36dcb686c41db4f1f9542f24d01708&oe=5C437A2A" />
+                  </a>
+                  <div class="content-list">
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text 2</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="1">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="1">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="2">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="2">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sent-time">
+                  T3 18:06
+                </div>
+              </div>
+              <div class="message message--my">
+                <div class="d-flex">
+                  <div class="content-list">
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text 2</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="1">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="1">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-item">
+                      <div class="content">
+                        <span>Demo text</span>
+                      </div>
+                      <div class="message-action">
+                        <div class="d-flex align-items-center">
+                          <a class="message-reaction d-flex align-items-center" data-message-id="2">
+                            <i class="msn-icon sn-icon--1x sn-reaction"></i>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <a class="delete-message d-flex align-items-center" data-message-id="2">
+                            <i class="sn-icon sn-icon--1x sn-three-dot"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sent-time">
+                  T3 18:06
                 </div>
               </div>
             </div>
@@ -1847,7 +1988,7 @@
                 </a>
               </li>
               <li class="action-item">
-                <a data-toggle="tooltip" title="Choose an emoji" class="action-button">
+                <a data-toggle="tooltip" title="Choose an emoji" class="choose-emoji-button action-button">
                   <i class="sn-icon sn-icon--1x sn-emoji"></i>
                 </a>
               </li>
