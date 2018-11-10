@@ -12,6 +12,7 @@
   <link href="./../../css/custom.css" rel="stylesheet" />
   <link href="./../../css/common.css" rel="stylesheet" />
   <link href="./../../css/utility.css" rel="stylesheet" />
+  <link href="./../../css/material/input.css" rel="stylesheet" />
   <link href="./../../css/manage-ads.css" rel="stylesheet" />
   <link href="./../../css/social-network-icon.css" rel="stylesheet" />
   <link href="./../../../Giao dien tong hop/css/header.css" rel="stylesheet" />
@@ -20,6 +21,7 @@
   <script src="../../js/Chart.bundle.min.js"></script>
   <script src="../../js/autosize.js"></script>
   <script src="https://rawgit.com/utatti/perfect-scrollbar/master/dist/perfect-scrollbar.js"></script>
+  <script src="../../js/material/input.js"></script>
   <script src="../../js/manage-ads.js"></script>
 </head>
 
@@ -793,11 +795,144 @@
               <input class="form-control" type="text" placeholder="Tìm từ khóa" />
               <button class="btn btn-sm"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown">
+              <button type="button" class="btn btn-default btn-sm dropdown-toggle date-range-editor-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="date-range-editor">
                 <span>7 ngày qua: 23-05-2018 - 29-05-2018</span>
                 <span class="caret"></span>
               </button>
+              <div class="dropdown-menu date-range-editor" aria-labelledby="date-range-editor">
+                <div class="d-flex">
+                  <aside class="left-column">
+                    <div class="option-list">
+                      <div class="option-group">
+                        <a class="option">Tùy chỉnh</a>
+                      </div>
+                      <hr />
+                      <div class="option-group">
+                        <a class="option">Hôm nay</a>
+                        <a class="option">Hôm qua</a>
+                        <a class="option">Tuần này (Th 2 - Hôm nay)</a>
+                        <a class="option active">7 ngày trước</a>
+                        <a class="option">Tuần trước (Th 2 - CN)</a>
+                        <a class="option">14 ngày trước</a>
+                        <a class="option">Tháng này</a>
+                        <a class="option">30 ngày trước</a>
+                        <a class="option">Tháng trước</a>
+                        <a class="option">Toàn bộ thời gian</a>
+                      </div>
+                      <hr />
+                      <div class="option-group">
+                        <a class="option">
+                          <div class="d-flex align-items-center">
+                            <div class="material-input days-input">
+                              <input type="text" />
+                              <div class="underline">
+                                <div class="unfocused-underline"></div>
+                                <div class="focused-underline"></div>
+                              </div>
+                            </div>
+                            <span class="ml-1">số ngày cho đến hôm nay</span>
+                          </div>
+                        </a>
+                        <a class="option">
+                          <div class="d-flex align-items-center">
+                            <div class="material-input days-input">
+                              <input type="text" />
+                              <div class="underline">
+                                <div class="unfocused-underline"></div>
+                                <div class="focused-underline"></div>
+                              </div>
+                            </div>
+                            <span class="ml-1">số ngày cho đến hôm nay</span>
+                          </div>
+                        </a>
+                      </div>
+                      <hr />
+                      <div class="option-group">
+                        <a class="option">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span>So sánh</span>
+                            <input type="checkbox" />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </aside>
+                  <section class="right-column">
+                    <div class="range-input">
+                      <div class="material-input start-date">
+                        <input type="text" value="3/11/2018" />
+                        <div class="underline">
+                          <div class="unfocused-underline"></div>
+                          <div class="focused-underline"></div>
+                        </div>
+                      </div>
+                      <div class="separator">—</div>
+                      <div class="material-input end-date">
+                        <input type="text" value="3/11/2018" />
+                        <div class="underline">
+                          <div class="unfocused-underline"></div>
+                          <div class="focused-underline"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="month-selector-toolbar">
+                      <div class="month-selector">
+                        <span class="visible-month">THG 11 2017</span>
+                        <div class="month-selector-dropdown-icon">
+                          <i class="fa fa-caret-down"></i>
+                        </div>
+                      </div>
+                      <div class="next-prev-button">
+                        <a class="prev">
+                          <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="next">
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="picker-container">
+                      <div class="picker month-picker">
+                        <div class="scroll-container">
+                          <div class="calendar-container">
+                            <div class="year">
+                              <h2 class="year-title">2017</h2>
+                              <div class="month disabled">thg 1</div>
+                              <div class="month disabled">thg 2</div>
+                              <div class="month disabled">thg 3</div>
+                              <div class="month disabled">thg 4</div>
+                              <div class="month disabled">thg 5</div>
+                              <div class="month disabled">thg 6</div>
+                              <div class="month disabled">thg 7</div>
+                              <div class="month disabled">thg 8</div>
+                              <div class="month disabled">thg 9</div>
+                              <div class="month disabled">thg 10</div>
+                              <div class="month">thg 11</div>
+                              <div class="month">thg 12</div>
+                            </div>
+                            <div class="year">
+                              <h2 class="year-title">2018</h2>
+                              <div class="month">thg 1</div>
+                              <div class="month">thg 2</div>
+                              <div class="month">thg 3</div>
+                              <div class="month">thg 4</div>
+                              <div class="month">thg 5</div>
+                              <div class="month">thg 6</div>
+                              <div class="month">thg 7</div>
+                              <div class="month">thg 8</div>
+                              <div class="month">thg 9</div>
+                              <div class="month">thg 10</div>
+                              <div class="month">thg 11</div>
+                              <div class="month disabled">thg 12</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
         </div>

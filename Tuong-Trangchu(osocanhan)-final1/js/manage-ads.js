@@ -115,8 +115,8 @@ $(document).ready(function () {
       `;
     });
     $('.ad-statistic-column').html(html);
-    $('.start-date').text(getFormattedDate(adStatisticInfo.startDate));
-    $('.end-date').text(getFormattedDate(adStatisticInfo.endDate));
+    $('.ad-statistic-chart-container .start-date').text(getFormattedDate(adStatisticInfo.startDate));
+    $('.ad-statistic-chart-container .end-date').text(getFormattedDate(adStatisticInfo.endDate));
 
     if (adStatisticInfo.datasets[0].data.length) {
       labels = (new Array(adStatisticInfo.datasets[0].data.length)).fill('');
@@ -248,16 +248,32 @@ $(document).ready(function () {
 
   autosize($('.autosize'));
 
+  // date range editor even
+  $('.date-range-editor').click(function (e) {
+    e.stopPropagation();
+  });
+  $('.date-range-editor-button').click(function (e) {
+    $('.date-range-editor').css({
+      right: 0,
+      left: 'auto'
+    });
+  });
+  $('.date-range-editor .month-selector').click(function () {
+    $(this).find('.month-selector-dropdown-icon').toggleClass('flipped');
+    const monthPickerElement = $('.date-range-editor .month-picker');
+    monthPickerElement.toggleClass('showhide-hide');
+    if (!monthPickerElement.hasClass('showhide-hidden')) {
+      setTimeout(function () {
+        $('.date-range-editor .month-picker').toggleClass('showhide-hidden');
+      }, 300);
+    } else {
+      $('.date-range-editor .month-picker').toggleClass('showhide-hidden');
+    }
+  });
+
+  // conversation event
   function initConversationEvent()
   {
-    function documentClickEvent() {
-      $('.add-keyword-button-dialog').addClass('d-none');
-      $('.delete-message').tooltip('hide');
-      $('.message-reaction').popover('hide');
-      $('.message-action').removeClass('d-flex');
-      $('.choose-emoji-button').popover('hide');
-    }
-
     $('.delete-message').tooltip({
       placement: 'top',
       title: 'Xóa',
@@ -517,72 +533,66 @@ $(document).ready(function () {
       `
     });
 
-    $(document).on('click', '.conversation', function (e) {
-      e.stopPropagation();
-      $(this).addClass('conversation--focus');
-      documentClickEvent();
-    });
-    $(document).on('click', '.conversation__header', function (e) {
-      e.stopPropagation();
-      const conversationElement = $(this).closest('.conversation');
-      conversationElement.toggleClass('conversation--collapsed');
-      documentClickEvent();
+    $(document).click(function (e) {
+      const target = $(e.target);
 
-      if (conversationElement.hasClass('conversation--collapsed')) {
-        conversationElement.removeClass('conversation--focus');
-      } else {
-        conversationElement.addClass('conversation--focus');
-        conversationElement.find('.chat-input > textarea').focus();
+      $('.conversation').removeClass('conversation--focus');
+      if ($('.conversation').find(target).length) {
+        target.closest('.conversation').addClass('conversation--focus');
       }
-      
+
+      if ($('.conversation__header').find(target).length) {
+        const conversationElement = target.closest('.conversation');
+        conversationElement.toggleClass('conversation--collapsed');
+
+        if (conversationElement.hasClass('conversation--collapsed')) {
+          conversationElement.removeClass('conversation--focus');
+        } else {
+          conversationElement.addClass('conversation--focus');
+          conversationElement.find('.chat-input > textarea').focus();
+        }
+      }
+
+      $('.message-action').removeClass('d-flex');
+      if ($('.delete-message').find(target).length) {
+        const element = target.closest('.delete-message');
+
+        $('.delete-message').not(element).tooltip('hide');
+        element.closest('.message-action').addClass('d-flex');
+        element.tooltip('show');
+      } else {
+        $('.delete-message').tooltip('hide');
+      }
+      if ($('.message-reaction').find(target).length) {
+        const element = target.closest('.message-reaction');
+
+        $('.message-reaction').not(element).popover('hide');
+        element.closest('.message-action').addClass('d-flex');
+        element.popover('show');
+      } else {
+        $('.message-reaction').popover('hide');
+      }
+
+      if ($('.choose-emoji-button').find(target).length) {
+        const element = target.closest('.choose-emoji-button');
+
+        $('.choose-emoji-button').not(element).popover('hide');
+        element.popover('show');
+      } else {
+        $('.choose-emoji-button').popover('hide');
+      }
     });
+
     $(document).on('click', '.close-tab', function () {
       $(this).closest('.conversation').remove();
     });
 
-    $(document).on('click', '.delete-message', function (e) {
-      const element = $(this);
-
-      e.stopPropagation();
-      element.closest('.conversation').addClass('conversation--focus');
-      $('.message-reaction').popover('hide');
-      $('.message-action').removeClass('d-flex');
-      element.closest('.message-action').addClass('d-flex');
-      $('.message-reaction').tooltip('hide');
-      element.tooltip('show');
-    });  
-    $(document).on('click', '.message-reaction', function (e) {
-      const element = $(this);
-
-      e.stopPropagation();
-      element.closest('.conversation').addClass('conversation--focus');
-      $('.delete-message').tooltip('hide');
-      $('.message-action').removeClass('d-flex');
-      element.closest('.message-action').addClass('d-flex');
-      $('.message-reaction').not(element).popover('hide');
-      element.popover('show');
-    });
-    $(document).on('click', '.message-action .popover-reaction-list', function (e) {
-      e.stopPropagation();
-    });
     $(document).on('click', '.popover-reaction-list .reaction-item a', function () {
       $(this).closest('.message-action').removeClass('d-flex');
       $('.message-reaction').popover('hide');
     });
   
     $('.conversation__body').scrollTop($('.conversation__body').height());
-    $(document).click(function () {
-      $('.conversation').removeClass('conversation--focus');
-      documentClickEvent();
-    });
-
-    $(document).on('click', '.choose-emoji-button', function (e) {
-      e.stopPropagation();
-      $('.message-reaction').popover('hide');
-      $('.delete-message').tooltip('hide');
-      $('.message-action').removeClass('d-flex');
-      $(this).popover('show');
-    });
   }
   initConversationEvent();
 

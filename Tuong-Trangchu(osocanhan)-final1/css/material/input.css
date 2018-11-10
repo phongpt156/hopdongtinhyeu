@@ -1,0 +1,24 @@
+.material-input input {
+    width: 100%;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.material-input .underline .unfocused-underline {
+    top: -1px;
+    position: relative;
+    height: 1px;
+    background-color: #0000001f;
+}
+.material-input .underline .focused-underline {
+    transition: ease-in-out 200ms;
+    transform: scale3d(0, 1, 1);
+    top: -3px;
+    position: relative;
+    height: 2px;
+    background-color: #4285f4;
+}
+.material-input.active .underline .focused-underline {
+    transform: scale(1);
+}
