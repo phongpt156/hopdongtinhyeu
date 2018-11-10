@@ -24,6 +24,13 @@ i.sn-setting {
     background-position: -25px -323px;
     background-image: url(./../images/social-network/list-icon-1.png);
 }
+i.sn-setting--v2 {
+    background-image: url(./../images/social-network/list-icon-2.png);
+    background-position: 0 -695px;
+}
+i.sn-setting--v2.sn-setting--lighter {
+    background-position: 0 -678px;
+}
 i.sn-close {
     background-position: -1px -119px;
     background-image: url(./../images/social-network/list-icon-2.png);
@@ -58,6 +65,20 @@ i.sn-reaction {
 }
 i.sn-three-dot {
     background-image: url(./../images/social-network/list-icon-4.png);
+}
+i.sn-edit {
+    background-image: url(./../images/social-network/list-icon-2.png);
+    background-position: 0 -440px;
+}
+i.sn-edit.sn-edit--lighter {
+    background-position: 0 -423px;
+}
+i.sn-add-user-plus {
+    background-image: url(./../images/social-network/list-icon-2.png);
+    background-position: 0 -543px;
+}
+i.sn-add-user-plus.sn-add-user-plus--lighter {
+    background-position: 0 -525px;
 }
 
 .sn-emoji {

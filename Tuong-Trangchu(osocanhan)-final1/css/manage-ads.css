@@ -39,7 +39,7 @@ body {
 .layout-title-bar .online-status {
     margin-right: .25em;
 }
-.conversation-dialog {
+.conversation-dialog, .contact-list-container--open {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
     border-radius: 4px 4px 0 0;
 }
@@ -447,6 +447,7 @@ body {
 }
 .action-list {
     padding-left: 0;
+    margin-bottom: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -456,6 +457,16 @@ body {
 }
 .action-list > .action-item {
     cursor: pointer;
+}
+.action-list.ml-auto > .action-item + .action-item {
+    padding-left: .375em;
+}
+.action-list.ml-auto > .action-item .action-button {
+    opacity: .9;
+    display: flex;
+}
+.action-list.ml-auto > .action-item:hover .action-button {
+    opacity: 1;
 }
 /*======= End right aside =======*/
 
@@ -480,6 +491,9 @@ body {
     background-position: -1px -147px;
     background-image: url(./../images/social-network/list-icon-2.png);
 }
+.conversation--collapsed .conversation__name:hover {
+    text-decoration: none;
+}
 .conversation--collapsed .conversation__header .action-item:not(.close-tab), .conversation--collapsed .conversation__body, .conversation--collapsed .conversation__footer {
     display: none;
 }
@@ -497,6 +511,10 @@ body {
     margin: 0 .9375em;
     display: flex;
     bottom: 0;
+    align-items: flex-end;
+}
+.conversation-list-container > * + * {
+    margin-left: .75em;
 }
 .conversation-list {
     padding-left: 0;
@@ -639,16 +657,16 @@ body {
 .conversation__footer .action-list {
     padding: .25em;
 }
-.conversation__footer .action-list .action-item a {
+.conversation__footer .action-list .action-item > a {
     padding: .325em;
-    margin-right: .625em;
 }
 
-.contact-list-container--collapse {
+.contact-list-container--collapse .contact-list-container__header {
     width: 17.25em;
     padding: .375em .75em;
-    height: 1.8125em;
+    /* height: 1.8125em; */
     display: flex;
+    color: #333;
     cursor: pointer;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
     border: 1px solid #dddfe2;
@@ -667,12 +685,6 @@ body {
     cursor: pointer;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
     background-color: #3578e5;
-}
-.contact-list-container__header .action-list {
-    color: #bec3c9;
-}
-.contact-list-container__header .action-list .create-group-button__icon {
-    background-position: 0px -525px;
 }
 .contact-list-container__body, .contact-list-container__footer {
     background-color: #f5f6f7;
@@ -703,11 +715,20 @@ body {
 .contact-list-container__footer .chat-search .search-input:focus {
     outline: none;
 }
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-setting--v2 {
+    background-position: 0 -746px;
+}
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-edit {
+    background-position: 0 -491px;
+}
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-add-user-plus {
+    background-position: 0 -593px;
+}
 /*======= End conversation list =======*/
 
 /*======= Footer =======*/
 .footer {
-    padding: 1em 1em 1em 12.8125em;
+    padding: 1em;
 }
 .footer__nav {
     padding-left: 0;
@@ -741,6 +762,49 @@ body {
     color: #737373;
 }
 /*======= End Footer =======*/
+
+/*======= Emoji list =======*/
+.popover-reaction-list, .popover-reaction-list .popover-content {
+    padding: 0;
+}
+.popover-reaction-list {
+    max-width: none;
+    font-size: 1rem;
+}
+.emoji-list {
+    padding-left: 0;
+    list-style-type: none;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .5em .125em;
+    display: grid;
+}
+.emoji-list-dialog {
+    /* padding:  */
+}
+.emoji-list-dialog__body {
+    text-align: center;
+    padding: .625em;
+    overflow: auto;
+    height: 21.5625em;
+}
+.emoji-list-dialog__body .emoji-item .sn-emoji {
+    width: 2em;
+    height: 2em;
+}
+.emoji-type-list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+.emoji-type-list .emoji-type-item a {
+    padding: .625em .585em;
+    display: block;
+}
+.emoji-type-list .emoji-type-item a img {
+    width: 16px;
+    height: 16px;
+}
+/*======= End emoji list =======*/
 
 
 @media screen and (min-width: 576px) {
@@ -776,6 +840,9 @@ body {
     section.main {
         margin-left: 12.8125em;
     }
+    .footer {
+        padding-left: 12.8125em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -792,8 +859,7 @@ body {
     .right-aside {
         display: block;
     }
-
-    .contact-list-container--collapse, .contact-list-container--open {
-        display: none;
+    .conversation-list-container {
+        right: 12.8125em;
     }
 }

@@ -246,12 +246,6 @@ $(document).ready(function () {
 
   $('[data-toggle="tooltip"]').tooltip();
 
-  $(window).resize(function () {
-    if (window.innerWidth < 1200) {
-      $('.contact-list-container--open').addClass('d-none');
-      $('.contact-list-container--collapse').removeClass('d-none');
-    }
-  });
   autosize($('.autosize'));
 
   function initConversationEvent()
@@ -261,6 +255,7 @@ $(document).ready(function () {
       $('.delete-message').tooltip('hide');
       $('.message-reaction').popover('hide');
       $('.message-action').removeClass('d-flex');
+      $('.choose-emoji-button').popover('hide');
     }
 
     $('.delete-message').tooltip({
@@ -313,120 +308,212 @@ $(document).ready(function () {
       placement: 'top',
       template: `
         <div class="popover popover-reaction-list" role="tooltip">
-          <div class="popover-arrow"></div>
+          <div class="arrow"></div>
           <div class="popover-content"></div>
         </div>
       `,
       trigger: 'manual',
       html: true,
       content: `
-        <ul class="emoji-list">
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f600.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f62c.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f601.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f602.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f603.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f604.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f605.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f606.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f607.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f609.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60a.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f642.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/263a.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60b.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60c.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60d.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f618.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f617.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f619.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f61a.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f61c.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f61d.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f61b.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60e.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f60f.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f610.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-          <li class="emoji-item">
-            <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
-          </li>
-        </ul>
+        <div class="emoji-list-dialog">
+          <div class="emoji-list-dialog__body">
+            <ul class="emoji-list">
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f600.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62c.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f601.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f602.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f603.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f604.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f605.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f606.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f607.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f609.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60a.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f642.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/263a.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60b.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60c.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60d.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f618.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f617.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f619.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61a.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61c.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61d.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61b.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60e.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f60f.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f636.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f610.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f611.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f612.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f633.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61e.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f61f.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f620.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f621.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f614.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f615.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f623.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f616.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62b.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f629.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f624.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62e.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f631.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f628.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f630.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62f.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f626.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f627.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f625.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f622.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62a.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f613.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f62d.png" class="sn-emoji" /></a>
+              </li>
+              <li class="emoji-item">
+                <a><img src="./../../images/social-network/emojis/1f635.png" class="sn-emoji" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="emoji-list-dialog__footer">
+            <ul class="emoji-type-list">
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f554.png" /></a>
+              </li>
+              <li class="active emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f603-sm.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f43b.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f354.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f554.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/26bd.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f696.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/1f4a1.png" /></a>
+              </li>
+              <li class="emoji-type-item">
+                <a><img src="./../../images/social-network/emojis/2764.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       `
     });
 
@@ -489,9 +576,42 @@ $(document).ready(function () {
       documentClickEvent();
     });
 
-    $(document).on('click', '.choose-emoji-button', function () {
+    $(document).on('click', '.choose-emoji-button', function (e) {
+      e.stopPropagation();
+      $('.message-reaction').popover('hide');
+      $('.delete-message').tooltip('hide');
+      $('.message-action').removeClass('d-flex');
       $(this).popover('show');
-    })
+    });
   }
   initConversationEvent();
+
+
+  // hàm test chức năng chat, có thể bỏ đi
+  function testChat()
+  {
+    let hasChoosenConversation = true;
+
+    if (window.innerWidth >= 576 && window.innerWidth < 1200) {
+      $('.contact-list-container--collapse').removeClass('d-none');
+    }
+
+    $(document).on('click', '.close-tab', function () {
+      $(this).closest('.conversation').remove();
+      hasChoosenConversation = false;
+      if (window.innerWidth >= 576 && window.innerWidth < 1200) {
+        $('.contact-list-container--collapse').removeClass('d-none');
+      }
+    });
+
+    $(window).resize(function () {
+      if (window.innerWidth >= 1200 || (hasChoosenConversation && window.innerWidth < 576)) {
+        $('.contact-list-container--collapse').addClass('d-none');
+      } else {
+        $('.contact-list-container--collapse').removeClass('d-none');
+      }
+      $('.contact-list-container--open').addClass('d-none');
+    });
+  }
+  testChat();
 });

@@ -1736,16 +1736,20 @@
           <span><i class="fa fa-search"></i></span>
           <input type="text" placeholder="Tìm kiếm" class="search-input" />
           <span class="clear-search-input d-none">&#x2715;</span>
-          <ul class="action-list">
+          <ul class="action-list ml-auto">
             <li class="action-item">
-              <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
+              <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-setting--v2"></i>
+              </a>
             </li>
             <li class="action-item">
-              <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
+              <a data-toggle="tooltip" title="Tin nhắn mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-edit"></i>
+              </a>
             </li>
             <li class="action-item">
-              <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-                <div class="create-group-button"></div>
+              <a data-toggle="tooltip" title="Tạo nhóm mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-add-user-plus"></i>
               </a>
             </li>
           </ul>
@@ -2022,26 +2026,32 @@
           </div>
         </li>
       </ul>
-      <div class="contact-list-container contact-list-container--collapse d-none layout-title-bar">
-        <div class="d-flex align-items-center">
-          <span class="online-status">
-            <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
-          </span>
-          <span class="online-count">Chat (76)</span>
+      <div class="contact-list-container contact-list-container--collapse layout-title-bar d-none">
+        <div class="contact-list-container__header">
+          <div class="d-flex align-items-center">
+            <span class="online-status">
+              <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+            </span>
+            <span class="online-count">Chat (76)</span>
+          </div>
+          <ul class="action-list ml-auto">
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-setting--v2"></i>
+              </a>
+            </li>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tin nhắn mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-edit"></i>
+              </a>
+            </li>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tạo nhóm mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-add-user-plus"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="action-list ml-auto">
-          <li class="action-item">
-            <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
-          </li>
-          <li class="action-item">
-            <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
-          </li>
-          <li class="action-item">
-            <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-              <div class="create-group-button"></div>
-            </a>
-          </li>
-        </ul>
       </div>
 
       <div class="contact-list-container contact-list-container--open d-none">
@@ -2053,15 +2063,19 @@
             <span class="online-count">Chat</span>
           </div>
           <ul class="action-list ml-auto">
-            <li>
-              <a data-toggle="tooltip" title="Tùy chọn"><i class="fa fa-cog"></i></a>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-setting--v2 sn-setting--lighter"></i>
+              </a>
             </li>
-            <li>
-              <a data-toggle="tooltip" title="Tin nhắn mới"><i class="fa fa-edit"></i></a>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tin nhắn mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-edit sn-edit--lighter"></i>
+              </a>
             </li>
-            <li>
-              <a class="create-group-button-container" data-toggle="tooltip" title="Tạo nhóm mới">
-                <div class="create-group-button"></div>
+            <li class="action-item">
+              <a data-toggle="tooltip" title="Tạo nhóm mới" class="action-button">
+                <i class="sn-icon sn-icon--1x sn-add-user-plus sn-add-user-plus--lighter"></i>
               </a>
             </li>
           </ul>
