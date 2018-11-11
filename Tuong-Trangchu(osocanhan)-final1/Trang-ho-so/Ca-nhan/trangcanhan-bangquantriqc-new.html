@@ -13,6 +13,7 @@
   <link href="./../../css/common.css" rel="stylesheet" />
   <link href="./../../css/utility.css" rel="stylesheet" />
   <link href="./../../css/material/input.css" rel="stylesheet" />
+  <link href="./../../css/material/toggle.css" rel="stylesheet" />
   <link href="./../../css/manage-ads.css" rel="stylesheet" />
   <link href="./../../css/social-network-icon.css" rel="stylesheet" />
   <link href="./../../../Giao dien tong hop/css/header.css" rel="stylesheet" />
@@ -852,7 +853,10 @@
                         <a class="option">
                           <div class="d-flex align-items-center justify-content-between">
                             <span>So sánh</span>
-                            <input type="checkbox" />
+                            <label class="material-toggle">
+                              <input type="checkbox" />
+                              <span class="slider"></span>
+                            </label>
                           </div>
                         </a>
                       </div>
@@ -884,7 +888,7 @@
                         </div>
                       </div>
                       <div class="next-prev-button">
-                        <a class="prev">
+                        <a class="prev disabled">
                           <i class="fa fa-angle-left"></i>
                         </a>
                         <a class="next">
@@ -892,8 +896,164 @@
                         </a>
                       </div>
                     </div>
-                    <div class="picker-container">
-                      <div class="picker month-picker">
+                    <div class="picker-container compact">
+                      <div class="picker calendar-picker">
+                        <header class="calendar-picker__header">
+                          <div class="header-day">T2</div>
+                          <div class="header-day">T3</div>
+                          <div class="header-day">T4</div>
+                          <div class="header-day">T5</div>
+                          <div class="header-day">T6</div>
+                          <div class="header-day">T7</div>
+                          <div class="header-day">CN</div>
+                        </header>
+                        <div class="scroll-container">
+                          <div class="calendar-container">
+                            <div class="month">
+                              <div class="month-title">
+                                thg 11 2017
+                              </div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot visible boundary boundary-preview start highlight highlight-preview hover"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible highlight highlight-preview"></div>
+                              <div class="day-slot visible boundary boundary-range active highlight highlight-range start"></div>
+                              <div class="day-slot visible highlight highlight-range"></div>
+                              <div class="day-slot visible highlight highlight-range"></div>
+                              <div class="day-slot visible highlight highlight-range"></div>
+                              <div class="day-slot visible highlight highlight-range"></div>
+                              <div class="day-slot visible highlight highlight-range"></div>
+                              <div class="day-slot visible boundary boundary-range highlight highlight-range end"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                            </div>
+                            <div class="month">
+                              <div class="month-title">
+                                thg 12 2017
+                              </div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                            </div>
+                            <div class="month">
+                              <div class="month-title">
+                                thg 1 2018
+                              </div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot disabled"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot visible"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                              <div class="day-slot"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="picker month-picker showhide-hide showhide-hidden">
                         <div class="scroll-container">
                           <div class="calendar-container">
                             <div class="year">

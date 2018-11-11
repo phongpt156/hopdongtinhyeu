@@ -1,0 +1,45 @@
+label.material-toggle {
+    width: 36px;
+    position: relative;
+    margin-bottom: 0;
+    height: 20px;
+    display: inline-block;
+}
+label.material-toggle input {
+    width: 0;
+    opacity: 0;
+    height: 0;
+}
+label.material-toggle .slider {
+    transition: .25s;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+}
+label.material-toggle .slider::before {
+    transition: .25s;
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    content: '';
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0,0, 0, 0.2);
+    border-radius: 50%;
+    background-color: #fff;
+}
+label.material-toggle input:checked + .slider {
+    background-color: #80cbc4;
+}
+label.material-toggle input:checked + .slider::before {
+    background-color: #009688;
+}
+label.material-toggle:hover .slider {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+label.material-toggle input:checked + .slider:before {
+    transform: translateX(16px);
+}

@@ -252,14 +252,17 @@ $(document).ready(function () {
   $('.date-range-editor').click(function (e) {
     e.stopPropagation();
   });
-  $('.date-range-editor-button').click(function (e) {
-    $('.date-range-editor').css({
-      right: 0,
-      left: 'auto'
-    });
+  $('.date-range-editor-button').click(function () {
+    if (window.innerWidth >= 669) {
+      $('.date-range-editor').css({
+        right: 0,
+        left: 'auto'
+      });
+    }
   });
   $('.date-range-editor .month-selector').click(function () {
     $(this).find('.month-selector-dropdown-icon').toggleClass('flipped');
+
     const monthPickerElement = $('.date-range-editor .month-picker');
     monthPickerElement.toggleClass('showhide-hide');
     if (!monthPickerElement.hasClass('showhide-hidden')) {
@@ -269,6 +272,20 @@ $(document).ready(function () {
     } else {
       $('.date-range-editor .month-picker').toggleClass('showhide-hidden');
     }
+
+    const calendarPickerElement = $('.date-range-editor .calendar-picker');
+    calendarPickerElement.toggleClass('showhide-hide');
+    if (!calendarPickerElement.hasClass('showhide-hidden')) {
+      setTimeout(function () {
+        $('.date-range-editor .calendar-picker').toggleClass('showhide-hidden');
+      }, 300);
+    } else {
+      $('.date-range-editor .calendar-picker').toggleClass('showhide-hidden');
+    }
+  });
+  new PerfectScrollbar($('.date-range-editor .right-column .picker-container .calendar-picker .scroll-container')[0], {
+    suppressScrollX: true,
+    wheelPropagation: false
   });
 
   // conversation event
@@ -621,6 +638,18 @@ $(document).ready(function () {
         $('.contact-list-container--collapse').removeClass('d-none');
       }
       $('.contact-list-container--open').addClass('d-none');
+
+      if (window.innerWidth >= 669) {
+        $('.date-range-editor').css({
+          right: 0,
+          left: 'auto'
+        });
+      } else {
+        $('.date-range-editor').css({
+          left: 0,
+          right: 'auto'
+        });
+      }
     });
   }
   testChat();

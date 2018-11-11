@@ -34,6 +34,12 @@
 .d-none {
     display: none !important;
 }
+.invisible {
+    visibility: hidden !important;
+}
+.visible {
+    visibility: visible !important;
+}
 .align-self-center {
     align-self: center !important;
 }

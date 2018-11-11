@@ -664,7 +664,6 @@ body {
 .contact-list-container--collapse .contact-list-container__header {
     width: 17.25em;
     padding: .375em .75em;
-    /* height: 1.8125em; */
     display: flex;
     color: #333;
     cursor: pointer;
@@ -821,6 +820,10 @@ body {
 .date-range-editor > * {
     width: max-content;
 }
+/* .date-range-editor > * {
+    width: 100%;
+    flex-wrap: wrap;
+} */
 .date-range-editor .left-column, .date-range-editor .right-column {
     flex-shrink: 0;
 }
@@ -901,6 +904,11 @@ body {
     display: flex;
     color: #767676;
 }
+.date-range-editor .right-column .month-selector-toolbar .next-prev-button .disabled {
+    pointer-events: none;
+    opacity: .26;
+    cursor: not-allowed;
+}
 .date-range-editor .right-column .month-selector-toolbar .next-prev-button .prev {
     margin-right: 8px;
 }
@@ -913,6 +921,9 @@ body {
     height: 288px;
     flex-grow: 1;
 }
+.date-range-editor .right-column .picker-container.compact {
+    line-height: 36px;
+}
 .date-range-editor .right-column .picker-container .picker {
     transition: transform 218ms cubic-bezier(0.4,0,0.2,1);
     transform: translateY(0);
@@ -920,9 +931,14 @@ body {
     right: 0;
     position: absolute;
     left: 0;
+    flex-direction: column;
+    display: flex;
     bottom: 0;
 }
 .date-range-editor .right-column .picker-container .picker.showhide-hide {
+    transform: translateY(100%);
+}
+.date-range-editor .right-column .picker-container .month-picker.picker.showhide-hide {
     transform: translateY(-100%);
 }
 .date-range-editor .right-column .picker-container .picker.showhide-hidden {
@@ -931,22 +947,20 @@ body {
 .date-range-editor .right-column .picker-container .month-picker {
     flex-direction: column;
     display: flex;
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-.date-range-editor .right-column .picker-container .month-picker .scroll-container {
-    width: 260px;
+.date-range-editor .right-column .scroll-container {
     position: relative;
+    padding-right: 6px;
     overflow-y: auto;
     overflow-x: hidden;
     flex-grow: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 .date-range-editor .right-column .picker-container .month-picker .scroll-container .calendar-container {
-    width: 252px;
     user-select: none;
     top: 0;
     text-transform: uppercase;
     position: absolute;
-    line-height: 36px;
     left: 0;
 }
 .date-range-editor .right-column .picker-container .month-picker .scroll-container .calendar-container .year .year-title {
@@ -982,6 +996,127 @@ body {
     bottom: 2px;
     border-radius: 18px;
     background: #eee;
+}
+.date-range-editor .right-column .picker-container .calendar-picker .calendar-picker__header {
+    justify-content: center;
+    display: flex;
+}
+.date-range-editor .right-column .picker-container .calendar-picker .calendar-picker__header .header-day {
+    width: 36px;
+    text-align: center;
+    height: 36px;
+    font-size: .75rem;
+    display: inline-block;
+    color: rgba(0,0,0,0.54);
+}
+.date-range-editor .right-column .picker-container .calendar-picker .scroll-container .calendar-container .month {
+    top: 0;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    height: 216px;
+    grid-template-columns: repeat(7, 1fr);
+    display: grid;
+    counter-reset: day;
+    background: #fff;
+}
+.date-range-editor .right-column .picker-container .calendar-picker .scroll-container .calendar-container .month-title {
+    z-index: 1;
+    width: 108px;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    padding-left: 12px;
+    margin: 0;
+    left: 0;
+    height: 36px;
+    font-size: .8125rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+.date-range-editor .calendar-container .day-slot.visible::after, .date-range-editor .calendar-container .day-slot.disabled::after {
+    counter-increment: day;
+    content: counter(day);
+}
+.date-range-editor .right-column .picker-container .day-slot {
+    z-index: 0;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.date-range-editor .right-column .picker-container.compact .day-slot.today::after, .date-range-editor .right-column .picker-container.compact .day-slot.hover::after, .date-range-editor .right-column .picker-container.compact .day-slot.boundary::after {
+    line-height: 32px;
+}
+.date-range-editor .right-column .picker-container.compact .day-slot {
+    height: 36px;
+}
+.date-range-editor .day-slot.invisible {
+    pointer-events: none;
+    color: transparent;
+}
+.date-range-editor .day-slot.disabled {
+    pointer-events: none;
+    color: rgba(0,0,0,0.38);
+}
+.date-range-editor .day-slot::before, .date-range-editor .day-slot::after {
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    bottom: 0;
+}
+.date-range-editor .day-slot.highlight {
+    border: none;
+    background-color: transparent;
+}
+.date-range-editor .day-slot.highlight::before {
+    z-index: -2;
+    top: 2px;
+    right: 0;
+    left: 0;
+    content: '';
+    bottom: 2px;
+}
+.date-range-editor .day-slot.highlight-preview::before {
+    border-top: 1px dashed rgba(0, 0, 0, 0.38);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.38);
+}
+.date-range-editor .day-slot.boundary.start::before {
+    left: 50%;
+}
+.date-range-editor .day-slot.boundary.end::before {
+    right: 50%;
+}
+.date-range-editor .day-slot.hover::after, .date-range-editor .day-slot.today::after, .date-range-editor .day-slot.boundary::after {
+    z-index: -1;
+    top: 2px;
+    right: 2px;
+    left: 2px;
+    content: '';
+    border-radius: 100%;
+    bottom: 2px;
+}
+.date-range-editor .day-slot.hover::after {
+    background: #eee;
+}
+.date-range-editor .day-slot.boundary-preview::after {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.38);
+}
+.date-range-editor .day-slot.boundary.boundary-range.active:not(.hover) {
+    color: #fff;
+}
+.date-range-editor .day-slot.boundary.boundary-range.active:not(.hover)::after {
+    background: #4285f4;
+}
+.date-range-editor .day-slot.boundary.highlight.highlight-range:not(.active):not(.hover)::after {
+    background: #c6dafc;
+}
+.date-range-editor .day-slot.highlight.highlight-range::before {
+    background: #c6dafc;
 }
 /*======= End date range editor =======*/
 
