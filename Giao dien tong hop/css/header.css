@@ -6,6 +6,45 @@ body,
 .container {
     width: auto;
 }
+header .navbar-header {
+    margin: 0 0 0 -5px !important;
+}
+.header-options {
+    margin: 5px 0 0 0;
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+.header-options svg {
+    height: 35px;
+}
+.header-options-dialog {
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #dde0ef;
+}
+.header-options-dialog .title {
+    white-space: nowrap;
+    padding: 0 15px 5px;
+    color: #837f7c;
+}
+.header-options-dialog hr {
+    margin: 0;
+    border-color: #c6cacd;
+}
+.header-options .preset-options {
+    padding: 0 15px;
+    margin: 5px 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+}
+.header-options .preset-options > li:not(:last-child) {
+    margin-right: 15px;
+}
+.header-options .preset-options > li > a {
+    color: #5270a2;
+}
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -21,7 +60,7 @@ body,
         width: 1170px;
     }
 }
-header .searchUser, header .setting-menu, header .navbar-header, header .top-menu {
+header .searchUser, header .setting-menu, header .top-menu {
     display: none;
 }
 @media screen and (min-width: 576px) {
@@ -31,6 +70,9 @@ header .searchUser, header .setting-menu, header .navbar-header, header .top-men
     header .top-menu{
         display: inline-block;
     }
+    .header-options-dialog .preset-options {
+        white-space: nowrap;
+    }
 }
 @media screen and (min-width: 992px) {
     header .searchUser {
@@ -38,5 +80,19 @@ header .searchUser, header .setting-menu, header .navbar-header, header .top-men
     }
     header .setting-menu {
         display: inline-block;
+    }
+    .header-options-dialog {
+        min-width: 500px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header .searchUser {
+        display: block;
+    }
+    header .setting-menu {
+        display: inline-block;
+    }
+    .header-options-dialog {
+        min-width: 690px;
     }
 }

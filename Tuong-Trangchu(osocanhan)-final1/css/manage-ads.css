@@ -503,12 +503,12 @@ body {
 .conversation--collapsed .conversation__header:hover .action-item.close-tab {
     visibility: visible;
 }
-
 .conversation-list-container {
     z-index: 1000;
     right: 0;
     position: fixed;
     margin: 0 .9375em;
+    height: 0;
     display: flex;
     bottom: 0;
     align-items: flex-end;
@@ -777,9 +777,6 @@ body {
     grid-gap: .5em .125em;
     display: grid;
 }
-.emoji-list-dialog {
-    /* padding:  */
-}
 .emoji-list-dialog__body {
     text-align: center;
     padding: .625em;
@@ -818,17 +815,11 @@ body {
     font-size: .8125rem;
 }
 .date-range-editor > * {
-    width: max-content;
-}
-/* .date-range-editor > * {
     width: 100%;
     flex-wrap: wrap;
-} */
-.date-range-editor .left-column, .date-range-editor .right-column {
-    flex-shrink: 0;
 }
-.date-range-editor .option-list {
-    border-right: 1px solid #e0e0e0;
+.date-range-editor .left-column, .date-range-editor .right-column {
+    flex: 1 0 auto;
 }
 .date-range-editor .option-list hr {
     margin: 0;
@@ -854,7 +845,6 @@ body {
 }
 .date-range-editor .right-column {
     padding-top: 10px;
-    margin-left: -1px;
     flex-direction: column;
     display: flex;
     border-left: 1px solid #e0e0e0;
@@ -999,6 +989,7 @@ body {
 }
 .date-range-editor .right-column .picker-container .calendar-picker .calendar-picker__header {
     justify-content: center;
+    flex-shrink: 0;
     display: flex;
 }
 .date-range-editor .right-column .picker-container .calendar-picker .calendar-picker__header .header-day {
@@ -1122,6 +1113,9 @@ body {
 
 
 @media screen and (min-width: 576px) {
+    .ad-statistic-table .header .right-header {
+        flex-wrap: nowrap;
+    }
     .ad-statistic-table .pagination {
         justify-content: flex-end;
         display: flex;
@@ -1135,6 +1129,9 @@ body {
         margin: 0 .625em;
         border-left: 1px solid #ccc;
         align-self: stretch;
+    }
+    .date-range-editor > * {
+        width: max-content;
     }
 }
 

@@ -253,7 +253,10 @@ $(document).ready(function () {
     e.stopPropagation();
   });
   $('.date-range-editor-button').click(function () {
-    if (window.innerWidth >= 669) {
+    const offset = $(this).offset();
+    const offsetRight = $(document).width() - (offset.left + $(this).innerWidth());
+
+    if (offsetRight < offset.left) {
       $('.date-range-editor').css({
         right: 0,
         left: 'auto'
@@ -283,9 +286,11 @@ $(document).ready(function () {
       $('.date-range-editor .calendar-picker').toggleClass('showhide-hidden');
     }
   });
-  new PerfectScrollbar($('.date-range-editor .right-column .picker-container .calendar-picker .scroll-container')[0], {
-    suppressScrollX: true,
-    wheelPropagation: false
+  $('.date-range-editor .right-column .picker-container .scroll-container').each(function () {
+    new PerfectScrollbar(this, {
+      suppressScrollX: true,
+      wheelPropagation: false
+    });
   });
 
   // conversation event
@@ -639,7 +644,9 @@ $(document).ready(function () {
       }
       $('.contact-list-container--open').addClass('d-none');
 
-      if (window.innerWidth >= 669) {
+      const offset = $('.date-range-editor-button').offset();
+      const offsetRight = $(document).width() - (offset.left + $('.date-range-editor-button').innerWidth());
+      if (offsetRight < offset.left) {
         $('.date-range-editor').css({
           right: 0,
           left: 'auto'
