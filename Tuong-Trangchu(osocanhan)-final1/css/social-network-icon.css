@@ -80,6 +80,10 @@ i.sn-add-user-plus {
 i.sn-add-user-plus.sn-add-user-plus--lighter {
     background-position: 0 -525px;
 }
+i.sn-plus-blue {
+    background-position: 0 -385px;
+    background-image: url(./../images/img72.png);
+}
 
 .sn-emoji {
     width: 30px;

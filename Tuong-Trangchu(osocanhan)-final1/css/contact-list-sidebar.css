@@ -1,0 +1,248 @@
+.online-status .online-icon {
+    font-size: .4rem;
+    display: flex;
+}
+.online-status .online-icon path {
+    fill: #42b72b;
+}
+.clear-search-input {
+    margin-right: .5em;
+    cursor: pointer;
+}
+.layout-title-bar {
+    position: relative;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.layout-title-bar:hover {
+    background-image: linear-gradient(rgba(29, 33, 41, .04), rgba(29, 33, 41, .04));
+}
+.layout-title-bar .online-status {
+    margin-right: .25em;
+}
+
+.contact-list-sidebar {
+    z-index: 1001;
+    width: 12.8125em;
+    top: 2.75em;
+    right: 0;
+    position: fixed;
+    display: none;
+    bottom: 0;
+    border-left: 1px solid #d2d3d7;
+}
+.contact-list-sidebar__inner {
+    position: relative;
+    height: 100%;
+}
+.contact-list-sidebar__main {
+    position: relative;
+    overflow: auto;
+    max-height: 100vh;
+    height: 100%;
+}
+.contact-list-sidebar__main .ps__rail-y {
+    z-index: 1000;
+}
+.contact-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+.contact-list > .contact-item > a {
+    padding: .3125em .625em;
+}
+.contact-list .contact-item > a:hover {
+    text-decoration: none;
+    box-shadow: 1px 0 0 #eaebed inset;
+    background-color: #dddfe2;
+}
+.contact-list .contact-item .cover-container {
+    width: 2em;
+    height: 2em;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.contact-list .contact-item .cover-container img {
+    width: 2em;
+    object-fit: cover;
+    height: 2em;
+}
+.contact-list .contact-item .cover-container .cover {
+    width: 2em;
+    overflow: hidden;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover, .contact-list .contact-item .cover-container.cover-container--3 .cover {
+    width: 1em;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:first-child, .contact-list .contact-item .cover-container.cover-container--3 .cover:first-child {
+    grid-column: 1 / 2;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:last-child {
+    grid-column: 2 / 3;
+}
+.contact-list .contact-item .cover-container.cover-container--2 .cover:last-child img, .contact-list .contact-item .cover-container.cover-container--3 .cover:nth-child(2) img, .contact-list .contact-item .cover-container.cover-container--3 .cover:last-child img {
+    margin-left: -1em;
+}
+.contact-list .contact-item .cover-container.cover-container--3 .cover:not(:first-child) {
+    grid-row: span 1;
+    grid-column: 2 / 3;
+}
+.contact-list .contact-item .cover-container.cover-container--3 .cover:last-child img {
+    margin-top: -1em;
+}
+.contact-list .contact-item .name {
+    margin-left: .75em;
+    font-size: .75rem;
+    color: #333;
+}
+.contact-list .contact-item .online-status.offline-minutes {
+    font-size: .6875rem;
+    color: #90949c;
+}
+.group-conversation .title {
+    text-transform: uppercase;
+    padding: 0 .833333em;
+    font-size: .75rem;
+    color: #4b4c4e;
+}
+
+.contact-list-sidebar-setting {
+    top: -300px;
+}
+.contact-list-sidebar-setting > li.active a {
+    font-weight: bold;
+    color: #333;
+    background: url(../images/img47.png) left 7px no-repeat;
+}
+.contact-list-sidebar-setting > li > a:hover, .contact-list-sidebar-setting > li.active > a:hover {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.contact-list-sidebar__footer {
+    right: 0;
+    position: absolute;
+    padding: .714286em;
+    left: 0;
+    height: 2.142857em;
+    font-size: .875rem;
+    display: flex;
+    color: #bdc2c8;
+    bottom: 0;
+    background-color: #f6f7f9;
+    align-items: center;
+}
+.contact-list-sidebar__footer .search-input {
+    width: 5.571429em;
+    padding: 0 .357143em;
+    outline: none;
+    font-size: .875rem;
+    flex-grow: 1;
+    color: #000;
+    border: none;
+    background-color: transparent;
+}
+.action-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.action-list > .action-item, .action-list > .action-item > a:hover {
+    color: #8d949e;
+}
+.action-item > a:hover {
+    text-decoration: none;
+}
+.action-list > .action-item {
+    cursor: pointer;
+}
+.action-list.ml-auto > .action-item + .action-item {
+    padding-left: .375em;
+}
+.action-list.ml-auto > .action-item .action-button {
+    opacity: .9;
+    display: flex;
+}
+.action-list.ml-auto > .action-item:hover .action-button {
+    opacity: 1;
+}
+
+.contact-list-container--collapse .contact-list-container__header {
+    width: 17.25em;
+    padding: .375em .75em;
+    display: flex;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    border: 1px solid #dddfe2;
+    background-color: #f5f6f7;
+}
+.contact-list-container--collapse .online-count, .contact-list-container__header .online-count {
+    font-weight: 500;
+    font-size: .8125em;
+}
+.contact-list-container__header {
+    width: 17.25em;
+    padding: .375em .75em;
+    height: 1.8125em;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    background-color: #3578e5;
+}
+.contact-list-container__body, .contact-list-container__footer {
+    background-color: #f5f6f7;
+}
+.contact-list-container__body {
+    position: relative;
+    overflow: auto;
+    height: 17.8125em;
+}
+.contact-list-container__footer {
+    border-top: 1px solid #dadfea;
+}
+.contact-list-container__footer .chat-search {
+    padding: .615385em 1em;
+    font-size: .8125rem;
+    display: flex;
+    align-items: center;
+}
+.contact-list-container__footer .chat-search .fa-search {
+    color: #bdc2c8;
+}
+.contact-list-container__footer .chat-search .search-input {
+    padding: 0 .538462em;
+    flex-grow: 1;
+    border: none;
+    background-color: inherit;
+}
+.contact-list-container__footer .chat-search .search-input:focus {
+    outline: none;
+}
+.contact-list-container--open {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-setting--v2 {
+    background-position: 0 -746px;
+}
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-edit {
+    background-position: 0 -491px;
+}
+.contact-list-container--open .action-list .action-item .action-button:hover .sn-add-user-plus {
+    background-position: 0 -593px;
+}
+
+@media screen and (min-width: 1200px) {
+    section.main {
+        margin-right: 12.8125em;
+    }
+    .contact-list-sidebar {
+        display: block;
+    }
+}

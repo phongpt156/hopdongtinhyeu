@@ -1,0 +1,36 @@
+.personal-left-sidebar .navbar-header {
+    float: none;
+}
+.personal-left-sidebar .navbar-default {
+    background-color: inherit;
+}
+.personal-left-sidebar .navbar-collapse .navbar-nav > li > a {
+    padding: .571429em;
+    font-size: .875rem;
+    color: #111;
+}
+.personal-left-sidebar .navbar-collapse .navbar-nav > li.active > a {
+    font-weight: bold;
+    border-left: .214286em solid #4267b2;
+    background-color: #dddfe2;
+}
+.personal-left-sidebar .navbar-collapse .navbar-nav > li.active > a:hover {
+    color: inherit;
+}
+@media screen and (min-width: 768px) {
+    section.main {
+        margin-left: 12.8125em;
+    }
+    .personal-left-sidebar, section.main {
+        margin-top: 15px;   
+    }
+    .personal-left-sidebar {
+        width: 12.8125em;
+        top: 2.75em;
+        position: fixed;
+    }
+    .personal-left-sidebar .navbar-nav {
+        flex-direction: column;
+        display: flex;
+    }
+}

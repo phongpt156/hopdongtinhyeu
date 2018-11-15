@@ -6,19 +6,36 @@ body,
 .container {
     width: auto;
 }
+header.navbar-fixed-top .container {
+    width: auto;
+    padding: 0 1.4375em;
+}
+header.navbar-fixed-top .navbar-brand, header.navbar-fixed-top .row {
+    margin: 0 !important;
+}
+.btn-primary {
+    background-color: #3b5998 !important;
+}
+.sx_90e325 {
+    margin-top: 0;
+}
+.fa-question-square path {
+    fill: #949494;
+}
 header .navbar-header {
     margin: 0 0 0 -5px !important;
 }
 .header-options {
-    margin: 5px 0 0 0;
-    float: left;
-    display: block;
+    top: -4px;
+    position: relative;
+    display: inline-block;
     cursor: pointer;
 }
 .header-options svg {
-    height: 35px;
+    height: 24px;
 }
 .header-options-dialog {
+    right: -100px;
     font-weight: 500;
     font-size: 13px;
     background-color: #dde0ef;
@@ -73,6 +90,10 @@ header .searchUser, header .setting-menu, header .top-menu {
     .header-options-dialog .preset-options {
         white-space: nowrap;
     }
+    .header-options-dialog {
+        right: 0;
+        min-width: 400px;
+    }
 }
 @media screen and (min-width: 992px) {
     header .searchUser {
@@ -82,7 +103,7 @@ header .searchUser, header .setting-menu, header .top-menu {
         display: inline-block;
     }
     .header-options-dialog {
-        min-width: 500px;
+        min-width: 750px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -91,8 +112,5 @@ header .searchUser, header .setting-menu, header .top-menu {
     }
     header .setting-menu {
         display: inline-block;
-    }
-    .header-options-dialog {
-        min-width: 690px;
     }
 }
