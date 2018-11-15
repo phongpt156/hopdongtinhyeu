@@ -7,24 +7,29 @@ body {
     font-size: .75rem;
 }
 
+.main {
+    position: relative;
+}
 .left-main {
+    min-width: 0;
     border-radius: .1875em;
     border: 1px solid #dddfe2;
     background-color: #fff;
+    align-self: flex-start;
 }
 .left-main__header {
     padding: .9375em;
     display: flex;
     border-bottom: 1px solid #e5e5e5;
 }
+.left-main__header > * {
+    min-width: 0;
+}
 .left-main__header .title {
     margin: 0;
     font-size: .875rem;
 }
 .left-main__header .description {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     margin: 0;
     font-size: .75rem;
     color: #90949c;
@@ -44,6 +49,9 @@ body {
     padding: .9375em;
     border-bottom: 1px solid #e5e5e5;
 }
+.ad-list .ad-item > .d-flex > :not(.cover) {
+    min-width: 0;
+}
 .ad-list .ad-item .description {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -52,10 +60,15 @@ body {
     color: #b3b3b2;
 }
 .ad-list .ad-item .cover {
+    width: 4.0625em;
     margin-right: 1em;
+    height: 4.0625em;
 }
 .ad-list .ad-item .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
     margin: .3125em 0 .5em;
+    overflow: hidden;
     font-weight: bold;
     font-size: .9375rem;
 }
@@ -70,16 +83,15 @@ body {
     font-size: .75rem;
     color: rgb(96, 103, 112);
 }
-.ad-list .ad-item .statistic-info {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
-}
 .ad-list .ad-item .info {
     margin-top: .5em;
+    justify-content: space-between;
+    display: flex;
 }
-.ad-list .ad-item .info .statistic-info .statistic-item {
-    max-width: calc(1 / 3 * 100%);
+.ad-list .ad-item .info .statistic-info {
+    max-width: 50%;
+    flex-direction: column;
+    display: flex;
 }
 .ad-list .ad-item .info .statistic-info .statistic-item:not(:last-child) {
     padding-right: .5em;
@@ -100,16 +112,98 @@ body {
     background-color: rgb(235, 237, 240);
 }
 
-@media screen and (min-width: 576px) {
-
+/*========= Right main =========*/
+.right-main {
+    top: 1px;
+    right: 0;
+    position: absolute;
+    display: none;
+    align-self: flex-start;
 }
-@media screen and (min-width: 768px) {
+.sponsor-suggestion {
+    padding: .625em;
+    background-color: #fff;
+}
+.sponsor-suggestion .title {
+    margin: 0 0 .625em;
+    font-size: .875rem;
+    color: #616787;
+}
+.sponsor-suggestion .sponsor-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item {
+    width: 17.5em;
+    position: relative;
+    padding-bottom: .5em;
+    color: #939594;
+    border: 1px solid #dedfe3;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item .close {
+    z-index: 1000;
+    top: 6px;
+    text-shadow: inherit;
+    right: 6px;
+    position: absolute;
+    padding: .5px 1.5px 1px;
+    opacity: 1;
+    font-size: .7rem;
+    color: #fff;
+    border-radius: 1px;
+    background-color: #aebad0;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item::after:hover {
+    opacity: .6;
+}
+
+.sponsor-suggestion .sponsor-list .sponsor-item + .sponsor-item {
+    margin-top: .5em;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item .title {
+    padding: 0 5px;
+    margin: .714286em 0 0;
+    font-size: .875rem;
+    color: #36599b;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item .description {
+    padding: 0 5px;
+    margin: 0 0 .769231em;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item .description .number {
+    color: #5295fd;
+}
+.sponsor-suggestion .sponsor-list .sponsor-item .description, .sponsor-suggestion .sponsor-list .sponsor-item .content {
+    padding: 0 5px;
+    font-size: .8125rem;
+}
+/*========= End right main =========*/
+
+@media screen and (min-width: 992px) {
+    
     .ad-list .ad-item {
         display: flex;
+    }
+    .ad-list .ad-item > * {
+        width: 50%;
     }
     .ad-list .ad-item .info {
         margin-top: 0;
         margin-left: 1em;
         flex-grow: 1;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main {
+        padding-right: .625em;
+    }
+    .left-main {
+        margin-right: 18.75em;
+    }
+    .right-main {
+        display: block;
+    }
+    .footer {
+        margin-right: 18.75em;
     }
 }
