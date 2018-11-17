@@ -48,7 +48,7 @@ $(document).ready(function () {
         },
         {
           backgroundColor: '#e7f4fa',
-          borderColor: '#068ec8',
+          borderColor: '#d64937',
           pointBackgroundColor: '#d64937',
           data: [100, 400, 410, 170, 400, 390, 370],
           label: 'Tương tác với bài đăng',
@@ -56,7 +56,7 @@ $(document).ready(function () {
         },
         {
           backgroundColor: '#e7f4fa',
-          borderColor: '#068ec8',
+          borderColor: '#109d59',
           pointBackgroundColor: '#109d59',
           data: [100, 400, 410, 170, 400, 390, 370],
           label: 'Số lần nhấp chuột',
@@ -64,7 +64,7 @@ $(document).ready(function () {
         },
         {
           backgroundColor: '#e7f4fa',
-          borderColor: '#068ec8',
+          borderColor: '#ea6b04',
           pointBackgroundColor: '#ea6b04',
           data: [100, 400, 410, 170, 400, 390, 370],
           label: 'Đã chi tiêu/140.000',

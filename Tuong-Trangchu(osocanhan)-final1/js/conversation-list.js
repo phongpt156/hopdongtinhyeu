@@ -6,6 +6,12 @@ $(document).ready(function () {
     $('.contact-list-container--collapse').toggleClass('d-none');
     $('.contact-list-container--open').toggleClass('d-none');
   });
+  $(document).on('click', '.conversation .add-user-button', function () {
+    $(this).closest('.conversation').find('.add-user-box').toggleClass('d-flex');
+  });
+  $(document).on('click', '.conversation .add-user-box .done', function () {
+    $(this).closest('.add-user-box').removeClass('d-flex');
+  });
 
   // conversation event
   function initConversationEvent()

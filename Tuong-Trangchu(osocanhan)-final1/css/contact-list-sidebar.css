@@ -165,7 +165,7 @@
     padding-left: .375em;
 }
 .action-list.ml-auto > .action-item .action-button {
-    opacity: .9;
+    opacity: .7;
     display: flex;
 }
 .action-list.ml-auto > .action-item:hover .action-button {
@@ -236,6 +236,21 @@
 }
 .contact-list-container--open .action-list .action-item .action-button:hover .sn-add-user-plus {
     background-position: 0 -593px;
+}
+
+.listChat .item .infoUserLf {
+    top: -15px;
+    left: -398px;
+}
+.listChat .item .infoUserLf.bottom {
+    top: -150px;
+}
+.listChat .item .infoUserLf.bottom::after {
+    top: auto;
+    bottom: 10px;
+}
+.chat-sidebar-info-popover .popover-content {
+    padding: 0;
 }
 
 @media screen and (min-width: 1200px) {

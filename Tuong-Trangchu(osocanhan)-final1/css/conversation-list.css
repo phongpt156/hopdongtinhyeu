@@ -9,6 +9,10 @@
 .conversation--focus .layout-title-bar .conversation__name {
     color: #fff !important;
 }
+.conversation--focus .layout-title-bar .sn-plus {
+    background-position: -1px -351px;
+    background-image: url(./../images/social-network/list-icon-1.png);
+}
 .conversation--focus .layout-title-bar .sn-video {
     background-position: -25px -351px;
 }
@@ -55,7 +59,36 @@
 }
 .conversation {
     width: 17.75em;
+    position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+.conversation .add-user-box {
+    z-index: 999;
+    width: 100%;
+    top: 1.625em;
+    position: absolute;
+    padding: .4375em;
+    left: 0;
+    height: 2.6875em;
+    display: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+.conversation .add-user-box input {
+    padding: .333333em;
+    margin-right: .5em;
+    font-size: .75rem;
+    flex-grow: 1;
+    border: 1px solid #bdc7d8;
+}
+.conversation .add-user-box .done {
+    padding: .5em .833333em;
+    font-weight: bold;
+    font-size: .75rem;
+    color: #fff;
+    border-radius: 0;
+    border-color: #4267b2;
+    background-color: #4267b2;
 }
 .conversation--collapsed {
     width: 11.25em;

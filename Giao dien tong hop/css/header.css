@@ -13,6 +13,9 @@ header.navbar-fixed-top .container {
 header.navbar-fixed-top .navbar-brand, header.navbar-fixed-top .row {
     margin: 0 !important;
 }
+header .searchUser .form-group {
+    margin-bottom: 0;
+}
 .btn-primary {
     background-color: #3b5998 !important;
 }
@@ -24,6 +27,9 @@ header.navbar-fixed-top .navbar-brand, header.navbar-fixed-top .row {
 }
 header .navbar-header {
     margin: 0 0 0 -5px !important;
+}
+header .setting-menu, header .top-menu {
+    display: none !important;
 }
 .header-options {
     top: -4px;
@@ -62,30 +68,9 @@ header .navbar-header {
 .header-options .preset-options > li > a {
     color: #5270a2;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-header .searchUser, header .setting-menu, header .top-menu {
-    display: none;
-}
 @media screen and (min-width: 576px) {
     header .navbar-header {
         display: block;
-    }
-    header .top-menu{
-        display: inline-block;
     }
     .header-options-dialog .preset-options {
         white-space: nowrap;
@@ -95,9 +80,17 @@ header .searchUser, header .setting-menu, header .top-menu {
         min-width: 400px;
     }
 }
-@media screen and (min-width: 992px) {
-    header .searchUser {
-        display: block;
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    header .top-menu {
+        display: inline-block !important;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
     }
     header .setting-menu {
         display: inline-block;
@@ -106,11 +99,19 @@ header .searchUser, header .setting-menu, header .top-menu {
         min-width: 750px;
     }
 }
-@media screen and (min-width: 1200px) {
-    header .searchUser {
-        display: block;
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
     }
-    header .setting-menu {
-        display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+    header .searchUser {
+        width: auto;
+    }
+}
+@media screen and (max-width: 468px) {
+    body {
+        padding-top: 4.9375em !important;
     }
 }

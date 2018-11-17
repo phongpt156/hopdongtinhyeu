@@ -826,11 +826,16 @@
           </div>
           <div class="border-left"></div>
           <div class="right-header">
-            <div class="btn-group">
+            <div class="dropdown">
               <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>Chỉnh sửa</span>
                 <span class="caret"></span>
               </button>
+              <ul class="dropdown-menu">
+                <li><a>Action</a></li>
+                <li><a>Another action</a></li>
+                <li><a>Something else here</a></li>
+              </ul>
             </div>
             <div class="btn-group">
               <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -2117,6 +2122,10 @@
     <section class="conversation-list-container">
       <ul class="conversation-list conversation-dialog">
         <li class="conversation">
+          <div class="add-user-box">
+            <input type="text" placeholder="Thêm bạn bè vào cuộc trò chuyện" />
+            <button class="done btn">Xong</button>
+          </div>
           <div class="conversation__header layout-title-bar">
             <div class="d-flex align-items-center">
               <span class="online-status">
@@ -2124,6 +2133,11 @@
               </span>
               <a class="conversation__name">Trần Thị Thùy Linh</a>
               <ul class="action-list ml-auto">
+                <li class="action-item">
+                  <a data-toggle="tooltip" title="Thêm bạn bè khác vào cuộc trò chuyện" class="action-button add-user-button">
+                    <i class="sn-icon sn-icon--2x sn-plus"></i>
+                  </a>
+                </li>
                 <li class="action-item">
                   <a data-toggle="tooltip" title="Bắt đầu video chat với Linh" class="action-button">
                     <i class="sn-icon sn-icon--2x sn-video"></i>
@@ -2134,10 +2148,22 @@
                     <i class="sn-icon sn-icon--2x sn-phone"></i>
                   </a>
                 </li>
-                <li class="action-item">
-                  <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
-                    <i class="sn-icon sn-icon--2x sn-setting"></i>
+                <li class="action-item dropdown">
+                  <a class="action-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="sn-icon sn-icon--2x sn-setting" data-toggle="tooltip" title="Tùy chọn"></i>
                   </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a>Chỉnh sửa biệt hiệu</a></li>
+                    <li><a>Thay đổi màu</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>Ẩn cuộc trò chuyện...</a></li>
+                    <li><a>Xóa cuộc trò chuyện...</a></li>
+                    <li><a>Bỏ qua tin nhắn...</a></li>
+                    <li><a>Chặn tin nhắn...</a></li>
+                    <li><a>Báo cáo...</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>Bắt đầu kế hoạch</a></li>
+                  </ul>
                 </li>
                 <li class="action-item close-tab">
                   <a data-toggle="tooltip" title="Đóng tab" class="action-button">
