@@ -3,13 +3,16 @@ body,
     min-width: auto;
 }
 .term-of-service {
-    padding-top: 2.8125em;
+    padding-top: 1.25em;
     font-size: 16px;
     --cadet-blue: #6ca0b6;
     --coral: #e9785b;
     --dark-cyan: #31a38d;
     --hot-pink: #f36b7f;
     --golden-rod: #fcd872;
+}
+.term-of-service .navbar-header {
+    float: none;
 }
 aside a, aside a:hover {
     color: #4b4f56;
@@ -20,6 +23,10 @@ aside a, aside a:hover {
 @media (min-width: 768px) {
     .container {
         width: 750px;
+    }
+    .term-of-service .navbar-default {
+        border: none;
+        background-color: transparent;
     }
 }
 @media (min-width: 992px) {
@@ -354,5 +361,11 @@ aside a, aside a:hover {
 @media screen and (min-width: 768px) {
     .guess-only-poup__inner > div {
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    body {
+        padding-top: 0 !important;
     }
 }
