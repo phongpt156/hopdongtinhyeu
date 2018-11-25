@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  new PerfectScrollbar($('.contact-list-container__body')[0], {
+    suppressScrollX: true,
+    wheelPropagation: false
+  });
+
   $('.conversation__action-list').click(function (e) {
     e.stopPropagation();
   });

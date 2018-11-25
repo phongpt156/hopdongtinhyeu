@@ -3,9 +3,6 @@ body {
     font-size: 1rem;
     background-color: #e9ebee;
 }
-.wpMainadminWc {
-    font-size: .75rem;
-}
 
 .main {
     position: relative;
@@ -118,63 +115,6 @@ body {
     border: 1px solid #dddfe2;
     align-self: flex-start;
 }
-.sponsor-suggestion {
-    padding: .625em;
-    background-color: #fff;
-}
-.sponsor-suggestion .title {
-    margin: 0 0 .625em;
-    font-size: .875rem;
-    color: #616787;
-}
-.sponsor-suggestion .sponsor-list {
-    padding-left: 0;
-    list-style-type: none;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item {
-    /* width: 17.5em; */
-    position: relative;
-    padding-bottom: .5em;
-    color: #939594;
-    border: 1px solid #dedfe3;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item .close {
-    z-index: 1000;
-    top: 6px;
-    text-shadow: inherit;
-    right: 6px;
-    position: absolute;
-    padding: .5px 1.5px 1px;
-    opacity: 1;
-    font-size: .7rem;
-    color: #fff;
-    border-radius: 1px;
-    background-color: #aebad0;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item::after:hover {
-    opacity: .6;
-}
-
-.sponsor-suggestion .sponsor-list .sponsor-item + .sponsor-item {
-    margin-top: .5em;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item .title {
-    padding: 0 5px;
-    margin: .714286em 0 0;
-    font-size: .875rem;
-    color: #36599b;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item .description {
-    padding: 0 5px;
-    margin: 0 0 .769231em;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item .description .number {
-    color: #5295fd;
-}
-.sponsor-suggestion .sponsor-list .sponsor-item .description, .sponsor-suggestion .sponsor-list .sponsor-item .content {
-    padding: 0 5px;
-    font-size: .8125rem;
-}
 /*========= End right main =========*/
 
 @media screen and (min-width: 992px) {
@@ -201,9 +141,6 @@ body {
         top: 1px;
         right: 7px;
         position: absolute;
-        /* top: 59px;
-        right: 212px;
-        position: fixed !important; */
         margin-top: 0;
         display: block;
     }

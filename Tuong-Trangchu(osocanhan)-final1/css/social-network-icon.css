@@ -4,10 +4,18 @@ i.sn-icon {
     background-repeat: no-repeat;
 }
 i.sn-icon--1x {
+    width: 12px;
+    height: 12px;
+}
+i.sn-icon--2x {
     width: 16px;
     height: 16px;
 }
-i.sn-icon--2x {
+i.sn-icon--3x {
+    width: 24px;
+    height: 24px;
+}
+i.sn-icon--4x {
     width: 22px;
     height: 26px;
 }
@@ -34,6 +42,14 @@ i.sn-setting--v2.sn-setting--lighter {
 i.sn-close {
     background-position: -1px -119px;
     background-image: url(./../images/social-network/list-icon-2.png);
+}
+i.sn-close--v2 {
+    background-position: 0 -1057px;
+    background-image: url(./../images/social-network/list-icon-6.png);
+}
+i.sn-close--v3 {
+    background-position: -85px -270px;
+    background-image: url(./../images/social-network/list-icon-11.png);
 }
 i.sn-photo {
     background-position: -68px -556px;
@@ -80,6 +96,10 @@ i.sn-add-user-plus {
 i.sn-add-user-plus.sn-add-user-plus--lighter {
     background-position: 0 -525px;
 }
+i.sn-add-user-plus--v2 {
+    background-position: -37px -154px;
+    background-image: url(./../images/social-network/list-icon-8.png);
+}
 i.sn-plus-blue {
     background-position: 0 -385px;
     background-image: url(./../images/img72.png);
@@ -87,6 +107,31 @@ i.sn-plus-blue {
 i.sn-plus {
     background-position: -63px -282px;
     background-image: url(./../images/social-network/list-icon-1.png);
+}
+i.sn-thumbsup-circle-blue {
+    background-position: 0 -526px;
+    background-image: url(./../images/social-network/list-icon-7.png);
+}
+i.sn-thumbsdown-circle-blue {
+    transform: rotateZ(-180deg);
+    background-position: 0 -526px;
+    background-image: url(./../images/social-network/list-icon-7.png);
+}
+i.sn-wifi {
+    background-position: -51px -201px;
+    background-image: url(./../images/social-network/list-icon-9.png);
+}
+i.sn-bag {
+    background-position: -34px -167px;
+    background-image: url(./../images/social-network/list-icon-10.png);
+}
+i.sn-graduation-cap {
+    background-position: -34px -269px;
+    background-image: url(./../images/social-network/list-icon-10.png);
+}
+i.sn-info-circle {
+    background-position: 0 -25px;
+    background-image: url(./../images/social-network/list-icon-12.png);
 }
 
 .sn-emoji {

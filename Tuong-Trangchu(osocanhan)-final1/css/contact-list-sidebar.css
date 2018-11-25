@@ -56,11 +56,15 @@
     box-shadow: 1px 0 0 #eaebed inset;
     background-color: #dddfe2;
 }
+.contact-list .contact-item > .d-flex > .d-flex {
+    min-width: 0;
+}
 .contact-list .contact-item .cover-container {
     width: 2em;
     height: 2em;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    flex-shrink: 0;
     display: grid;
 }
 .contact-list .contact-item .cover-container img {
@@ -94,9 +98,16 @@
     margin-top: -1em;
 }
 .contact-list .contact-item .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     margin-left: .75em;
     font-size: .75rem;
     color: #333;
+}
+.contact-list .contact-item .online-status {
+    margin-left: .272727em;
+    flex-shrink: 0;
 }
 .contact-list .contact-item .online-status.offline-minutes {
     font-size: .6875rem;

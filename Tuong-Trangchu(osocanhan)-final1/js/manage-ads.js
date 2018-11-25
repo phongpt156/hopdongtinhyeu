@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  $('.right-main').simpleScrollFollow();
+  $('.right-main').simpleScrollFollow({
+    min_width: 1200
+  });
 });

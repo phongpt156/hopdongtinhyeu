@@ -19,10 +19,6 @@ $(document).ready(function () {
     $('.search-input').focus();
   });
 
-  new PerfectScrollbar($('.contact-list-container__body')[0], {
-    suppressScrollX: true,
-    wheelPropagation: false
-  });
   $('.contact-list-container--collapse').click(function () {
     $('.contact-list-container--open').toggleClass('d-none');
     $(this).toggleClass('d-none');
@@ -73,7 +69,11 @@ $(document).ready(function () {
     e.preventDefault();
   }).on('mouseenter', function() {
     $(this).popover('show');
-    if ($(window).height() - $(this).offset().top < 150) {
+    const scrollTop = $(window).scrollTop();
+    const elementOffset = $(this).offset().top;
+    const currentElementOffset = (elementOffset - scrollTop);
+
+    if ($(window).height() - currentElementOffset < 200) {
       $('.listChat .item .infoUserLf').addClass('bottom');
     }
     $('.infoUserLf').on('mouseleave', function() {

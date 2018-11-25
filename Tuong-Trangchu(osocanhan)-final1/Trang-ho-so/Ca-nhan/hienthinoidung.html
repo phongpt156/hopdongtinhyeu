@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="vi"> 
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tạo danh mục</title>
+    <link href="./../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./../../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../css/custom.css" rel="stylesheet">
+    <link href="../../css/custom2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../../libs/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link href="./../../css/custom.css" rel="stylesheet" />
+    <link href="./../../css/common.css" rel="stylesheet" />
+    <link href="./../../css/utility.css" rel="stylesheet" />
+    <link href="./../../css/social-network-icon.css" rel="stylesheet" />
+    <link href="./../../../Giao dien tong hop/css/header.css" rel="stylesheet" />
+    <link href="./../../../Giao dien tong hop/css/footer.css" rel="stylesheet" />
+    <link href="./../../css/contact-list-sidebar.css" rel="stylesheet" />
+    <link href="./../../css/sponsor-suggestion-sidebar.css" rel="stylesheet" />
+    <link href="./../../css/display-content.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./../../js/bootstrap.min.js"></script>
+    <script src="./../../libs/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="./../../../Giao dien tong hop/js/jquery-simple-scroll-follow.min.js"></script>
+    <script src="./../../js/contact-list-sidebar.js"></script>
+    <script src="./../../js/display-content.js"></script>
+  </head>
+  <body class="index"> 
+    <header class="navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-small">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand"><img src="./../../images/logo_sm.png" alt="logo"></a>
+          </div>
+          <div class="searchUser">
+            <div class="searchFormUser">
+              <form action="" method="post" class="form-inline">
+                <div class="form-group">
+                  <input id="searchMain" type="text" class="form-control" value="">
+                </div>
+                <button type="submit" class="btn btn-default btn-search-user pull-right"><i class="fa fa-search"></i></button>
+              </form>
+              <ul class="searchResult">
+                <li>
+                  <a href="">Hoa <strong>mai</strong></a>
+                </li>
+                <li>
+                  <a href="">Hoa <strong>đào</strong></a>
+                </li>
+                <li>
+                  <a href="">Hoa hồng</a>
+                </li>
+                <li>
+                  <a href="">Xem tất cả kết quả cho hoa</a>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+          <div class="pull-right row">
+            <ul class="list-inline top-menu borderRight">
+              <li>
+                <a>
+                  <img class="pull-left avata-user" src="./../../images/avata.jpg" alt="avata">
+                  <span class="nameUser">Jame</span>
+                </a>
+              </li>
+              <li class="text-center">
+                <a href="">Trang chủ <span class="numberNews">2</span></a>
+              </li>
+              <li class="text-center last">
+                <a href="">Tìm bạn bè</a>
+              </li>
+            </ul>
+            <div class="header-options dropdown">
+              <svg focusable="false" viewBox="0 0 24 24" class="svg-inline--fa " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="header-options">
+                <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" fill="#000"></path>
+              </svg>
+              <div class="dropdown-menu dropdown-menu-right header-options-dialog" aria-labelledby="header-options">
+                <div class="title">
+                  Top 500 đối tượng ảnh hưởng lớn nhất Việt Nam
+                </div>
+                <hr />
+                <ul class="preset-options">
+                  <li><a>Tuyển dụng</a></li>
+                  <li><a>PG <span style="color: #4c404e">&</span> Model</a></li>
+                  <li><a>Nhà hàng <span style="color: #4c404e">&</span> Khách sạn</a></li>
+                  <li><a>Nghệ thuật</a></li>
+                  <li><a>Làm thêm</a></li>
+                  <li><a>Sinh viên</a></li>
+                  <li><a>Đào tạo</a></li>
+                  <li><a>Khu công nghiệp</a></li>
+                </ul>
+                <hr />
+                <ul class="preset-options">
+                  <li><a>Hồ sơ ứng viên</a></li>
+                  <li><a>PG <span style="color: #4c404e">&</span> Model</a></li>
+                  <li><a>Nhà hàng <span style="color: #4c404e">&</span> Khách sạn</a></li>
+                  <li><a>Nghệ thuật</a></li>
+                  <li><a>Làm thêm</a></li>
+                  <li><a>Sinh viên</a></li>
+                  <li><a>Lập trình</a></li>
+                  <li><a>Đào tạo</a></li>
+                  <li><a>Khu công nghiệp</a></li>
+                </ul>
+                <hr />
+                <ul class="preset-options mb-0">
+                  <li><a>Kết bạn</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="list-notifi">
+              <li class="friend-notifi">
+                <i>15</i>
+                <span></span>
+                <div class="drop-down ">
+                  <div class="uiHeader">
+                    <div class="pull-left">
+                      <h5 class="pull-left">Lời mời kết bạn</h5>
+                    </div>
+                    <div class="text-right pull-right">
+                      <a href="">Tìm bạn bè</a>&nbsp;&nbsp;
+                      <a href="">Cài đặt</a>
+                    </div>
+                  </div>
+                  <div class="hidden-box mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <div class="media">
+                          <div class="media-left">
+                            <a href=""><img class="media-object" src="./../../images/mes_1.jpg" alt=""></a>
+                          </div>
+                          <div class="media-body">
+                            <a href=""><strong>Nobita</strong></a>
+                            <div class="pull-right">
+                              <button class="btn btn-primary btn-sm">Chấp nhận</button>
+                              <button class="btn btn-default btn-sm">Xóa yêu cầu</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="media">
+                          <div class="media-left">
+                            <a href=""><img class="media-object" src="./../../images/add_1.jpg" alt=""></a>
+                          </div>
+                          <div class="media-body">
+                            <a href=""><strong>Xeko</strong></a>
+                            <div class="pull-right">
+                              <button class="btn btn-primary btn-sm">Chấp nhận</button>
+                              <button class="btn btn-default btn-sm">Xóa yêu cầu</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="media">
+                          <div class="media-left">
+                            <a href=""><img class="media-object" src="./../../images/add_2.jpg" alt=""></a>
+                          </div>
+                          <div class="media-body">
+                            <a href=""><strong>Chaien</strong></a>
+                            <div class="pull-right">
+                              <button class="btn btn-primary btn-sm">Chấp nhận</button>
+                              <button class="btn btn-default btn-sm">Xóa yêu cầu</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="media">
+                          <div class="media-left">
+                            <a href=""><img class="media-object" src="./../../images/add_3.jpg" alt=""></a>
+                          </div>
+                          <div class="media-body">
+                            <a href=""><strong>Dekhi</strong></a>
+                            <div class="pull-right">
+                              <button class="btn btn-primary btn-sm">Chấp nhận</button>
+                              <button class="btn btn-default btn-sm">Xóa yêu cầu</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--hidden-box-->
+                  <div class="viewMore text-center">
+                    <a href=""><strong>Xem tất cả</strong></a>
+                  </div>
+                </div>
+                <!--drop-down-->
+              </li>
+              <li class="mes-notifi">
+                <i>32</i>
+                <span></span>
+                <div class="drop-down ">
+                  <div class="uiHeader">
+                    <div class="pull-left">
+                      <h5 class="pull-left">Gần đây 10</h5>
+                      <a href="" class="mes-waitting">Tin nhắn đang chờ</a>
+                    </div>
+                    <div class="text-right pull-right">
+                      <a href="">Đánh dấu tất cả là đã đọc</a>&nbsp;&nbsp;
+                      <a href="">Tin nhắn mới</a>
+                    </div>
+                  </div>
+                  <div class="hidden-box mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <ul class="list-group">
+                      <li class="list-group-item unread">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Candy Crush</strong> <span class="online"></span></p>
+                              <p><span class="reply wait"></span>Demo text</p>
+                              <p class="time-notifi"><span>11:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle unread" title="Đánh dấu là đã đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Lầyy</strong> <span class="online"></span></p>
+                              <p><span class="reply seen"></span>Today is a good day</p>
+                              <p class="time-notifi"><span>6:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_3.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Xuka (3)</strong></p>
+                              <p>Ê</p>
+                              <p class="time-notifi"><span>08:40</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle unread" title="Đánh dấu là đã đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_4.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Doraemon</strong> <span class="online"></span></p>
+                              <p><span class="reply seen"></span>How are you, today?</p>
+                              <p class="time-notifi"><span>7:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Candy Crush</strong> <span class="online"></span></p>
+                              <p><span class="reply wait"></span>Demo text</p>
+                              <p class="time-notifi"><span>11:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle unread" title="Đánh dấu là đã đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="">
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Lầyy</strong> <span class="online"></span></p>
+                              <p><span class="reply seen"></span>Today is a good day</p>
+                              <p class="time-notifi"><span>6:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_3.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Xuka (3)</strong></p>
+                              <p>Ê</p>
+                              <p class="time-notifi"><span>08:40</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle unread" title="Đánh dấu là đã đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object img-circle" src="./../../images/mes_4.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Doraemon</strong> <span class="online"></span></p>
+                              <p><span class="reply seen"></span>How are you, today?</p>
+                              <p class="time-notifi"><span>7:00</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--hidden-box-->
+                  <div class="viewMore text-center">
+                    <a href=""><strong>Xem tất cả</strong></a>
+                  </div>
+                </div>
+                <!--drop-down-->
+              </li>
+              <li class="new-notifi hasNotifi">
+                <i>10</i>
+                <span></span>
+                <div class="drop-down">
+                  <div class="uiHeader">
+                    <h5 class="pull-left">Thông báo</h5>
+                    <div class="text-right pull-right">
+                      <a>Đánh dấu tất cả là đã đọc</a>&nbsp;&nbsp;
+                      <a>Cài đặt</a>
+                    </div>
+                  </div>
+                  <div class="hidden-box mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <ul class="list-group">
+                      <li class="list-group-item unread">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/new_6.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Candy Crush Saga: Zara</strong> đã gửi cho bạn một yêu cầu.</p>
+                              <p class="time-notifi"><img src="./../../images/candy.png" class="notifi-icon" />
+                                <span>10 phút trước</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo từ ứng dụng này">Tắt thông báo từ ứng dụng này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle unread" title="Đánh dấu là đã đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Lầyy</strong> đã bình luận về một ảnh mà bạn được gắn thẻ. </p>
+                              <p class="time-notifi"><img src="./../../images/mes.png" class="notifi-icon" /> <span>7
+                                  Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                            <div class="media-left text-right">
+                              <img class="media-object thumbnail imgBorder" src="./../../images/new_4.jpg" />
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_2.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Susi</strong> đã bày tỏ cảm xúc về một ảnh.</p>
+                              <p class="time-notifi"><img src="./../../images/love.png" class="notifi-icon" /> <span>7 Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                            <div class="media-left text-right">
+                              <img class="media-object thumbnail imgBorder" src="./../../images/new_5.jpg" />
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle unread" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_3.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p>Hôm nay là sinh nhật <strong>Xuka</strong> . Hãy chúc cô ấy có một ngày thật tuyệt vời!</p>
+                              <p class="time-notifi"><img src="./../../images/face.png" class="notifi-icon"> <span>2
+                                  Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/new_6.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Candy Crush Saga: Zara</strong> đã gửi cho bạn một yêu cầu.</p>
+                              <p class="time-notifi"><img src="./../../images/candy.png" alt="" class="notifi-icon">
+                                <span>10 phút trước</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="">Ẩn thông báo này</a></li>
+                            <li><a href="" title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle unread" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_1.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Lầyy</strong> đã bình luận về một ảnh mà bạn được gắn thẻ. </p>
+                              <p class="time-notifi"><img src="./../../images/mes.png" class="notifi-icon"> <span>7 Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                            <div class="media-left text-right">
+                              <img class="media-object thumbnail imgBorder" src="./../../images/new_4.jpg" />
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item unread">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p><strong>Susi</strong> đã bày tỏ cảm xúc về một ảnh.</p>
+                              <p class="time-notifi"><img src="./../../images/love.png" alt="" class="notifi-icon"> <span>7
+                                  Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                            <div class="media-left text-right">
+                              <img class="media-object thumbnail imgBorder" src="./../../images/new_5.jpg" alt="">
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a>Ẩn thông báo này</a></li>
+                            <li><a title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle unread" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <a>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-object" src="./../../images/news_3.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                              <p>Hôm nay là sinh nhật <strong>Xuka</strong> . Hãy chúc cô ấy có một ngày thật tuyệt vời!</p>
+                              <p class="time-notifi"><img src="./../../images/face.png" alt="" class="notifi-icon"> <span>2
+                                  Tháng 1 2017 lúc 18:06</span></p>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-group select_statements">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="">Ẩn thông báo này</a></li>
+                            <li><a href="" title="Tắt thông báo về bình luận mới về bài viết trên Trang cho trang này">Tắt
+                                thông báo về bình luận mới về bài viết trên Trang cho trang này</a></li>
+                          </ul>
+                        </div>
+                        <span class="readCircle read" title="Đánh dấu là chưa đọc"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--hidden-box-->
+                  <div class="viewMore text-center">
+                    <a href=""><strong>Xem tất cả</strong></a>
+                  </div>
+                </div>
+                <!--drop-down-->
+              </li>
+            </ul>
+            <ul class="nav navbar-nav setting-menu">
+              <li class="dropdown secuSetting">
+                <span class="f_click"></span>
+                <div class="security">
+                  <div class="relaUi">
+                    <div class="uiHeader">
+                      <h5 class="pull-left">Lối tắt quyền riêng tư</h5>
+                      <span class="glyphicon glyphicon-search pull-right"></span>
+                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                              <i class="icon-secu earth-icon"></i>
+                              <span class="txtDetail">Ai có thể xem nội dung của tôi</span>
+                              <i class="down-icon"></i>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="media">
+                              <div class="media-left media-middle">
+                                <i class="secu-child-icon news"></i>
+                              </div>
+                              <div class="media-body">
+                                Ai có thể xem các bài viết sau này của tôi?
+                                <div class="btn-group btn-decentra">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"><i class="icon-avt public"></i> Mọi người
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="media">
+                              <div class="media-left">
+                                <i class="secu-child-icon photo"></i>
+                              </div>
+                              <div class="media-body">
+                                Tôi sẽ đánh giá những người có thể nhìn thấy hoặc tìm kiếm những nội dung tôi đã đăng
+                                hoặc được đánh dấu ở đâu?<br />
+                                <a href="">Sử dụng nhật ký hoạt động<br /></a>
+                              </div>
+                            </div>
+                            <div class="media">
+                              <div class="media-left">
+                                <i class="secu-child-icon timeline"></i>
+                              </div>
+                              <div class="media-body">
+                                Những người khác thấy gì trên dòng thời gian của tôi?<br /><a href="">Xem giao diện</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                              aria-expanded="true" aria-controls="collapseTwo">
+                              <i class="icon-secu user-icon"></i>
+                              <span class="txtDetail top">Ai có thể liên hệ với tôi?</span>
+                              <i class="down-icon"></i>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="media">
+                              <div class="media-left media-middle">
+                                <i class="secu-child-icon addFriend"></i>
+                              </div>
+                              <div class="media-body">
+                                Ai có thể gửi cho tôi lời mời kết bạn?
+                                <div class="btn-group btn-decentra">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"><i class="icon-avt public"></i> Mọi người
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                              aria-expanded="true" aria-controls="collapseThree">
+                              <i class="icon-secu deny-icon"></i>
+                              <span class="txtDetail">Làm cách nào để ngăn ai đó làm phiền tôi?</span>
+                              <i class="down-icon"></i>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="media">
+                              <div class="media-left media-middle">
+                                <i class="secu-child-icon news"></i>
+                              </div>
+                              <div class="media-body">
+                                Bạn có thể chặn ai đó để hủy kết bạn với họ và ngăn họ bắt đầu cuộc trò chuyện với bạn
+                                hoặc xem nội dung bạn đăng lên Dòng thời gian của mình.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--panel-group-->
+                    <div class="other-setting">
+                      <a href=""><strong>Xem cài đặt khác</strong></a> hoặc truy cập vào<a href=""><strong>Thông tin cơ
+                          bản về quyền riêng tư</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown otherSetting">
+                <span class="down_click"></span>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Tạo trang</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Tạo nhóm</a></li>
+                  <li><a href="#">Tìm nhóm</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Tìm quảng cáo</a></li>
+                  <li><a href="#">Quảng cáo trên Facebook</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Nhật ký hoạt động <span class="numberDropdown">2</span></a></li>
+                  <li><a href="#">Tùy chọn Bảng tin</a></li>
+                  <li><a href="#">Cài đặt</a></li>
+                  <li><a href="#">Đăng xuất</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Trợ giúp</a></li>
+                  <li><a href="#">Hộp thư hỗ trợ <span class="numberDropdown">71</span></a></li>
+                  <li><a href="#">Báo cáo sự cố</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <div class="display-content">
+      <section class="main">
+        <div class="main__inner">
+          <div class="mainContent bot-40">
+            <div>
+              <div class="left-main">
+                <div>
+                  <div class="whiteBox">
+                    <div class="infoDetail">
+                      <div class="title">
+                        <div class="left">
+                          <h3>Tuyển cộng tác viên quản lý nội dụng sản phẩm</h3>
+                          <a class="time"><span>18 tháng 1 2017 lúc 11:23</span></a>
+                          <a class="status" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mọi người">
+                            <img src="../../images/public-icon.png" alt="">
+                          </a>
+                          <a class="approach"><span>Đã tiếp cận 648 người</span></a>
+                        </div>
+                        <button class="btn btn-default btn-sm">
+                          <i class="glyphicon glyphicon-pencil"></i> Chỉnh sửa
+                        </button>
+                      </div>
+                      <div class="d-flex CVs">
+                        <div class="col-xs-5">
+                          <p>Cấp bậc: Cộng tác viên</p>
+                          <p>Địa điểm làm việc: Hà Nội</p>
+                          <p>Ngành nghề: Nhân sự</p>
+                        </div>
+                        <div class="col-xs-7">
+                          <p>Thời gian: Toàn thời gian cố định</p>
+                          <p>Mức lương: Thỏa thuận</p>
+                        </div>
+                      </div>
+                      <div class="describe">
+                        <div class="block-dt">
+                          <p>Mô tả công việc</p>
+                          <ul>
+                            <li>
+                              - Quản lú bộ phận thiết kế kiến trúc và nội thất.
+                            </li>
+                            <li>
+                              - Là người trực tiếp sáng tác, phát thảo, phân công và kiểm soát tiến độ cũng như chất lượng bản vẽ thiết kế.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-dt">
+                          <p>Quyền lợi được hưởng</p>
+                          <ul>
+                            <li>
+                              - Hưởng các quyền lợi theo luật doanh nghiệp
+                            </li>
+                            <li>
+                              - Vị trí trưởng phòng được nhận các mức thưởng vượt trội khi hoàn thành các chỉ tiêu công việc đề ra.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-dt">
+                          <p>Yêu cầu khác</p>
+                          <ul>
+                            <li>
+                              - Có kỹ năng thiết kế vững vàng, khả năng sáng tạo tốt, kinh nghiệm làm việc thực địa và sản phẩm đồ gỗ.
+                            </li>
+                            <li>
+                              - Thành thạo các phần mềm đồ họa và có kỹ năng quản lý nhóm.
+                            </li>
+                          </ul>
+                        </div>
+                      </div> <!--describe-->
+                      <div class="block-dt text-right">
+                        <a class="btn btn-primary btn-sm button-pri">Nộp hồ sơ ứng tuyển</a>
+                      </div>
+                      <div class="apply">
+                        <div class="bgApply">
+                          <div class="ap_Oline">
+                            <h4>Nộp hồ sơ trực tuyến</h4>
+                            <p>Bạn đã có hồ sơ tại NDA Rank, <a data-toggle="modal" data-target="#chooseCV">click vào đây để gửi hồ sơ</a></p>
+                          </div>
+                          <form>
+                            <div class="form-group title">
+                              <input type="text" class="fomr-control" placeholder="Tiêu đề hồ sơ" />
+                            </div>
+                            <div class="form-group measure">
+                              <input type="number" class="fomr-control" placeholder="Mức lương mong muốn" />
+                              <div class="select_box">
+                                <select class="sl_brief form-control">
+                                  <option disabled selected>Năm sinh</option>
+                                  <option>1994</option>
+                                </select>
+                              </div>
+                              <div class="select_box">
+                                <select class="sl_brief form-control">
+                                  <option disabled selected>Hôn nhân</option>
+                                  <option >Độc thân</option>
+                                </select>
+                              </div>
+                              <div class="select_box">
+                                <select class="sl_brief form-control">
+                                  <option disabled selected>Giới tính</option>
+                                  <option >Nam</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group contact">
+                              <input type="text" class="fomr-control" placeholder="Họ tên" />
+                              <input type="text" class="fomr-control" placeholder="Điện thoại liên hệ" />
+                              <input type="text" class="fomr-control email" placeholder="Email liên hệ" />
+                            </div>
+                            <div class="form-group">
+                              <textarea placeholder="Nội dung"></textarea>
+                            </div>
+                            <div class="form-group">
+                              <input type="file" class="fomr-control" placeholder="Họ tên" />
+                              <button class="btn btn-primary button-pri">Ứng tuyển</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal fade chooseCV" id="chooseCV" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Chọn hồ sơ để ứng tuyển</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="media cv_select">
+                                <div class="leftLk">
+                                  <div class="radio">
+                                      <input type="radio" name="cv" id="choose">
+                                      <label for="choose">
+                                      </label>
+                                  </div>
+                                </div>
+                                <div class="media-left">
+                                  <a>
+                                    <img class="media-object" src="../../images/avt_sb.jpg" />
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <div class="rightLk">
+                                    <button class="btn btn-default"><i class="like"></i></button>
+                                    <button class="btn btn-default"><i class="dislike"></i></button>
+                                  </div>
+                                  <h4 class="media-heading">Giám đốc nhân sự</h4>
+                                  <p>Nữ giới</p>
+                                  <p class="modal_statis">
+                                    <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời</span> <span>(111 bình luận)</span>
+                                  </p>
+                                  <p>
+                                    <span>Hồ sơ ứng viên</span> - <span>Xem 1.783.342</span> - <span>6 phút trước</span> - <a>Chia sẻ</a> - <a>Lưu lại</a>
+                                  </p>
+                                  <p>Liên quan: Hoàng Nam, tnG Fashion, Công ty Nam Đại, Hoàng Phát</p>
+                                </div>
+                              </div>
+                              <div class="media cv_select">
+                                <div class="leftLk">
+                                  <div class="radio">
+                                      <input type="radio" name="cv" id="choose1">
+                                      <label for="choose1">
+                                      </label>
+                                  </div>
+                                </div>
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="../../images/avt_sb.jpg" />
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <div class="rightLk">
+                                      <button class="btn btn-default"><i class="like"></i></button>
+                                      <button class="btn btn-default"><i class="dislike"></i></button>
+                                  </div>
+                                  <h4 class="media-heading">Giám đốc nhân sự</h4>
+                                  <p>Nữ giới</p>
+                                  <p class="modal_statis">
+                                    <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời</span> <span>(111 bình luận)</span>
+                                  </p>
+                                  <p>
+                                    <span>Hồ sơ ứng viên</span> - <span>Xem 1.783.342</span> - <span>6 phút trước</span> - <a href="">Chia sẻ</a> - <a href="">Lưu lại</a>
+                                  </p>
+                                  <p>Liên quan: Hoàng Nam, tnG Fashion, Công ty Nam Đại, Hoàng Phát</p>
+                                </div>
+                              </div>
+                              <div class="media cv_select">
+                                <div class="leftLk">
+                                  <div class="radio">
+                                      <input type="radio" name="cv" id="choose2">
+                                      <label for="choose2">
+                                      </label>
+                                  </div>
+                                </div>
+                                <div class="media-left">
+                                  <a>
+                                    <img class="media-object" src="../../images/avt_sb.jpg" />
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <div class="rightLk">
+                                      <button class="btn btn-default"><i class="like"></i></button>
+                                      <button class="btn btn-default"><i class="dislike"></i></button>
+                                  </div>
+                                  <h4 class="media-heading">Giám đốc nhân sự</h4>
+                                  <p>Nữ giới</p>
+                                  <p class="modal_statis">
+                                    <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời</span> <span>(111 bình luận)</span>
+                                  </p>
+                                  <p>
+                                    <span>Hồ sơ ứng viên</span> - <span>Xem 1.783.342</span> - <span>6 phút trước</span> - <a>Chia sẻ</a> - <a>Lưu lại</a>
+                                  </p>
+                                  <p>Liên quan: Hoàng Nam, tnG Fashion, Công ty Nam Đại, Hoàng Phát</p>
+                                </div>
+                              </div>                
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary send-cv-button">Gửi hồ sơ</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- success send cv modal -->
+                    <div class="modal modal--center fade success-send-cv-modal" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Bạn đã gửi hồ sơ thành công.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end success send cv modal -->
+
+                    <div class="post-reaction-statistic">
+                      <a class="d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
+                        <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue mr-1"></i> NDArank.com Đánh giá..., Lan lan và 1 người khác
+                      </a>
+                      <a class="ml-2 d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
+                        <i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue mr-1"></i> Nguyễn Tấn Đạt...
+                      </a>
+                      <div class="reaction-detail-modal post-reaction-detail-modal modal modal--center fade" role="dialog">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <ul class="icon-list">
+                                <li class="active">
+                                  <a>Tất cả 77</span></a>
+                                </li>
+                                <li>
+                                  <a><i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i> <span data-color="rgb(53, 120, 229)">2</span></a>
+                                </li>
+                                <li>
+                                  <a><i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i> <span data-color="rgb(53, 120, 229)">2</span></a>
+                                </li>
+                              </ul>
+                              <a type="button" class="d-flex" data-dismiss="modal">
+                                <i class="sn-icon sn-icon--1x sn-close--v2"></i>
+                              </a>
+                            </div>
+                            <div class="modal-body">
+                              <div class="reaction-profile">
+                                <ul class="reaction-profile-list">
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture profile-wall-link">
+                                          <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                        Add friend
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture">
+                                          <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-name">Văn Bửu Trung</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                        Follow
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture profile-wall-link">
+                                          <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                        Add friend
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture">
+                                          <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-name">Văn Bửu Trung</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                        Follow
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture profile-wall-link">
+                                          <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                        Add friend
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture">
+                                          <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-name">Văn Bửu Trung</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                        Follow
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture profile-wall-link">
+                                          <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                        Add friend
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture">
+                                          <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-name">Văn Bửu Trung</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                        Follow
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture profile-wall-link">
+                                          <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                        Add friend
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li class="reaction-profile-item">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <div class="d-flex align-items-center">
+                                        <a class="profile-picture">
+                                          <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                        </a>
+                                        <a class="profile-name">Văn Bửu Trung</a>
+                                      </div>
+                                      <button class="social-network-button">
+                                        <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                        Follow
+                                      </button>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <a class="view-more-button">See more</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="likeBox">
+                      <a class="like">
+                        <span>Thích</span>
+                      </a>
+                      <a class="dislike">
+                        <span>Không thích</span>
+                      </a>
+                      <a class="comment">
+                        <span>Bình luận</span>
+                      </a>
+                      <a class="share">
+                        <span>Chia sẻ</span>
+                      </a>
+                      <a class="report">
+                        <span>Báo xấu</span>
+                      </a>
+                    </div>
+                    <div class="cmt_nda">
+                      <div class="statistic">
+                        <div class="stt_1">
+                          <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời (111 bình luận)</span>
+                          <a href=""><span class="share_stt">1 chia sẻ</span></a>
+                        </div>
+                        <div class="dropdown check_dropdown">
+                          <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bình luận hàng đầu
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li class="active">
+                              <a>
+                                <strong>Bình luận hàng đầu</strong>
+                                <span>Bình luận liên quan nhất sẽ xuất hiện trên cùng.</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a>
+                                <strong>Theo trình tự thời gian</strong>
+                                <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận mới nhất ở dưới cùng.</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a>
+                                <strong>Bình luận hàng đầu (Chưa lọc)</strong>
+                                <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận liên quan nhất ở trên cùng.</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="comment">
+                        <div class="type">
+                          <span class="active">NDA rank</span>
+                          <span>Facebook</span>
+                          <span>Google</span>
+                          <span>Tweeter</span>
+                        </div>
+                        <div class="cmtTxt">
+                          <div class="media">
+                            <div class="media-left">
+                              <a=>
+                                <img class="media-object cmt_avt" src="../../images/avata.jpg" alt="...">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <div class="inputCmt">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Viết bình luận..." />
+                                    <a data-toggle="tooltip" data-placement="left" data-original-title="Đính kèm một ảnh hoặc video"><span class="upImage"></span></a>
+                                    <a data-toggle="tooltip" data-placement="left" data-original-title="Đăng nhãn dán"><span class="emoticon"></span></a>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                            <div class="media-left">
+                              <a>
+                                <img class="media-object cmt_avt" src="../../images/cmt1.jpg" alt="..." />
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <div class="detailCmt">
+                                <a><span class="name">Tạ Quang Minh</span></a>
+                                <div class="content">
+                                  <div>
+                                    <span>this is demo text</span>
+                                  </div>
+                                  <div class="reaction shadow-sm" data-toggle="tooltip">
+                                    <a data-toggle="modal" data-target=".reaction-detail-modal-1"><i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i></a>
+                                    <a data-toggle="modal" data-target=".reaction-detail-modal-2"><i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i></a>
+                                    <div class="total-reaction">
+                                      111.100.000
+                                    </div>
+                                  </div>
+                                  <a class="comment-action">
+                                    <i class="sn-icon sn-icon--2x sn-three-dot" data-toggle="tooltip" data-title="Chỉnh sửa hoặc xóa"></i>
+                                  </a>
+                                  <div class="reaction-detail-modal reaction-detail-modal-1 modal modal--center fade" role="dialog">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <ul class="icon-list">
+                                            <li class="active">
+                                              <a><i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i> <span style="color: rgb(53, 120, 229)">2</span></a>
+                                            </li>
+                                          </ul>
+                                          <a type="button" class="d-flex" data-dismiss="modal">
+                                            <i class="sn-icon sn-icon--1x sn-close--v2"></i>
+                                          </a>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="reaction-profile">
+                                            <ul class="reaction-profile-list">
+                                              <li class="reaction-profile-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                  <div class="d-flex align-items-center">
+                                                    <a class="profile-picture profile-wall-link">
+                                                      <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                                      <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                                    </a>
+                                                    <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                                  </div>
+                                                  <button class="social-network-button">
+                                                    <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                                    Add friend
+                                                  </button>
+                                                </div>
+                                              </li>
+                                              <li class="reaction-profile-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                  <div class="d-flex align-items-center">
+                                                    <a class="profile-picture">
+                                                      <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                                      <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i>
+                                                    </a>
+                                                    <a class="profile-name">Văn Bửu Trung</a>
+                                                  </div>
+                                                  <button class="social-network-button">
+                                                    <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                                    Follow
+                                                  </button>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="reaction-detail-modal reaction-detail-modal-2 modal modal--center fade" role="dialog">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <ul class="icon-list">
+                                            <li class="active">
+                                              <a><i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i> <span style="color: rgb(53, 120, 229)">2</span></a>
+                                            </li>
+                                          </ul>
+                                          <a type="button" class="d-flex" data-dismiss="modal">
+                                            <i class="sn-icon sn-icon--1x sn-close--v2"></i>
+                                          </a>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="reaction-profile">
+                                            <ul class="reaction-profile-list">
+                                              <li class="reaction-profile-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                  <div class="d-flex align-items-center">
+                                                    <a class="profile-picture profile-wall-link">
+                                                      <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p24x24/17426131_1868906883321421_3439271055225595146_n.jpg?_nc_cat=111&_nc_ht=scontent.fhan5-3.fna&oh=111831bb1aad1780f6d440c4c5c80636&oe=5CA93F70" class="circle" />
+                                                      <i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i>
+                                                    </a>
+                                                    <a class="profile-wall-link profile-name">Đinh Hồng Khanh</a>
+                                                  </div>
+                                                  <button class="social-network-button">
+                                                    <i class="sn-icon sn-icon--1x sn-add-user-plus--v2"></i>
+                                                    Add friend
+                                                  </button>
+                                                </div>
+                                              </li>
+                                              <li class="reaction-profile-item">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                  <div class="d-flex align-items-center">
+                                                    <a class="profile-picture">
+                                                      <img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-1/c10.0.40.40/p40x40/1377622_178555798998487_622198311_n.jpg?_nc_cat=109&_nc_ht=scontent.fhan5-1.fna&oh=93e2345b0ae8293b2b9a26b0bbe3a5c9&oe=5CAA722C" class="circle" />
+                                                      <i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i>
+                                                    </a>
+                                                    <a class="profile-name">Văn Bửu Trung</a>
+                                                  </div>
+                                                  <button class="social-network-button">
+                                                    <i class="sn-icon sn-icon--1x sn-wifi"></i>
+                                                    Follow
+                                                  </button>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="line"><a>Thích</a> · <a>Không thích</a> . <a>Trả lời</a>  ·  <span>1 giờ</span></p>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                            <div class="media-left">
+                              <a>
+                                <img class="media-object cmt_avt" src="../../images/mes_4.jpg" alt="..." />
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p class="detailCmt">
+                                <a><span class="name">Xu Xu</span></a> <a>Duy Nguyễn</a> Mưu sinh vì cái gì ? Làm giàu cho ai ? Sinh con ra làm gì ? Tôi có 3 đứa đây ! Sanh ra mà không dạy dỗ nó nên người để nó như cây hoang tự mọc tự trưởng thành làm cặn bã cho XH thì đầu tiên phải chửi nó mất dạy trước tiên. Sau đó mới trách tới bản thân...<a>Xem thêm</a>
+                              </p>
+                              <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <span>1 giờ</span></p>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" title="" data-original-title="Ẩn bình luận">×</span>
+                            <div class="media-left">
+                              <a>
+                                <img class="media-object cmt_avt" src="../../images/news_1.jpg" />
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p class="detailCmt"><a><span class="name">Tiểu Cương Thi</span></a> this is demo text</p>
+                              <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <span>3 giờ</span></p>
+                              <div class="replyBox">
+                                <p class="hideReply"><i></i> <span>5 câu trả lời</span> · <span>1 giờ</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                            <div class="media-left">
+                              <a>
+                                <img class="media-object cmt_avt" src="../../images/news_2.jpg" alt="..." />
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <div class="detailCmt">
+                                <a><span class="name">Lầy</span></a>
+                                <div class="content">
+                                  <span>this is demo text</span>
+                                </div>
+                              </div>
+                              <div class="detailCmt">
+                                <div class="content">
+                                  <a><img src="../../images/profile/1.jpg" /></a>
+                                  <div class="reaction shadow-sm" data-toggle="tooltip">
+                                    <a><i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i></a>
+                                    <a><i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i></a>
+                                    <div class="total-reaction">
+                                      111.100.000
+                                    </div>
+                                  </div>
+                                  <a class="comment-action align-self-end">
+                                    <i class="sn-icon sn-icon--2x sn-three-dot" data-toggle="tooltip" data-title="Chỉnh sửa hoặc xóa"></i>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <a class="cmtLike"><span></span> <span>3</span></a>  ·  <span>1 giờ</span></p>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <span class="noAvt"></span>
+                            </div>
+                            <div class="media-body">
+                              <div class="replyBox">
+                                <div class="media">
+                                  <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                                  <div class="media-left">
+                                    <a>
+                                      <img class="media-object" src="../../images/new_6.jpg" alt="..." />
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <p class="detailCmt"><a><span class="name">Luyn</span></a> this is reply</p>
+                                    <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <a class="cmtLike"><span></span> <span>3</span></a>  ·  <span>1 giờ</span></p>
+                                  </div>
+                                </div>
+                                <div class="media">
+                                  <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                                  <div class="media-left">
+                                    <a>
+                                      <img class="media-object" src="../../images/new_6.jpg" alt="..." />
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <p class="detailCmt"><a><span class="name">Luyn</span></a> this is reply</p>
+                                    <p>
+                                      <a><img src="../../images/profile/4.jpg" /></a>
+                                    </p>
+                                    <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <a class="cmtLike"><span></span> <span>3</span></a>  ·  <span>1 giờ</span></p>
+                                  </div>
+                                </div>
+                                <div class="media cmt">
+                                  <div class="media-left">
+                                    <a>
+                                      <img class="media-object cmt_avt" src="../../images/avata.jpg" alt="..." />
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <div class="inputCmt">
+                                      <form>
+                                        <div class="form-group"> 
+                                          <input type="text" class="form-control" placeholder="Viết trả lời..." />
+                                          <label class="mb-0 vertical-top">
+                                            <a data-toggle="tooltip" data-placement="left" data-original-title="Đính kèm một ảnh hoặc video"><span class="upImage"></span></a>
+                                            <input type="file" class="d-none" accept="image/*,video/*" />
+                                          </label>
+                                          <label class="mb-0 vertical-top">
+                                            <a data-toggle="tooltip" data-placement="left" data-original-title="Đăng nhãn dán"><span class="emoticon"></span></a>
+                                          </label>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="media">
+                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                            <div class="media-left">
+                              <a>
+                                <img class="media-object cmt_avt" src="../../images/news_1.jpg" />
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p class="detailCmt"><a><span class="name">Tiểu Cương Thi</span></a> this is demo text</p>
+                              <p class="line"><a>Thích</a> · <a>Trả lời</a>  ·  <span>30 phút</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--comment-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-main">
+                <div class="detailProfile">
+                  <div class="photo">
+                    <div class="media">
+                      <div class="media-left">
+                        <a>
+                          <img class="media-object" src="../../images/avt_sb.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><a><strong>Taylor Swift</strong></a></h4>
+                        <p><strong>Senior Oshin at HEADSPI - Hanoi University of Science and...</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nda_statis">
+                    <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời (111 bình luận)</span>
+                  </div>
+                  <div class="whiteBox">
+                    <div class="nameRight">
+                      <a style="text-decoration: none; color: #111; line-height: 20px;"><p><strong>Tin tuyển dụng của Taylor Swift</strong></p></a>
+                      <a style="text-decoration: none; color: #111; line-height: 20px;"><p><strong>Trang tuyển dụng</strong></p></a>
+                    </div>
+                  </div>
+                  <div class="whiteBox mr-t-20 boxSidebar">
+                    <div class="nameRight">
+                      <div class="title-boxSb">
+                        Được gắn thẻ
+                      </div>
+                      <ul class="list-imgTag">
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                        <li><a><img src="../../images/avt_sb.jpg"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="whiteBox mr-t-20 boxSidebar">
+                    <div class="nameRight">
+                      <div class="title-boxSb">
+                        Xu hướng đề xuất 
+                        <div class="pull-right"><a href="#" class="view-all">Xem tất cả</a></div>
+                      </div>
+                      <ul class="list-item-boxSb">
+                        <li class="item-boxSb">
+                          <div class="wpPopupInfoPage">
+                            <div class="mainPopupInfoPage">
+                              <div class="head">
+                                <div class="overlay"></div>
+                                <div class="cover_op"></div>
+                                <div class="cover"><img src="../../images/cover.jpg" /></div>
+                                <div class="row head-content">
+                                  <div class="col-xs-3">
+                                    <img src="../../images/avt_sb.jpg" class="avt_page">
+                                  </div>
+                                  <div class="col-xs-7">
+                                    <div class="title">Thanh Xuân</div>
+                                    <div class="abbreviations">20 tháng 7, 2018</div>
+                                    <div class="detail">Trang web giải trí · 582 lượt thích</div>
+                                  </div>
+                                  <div class="col-xs-2 pr-0">
+                                    <div class="pull-right dropdown">
+                                      <button class="save_page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="img sp_ZW3uj1Ck-wQ sx_3e220b"></i></button>
+                                      <ul class="dropdown-menu">
+                                        <li><a>Ẩn tin này</a></li>
+                                        <li><a class="document-report-button">Báo cáo tin này</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="main">
+                                <ul class="list-rate">
+                                  <li class="item">
+                                    <div class="col-xs-2" style="padding-right: 0;">
+                                      <img src="../../images/avt_sb.jpg" />
+                                    </div>
+                                    <div class="col-xs-9" style="padding-left: 15px;">
+                                      <div class="name"><a>Mạnh Hải</a></div>
+                                      <div class="rate"><span class="nda-color">NDA 12.339.000</span> - Tuyệt vời (321 bình luận)</div>
+                                      <div class="time">20 tháng 7, 2018</div>
+                                    </div>
+                                  </li>
+                                  <li class="item">
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-2" style="padding-right: 0;">
+                                      <img src="../../images/avt_sb.jpg" alt="">
+                                    </div>
+                                    <div class="col-xs-9" style="padding-left: 15px;">
+                                      <div class="name"><a>Mạnh Hải</a></div>
+                                      <div class="rate"><span class="nda-color">NDA 12.339.000</span> - Tuyệt vời (321 bình luận)</div>
+                                      <div class="time">20 tháng 7, 2018</div>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <hr class="hoz"> 
+                                <div class="clearfix"></div>
+                                <div class="col-xs-6 title_photo-recent">Ảnh gần đây</div>
+                                <div class="col-xs-6"><div class="pull-right"><a>Xem tất cả</a></div></div>
+                                <ul class="list_photo-recent">
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                </ul>
+                              </div>
+                              <div class="footer">
+                                <ul class="list-Interactive">
+                                  <li class="item col-md-4" style="padding: 0; padding-right: 0px;"><button class="like"><i alt="" class="_3-8_ img sp_CzQQKqd_AHg sx_11fbdc"></i> Thích</button></li>
+                                  <li class="item col-md-4" style="padding: 0;padding-right: 0px;"><button class="like follow"><i alt="" class="_3-8_ img sp_oWsDjTX0MQ1 sx_5f1e0c"></i> Theo dõi</button></li>
+                                  <li class="item col-md-4" style="padding: 0;padding-right: 5px;"><button class="like sms">Nhắn tin</button></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" alt="">
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-boxSb">
+                          <div class="wpPopupInfoPage">
+                            <div class="mainPopupInfoPage">
+                              <div class="head">
+                                <div class="overlay"></div>
+                                <div class="cover_op"></div>
+                                <div class="cover"><img src="../../images/cover.jpg" /></div>
+                                <div class="row head-content">
+                                  <div class="col-xs-3">
+                                    <img src="../../images/avt_sb.jpg" class="avt_page">
+                                  </div>
+                                  <div class="col-xs-7">
+                                    <div class="title">Thanh Xuân</div>
+                                    <div class="abbreviations">20 tháng 7, 2018</div>
+                                    <div class="detail">Trang web giải trí · 582 lượt thích</div>
+                                  </div>
+                                  <div class="col-xs-2 pr-0">
+                                    <div class="pull-right dropdown">
+                                      <button class="save_page" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="img sp_ZW3uj1Ck-wQ sx_3e220b"></i></button>
+                                      <ul class="dropdown-menu">
+                                        <li><a>Ẩn tin này</a></li>
+                                        <li><a class="document-report-button">Báo cáo tin này</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="main">
+                                <ul class="list-rate">
+                                  <li class="item">
+                                    <div class="col-xs-2" style="padding-right: 0;">
+                                      <img src="../../images/avt_sb.jpg" />
+                                    </div>
+                                    <div class="col-xs-9" style="padding-left: 15px;">
+                                      <div class="name"><a>Mạnh Hải</a></div>
+                                      <div class="rate"><span class="nda-color">NDA 12.339.000</span> - Tuyệt vời (321 bình luận)</div>
+                                      <div class="time">20 tháng 7, 2018</div>
+                                    </div>
+                                  </li>
+                                  <li class="item">
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-2" style="padding-right: 0;">
+                                      <img src="../../images/avt_sb.jpg" alt="">
+                                    </div>
+                                    <div class="col-xs-9" style="padding-left: 15px;">
+                                      <div class="name"><a>Mạnh Hải</a></div>
+                                      <div class="rate"><span class="nda-color">NDA 12.339.000</span> - Tuyệt vời (321 bình luận)</div>
+                                      <div class="time">20 tháng 7, 2018</div>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <hr class="hoz"> 
+                                <div class="clearfix"></div>
+                                <div class="col-xs-6 title_photo-recent">Ảnh gần đây</div>
+                                <div class="col-xs-6"><div class="pull-right"><a>Xem tất cả</a></div></div>
+                                <ul class="list_photo-recent">
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                  <li class="item"><a><img src="../../images/avt_sb.jpg" alt=""></a></li>
+                                </ul>
+                              </div>
+                              <div class="footer">
+                                <ul class="list-Interactive">
+                                  <li class="item col-md-4" style="padding: 0; padding-right: 0px;"><button class="like"><i alt="" class="_3-8_ img sp_CzQQKqd_AHg sx_11fbdc"></i> Thích</button></li>
+                                  <li class="item col-md-4" style="padding: 0;padding-right: 0px;"><button class="like follow"><i alt="" class="_3-8_ img sp_oWsDjTX0MQ1 sx_5f1e0c"></i> Theo dõi</button></li>
+                                  <li class="item col-md-4" style="padding: 0;padding-right: 5px;"><button class="like sms">Nhắn tin</button></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a href="#">Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a href="#">Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a href="#">Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a href="#">Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - </span>
+                              </div>
+                              
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="whiteBox mr-t-20 boxSidebar">
+                    <div class="nameRight">
+                      <div class="title-boxSb">
+                        Lời mời kết bạn
+                        <div class="pull-right"><a href="#" class="view-all">Xem tất cả</a></div>
+                      </div>
+
+                      <ul class="list-item-boxSb friend-request-list">
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>San Song</a></div>
+                              <div class="wpcmt">
+                                <span class="friend-cm">Nguyen Mai là bạn chung</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_4c291a"></i> Xác nhận bạn bè
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="whiteBox mr-t-20 boxSidebar">
+                    <div class="nameRight">
+                      <div class="title-boxSb">
+                        Trang được đề xuất
+                        <div class="pull-right"><a href="#" class="view-all">Xem tất cả</a></div>
+                      </div>
+
+                      <ul class="list-item-boxSb">
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+                              <div class="wpcmt">
+                                <span class="feel">121 người thích trang này</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+                              <div class="wpcmt">
+                                <span class="feel">121 người thích trang này</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li class="item-boxSb">
+                          <div class="button-close"></div>
+                          <div class="d-flex">
+                            <div class="img-item">
+                              <img src="../../images/avt_sb.jpg" />
+                            </div>
+                            <div class="info-item">
+                              <div class="title-item"><a>Cho nàng thêm xinh - Đồ lót nữ</a></div>
+                              <div class="wpcmt">
+                                <span class="name-cmt">NDA 12.989.098</span><span class="feel"> - Tuyệt vời </span>
+                              </div>
+                              <div class="wpcmt">
+                                <span class="feel">121 người thích trang này</span>
+                              </div>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7"></i> Thích
+                              </button>
+                              <button class="btn-accept-friend">
+                                <i class="_3-8_ img sp_H4WSI7nAN2z sx_6a88c7_0"></i> Không thích
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="mr-t-20 sponsor-suggestion">
+                    <h3 class="title">Tài trợ được đề xuất</h3>
+                    <ul class="sponsor-list">
+                      <li class="sponsor-item">
+                        <a class="close">
+                          <i class="fa fa-times"></i>
+                        </a>
+                        <a class="image-wrapper image-21-9 cover">
+                          <img src="./../../images/avt_sb.jpg" alt="">
+                        </a>
+                        <h4 class="title"><a>Cộng Đồng Cư Dân Chung Cư HH1, HH2, HH3, HH1, HH2, HH3, HH4 Linh Đàm</a></h4>
+                        <div class="description">
+                          <a class="number">NDA 12.989.098</a>
+                          - Tuyệt vời (111 bình luận)
+                        </div>
+                        <div class="content">
+                          Khi họ mới kết hôn, cuộc sống còn nhiều thiếu thốn, thậm chí trong nhà đến cái tivi cũng không có, nhưng cô không bao giờ hối tiếc vì đã lấy
+                        </div>
+                      </li>
+                      <li class="sponsor-item">
+                        <a class="close">
+                          <i class="fa fa-times"></i>
+                        </a>
+                        <a class="image-wrapper image-21-9 cover">
+                          <img src="./../../images/avt_sb.jpg" alt="">
+                        </a>
+                        <h4 class="title">Cộng Đồng Cư Dân Chung Cư HH1, HH2, HH3, HH1, HH2, HH3, HH4 Linh Đàm</h4>
+                        <div class="description">
+                          <a class="number">NDA 12.989.098</a>
+                          - Tuyệt vời (111 bình luận)
+                        </div>
+                        <div class="content">
+                          Khi họ mới kết hôn, cuộc sống còn nhiều thiếu thốn, thậm chí trong nhà đến cái tivi cũng không có, nhưng cô không bao giờ hối tiếc vì đã lấy
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="mr-t-20">
+                    <footer class="footer aside-footer">
+                      <div class="whiteBox">
+                        <div class="d-flex">
+                          <ul class="language-list footer__nav mb-0">
+                            <li class="active"><a>Tiếng Việt</a></li>
+                            <li><a>English (US)</a></li>
+                            <li><a>中文(台灣)</a></li>
+                            <li><a>Español</a></li>
+                            <li><a>Português (Brasil)</a></li>
+                          </ul>
+                          <button class="add-language-button btn align-self-center"><span class="glyphicon glyphicon-plus"></span></button>
+                        </div>
+                      </div>
+                      <div>
+                        <nav>
+                          <ul class="footer__nav footer--dark__nav">
+                            <li><a>Quyền riêng tư</a></li>
+                            <li><a>Điều khoản</a></li>
+                            <li><a>Quảng cáo</a></li>
+                            <li><a>Lựa chọn quảng cáo<i class="sx_90e325"></i></a></li>
+                            <li><a>Cookie</a></li>
+                            <li>
+                              <a>Xem thêm <span class="caret"></span></a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <p class="copyright">NDA Rank © 2017</p>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="contact-list-sidebar">
+        <div class="contact-list-sidebar__inner">
+          <div class="contact-list-sidebar__main">
+            <div class="contact-list-container">
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center ">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&amp;_nc_ht=scontent.fhan5-2.fna&amp;oh=4a9897bf47fccdcbee2ec0d183654a92&amp;oe=5C76CAE6" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Hà Bầu</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Nguyễn Tấn Đạt</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center ">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&amp;_nc_ht=scontent.fhan5-2.fna&amp;oh=4a9897bf47fccdcbee2ec0d183654a92&amp;oe=5C76CAE6" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Hà Bầu</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Nguyễn Tấn Đạt</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&amp;_nc_ht=scontent.fhan5-2.fna&amp;oh=4a9897bf47fccdcbee2ec0d183654a92&amp;oe=5C76CAE6" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Hà Bầu</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Nguyễn Tấn Đạt</span>
+                    </div>
+                    <span class="online-status offline-minutes">15 phút</span>
+                  </a>
+                </li>
+                <li class="contact-item">
+                  <a class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="cover-container">
+                        <div class="cover">
+                          <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&amp;_nc_ht=scontent.fhan5-2.fna&amp;oh=4a9897bf47fccdcbee2ec0d183654a92&amp;oe=5C76CAE6" class="circle" />
+                        </div>
+                      </div>
+                      <span class="name">Hà Bầu</span>
+                    </div>
+                    <span class="online-status">
+                      <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="group-conversation">
+                <h3 class="title">Cuộc trò chuyện nhóm</h3>
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--2">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">Bầu, Đạt</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--3">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p32x32/10849989_1534658760108533_6418436980858452946_n.jpg?_nc_cat=100&_nc_ht=scontent.fhan5-3.fna&oh=f909f9772067addace851dc29b7bf059&oe=5C744FCC" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">NDA tuyển dụng</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--2">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">Bầu, Đạt</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--3">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p32x32/10849989_1534658760108533_6418436980858452946_n.jpg?_nc_cat=100&_nc_ht=scontent.fhan5-3.fna&oh=f909f9772067addace851dc29b7bf059&oe=5C744FCC" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">NDA tuyển dụng</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--2">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">Bầu, Đạt</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--3">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p32x32/10849989_1534658760108533_6418436980858452946_n.jpg?_nc_cat=100&_nc_ht=scontent.fhan5-3.fna&oh=f909f9772067addace851dc29b7bf059&oe=5C744FCC" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">NDA tuyển dụng</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--2">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">Bầu, Đạt</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="contact-item">
+                    <a class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="cover-container cover-container--3">
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p50x50/37348035_10212985529175256_7763331250705661952_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=797ef18e3c3fabde37332202e0812d4e&oe=5C3DFE7F" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.0-1/p32x32/26815233_10208611501044781_8317648352343803209_n.jpg?_nc_cat=102&_nc_ht=scontent.fhan5-2.fna&oh=4a9897bf47fccdcbee2ec0d183654a92&oe=5C76CAE6" class="circle" />
+                          </div>
+                          <div class="cover">
+                            <img src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.0-1/p32x32/10849989_1534658760108533_6418436980858452946_n.jpg?_nc_cat=100&_nc_ht=scontent.fhan5-3.fna&oh=f909f9772067addace851dc29b7bf059&oe=5C744FCC" class="circle" />
+                          </div>
+                        </div>
+                        <span class="name">NDA tuyển dụng</span>
+                      </div>
+                      <span class="online-status">
+                        <svg viewBox="0 0 512 512" class="online-icon svg-inline--fa fa-circle fa-w-16 fa-2x"><path fill="#0da962" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contact-list-sidebar__footer">
+            <span><i class="fa fa-search"></i></span>
+            <input type="text" placeholder="Tìm kiếm" class="search-input" />
+            <span class="clear-search-input d-none">&#x2715;</span>
+            <ul class="action-list ml-auto">
+              <li class="action-item dropdown">
+                <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="contact-list-sidebar-setting">
+                  <a data-toggle="tooltip" title="Tùy chọn" class="action-button">
+                    <i class="sn-icon sn-icon--2x sn-setting--v2"></i>
+                  </a>
+                </div>
+                <ul class="contact-list-sidebar-setting dropdown-menu dropdown-menu-right" aria-labelledby="contact-list-sidebar-setting">
+                  <li class="option active"><a>Âm thanh trò chuyện</a></li>
+                  <li class="option"><a>Biểu tượng cảm xúc</a></li>
+                  <li class="option"><a>Cài đặt chặn</a></li>
+                  <li class="divider" role="separator"></li>
+                  <li class="option"><a>Thu gọn tất cả các tab trò chuyện</a></li>
+                  <li class="option"><a>Đóng tất cả các tab trò chuyện</a></li>
+                  <li class="option"><a>Ẩn thanh bên</a></li>
+                  <li class="option"><a>Ẩn các trang liên hệ</a></li>
+                  <li class="option"><a>Ẩn nhóm</a></li>
+                  <li class="option"><a>Ẩn tính năng chat</a></li>
+                  <li class="option"><a>Tắt tính năng gọi video/thoại</a></li>
+                </ul>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Tin nhắn mới" class="action-button">
+                  <i class="sn-icon sn-icon--2x sn-edit"></i>
+                </a>
+              </li>
+              <li class="action-item">
+                <a data-toggle="tooltip" title="Tạo nhóm mới" class="action-button">
+                  <i class="sn-icon sn-icon--2x sn-add-user-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- document report modal -->
+    <div id="document-report-modal" class="modal modal--center fade document-report-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="title">Gửi phản hồi về tài liệu này</h4>
+            <a type="button" class="d-flex" data-dismiss="modal">
+              <i class="sn-icon sn-icon--2x sn-close--v3"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <form class="document-report-form">
+              <div class="description">
+                <img src="./../../images/social-network/orange-square-exclamation-point.png" />
+                <div>Dựa trên phản hồi của bạn, chúng tôi sẽ phát hiện được nếu có gì đó không ổn</div>
+              </div>
+              <ul class="preset-report-option-list">
+                <li class="preset-report-option-item active">
+                  <button>Ảnh khỏa thân</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Bạo lực</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Quấy rối</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Tự tử/ Tự gây thương tích</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Spam</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Bán hàng trái phép</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Ngôn từ gây thù ghét</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Khủng bố</button>
+                </li>
+                <li class="preset-report-option-item">
+                  <button>Không muốn nhìn thấy</button>
+                </li>
+              </ul>
+              <div class="hint">
+                <i class="sn-icon sn-icon--3x sn-info-circle"></i>
+                <span>Nếu bạn nhận thấy ai đó đang gặp nguy hiểm, đừng chần chừ mà hãy báo ngay cho dịch vụ cấp cứu tại địa phương</span>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default send-report-button" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end document report modal -->
+
+  </body>
+</html>
