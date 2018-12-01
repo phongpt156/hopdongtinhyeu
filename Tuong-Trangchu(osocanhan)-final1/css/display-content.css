@@ -32,13 +32,6 @@ body {
 .list-item-boxSb .item-boxSb .info-item {
     padding-right: 0;
 }
-.cmtTxt .detailCmt .content {
-    flex-wrap: wrap;
-    display: inline-flex;
-}
-.cmtTxt .detailCmt .content > * {
-    margin: 3px;
-}
 .cmtTxt .detailCmt .reaction {
     padding: 0 5px;
     display: inline-flex;
@@ -314,15 +307,27 @@ body {
     display: none;
 }
 .cmtTxt .detailCmt:hover .comment-action {
-    display: flex;
+    display: inline-block;
+}
+.comment-action-popover {
+    max-width: fit-content;
 }
 .comment-action-popover .comment-action-list a {
     padding: 3px 0;
-    display: block;
+    display: flex;
     color: #72767f;
+    align-items: center;
 }
 .comment-action-popover .comment-action-list a:hover {
     text-decoration: none;
+}
+.comment-action-popover .comment-action-list a > i {
+    margin-right: 5px;
+}
+
+.media .replyBox {
+    padding-top: 5px;
+    padding-left: 7px;
 }
 
 .chooseCV .cv_select .media-body p.modal_statis .nda_stt {

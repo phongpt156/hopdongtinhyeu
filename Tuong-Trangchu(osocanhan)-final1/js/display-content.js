@@ -170,7 +170,7 @@ $(document).ready(function () {
     }.bind(this), 100);
   });
 
-  $('.comment-action').popover({
+  $('.comment-action.mine').popover({
     trigger: 'manual',
     html : true,
     placement: 'bottom',
@@ -195,13 +195,42 @@ $(document).ready(function () {
   }).click(function (e) {
     e.stopPropagation();
 
-    $('.comment-action').not($(this)).popover('hide').removeClass('d-flex');
-    $(this).addClass('d-flex');
+    $('.comment-action').not($(this)).popover('hide').removeClass('d-inline-block');
+    $(this).toggleClass('d-inline-block');
+    $(this).popover('toggle');
+  });
+
+  $('.comment-action.yours').popover({
+    trigger: 'manual',
+    html : true,
+    placement: 'bottom',
+    template: `
+      <div class="popover comment-action-popover" role="tooltip">
+        <div class="arrow"></div>
+        <div class="popover-content"></div>
+      </div>
+    `,
+    content: `
+      <div class="comment-action-list">
+        <a class="comment-action-item">
+          <i class="sn-icon sn-icon--2x sn-close-square"></i>
+          <span>Ẩn bình luận</span>
+        </a>
+        <a class="comment-action-item">
+          <span>Gửi phản hồi hoặc báo cáo bình luân này</span>
+        </a>
+      </div>
+    `
+  }).click(function (e) {
+    e.stopPropagation();
+
+    $('.comment-action').not($(this)).popover('hide').removeClass('d-inline-block');
+    $(this).toggleClass('d-inline-block');
     $(this).popover('toggle');
   });
 
   $(document).on('click', '.comment-action-popover .comment-action-item', function () {
-    $('.comment-action').popover('hide').removeClass('d-flex');
+    $('.comment-action').popover('hide').removeClass('d-inline-block');
   });
 
   $('.send-cv-button').click(function () {
@@ -318,6 +347,11 @@ $(document).ready(function () {
         $(this).popover('hide');
       }
     }.bind(this), 100);
+  });
+
+  $(document).on('click', '.hide-reply-button', function () {
+    $(this).addClass('d-none');
+    $(this).closest('.media-body').find('.reply-list').removeClass('d-none');
   });
 
   new PerfectScrollbar('.reaction-detail-modal .modal-body', {

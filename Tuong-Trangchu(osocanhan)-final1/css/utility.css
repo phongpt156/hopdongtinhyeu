@@ -31,6 +31,9 @@
 .d-block {
     display: block !important;
 }
+.d-inline-block {
+    display: inline-block !important;
+}
 .d-none {
     display: none !important;
 }
@@ -289,4 +292,13 @@
 }
 .vertical-top {
     vertical-align: top !important;
+}
+.vertical-middle {
+    vertical-align: middle !important;
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: flex;
+    }
 }

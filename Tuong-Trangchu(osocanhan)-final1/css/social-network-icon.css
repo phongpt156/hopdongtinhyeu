@@ -51,6 +51,10 @@ i.sn-close--v3 {
     background-position: -85px -270px;
     background-image: url(./../images/social-network/list-icon-11.png);
 }
+i.sn-close-square {
+    background-position: -51px -252px;
+    background-image: url(./../images/social-network/list-icon-10.png);
+}
 i.sn-photo {
     background-position: -68px -556px;
     background-image: url(./../images/social-network/list-icon-1.png);
