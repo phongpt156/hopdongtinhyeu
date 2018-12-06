@@ -15,7 +15,6 @@ header.header .navbar-brand:hover {
 }
 header.header .navbar-default {
     border-bottom: none;
-    /* background-color: transparent; */
 }
 
 .trial-registration-form {
@@ -73,7 +72,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     background-color: #cfcfcf;
 }
 
-.section .main__inner {
+[class^=section] .main__inner {
     padding-top: calc(100vh - 546px);
     padding-right: 15px;
     padding-left: 15px;
@@ -112,42 +111,51 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     margin-top: 1.5em;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1em;
-    grid-auto-rows: 1fr;
     display: grid;
 }
 .content-block-list .content-block--span-2 {
     grid-row: span 2;
 }
-.content-block-list .content-block:nth-child(6n+1) {
+.content-block-list .content-block--span-3 {
+    grid-row: span 3;
+}
+.content-block-list .content-block--span-4 {
+    grid-row: span 4;
+}
+.content-block-list .content-block--span-5 {
+    grid-row: span 5;
+}
+.content-block-list [class^=content-block]:nth-child(6n+1) {
     background-color: #75bbc4;
 }
-.content-block-list .content-block:nth-child(6n+2) {
+.content-block-list [class^=content-block]:nth-child(6n+2) {
     background-color: #963ff2;
 }
-.content-block-list .content-block:nth-child(6n+3) {
+.content-block-list [class^=content-block]:nth-child(6n+3) {
     background-color: #d69e47;
 }
-.content-block-list .content-block:nth-child(6n+4) {
+.content-block-list [class^=content-block]:nth-child(6n+4) {
     background-color: #ff62cd;
 }
-.content-block-list .content-block:nth-child(6n+5) {
+.content-block-list [class^=content-block]:nth-child(6n+5) {
     background-color: #a1ac88;
 }
-.content-block-list .content-block:nth-child(6n+6) {
+.content-block-list [class^=content-block]:nth-child(6n+6) {
     background-color: #426e6e;
 }
 
-.content-block-list .content-block:nth-child(6n+1) .title, .content-block-list .content-block:nth-child(6n+1) .description, .content-block-list .content-block:nth-child(6n+2) .title, .content-block-list .content-block:nth-child(6n+2) .description {
+.content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+1) .description, .content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+2) .description {
     color: #000;
 }
-.content-block-list .content-block:nth-child(6n+2) .title, .content-block-list .content-block:nth-child(6n+2) .description, .content-block-list .content-block:nth-child(6n+3) .title, .content-block-list .content-block:nth-child(6n+3) .description, .content-block-list .content-block:nth-child(6n+4) .title, .content-block-list .content-block:nth-child(6n+4) .description, .content-block-list .content-block:nth-child(6n+6) .title, .content-block-list .content-block:nth-child(6n+6) .description {
+.content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+2) .description, .content-block-list [class^=content-block]:nth-child(6n+3) .title, .content-block-list [class^=content-block]:nth-child(6n+3) .description, .content-block-list [class^=content-block]:nth-child(6n+4) .title, .content-block-list [class^=content-block]:nth-child(6n+4) .description, .content-block-list [class^=content-block]:nth-child(6n+6) .title, .content-block-list [class^=content-block]:nth-child(6n+6) .description {
     color: #fff;
 }
 
-.section-2 .content-block {
-    padding: 2.1875em;
+.section-2 [class^=content-block] {
+    padding: 1.5625em;
 }
-.section-2 .content-block .title {
+.section-2 [class^=content-block] .title {
+    text-transform: uppercase;
     font-size: 1.125rem;
 }
 
@@ -173,7 +181,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
         padding-right: 6.25em;
         grid-template-columns: repeat(4, 1fr);
     }
-    .section .main__inner {
+    [class^=section] .main__inner {
         padding-right: 2em;
         padding-left: 2em;
     }
@@ -187,7 +195,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     }
 }
 @media (min-width: 1200px) {
-    .section .main__inner {
+    [class^=section] .main__inner {
         padding-right: 4.0625em;
         padding-left: 9.6875em;
     }
