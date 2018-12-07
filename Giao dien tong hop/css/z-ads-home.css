@@ -16,6 +16,9 @@ header.header .navbar-brand:hover {
 header.header .navbar-default {
     border-bottom: none;
 }
+.no-transform {
+    transform: unset !important;
+}
 
 .trial-registration-form {
     height: 100%;
@@ -62,6 +65,9 @@ header.header .navbar-right a {
 header.header .navbar-right a, header.header .navbar-right a:hover {
     color: #767676;
 }
+header.header .navbar-right a:hover {
+    background-color: transparent;
+}
 
 #pp-nav li[data-tooltip] a span {
     width: 14px;
@@ -73,7 +79,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
 }
 
 [class^=section] .main__inner {
-    padding-top: calc(100vh - 546px);
+    padding-top: calc(100vh - 620.5px);
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -108,7 +114,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     color: #7c7c7c;
 }
 .content-block-list {
-    margin-top: 1.5em;
+    margin-top: .626em;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1em;
     display: grid;
@@ -144,19 +150,41 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     background-color: #426e6e;
 }
 
-.content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+1) .description, .content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+2) .description {
+.content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+6) .title {
+    font-size: 1.125rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+4) .title {
+    font-size: 1.625rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+3) .title {
+    font-size: 1.5rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+5) .title {
+    font-size: .75rem;
+}
+
+.content-block-list [class^=content-block]:nth-child(6n+1) .description, .content-block-list [class^=content-block]:nth-child(6n+6) .description , .content-block-list [class^=content-block]:nth-child(6n+3) .description {
+    font-size: 1rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+4) .description {
+    font-size: .875rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+5) .description {
+    font-size: .75rem;
+}
+
+.content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+1) .description, .content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+2) .description, .content-block-list [class^=content-block]:nth-child(6n+5) .title, .content-block-list [class^=content-block]:nth-child(6n+5) .description {
     color: #000;
 }
 .content-block-list [class^=content-block]:nth-child(6n+2) .title, .content-block-list [class^=content-block]:nth-child(6n+2) .description, .content-block-list [class^=content-block]:nth-child(6n+3) .title, .content-block-list [class^=content-block]:nth-child(6n+3) .description, .content-block-list [class^=content-block]:nth-child(6n+4) .title, .content-block-list [class^=content-block]:nth-child(6n+4) .description, .content-block-list [class^=content-block]:nth-child(6n+6) .title, .content-block-list [class^=content-block]:nth-child(6n+6) .description {
     color: #fff;
 }
 
-.section-2 [class^=content-block] {
+.section-2 [class^=content-block--] {
     padding: 1.5625em;
 }
 .section-2 [class^=content-block] .title {
     text-transform: uppercase;
-    font-size: 1.125rem;
 }
 
 @media (min-width: 576px) {
@@ -173,7 +201,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
     }
     header.header .navbar-right li:not(:last-child) a span {
         padding-right: 5px;
-        border-right: 3px solid #767676;
+        border-right: 1px solid #767676;
     }
 }
 @media (min-width: 992px) {
@@ -182,6 +210,7 @@ header.header .navbar-right a, header.header .navbar-right a:hover {
         grid-template-columns: repeat(4, 1fr);
     }
     [class^=section] .main__inner {
+        padding-top: calc(100vh - 546px);
         padding-right: 2em;
         padding-left: 2em;
     }

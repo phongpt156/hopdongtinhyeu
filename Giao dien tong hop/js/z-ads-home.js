@@ -17,6 +17,7 @@ $(document).ready(function () {
     if (window.matchMedia('(min-width: 992px)').matches) {
       $(window).scrollTop(0);
       $.fn.pagepiling.setMouseWheelScrolling(true);
+      $('.pp-section').removeClass('no-transform');
       $('header.header .navbar-fixed-top').css({
         position: 'fixed',
         'background-color': 'transparent',
@@ -27,6 +28,7 @@ $(document).ready(function () {
       $('.pp-section').css('position', 'absolute');
     } else {
       $.fn.pagepiling.setMouseWheelScrolling(false);
+      $('.pp-section').addClass('no-transform');
       $('header.header .navbar-fixed-top').css({
         position: 'static',
         'background-color': '#000',
