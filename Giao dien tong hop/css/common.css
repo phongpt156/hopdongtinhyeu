@@ -55,12 +55,12 @@ svg:not(:root) {
 img.circle {
     border-radius: 50%;
 }
-.image-wrapper {
+.p-image-wrapper {
     width: 100%;
     position: relative;
     display: block;
 }
-.image-wrapper > img {
+.p-image-wrapper > img {
     width: 100%;
     top: 0;
     position: absolute;
