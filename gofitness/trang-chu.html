@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="./dist/libraries/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./dist/css/common.css" />
+  <link rel="stylesheet" href="./dist/css/utilities.css" />
+  <link rel="stylesheet" href="./dist/css/header.css" >
+  <link rel="stylesheet" href="./dist/css/homepage.css" />
+  <script src="./dist/libraries/jquery/jquery.min.js"></script>
+  <script src="./dist/libraries/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./dist/libraries/font-awesome/js/font-awesome.js"></script>
+  <script src="./dist/libraries/font-awesome/js/solid.js"></script>
+  <script src="./dist/libraries/font-awesome/js/brand.js"></script>
+  <script src="./dist/libraries/jssor/js/jssor-slider.min.js"></script>
+  <script src="./dist/js/header.js"></script>
+  <script src="./dist/js/homepage.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">
+            <img src="./dist/images/logo.png" alt="" />
+          </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                Tiếng Việt
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Language
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                        Tiếng Việt
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/uk.svg" alt="Vietnam icon flag" />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                VNĐ
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Currency
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">VND</span>
+                        Việt Nam Đồng
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">USD</span>
+                        US Dollar
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Đăng nhập
+              </button>
+              <div class="dropdown-menu authentication-dialog">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  <a>Đăng nhập</a>
+                </div>
+                <div class="dropdown-menu__body">
+                  <form class="authentication-form">
+                    <p class="text-uppercase">Bạn có thể sử dụng tài khoản:</p>
+                    <div class="login-social-network">
+                      <a class="login-social-button login-facebook-button">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                      </a>
+                      <a class="login-social-button login-google-button">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                      </a>
+                    </div>
+                    <p class="text-uppercase">Hoặc đăng nhập sử dụng tài khoản Gofitness:</p>
+                    <div class="form-group">
+                      <input type="text" placeholder="Email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Mật khẩu" class="form-control" />
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                      <div class="save-pass">
+                        <label class="d-flex font-weight-normal">
+                          <input type="checkbox" class="mr-1" />
+                          Lưu mật khẩu
+                        </label>
+                      </div>
+                      <a class="forget-pass">Quên mật khẩu?</a>
+                    </div>
+                    <button class="btn submit-button">Đăng nhập</button>
+                    <hr />
+                    <div class="authentication-form__footer">
+                      <p>Chưa có tài khoản? <a class="register">Đăng ký</a></p>
+                      <p>
+                        Bạn là khách hàng doanh nghiệp?
+                        <a class="register">Đăng nhập tại đây</a>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Đăng ký
+              </button>
+              <div class="dropdown-menu authentication-dialog">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  <a>Đăng ký</a>
+                </div>
+                <div class="dropdown-menu__body">
+                  <form class="authentication-form">
+                    <p>Đăng ký mới tài khoản GOFITNESS:</p>
+                    <div class="form-group">
+                      <input type="text" placeholder="Tài khoản, email..." class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Mật khẩu" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Nhập lại mật khẩu" class="form-control" />
+                    </div>
+                    <button class="btn submit-button">Đăng ký</button>
+                    <hr />
+                    <div class="authentication-form__footer">
+                      <p>Đã có tài khoản? <a class="login">Đăng nhập</a></p>
+                      <p class="term">Qua việc đăng ký tài khoản GOFITNESS, bạn đồng ý hoàn toàn với các <a>Điều khoản Điều kiện</a>&nbsp; cũng như các <a>Chính sách bảo mật</a>&nbsp; của GOFITNESS.</p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="hotline navbar-right__menu-item">
+              <a>
+                <p class="top-hotline247">Hotline <strong>miễn phí 24/7</strong></p>
+                <p class="top-hotline"><i class="fas fa-phone"></i><strong>1800-2032</strong></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="banner">
+      <div id="jssor-banner" style="position:relative;width:1300px;height:330px;overflow:hidden;visibility:hidden;">
+        <div data-u="slides" style="position:relative;width:1300px;height:330px;overflow:hidden;">
+          <div>
+            <img data-u="image" src="./dist/images/homepage-banner.jpg" />
+          </div>
+          <div>
+            <img data-u="image" src="./dist/images/homepage-banner.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-form-container container">
+      <label class="title">Tìm phòng tập hoặc huấn luyện viên cho bạn</label>
+      <form class="search-form">
+        <div class="form-group">
+          <input type="text" placeholder="Tỉnh thành" class="form-control" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Quận/ huyện" class="form-control" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Môn tập" class="form-control" />
+        </div>
+        <button class="btn search-button btn--lg btn--orange">Tìm kiếm</button>
+      </form>
+    </div>
+
+    <div class="main container">
+      <div class="reason-list row mx-0">
+        <div class="reason-item col-sm-4">
+          <div class="reason-item__header">
+            <img src="./dist/images/price.jpg" />
+          </div>
+          <div class="reason-item__body">
+            <h3 class="title">Rẻ hơn giá rẻ nhất, ngại gì ko đặt?</h3>
+            <p class="description">
+              Ở đâu giá rẻ hơn, <span class="text-orange"><span class="font-weight-bold--lighter">GoFitness.vn</span> hoàn tiền.</span>Khách hàng<br />vẫn được mua với giá rẻ hơn giá rẻ nhất
+              <a class="resaon-detail-button">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="reason-item col-sm-4">
+          <div class="reason-item__header">
+            <img src="./dist/images/calendar.jpg" />
+          </div>
+          <div class="reason-item__body">
+            <h3 class="title">Chủ động lịch học tập</h3>
+            <p class="description">
+              <span class="text-orange font-weight-bold--lighter">Bạn Điều chỉnh lịch tập dễ dàng</span> theo thời gian học tập<br />và làm việc
+              <a class="resaon-detail-button">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="reason-item col-sm-4">
+          <div class="reason-item__header">
+            <img src="./dist/images/support.jpg" />
+          </div>
+          <div class="reason-item__body">
+            <h3 class="title">Hỗ trợ miễn phí 24/7</h3>
+            <p class="description">
+              Gọi ngay 1800-2032 kể cả 2h sáng để được hỗ trợ.<br />Hoàn toàn <span class="text-orange">không - mất - phí</span>
+              <a class="resaon-detail-button">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile-container popular-subject-container">
+        <div class="tile__header">
+          <h3 class="title">Những môn tập phổ biến</h3>
+          <span class="separator"></span>
+        </div>
+        <div class="tile__body">
+          <div class="popular-subject-list">
+            <div class="popular-subject-item popular-subject-item--span-2">
+              <div class="image__wrapper image-1-2">
+                <div class="overlay"></div>
+                <div class="text-overlay">Gym</div>
+                <img src="./dist/images/subject-1.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item">
+              <div class="image__wrapper image-1-1">
+                <div class="overlay"></div>
+                <div class="text-overlay">Aerobic</div>
+                <img src="./dist/images/subject-2.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item">
+              <div class="image__wrapper image-1-1">
+                <div class="overlay"></div>
+                <div class="text-overlay">Bóng rổ</div>
+                <img src="./dist/images/subject-3.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item popular-subject-item--span-2">
+              <div class="image__wrapper image-1-2">
+                <div class="overlay"></div>
+                <div class="text-overlay">Bóng đá</div>
+                <img src="./dist/images/subject-4.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item popular-subject-item--span-2">
+              <div class="image__wrapper image-1-2">
+                <div class="overlay"></div>
+                <div class="text-overlay">Yoga</div>
+                <img src="./dist/images/subject-5.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item popular-subject-item--span-2">
+              <div class="image__wrapper image-1-2">
+                <div class="overlay"></div>
+                <div class="text-overlay">Dance</div>
+                <img src="./dist/images/subject-6.jpg" />
+              </div>
+            </div>
+            <div class="popular-subject-item popular-subject-item--span-2">
+              <div class="image__wrapper image-1-2">
+                <div class="overlay"></div>
+                <div class="text-overlay">Boxing</div>
+                <img src="./dist/images/subject-6.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile-container register-form-container">
+        <div class="tile__header">
+          <h3 class="title">Đăng ký ngay để được tư vấn</h3>
+          <span class="separator"></span>
+        </div>
+        <div class="tile__body">
+          <form class="register-form">
+            <div class="row mx-0">
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control col-md-3" placeholder="Họ tên" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control col-md-3" placeholder="Năm sinh" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control col-md-3" placeholder="Điện thoại" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control col-md-3" placeholder="Nơi ở hiện nay" />
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="register-button btn btn--orange">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="footer-head">
+          <span>Dành cho các phòng tập, PT, Huấn luyện viên muốn hợp tác với Go Fitness</span>
+        </div>
+        <form class="register-form">
+          <div class="row mx-0">
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Tên phòng tập" />
+            </div>
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Điện thoại phòng tập" />
+            </div>
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Website phòng tập" />
+            </div>
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Địa điểm" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Họ tên" />
+            </div>
+            <div class="form-group col-md-3">
+              <input type="text" class="form-control" placeholder="Điện thoại người liên hệ" />
+            </div>
+            <button class="register-button btn btn--orange">Đăng ký</button>
+          </div>
+        </form>
+        <hr style="border-color: #d8d8d8" />
+        <div class="about-gofitness">
+          <ul class="nav">
+            <li><a>Về chúng tôi</a></li>
+            <li><a>Liên hệ</a></li>
+            <li><a>Điều khoản sử dụng</a></li>
+            <li><a>Chính sách bảo mật</a></li>
+            <li><a>Dịch vụ</a></li>
+            <li><a>Hợp tác</a></li>
+          </ul>
+          <ul class="nav flex-row">
+            <li><a class="logo-appstore"></a></li>
+            <li class="mt-0 ml-2"><a class="logo-googleplay"></a></li>
+          </ul>
+          <ul class="nav">
+            <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
+            <li><p>Phòng 1724, tòa nhà HH2B, bán đảo Linh Đàm Hoàng Mai, Hà Nội</p></li>
+            <li><p class="mb-0">Hotline: 0936 968 000</p></li>
+            <li class="mt-0"><p>Email: info@gofitness.vn</p></li>
+            <li><p class="mb-0">Khiếu nại và góp ý: 024 6260 4822</p></li>
+            <li class="mt-0"><p>Làm việc từ 8h - 17h30 từ thứ 2 đến thứ 6</p></li>
+          </ul>
+          <ul class="nav">
+            <li><p class="mb-0">Đăng ký nhận tin để có thể nhận những gói tập <span class="text-orange">với mức giá rẻ bất ngờ</span></p></li>
+            <li class="align-self-stretch">
+              <form class="receive-notify-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nhập địa chỉ email" />
+                  <button class="btn btn--sm submit-button">Đăng ký</button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="copyright">
+            <span>Bản quyền thuộc về gofitness.vn</span>
+            <a class="ministry-of-industry-and-trade"></a>
+          </div>
+          <div class="social-network">
+            <a><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a><i class="fab fa-google-plus-square"></i>GooglePlus</a>
+            <a><i class="fab fa-twitter-square"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

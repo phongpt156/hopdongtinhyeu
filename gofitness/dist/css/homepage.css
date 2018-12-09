@@ -1,0 +1,304 @@
+body {
+    --orange: #ff8916;
+}
+.text-orange {
+    color: var(--orange) !important;
+}
+.form-group .form-control {
+    border: 1px solid #cccccc;
+    border-radius: inherit;
+    height: 2.4375rem;
+    padding: .625rem .9375rem;
+}
+.btn {
+    border-radius: inherit;
+    padding: .5625rem 3.625rem;
+    transition: background .2s ease-in-out;
+}
+.btn:active {
+    box-shadow: none;
+}
+.btn--sm {
+    padding: .5rem 1.4375rem;
+}
+.btn--lg {
+    line-height: 1.0625rem;
+    padding: .625rem 5.75rem;
+}
+.btn--orange {
+    background-color: var(--orange);
+    color: #fff;
+}
+.btn--orange:hover, .btn--orange:focus {
+    background-color: #ffc317;
+    color: #fff;
+}
+
+.banner  {
+    cursor: pointer;
+}
+.banner img {
+    object-fit: cover;
+}
+
+.body {
+    background-color: #f1f1f1;
+    padding-bottom: 4.0625rem;
+}
+.search-form-container {
+    background-color: #fff;
+    padding: 2.0625rem 2.6875rem;
+    transform: translateY(-10%);
+}
+.search-form-container label.title {
+    color: #44444f;
+    margin-bottom: 1.5625rem;
+}
+.search-form-container .search-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-form-container .search-form > * {
+    margin-bottom: .625rem;
+}
+.search-form-container .search-form .form-group:not(:last-child) {
+    margin-right: .625rem;
+}
+
+.reason-list .reason-item {
+    color: #44444f;
+    text-align: center;
+}
+.reason-list .reason-item__body .title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.reason-list .reason-item__body .description {
+    margin-bottom: 0;
+}
+.reason-list .reason-item__body .resaon-detail-button {
+    background-color: var(--orange);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: #fff;
+    padding: .1875rem .5rem;
+    transition: all .2s ease-in-out;
+}
+.reason-list .reason-item__body .resaon-detail-button:hover {
+    background-color: transparent;
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.tile-container {
+    margin: 3.125rem 0 0;
+}
+.tile__header {
+    text-align: center;
+}
+.tile__header .title {
+    color: #7d7d7d;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tile__header .separator {
+    border-top: 2px solid #d8d8d8;
+    display: inline-flex;
+    width: 8.75rem;
+}
+.popular-subject-list {
+    display: grid;
+    grid-gap: .625rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 1.125rem;
+}
+.popular-subject-list .popular-subject-item--span-2 {
+    grid-column: span 2;
+}
+.popular-subject-list .popular-subject-item .image__wrapper {
+    cursor: pointer;
+}
+.popular-subject-list .popular-subject-item .overlay {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: .45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.popular-subject-list .popular-subject-item .text-overlay {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-decoration: underline;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.body .register-form {
+    margin-top: 1.25rem;
+    padding: 0 1.75rem;
+}
+.body .register-form .form-group {
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+}
+
+footer.footer {
+    background: url(./../images/sprite-home.png) center -128px no-repeat;
+    background-color: #f1f1f1;
+    padding-top: 6.125rem;
+}
+footer.footer .top-footer {
+    background-color: #fff;
+    border-top: 2px solid #ff8917;
+    padding: 0 0 1.25rem;
+}
+footer.footer .footer-head {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    color: #666;
+}
+footer.footer .footer-head span {
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 2.5rem;
+    transform: translateY(5px);
+}
+
+footer.footer .register-form {
+    padding: 0 1.75rem;
+}
+footer.footer .register-form .form-group {
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+}
+footer.footer .register-form .row:last-child {
+    text-align: center;
+}
+footer.footer .about-gofitness a, footer.footer .about-gofitness p {
+    color: #797979;
+}
+.about-gofitness {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-gofitness .nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.about-gofitness .nav:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.about-gofitness .nav > li + li {
+    margin-top: .5rem;
+}
+.about-gofitness .nav > li > a {
+    padding: 0;
+}
+.about-gofitness .nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+.about-gofitness .logo-appstore {
+    background: url(./../images/sprite-home.png) -341px 0 no-repeat;
+    height: 36px;
+    width: 122px;
+}
+.about-gofitness .logo-googleplay {
+    background: url(./../images/sprite-home.png) -463px 0 no-repeat;
+    height: 36px;
+    width: 122px;
+}
+.about-gofitness .receive-notify-form .form-group {
+    display: flex;
+}
+.about-gofitness .receive-notify-form .form-group .submit-button {
+    background-color: #fff;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    padding-bottom: .4375rem;
+    padding-top: .4375rem;
+}
+
+footer.footer .bottom-footer {
+    background-color: var(--orange);
+    color: #fff;
+    padding: .9375rem;
+}
+footer.footer .bottom-footer a {
+    color: #fff;
+}
+footer.footer .bottom-footer .copyright {
+    align-items: center;
+    display: flex;
+}
+.bottom-footer .ministry-of-industry-and-trade {
+    background: url(./../images/sprite-home.png) -445px -36px no-repeat;
+    display: inline-block;
+    height: 40px;
+    margin-left: .5rem;
+    width: 136px;
+}
+.bottom-footer .social-network {
+    display: flex;
+    margin-top: 1rem;
+}
+.bottom-footer .social-network a {
+    font-size: .75rem;
+    padding-right: 1.25rem;
+}
+.bottom-footer .social-network a svg {
+    font-size: 1.25rem;
+    margin-right: .3125rem;
+}
+
+@media screen and (min-width: 576px) {
+    .search-form-container {
+        transform: translateY(-30%);
+    }
+}
+@media screen and (min-width: 768px) {
+    .search-form-container {
+        transform: translateY(-50%);
+    }
+    .body .main {
+        margin-top: -2.1875rem;
+    }
+    .bottom-footer .social-network {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer.footer .register-form .row:last-child .col-md-3 {
+        display: inline-block;
+        float: none;
+    }
+    .about-gofitness {
+        flex-wrap: nowrap;
+    }
+    .about-gofitness .nav + .nav {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .bottom-footer .social-network {
+        padding-right: 5.625rem;
+    }
+}

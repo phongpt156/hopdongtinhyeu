@@ -1,0 +1,278 @@
+body {
+    --orange: #ff8916;
+}
+
+header.header .navbar-header .navbar-brand {
+    height: 3.8125rem;
+    width: 22.875rem;
+}
+header.header .navbar-header .navbar-brand > img {
+    height: 100%;
+    width: 100%;
+}
+.text-green {
+    color: #91bb15 !important;
+}
+
+header.header .navbar-default, header.header .navbar-default .navbar-collapse {
+    background-color: transparent;
+    border: none;
+}
+header.header .navbar-right {
+    margin: 0;
+}
+header.header .navbar-right > li:not(:last-child) {
+    margin-right: 1.25rem;
+}
+header.header .navbar-right > li:not(.hotline) {
+    padding: 1.2815rem 0;
+}
+header.header .navbar-right > li.hotline {
+    padding: .59375rem 0;
+}
+header.header .navbar-right > li.hotline > a {
+    text-transform: none;
+}
+header.header .navbar-right > li.hotline > a .top-hotline247 {
+    background-color: #fffcee;
+    border: 2px solid #91bb15;
+    border-radius: 2px 2px 0 0;
+    color: #666;
+    font-size: .625rem;
+    line-height: .75rem;
+    margin: 0;
+    padding: .1875rem .3125rem;
+    text-align: center;
+}
+header.header .navbar-right > li.hotline > a .top-hotline247 strong {
+    font-weight: 500;
+}
+header.header .navbar-right > li.hotline > a .top-hotline {
+    background-color: #91bb15;
+    border: none;
+    border-radius: 0 0 2px 2px;
+    color: #fff;
+    float: none;
+    letter-spacing: .11875rem;
+    margin: 0;
+    padding: 0 .5625rem;
+    text-align: center;
+}
+header.header .navbar-right > li.hotline > a .top-hotline .fa-phone {
+    margin-right: .125rem;
+    transform: rotateZ(90deg);
+}
+
+header.header .navbar-right .navbar-right__menu-item > a {
+    padding: 0;
+}
+header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle {
+    color: #222;
+    padding: 0;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+}
+header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle:hover {
+    color: var(--orange);
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-toggle, header.header .navbar-right .navbar-right__menu-item.select-option-button.open .dropdown-toggle  {
+    color: #438dc4;
+}
+.navbar-right__menu-item .dropdown-toggle {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 0;
+}
+.navbar-right__menu-item.open > .dropdown-toggle.btn-default {
+    background-color: transparent;
+    border: none;
+}
+.navbar-right__menu-item .dropdown-toggle:active {
+    background-color: transparent;
+    box-shadow: inherit;
+    outline: none
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-toggle .country-flag-icon {
+    height: 1rem;
+    margin-right: .625rem;
+    width: 1rem;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-toggle .fa-angle-down {
+    margin-left: .3125rem;
+}
+.navbar-right__menu-item .dropdown-menu {
+    border-top: solid 4px var(--orange);
+    box-shadow: 0 .0625rem .1875rem 0 rgba(27, 27, 27, .1);
+    padding: 0;
+    right: -1.5625rem;
+    top: 3.4375rem !important;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu {
+    width: 11.5625rem;
+}
+.navbar-right__menu-item .dropdown-menu .arrow {
+    border-color: transparent transparent var(--orange);
+    border-style: solid;
+    border-width: 8px;
+    display: none;
+    height: 0;
+    margin-left: -.6875rem;
+    position: absolute;
+    right: 11%;
+    top: -1.1875rem;
+    width: 0;
+}
+header.header .navbar-right .navbar-right__menu-item .dropdown-menu__header {
+    background-color: #fffcee;
+    border-bottom: solid 1px #e9e9e9;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__header {
+    padding: 1.125rem .875rem .9375rem;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body {
+    padding: 1.25rem 1.25rem 1.4375rem;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item {
+    margin-bottom: .5625rem;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item a {
+    align-items: center;
+    color: #444;
+    display: inline-flex;
+    transition: all .2s ease-in-out;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item a:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item a .country-flag-icon, header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item a .text-green {
+    margin-right: .625rem;
+}
+header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-menu__body .option-list .option-item a .country-flag-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.navbar-right__menu-item .authentication-dialog .dropdown-menu__header {
+    padding: .3125rem 0 0 1.25rem;
+}
+.navbar-right__menu-item .authentication-dialog .dropdown-menu__header a {
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-bottom: none;
+    border-radius: .3125rem .3125rem 0 0;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .3125rem .625rem;
+}
+.navbar-right__menu-item .authentication-dialog .dropdown-menu__header a:hover {
+    background-color: transparent;
+    color: var(--orange);
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.navbar-right__menu-item .authentication-dialog .dropdown-menu__body {
+    padding: 0 .9375rem;
+}
+
+.authentication-dialog .authentication-form {
+    padding: 0 .9375rem 1.25rem;
+}
+.authentication-dialog .authentication-form p {
+    color: #444;
+    margin: 1rem 0;
+}
+.authentication-dialog .authentication-form .login-social-network {
+    display: flex;
+    justify-content: space-between;
+}
+.authentication-dialog .authentication-form .login-social-network .login-social-button {
+    align-items: center;
+    border-radius: 5%;
+    display: flex;
+    color: #fff;
+}
+.authentication-dialog .authentication-form .login-social-network .login-facebook-button {
+    background-color: #546fae;
+}
+.authentication-dialog .authentication-form .login-social-network .login-google-button {
+    background-color: #dd4d30;
+}
+.authentication-dialog .authentication-form .login-social-network .login-social-button:hover {
+    opacity: .9;
+    text-decoration: none;
+}
+.authentication-dialog .authentication-form .login-social-network .login-social-button svg {
+    border-right: solid 1px #fff;
+}
+.authentication-dialog .authentication-form .login-social-network .login-facebook-button .fa-facebook-f {
+    height: 2.125rem;
+    padding: .625rem;
+    width: 1.8125rem;
+}
+.authentication-dialog .authentication-form .login-social-network .login-google-button .fa-google {
+    height: 2.125rem;
+    padding: .625rem;
+    width: 2.0625rem;
+}
+.authentication-dialog .authentication-form .login-social-network .login-social-button span {
+    padding: 0 3.75rem 0 .875rem;
+}
+.authentication-dialog .authentication-form .form-group .form-control {
+    border-radius: inherit;
+    height: 2.5rem;
+}
+.authentication-dialog .authentication-form .form-group .forget-pass {
+    color: #438dc4;
+}
+.authentication-dialog .authentication-form .submit-button {
+    background-color: var(--orange);
+    border-radius: inherit;
+    color: #fff;
+    padding: .5625rem .9375rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.authentication-dialog .authentication-form .submit-button:hover {
+    background-color: #ffc317;
+}
+.authentication-dialog .authentication-form__footer p {
+    text-transform: none;
+}
+.authentication-dialog .authentication-form__footer a {
+    color: #438dc4;
+    margin-left: .5rem;
+    transition: all .2s ease-in-out;
+    text-decoration: underline;
+}
+.authentication-dialog .authentication-form__footer a:hover {
+    color: var(--orange);
+}
+.authentication-dialog .authentication-form__footer .term {
+    font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    header.header {
+        padding-top: 1.875rem;
+    }
+    .navbar-right__menu-item .dropdown-menu .arrow {
+        display: block;
+    }
+    .authentication-dialog {
+        width: 25.625rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header.header {
+        padding-left: 5.59375rem;
+        padding-right: 5.59375rem;
+    }
+}

@@ -1,0 +1,84 @@
+:root {
+    font-size: 1rem;
+}
+a {
+    color: #365899;
+    cursor: pointer;
+}
+a.no-decoration:hover {
+    text-decoration: none;
+}
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.svg-inline--fa {
+    vertical-align: -.125em;
+    overflow: visible;
+    height: 1em;
+    font-size: inherit;
+    display: inline-block;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.fa-1x {
+    font-size: 1em;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.fa-3x {
+    font-size: 3em;
+}
+
+img.circle {
+    border-radius: 50%;
+}
+.image__wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.image__wrapper > img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.image-1-1 {
+    padding-top: 100%;
+}
+.image-1-2 {
+    padding-top: 50%;
+}
+.image-21-9 {
+    padding-top: calc(100% * 9 / 21);
+}
+
+/* ========= custom modal ========= */
+.modal--center.modal {
+    padding: 0!important;
+    text-align: center;
+}
+.modal--center.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.modal--center .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/* ========= end custom modal ========= */
