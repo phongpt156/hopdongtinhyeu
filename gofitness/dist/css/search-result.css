@@ -45,7 +45,7 @@ section.body {
 .result-content .result-content__header .sponsor-tag {
     background-color: var(--orange);
     color: #fff;
-    padding: .1875rem 1.125rem;
+    padding: 0 1.125rem;
 }
 .result-content .result-content__body {
     color: #797979;
