@@ -1,0 +1,136 @@
+footer.footer .top-footer {
+    background-color: #fff;
+}
+footer.footer .top-footer .footer-head {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    color: #666;
+}
+footer.footer .top-footer .footer-head span {
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 2.5rem;
+    transform: translateY(5px);
+}
+
+footer.footer .top-footer .register-form {
+    padding: 0 1.75rem;
+}
+footer.footer .top-footer .register-form .form-group {
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+}
+footer.footer .top-footer .register-form .row:last-child {
+    text-align: center;
+}
+footer.footer .top-footer .about-gofitness a, footer.top-footer .about-gofitness p {
+    color: #797979;
+}
+.about-gofitness {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-gofitness .nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.about-gofitness .nav:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.about-gofitness .nav > li + li {
+    margin-top: .5rem;
+}
+.about-gofitness .nav > li > a {
+    padding: 0;
+}
+.about-gofitness .nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+.about-gofitness .logo-appstore {
+    background: url(./../images/sprite-home.png) -341px 0 no-repeat;
+    height: 36px;
+    width: 122px;
+}
+.about-gofitness .logo-googleplay {
+    background: url(./../images/sprite-home.png) -463px 0 no-repeat;
+    height: 36px;
+    width: 122px;
+}
+.about-gofitness .receive-notify-form .form-group {
+    display: flex;
+}
+.about-gofitness .receive-notify-form .form-group .form-control {
+    height: 2.4375rem;
+    border-radius: inherit;
+}
+.about-gofitness .receive-notify-form .form-group .submit-button {
+    background-color: #fff;
+    border: 2px solid var(--orange);
+    border-radius: inherit;
+    color: var(--orange);
+    padding-bottom: .4375rem;
+    padding-top: .4375rem;
+}
+
+footer.footer .bottom-footer {
+    background-color: var(--orange);
+    color: #fff;
+    padding: .9375rem 0;
+}
+footer.footer .bottom-footer a {
+    color: #fff;
+}
+footer.footer .bottom-footer .copyright {
+    align-items: center;
+    display: flex;
+}
+footer.footer .bottom-footer .ministry-of-industry-and-trade {
+    background: url(./../images/sprite-home.png) -445px -36px no-repeat;
+    display: inline-block;
+    height: 40px;
+    margin-left: .5rem;
+    width: 136px;
+}
+footer.footer .bottom-footer .social-network {
+    display: flex;
+    margin-top: 1rem;
+}
+footer.footer .bottom-footer .social-network a {
+    font-size: .75rem;
+    padding-right: 1.25rem;
+}
+footer.footer .bottom-footer .social-network a svg {
+    font-size: 1.25rem;
+    margin-right: .3125rem;
+}
+@media screen and (min-width: 768px) {
+    footer.footer .bottom-footer .social-network {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer.footer .bottom-footer .social-network {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer.footer .top-footer .register-form .row:last-child .col-md-3 {
+        display: inline-block;
+        float: none;
+    }
+    .about-gofitness {
+        flex-wrap: nowrap;
+    }
+    .about-gofitness .nav + .nav {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer.footer .bottom-footer .social-network {
+        padding-right: 5.625rem;
+    }
+}

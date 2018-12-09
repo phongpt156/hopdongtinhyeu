@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./dist/libraries/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./dist/css/common.css" />
   <link rel="stylesheet" href="./dist/css/utilities.css" />
-  <link rel="stylesheet" href="./dist/css/header.css" >
+  <link rel="stylesheet" href="./dist/css/header.css" />
+  <link rel="stylesheet" href="./dist/css/footer.css" />
   <link rel="stylesheet" href="./dist/css/homepage.css" />
   <script src="./dist/libraries/jquery/jquery.min.js"></script>
   <script src="./dist/libraries/bootstrap/js/bootstrap.min.js"></script>
@@ -22,7 +23,7 @@
 <body>
   <header class="header">
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -358,6 +359,7 @@
         </div>
       </div>
     </div>
+    <div class="city-background"></div>
   </section>
   <footer class="footer">
     <div class="top-footer">
@@ -365,67 +367,70 @@
         <div class="footer-head">
           <span>Dành cho các phòng tập, PT, Huấn luyện viên muốn hợp tác với Go Fitness</span>
         </div>
-        <form class="register-form">
-          <div class="row mx-0">
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Tên phòng tập" />
+        <div class="footer-body">
+          <form class="register-form">
+            <div class="row mx-0">
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Tên phòng tập" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Điện thoại phòng tập" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Website phòng tập" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Địa điểm" />
+              </div>
             </div>
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Điện thoại phòng tập" />
+            <div class="row mx-0">
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Họ tên" />
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control" placeholder="Điện thoại người liên hệ" />
+              </div>
+              <button class="register-button btn btn--orange">Đăng ký</button>
             </div>
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Website phòng tập" />
-            </div>
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Địa điểm" />
-            </div>
+          </form>
+          <hr style="border-color: #d8d8d8" />
+          <div class="about-gofitness">
+            <ul class="nav">
+              <li><a>Về chúng tôi</a></li>
+              <li><a>Liên hệ</a></li>
+              <li><a>Điều khoản sử dụng</a></li>
+              <li><a>Chính sách bảo mật</a></li>
+              <li><a>Dịch vụ</a></li>
+              <li><a>Hợp tác</a></li>
+            </ul>
+            <ul class="nav flex-row">
+              <li><a class="logo-appstore"></a></li>
+              <li class="mt-0 ml-2"><a class="logo-googleplay"></a></li>
+            </ul>
+            <ul class="nav">
+              <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
+              <li><p>Phòng 1724, tòa nhà HH2B, bán đảo Linh Đàm Hoàng Mai, Hà Nội</p></li>
+              <li><p class="mb-0">Hotline: 0936 968 000</p></li>
+              <li class="mt-0"><p>Email: info@gofitness.vn</p></li>
+              <li><p class="mb-0">Khiếu nại và góp ý: 024 6260 4822</p></li>
+              <li class="mt-0"><p>Làm việc từ 8h - 17h30 từ thứ 2 đến thứ 6</p></li>
+            </ul>
+            <ul class="nav">
+              <li><p class="mb-0">Đăng ký nhận tin để có thể nhận những gói tập <span class="text-orange">với mức giá rẻ bất ngờ</span></p></li>
+              <li class="align-self-stretch">
+                <form class="receive-notify-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nhập địa chỉ email" />
+                    <button class="btn btn--sm submit-button">Đăng ký</button>
+                  </div>
+                </form>
+              </li>
+            </ul>
           </div>
-          <div class="row mx-0">
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Họ tên" />
-            </div>
-            <div class="form-group col-md-3">
-              <input type="text" class="form-control" placeholder="Điện thoại người liên hệ" />
-            </div>
-            <button class="register-button btn btn--orange">Đăng ký</button>
-          </div>
-        </form>
-        <hr style="border-color: #d8d8d8" />
-        <div class="about-gofitness">
-          <ul class="nav">
-            <li><a>Về chúng tôi</a></li>
-            <li><a>Liên hệ</a></li>
-            <li><a>Điều khoản sử dụng</a></li>
-            <li><a>Chính sách bảo mật</a></li>
-            <li><a>Dịch vụ</a></li>
-            <li><a>Hợp tác</a></li>
-          </ul>
-          <ul class="nav flex-row">
-            <li><a class="logo-appstore"></a></li>
-            <li class="mt-0 ml-2"><a class="logo-googleplay"></a></li>
-          </ul>
-          <ul class="nav">
-            <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
-            <li><p>Phòng 1724, tòa nhà HH2B, bán đảo Linh Đàm Hoàng Mai, Hà Nội</p></li>
-            <li><p class="mb-0">Hotline: 0936 968 000</p></li>
-            <li class="mt-0"><p>Email: info@gofitness.vn</p></li>
-            <li><p class="mb-0">Khiếu nại và góp ý: 024 6260 4822</p></li>
-            <li class="mt-0"><p>Làm việc từ 8h - 17h30 từ thứ 2 đến thứ 6</p></li>
-          </ul>
-          <ul class="nav">
-            <li><p class="mb-0">Đăng ký nhận tin để có thể nhận những gói tập <span class="text-orange">với mức giá rẻ bất ngờ</span></p></li>
-            <li class="align-self-stretch">
-              <form class="receive-notify-form">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nhập địa chỉ email" />
-                  <button class="btn btn--sm submit-button">Đăng ký</button>
-                </div>
-              </form>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
+
     <div class="bottom-footer">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">

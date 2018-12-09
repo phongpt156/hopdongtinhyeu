@@ -13,7 +13,13 @@ header.header .navbar-header .navbar-brand > img {
 .text-green {
     color: #91bb15 !important;
 }
+.text-orange {
+    color: var(--orange) !important;
+}
 
+header.header .navbar-default {
+    margin-bottom: .1875rem;
+}
 header.header .navbar-default, header.header .navbar-default .navbar-collapse {
     background-color: transparent;
     border: none;
@@ -268,11 +274,5 @@ header.header .navbar-right .navbar-right__menu-item.select-option-button .dropd
     }
     .authentication-dialog {
         width: 25.625rem;
-    }
-}
-@media screen and (min-width: 1200px) {
-    header.header {
-        padding-left: 5.59375rem;
-        padding-right: 5.59375rem;
     }
 }
