@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="./dist/libraries/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./dist/css/common.css" />
+  <link rel="stylesheet" href="./dist/css/utilities.css" />
+  <link rel="stylesheet" href="./dist/css/header.css" />
+  <link rel="stylesheet" href="./dist/css/footer.css" />
+  <link rel="stylesheet" href="./dist/css/gfn-icon.css" />
+  <link rel="stylesheet" href="./dist/css/profile-dashboard.css" />
+  <script src="./dist/libraries/jquery/jquery.min.js"></script>
+  <script src="./dist/libraries/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./dist/libraries/font-awesome/js/font-awesome.js"></script>
+  <script src="./dist/libraries/font-awesome/js/solid.js"></script>
+  <script src="./dist/libraries/font-awesome/js/brand.js"></script>
+  <script src="./dist/libraries/jssor/js/jssor-slider.min.js"></script>
+  <script src="./dist/js/header.js"></script>
+  <script src="./dist/js/profile-dashboard.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">
+            <img src="./dist/images/logo.png" alt="" />
+          </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                Tiếng Việt
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Language
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                        Tiếng Việt
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/uk.svg" alt="Vietnam icon flag" />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                VNĐ
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Currency
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">VND</span>
+                        Việt Nam Đồng
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">USD</span>
+                        US Dollar
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle font-weight-bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Tìm kiếm
+              </button>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle font-weight-bold" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Hồ sơ
+              </button>
+            </li>
+            <li class="navbar-right__menu-item">
+              <a class="font-weight-bold">Thoát</a>
+            </li>
+            <li class="hotline navbar-right__menu-item">
+              <a>
+                <p class="top-hotline247">Hotline <strong>miễn phí 24/7</strong></p>
+                <p class="top-hotline"><i class="fas fa-phone"></i><strong>1800-2032</strong></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="container">
+      <aside class="left-aside">
+        <nav>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-user"></i> <b>Bình luận</b> <span class="notify-count">0</span></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-mail"></i> <span>Hòm thư</span> <span class="notify-count">0</span></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-heart"></i> <b>Đã đặt</b></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-cart"></i> <b>Đơn hàng</b></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-coin"></i> <b>Quản lý đơn hàng</b></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-edit"></i> <span>Hồ sơ</span></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-picture"></i> <span>Hình ảnh</span></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-table-color"></i> <b>Tạo môn tập</b></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-location-mark"></i> <b>Quản lý môn tập</b></a>
+            </li>
+            <li class="menu-item">
+              <a><i class="gfn-icon gfn--2x gfn-profile"></i> <span>Tài khoản của tôi</span></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="main">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#profile">Home</a></li>
+          <li><a data-toggle="tab" href="#introduce">Menu 1</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="profile" class="tab-pane fade in active">
+            <div class="table-responsive">
+              <table class="profile-table">
+                <tbody>
+                  <tr>
+                    <td>Tên thương hiệu</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Chăm sóc khách hàng
+                          </span>
+                          <input type="text" value="Chăm sóc khách hàng" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Địa chỉ link</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            tuvanhonnhan6l
+                          </span>
+                          <input type="text" value="tuvanhonnhan6l" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="text-value hide-when-edit">
+                        Bãi gửi xe
+                      </span>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Ô tô</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Ô tô">Ô tô</option>
+                            <option value="Xe máy">Xe máy</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Địa điểm</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Việt Nam - TP.Hồ Chí Minh - Quận Bình Tân Chưa chọn</span>
+                          <select class="select-field display-when-edit">
+                            <option value="1" selected="selected">Việt Nam</option>
+                            <option value="226">Aaland</option>
+                            <option value="2">Afghanistan</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">American-Samoa</option>
+                            <option value="6">Andorra</option>
+                            <option value="7">Angola</option>
+                            <option value="8">Anguilla</option>
+                            <option value="9">Antigua</option>
+                            <option value="10">Antilles</option>
+                            <option value="11">Argentina</option>
+                            <option value="12">Armenia</option>
+                            <option value="13">Aruba</option>
+                            <option value="14">Australia</option>
+                            <option value="15">Austria</option>
+                            <option value="16">Azerbaijan</option>
+                            <option value="17">Bahamas</option>
+                            <option value="18">Bahrain</option>
+                            <option value="19">Bangladesh</option>
+                            <option value="20">Barbados</option>
+                            <option value="21">Belarus</option>
+                            <option value="22">Belgium</option>
+                            <option value="23">Belize</option>
+                            <option value="24">Benin</option>
+                            <option value="25">Bermuda</option>
+                            <option value="26">Bhutan</option>
+                            <option value="27">Black-private</option>
+                            <option value="28">Bolivia</option>
+                            <option value="29">Bosnia-Herzegovina</option>
+                            <option value="30">Botswana</option>
+                            <option value="31">Bouvet</option>
+                            <option value="32">Brazil</option>
+                            <option value="33">Brunei</option>
+                            <option value="34">Bulgaria</option>
+                            <option value="35">Burkina-Faso</option>
+                            <option value="36">Burundi</option>
+                            <option value="37">Cambodia</option>
+                            <option value="38">Cameroon</option>
+                            <option value="39">Canada</option>
+                            <option value="40">Cape-Verde</option>
+                            <option value="41">Cayman-Islands</option>
+                            <option value="42">Central-African-Republic</option>
+                            <option value="43">Chad</option>
+                            <option value="44">Chile</option>
+                            <option value="46">China</option>
+                            <option value="47">Cocos</option>
+                            <option value="48">Columbia</option>
+                            <option value="49">Comoros</option>
+                            <option value="50">Congo</option>
+                            <option value="51">Cook-Islands</option>
+                            <option value="52">Costa-Rica</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="55">Curacao</option>
+                            <option value="56">Cyprus</option>
+                            <option value="57">Czech-Republic</option>
+                            <option value="58">Denmark</option>
+                            <option value="59">Djibouti</option>
+                            <option value="60">Dominica</option>
+                            <option value="61">Dominican-Republic</option>
+                            <option value="62">East-Timor</option>
+                            <option value="63">Ecuador</option>
+                            <option value="64">Egypt</option>
+                            <option value="65">El-Salvador</option>
+                            <option value="66">England</option>
+                            <option value="67">Equatorial-Guinea</option>
+                            <option value="68">Eritrea</option>
+                            <option value="69">Estonia</option>
+                            <option value="70">Ethiopia</option>
+                            <option value="71">Europe</option>
+                            <option value="72">Falklands</option>
+                            <option value="73">Faroe-Islands</option>
+                            <option value="74">Federal-States-of-Micronesia</option>
+                            <option value="75">Fiji</option>
+                            <option value="76">Finland</option>
+                            <option value="77">Former-Czechoslovakia</option>
+                            <option value="78">Former-Soviet-Union</option>
+                            <option value="79">France</option>
+                            <option value="80">Gabon</option>
+                            <option value="81">Gambia</option>
+                            <option value="82">Georgia</option>
+                            <option value="83">Germany</option>
+                            <option value="84">Ghana</option>
+                            <option value="85">Gibraltar</option>
+                            <option value="86">Great-Britain</option>
+                            <option value="87">Greece</option>
+                            <option value="88">Greenland</option>
+                            <option value="89">Grenada</option>
+                            <option value="90">Guam</option>
+                            <option value="91">Guatemala</option>
+                            <option value="92">Guinea</option>
+                            <option value="93">Guinea-Bissau</option>
+                            <option value="94">Guyana</option>
+                            <option value="95">Haiti</option>
+                            <option value="96">Honduras</option>
+                            <option value="97">Hong-Kong</option>
+                            <option value="98">Hungary</option>
+                            <option value="99">Iceland</option>
+                            <option value="100">India</option>
+                            <option value="101">Indonesia</option>
+                            <option value="102">Iran</option>
+                            <option value="103">Iraq</option>
+                            <option value="104">Ireland</option>
+                            <option value="105">Israel</option>
+                            <option value="106">Italy</option>
+                            <option value="107">Ivory-Coast</option>
+                            <option value="108">Jamaica</option>
+                            <option value="109">Japan</option>
+                            <option value="110">Jordan</option>
+                            <option value="111">Kazakhstan</option>
+                            <option value="112">Kenya</option>
+                            <option value="113">Kiribati</option>
+                            <option value="114">Kuwait</option>
+                            <option value="115">Kyrgyzstan</option>
+                            <option value="116">Laos</option>
+                            <option value="117">Latvia</option>
+                            <option value="118">Lebanon</option>
+                            <option value="119">Lesotho</option>
+                            <option value="120">Liberia</option>
+                            <option value="121">Libya</option>
+                            <option value="122">Liechtenstein</option>
+                            <option value="123">Lithuania</option>
+                            <option value="124">Luxembourg</option>
+                            <option value="125">Macau</option>
+                            <option value="126">Macedonia</option>
+                            <option value="127">Madagascar</option>
+                            <option value="128">Malawi</option>
+                            <option value="129">Malaysia</option>
+                            <option value="130">Maldives</option>
+                            <option value="131">Mali</option>
+                            <option value="132">Malta</option>
+                            <option value="133">Mariana-Islands</option>
+                            <option value="134">Marshall-Islands</option>
+                            <option value="135">Mauritania</option>
+                            <option value="136">Mauritius</option>
+                            <option value="137">Mexico</option>
+                            <option value="138">Moldova</option>
+                            <option value="139">Monaco</option>
+                            <option value="140">Mongolia</option>
+                            <option value="141">Montenegro</option>
+                            <option value="142">Montserrat</option>
+                            <option value="143">Morocco</option>
+                            <option value="144">Mozambique</option>
+                            <option value="145">Myanmar</option>
+                            <option value="146">Namibia</option>
+                            <option value="147">Nauru</option>
+                            <option value="148">Nepal</option>
+                            <option value="149">Netherlands</option>
+                            <option value="150">New-Zealand</option>
+                            <option value="151">Nicaragua</option>
+                            <option value="152">Niger</option>
+                            <option value="153">Nigeria</option>
+                            <option value="154">Niue</option>
+                            <option value="155">Norfolk-Island</option>
+                            <option value="156">North-Korea</option>
+                            <option value="157">Norway</option>
+                            <option value="158">Oman</option>
+                            <option value="159">Pakistan</option>
+                            <option value="160">Palau</option>
+                            <option value="161">Palestinian-Territory</option>
+                            <option value="162">Panama</option>
+                            <option value="163">Paraguay</option>
+                            <option value="164">Peru</option>
+                            <option value="165">Philippines</option>
+                            <option value="166">PNG</option>
+                            <option value="167">Poland</option>
+                            <option value="168">Portugal</option>
+                            <option value="169">Puerto-Rico</option>
+                            <option value="170">Qatar</option>
+                            <option value="171">Romania</option>
+                            <option value="172">Russian-Federation</option>
+                            <option value="173">Rwanda</option>
+                            <option value="174">Saint-Helena</option>
+                            <option value="175">Saint-kitts-Nevis-Anguilla</option>
+                            <option value="176">Saint-Lucia</option>
+                            <option value="177">Saint-Vincent</option>
+                            <option value="178">Samoa</option>
+                            <option value="179">San-Marino</option>
+                            <option value="180">Sao-Tome</option>
+                            <option value="181">Saudi-Arabia</option>
+                            <option value="182">Scotland</option>
+                            <option value="183">Senegal</option>
+                            <option value="184">Serbia</option>
+                            <option value="185">Seychelles</option>
+                            <option value="186">Sierra-Leone</option>
+                            <option value="187">Singapore</option>
+                            <option value="188">Slovak-Republic</option>
+                            <option value="189">Slovenia</option>
+                            <option value="190">Solomon-Islands</option>
+                            <option value="191">Somalia</option>
+                            <option value="192">South-Africa</option>
+                            <option value="193">South-Georgia</option>
+                            <option value="194">South-Korea</option>
+                            <option value="195">Spain</option>
+                            <option value="196">Sri-Lanka</option>
+                            <option value="197">Sudan</option>
+                            <option value="198">Suriname</option>
+                            <option value="199">Swaziland</option>
+                            <option value="200">Sweden</option>
+                            <option value="201">Switzerland</option>
+                            <option value="202">Syria</option>
+                            <option value="203">Taiwan</option>
+                            <option value="204">Tajikistan</option>
+                            <option value="205">Tanzania</option>
+                            <option value="206">Tenerife</option>
+                            <option value="207">Thailand</option>
+                            <option value="208">Togo</option>
+                            <option value="209">Tokelau</option>
+                            <option value="210">Tonga</option>
+                            <option value="211">Trinidad-Tobago</option>
+                            <option value="212">Tunisia</option>
+                            <option value="213">Turkey</option>
+                            <option value="214">Turkmenistan</option>
+                            <option value="215">Tuvalu</option>
+                            <option value="216">Uganda</option>
+                            <option value="217">UK</option>
+                            <option value="218">Ukraine</option>
+                            <option value="219">United-Arab-Emirates</option>
+                            <option value="220">United-States</option>
+                            <option value="221">Uruguay</option>
+                            <option value="222">Uzbekistan</option>
+                            <option value="223">Vanuatu</option>
+                            <option value="224">Vatican</option>
+                            <option value="225">Venezuela</option>
+                            <option value="227">Virgin-Islands</option>
+                            <option value="228">Wales</option>
+                            <option value="229">White-private</option>
+                            <option value="230">Yemen</option>
+                            <option value="231">Yugoslavia</option>
+                            <option value="232">Zaire</option>
+                            <option value="233">Zambia</option>
+                            <option value="234">Zimbabwe</option>
+                          </select>
+                          <select class="select-field display-when-edit">
+                            <option value="24">Hà Nội</option>
+                            <option value="59" selected="selected">TP.Hồ Chí Minh</option>
+                            <option value="15">Đà Nẵng</option>
+                            <option value="28">Hải Phòng</option>
+                            <option value="14">Cần Thơ</option>
+                            <option value="57">Thừa Thiên Huế</option>
+                            <option value="1">An Giang</option>
+                            <option value="2">Bà Rịa - Vũng Tàu</option>
+                            <option value="3">Bình Dương</option>
+                            <option value="4">Bình Phước</option>
+                            <option value="5">Bình Thuận</option>
+                            <option value="6">Bình Ðịnh</option>
+                            <option value="7">Bạc Liêu</option>
+                            <option value="8">Bắc Giang</option>
+                            <option value="9">Bắc Kạn</option>
+                            <option value="10">Bắc Ninh</option>
+                            <option value="11">Bến Tre</option>
+                            <option value="12">Cao Bằng</option>
+                            <option value="13">Cà Mau</option>
+                            <option value="16">Đắk Lắk</option>
+                            <option value="17">Đắk Nông</option>
+                            <option value="18">Điện Biên</option>
+                            <option value="19">Đồng Nai</option>
+                            <option value="20">Đồng Tháp</option>
+                            <option value="21">Gia Lai</option>
+                            <option value="22">Hà Giang</option>
+                            <option value="23">Hà Nam</option>
+                            <option value="26">Hà Tĩnh</option>
+                            <option value="27">Hải Dương</option>
+                            <option value="29">Hậu Giang</option>
+                            <option value="30">Hòa Bình</option>
+                            <option value="31">Hưng Yên</option>
+                            <option value="32">Khánh Hòa</option>
+                            <option value="33">Kiên Giang</option>
+                            <option value="34">Kon Tum</option>
+                            <option value="35">Lai Châu</option>
+                            <option value="36">Lạng Sơn</option>
+                            <option value="37">Lào Cai</option>
+                            <option value="38">Lâm Đồng</option>
+                            <option value="39">Long An</option>
+                            <option value="40">Nam Định</option>
+                            <option value="41">Nghệ An</option>
+                            <option value="42">Ninh Bình</option>
+                            <option value="43">Ninh Thuận</option>
+                            <option value="44">Phú Thọ</option>
+                            <option value="45">Phú Yên</option>
+                            <option value="46">Quảng Bình</option>
+                            <option value="47">Quảng Nam</option>
+                            <option value="48">Quảng Ngãi</option>
+                            <option value="49">Quảng Ninh</option>
+                            <option value="50">Quảng Trị</option>
+                            <option value="51">Sóc Trăng</option>
+                            <option value="52">Sơn La</option>
+                            <option value="53">Tây Ninh</option>
+                            <option value="54">Thái Bình</option>
+                            <option value="55">Thái Nguyên</option>
+                            <option value="56">Thanh Hóa</option>
+                            <option value="58">Tiền Giang</option>
+                            <option value="60">Trà Vinh</option>
+                            <option value="61">Tuyên Quang</option>
+                            <option value="62">Vĩnh Long</option>
+                            <option value="63">Vĩnh Phúc</option>
+                            <option value="64">Yên Bái</option>
+                          </select>
+                          <select class="select-field display-when-edit">
+                            <option value="30">Huyện Bình Chánh</option>
+                            <option value="31">Huyện Cần Giờ</option>
+                            <option value="32">Huyện Củ Chi</option>
+                            <option value="33">Huyện Hóc Môn</option>
+                            <option value="34">Huyện Nhà Bè</option>
+                            <option value="35">Quận 1</option>
+                            <option value="36">Quận 10</option>
+                            <option value="37">Quận 11</option>
+                            <option value="38">Quận 12</option>
+                            <option value="39">Quận 2</option>
+                            <option value="40">Quận 3</option>
+                            <option value="41">Quận 4</option>
+                            <option value="42">Quận 5</option>
+                            <option value="43">Quận 6</option>
+                            <option value="44">Quận 7</option>
+                            <option value="45">Quận 8</option>
+                            <option value="46">Quận 9</option>
+                            <option value="47">Quận Bình Thạnh</option>
+                            <option value="48">Quận Gò Vấp</option>
+                            <option value="49">Quận Phú Nhuận</option>
+                            <option value="50">Quận Tân Bình</option>
+                            <option value="51">Quận Thủ Đức</option>
+                            <option value="632">Quận Tân Phú</option>
+                            <option value="633" selected="selected">Quận Bình Tân</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Găng boxing</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Không có</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Thảm tập</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Không có</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Phòng tắm</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Có sẵn</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn" selected="selected">Có sẵn</option>
+                            <option value="Không có">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Khăn tập</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Không có</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>HLV cá nhân</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Cho bạn biết sau</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Giáo viên quốc tế</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Việt Nam</span>
+                          <select class="select-field display-when-edit">
+                            <option value="1" selected="selected">Việt Nam</option>
+                            <option value="226">Aaland</option>
+                            <option value="2">Afghanistan</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">American-Samoa</option>
+                            <option value="6">Andorra</option>
+                            <option value="7">Angola</option>
+                            <option value="8">Anguilla</option>
+                            <option value="9">Antigua</option>
+                            <option value="10">Antilles</option>
+                            <option value="11">Argentina</option>
+                            <option value="12">Armenia</option>
+                            <option value="13">Aruba</option>
+                            <option value="14">Australia</option>
+                            <option value="15">Austria</option>
+                            <option value="16">Azerbaijan</option>
+                            <option value="17">Bahamas</option>
+                            <option value="18">Bahrain</option>
+                            <option value="19">Bangladesh</option>
+                            <option value="20">Barbados</option>
+                            <option value="21">Belarus</option>
+                            <option value="22">Belgium</option>
+                            <option value="23">Belize</option>
+                            <option value="24">Benin</option>
+                            <option value="25">Bermuda</option>
+                            <option value="26">Bhutan</option>
+                            <option value="27">Black-private</option>
+                            <option value="28">Bolivia</option>
+                            <option value="29">Bosnia-Herzegovina</option>
+                            <option value="30">Botswana</option>
+                            <option value="31">Bouvet</option>
+                            <option value="32">Brazil</option>
+                            <option value="33">Brunei</option>
+                            <option value="34">Bulgaria</option>
+                            <option value="35">Burkina-Faso</option>
+                            <option value="36">Burundi</option>
+                            <option value="37">Cambodia</option>
+                            <option value="38">Cameroon</option>
+                            <option value="39">Canada</option>
+                            <option value="40">Cape-Verde</option>
+                            <option value="41">Cayman-Islands</option>
+                            <option value="42">Central-African-Republic</option>
+                            <option value="43">Chad</option>
+                            <option value="44">Chile</option>
+                            <option value="46">China</option>
+                            <option value="47">Cocos</option>
+                            <option value="48">Columbia</option>
+                            <option value="49">Comoros</option>
+                            <option value="50">Congo</option>
+                            <option value="51">Cook-Islands</option>
+                            <option value="52">Costa-Rica</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="55">Curacao</option>
+                            <option value="56">Cyprus</option>
+                            <option value="57">Czech-Republic</option>
+                            <option value="58">Denmark</option>
+                            <option value="59">Djibouti</option>
+                            <option value="60">Dominica</option>
+                            <option value="61">Dominican-Republic</option>
+                            <option value="62">East-Timor</option>
+                            <option value="63">Ecuador</option>
+                            <option value="64">Egypt</option>
+                            <option value="65">El-Salvador</option>
+                            <option value="66">England</option>
+                            <option value="67">Equatorial-Guinea</option>
+                            <option value="68">Eritrea</option>
+                            <option value="69">Estonia</option>
+                            <option value="70">Ethiopia</option>
+                            <option value="71">Europe</option>
+                            <option value="72">Falklands</option>
+                            <option value="73">Faroe-Islands</option>
+                            <option value="74">Federal-States-of-Micronesia</option>
+                            <option value="75">Fiji</option>
+                            <option value="76">Finland</option>
+                            <option value="77">Former-Czechoslovakia</option>
+                            <option value="78">Former-Soviet-Union</option>
+                            <option value="79">France</option>
+                            <option value="80">Gabon</option>
+                            <option value="81">Gambia</option>
+                            <option value="82">Georgia</option>
+                            <option value="83">Germany</option>
+                            <option value="84">Ghana</option>
+                            <option value="85">Gibraltar</option>
+                            <option value="86">Great-Britain</option>
+                            <option value="87">Greece</option>
+                            <option value="88">Greenland</option>
+                            <option value="89">Grenada</option>
+                            <option value="90">Guam</option>
+                            <option value="91">Guatemala</option>
+                            <option value="92">Guinea</option>
+                            <option value="93">Guinea-Bissau</option>
+                            <option value="94">Guyana</option>
+                            <option value="95">Haiti</option>
+                            <option value="96">Honduras</option>
+                            <option value="97">Hong-Kong</option>
+                            <option value="98">Hungary</option>
+                            <option value="99">Iceland</option>
+                            <option value="100">India</option>
+                            <option value="101">Indonesia</option>
+                            <option value="102">Iran</option>
+                            <option value="103">Iraq</option>
+                            <option value="104">Ireland</option>
+                            <option value="105">Israel</option>
+                            <option value="106">Italy</option>
+                            <option value="107">Ivory-Coast</option>
+                            <option value="108">Jamaica</option>
+                            <option value="109">Japan</option>
+                            <option value="110">Jordan</option>
+                            <option value="111">Kazakhstan</option>
+                            <option value="112">Kenya</option>
+                            <option value="113">Kiribati</option>
+                            <option value="114">Kuwait</option>
+                            <option value="115">Kyrgyzstan</option>
+                            <option value="116">Laos</option>
+                            <option value="117">Latvia</option>
+                            <option value="118">Lebanon</option>
+                            <option value="119">Lesotho</option>
+                            <option value="120">Liberia</option>
+                            <option value="121">Libya</option>
+                            <option value="122">Liechtenstein</option>
+                            <option value="123">Lithuania</option>
+                            <option value="124">Luxembourg</option>
+                            <option value="125">Macau</option>
+                            <option value="126">Macedonia</option>
+                            <option value="127">Madagascar</option>
+                            <option value="128">Malawi</option>
+                            <option value="129">Malaysia</option>
+                            <option value="130">Maldives</option>
+                            <option value="131">Mali</option>
+                            <option value="132">Malta</option>
+                            <option value="133">Mariana-Islands</option>
+                            <option value="134">Marshall-Islands</option>
+                            <option value="135">Mauritania</option>
+                            <option value="136">Mauritius</option>
+                            <option value="137">Mexico</option>
+                            <option value="138">Moldova</option>
+                            <option value="139">Monaco</option>
+                            <option value="140">Mongolia</option>
+                            <option value="141">Montenegro</option>
+                            <option value="142">Montserrat</option>
+                            <option value="143">Morocco</option>
+                            <option value="144">Mozambique</option>
+                            <option value="145">Myanmar</option>
+                            <option value="146">Namibia</option>
+                            <option value="147">Nauru</option>
+                            <option value="148">Nepal</option>
+                            <option value="149">Netherlands</option>
+                            <option value="150">New-Zealand</option>
+                            <option value="151">Nicaragua</option>
+                            <option value="152">Niger</option>
+                            <option value="153">Nigeria</option>
+                            <option value="154">Niue</option>
+                            <option value="155">Norfolk-Island</option>
+                            <option value="156">North-Korea</option>
+                            <option value="157">Norway</option>
+                            <option value="158">Oman</option>
+                            <option value="159">Pakistan</option>
+                            <option value="160">Palau</option>
+                            <option value="161">Palestinian-Territory</option>
+                            <option value="162">Panama</option>
+                            <option value="163">Paraguay</option>
+                            <option value="164">Peru</option>
+                            <option value="165">Philippines</option>
+                            <option value="166">PNG</option>
+                            <option value="167">Poland</option>
+                            <option value="168">Portugal</option>
+                            <option value="169">Puerto-Rico</option>
+                            <option value="170">Qatar</option>
+                            <option value="171">Romania</option>
+                            <option value="172">Russian-Federation</option>
+                            <option value="173">Rwanda</option>
+                            <option value="174">Saint-Helena</option>
+                            <option value="175">Saint-kitts-Nevis-Anguilla</option>
+                            <option value="176">Saint-Lucia</option>
+                            <option value="177">Saint-Vincent</option>
+                            <option value="178">Samoa</option>
+                            <option value="179">San-Marino</option>
+                            <option value="180">Sao-Tome</option>
+                            <option value="181">Saudi-Arabia</option>
+                            <option value="182">Scotland</option>
+                            <option value="183">Senegal</option>
+                            <option value="184">Serbia</option>
+                            <option value="185">Seychelles</option>
+                            <option value="186">Sierra-Leone</option>
+                            <option value="187">Singapore</option>
+                            <option value="188">Slovak-Republic</option>
+                            <option value="189">Slovenia</option>
+                            <option value="190">Solomon-Islands</option>
+                            <option value="191">Somalia</option>
+                            <option value="192">South-Africa</option>
+                            <option value="193">South-Georgia</option>
+                            <option value="194">South-Korea</option>
+                            <option value="195">Spain</option>
+                            <option value="196">Sri-Lanka</option>
+                            <option value="197">Sudan</option>
+                            <option value="198">Suriname</option>
+                            <option value="199">Swaziland</option>
+                            <option value="200">Sweden</option>
+                            <option value="201">Switzerland</option>
+                            <option value="202">Syria</option>
+                            <option value="203">Taiwan</option>
+                            <option value="204">Tajikistan</option>
+                            <option value="205">Tanzania</option>
+                            <option value="206">Tenerife</option>
+                            <option value="207">Thailand</option>
+                            <option value="208">Togo</option>
+                            <option value="209">Tokelau</option>
+                            <option value="210">Tonga</option>
+                            <option value="211">Trinidad-Tobago</option>
+                            <option value="212">Tunisia</option>
+                            <option value="213">Turkey</option>
+                            <option value="214">Turkmenistan</option>
+                            <option value="215">Tuvalu</option>
+                            <option value="216">Uganda</option>
+                            <option value="217">UK</option>
+                            <option value="218">Ukraine</option>
+                            <option value="219">United-Arab-Emirates</option>
+                            <option value="220">United-States</option>
+                            <option value="221">Uruguay</option>
+                            <option value="222">Uzbekistan</option>
+                            <option value="223">Vanuatu</option>
+                            <option value="224">Vatican</option>
+                            <option value="225">Venezuela</option>
+                            <option value="227">Virgin-Islands</option>
+                            <option value="228">Wales</option>
+                            <option value="229">White-private</option>
+                            <option value="230">Yemen</option>
+                            <option value="231">Yugoslavia</option>
+                            <option value="232">Zaire</option>
+                            <option value="233">Zambia</option>
+                            <option value="234">Zimbabwe</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Diện tích</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">30 - 40m2</span>
+                          <select class="select-field display-when-edit">
+                            <option value="1">&lt; 10m2</option>
+                            <option value="2">10 - 20m2</option>
+                            <option value="3">20 - 30m2</option>
+                            <option value="4" selected="selected">30 - 40m2</option>
+                            <option value="5">50 - 60m2</option>
+                            <option value="6">60 - 80m2</option>
+                            <option value="7">80 - 120m2</option>
+                            <option value="8">120 - 220m2</option>
+                            <option value="9">220 - 420m2</option>
+                            <option value="10">420 - 1.000m2</option>
+                            <option value="11">1.000 - 2.000m2</option>
+                            <option value="12">&gt; 2.000m2</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Phòng xông</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Có sẵn</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn" selected="selected">Có sẵn</option>
+                            <option value="Không có">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Điều hòa</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Không có</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Tủ đồ</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Không có</span>
+                          <select class="select-field display-when-edit">
+                            <option value="Tủ riêng">Tủ riêng</option>
+                            <option value="Tủ chung">Tủ chung</option>
+                            <option value="Không có" selected="selected">Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>HLV quốc tế</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">Cho bạn biết sau</span>
+                          <select class="select-field display-when-edit">
+                            <option value="1">Việt Nam</option>
+                            <option value="226">Aaland</option>
+                            <option value="2">Afghanistan</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">American-Samoa</option>
+                            <option value="6">Andorra</option>
+                            <option value="7">Angola</option>
+                            <option value="8">Anguilla</option>
+                            <option value="9">Antigua</option>
+                            <option value="10">Antilles</option>
+                            <option value="11">Argentina</option>
+                            <option value="12">Armenia</option>
+                            <option value="13">Aruba</option>
+                            <option value="14">Australia</option>
+                            <option value="15">Austria</option>
+                            <option value="16">Azerbaijan</option>
+                            <option value="17">Bahamas</option>
+                            <option value="18">Bahrain</option>
+                            <option value="19">Bangladesh</option>
+                            <option value="20">Barbados</option>
+                            <option value="21">Belarus</option>
+                            <option value="22">Belgium</option>
+                            <option value="23">Belize</option>
+                            <option value="24">Benin</option>
+                            <option value="25">Bermuda</option>
+                            <option value="26">Bhutan</option>
+                            <option value="27">Black-private</option>
+                            <option value="28">Bolivia</option>
+                            <option value="29">Bosnia-Herzegovina</option>
+                            <option value="30">Botswana</option>
+                            <option value="31">Bouvet</option>
+                            <option value="32">Brazil</option>
+                            <option value="33">Brunei</option>
+                            <option value="34">Bulgaria</option>
+                            <option value="35">Burkina-Faso</option>
+                            <option value="36">Burundi</option>
+                            <option value="37">Cambodia</option>
+                            <option value="38">Cameroon</option>
+                            <option value="39">Canada</option>
+                            <option value="40">Cape-Verde</option>
+                            <option value="41">Cayman-Islands</option>
+                            <option value="42">Central-African-Republic</option>
+                            <option value="43">Chad</option>
+                            <option value="44">Chile</option>
+                            <option value="46">China</option>
+                            <option value="47">Cocos</option>
+                            <option value="48">Columbia</option>
+                            <option value="49">Comoros</option>
+                            <option value="50">Congo</option>
+                            <option value="51">Cook-Islands</option>
+                            <option value="52">Costa-Rica</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="55">Curacao</option>
+                            <option value="56">Cyprus</option>
+                            <option value="57">Czech-Republic</option>
+                            <option value="58">Denmark</option>
+                            <option value="59">Djibouti</option>
+                            <option value="60">Dominica</option>
+                            <option value="61">Dominican-Republic</option>
+                            <option value="62">East-Timor</option>
+                            <option value="63">Ecuador</option>
+                            <option value="64">Egypt</option>
+                            <option value="65">El-Salvador</option>
+                            <option value="66">England</option>
+                            <option value="67">Equatorial-Guinea</option>
+                            <option value="68">Eritrea</option>
+                            <option value="69">Estonia</option>
+                            <option value="70">Ethiopia</option>
+                            <option value="71">Europe</option>
+                            <option value="72">Falklands</option>
+                            <option value="73">Faroe-Islands</option>
+                            <option value="74">Federal-States-of-Micronesia</option>
+                            <option value="75">Fiji</option>
+                            <option value="76">Finland</option>
+                            <option value="77">Former-Czechoslovakia</option>
+                            <option value="78">Former-Soviet-Union</option>
+                            <option value="79">France</option>
+                            <option value="80">Gabon</option>
+                            <option value="81">Gambia</option>
+                            <option value="82">Georgia</option>
+                            <option value="83">Germany</option>
+                            <option value="84">Ghana</option>
+                            <option value="85">Gibraltar</option>
+                            <option value="86">Great-Britain</option>
+                            <option value="87">Greece</option>
+                            <option value="88">Greenland</option>
+                            <option value="89">Grenada</option>
+                            <option value="90">Guam</option>
+                            <option value="91">Guatemala</option>
+                            <option value="92">Guinea</option>
+                            <option value="93">Guinea-Bissau</option>
+                            <option value="94">Guyana</option>
+                            <option value="95">Haiti</option>
+                            <option value="96">Honduras</option>
+                            <option value="97">Hong-Kong</option>
+                            <option value="98">Hungary</option>
+                            <option value="99">Iceland</option>
+                            <option value="100">India</option>
+                            <option value="101">Indonesia</option>
+                            <option value="102">Iran</option>
+                            <option value="103">Iraq</option>
+                            <option value="104">Ireland</option>
+                            <option value="105">Israel</option>
+                            <option value="106">Italy</option>
+                            <option value="107">Ivory-Coast</option>
+                            <option value="108">Jamaica</option>
+                            <option value="109">Japan</option>
+                            <option value="110">Jordan</option>
+                            <option value="111">Kazakhstan</option>
+                            <option value="112">Kenya</option>
+                            <option value="113">Kiribati</option>
+                            <option value="114">Kuwait</option>
+                            <option value="115">Kyrgyzstan</option>
+                            <option value="116">Laos</option>
+                            <option value="117">Latvia</option>
+                            <option value="118">Lebanon</option>
+                            <option value="119">Lesotho</option>
+                            <option value="120">Liberia</option>
+                            <option value="121">Libya</option>
+                            <option value="122">Liechtenstein</option>
+                            <option value="123">Lithuania</option>
+                            <option value="124">Luxembourg</option>
+                            <option value="125">Macau</option>
+                            <option value="126">Macedonia</option>
+                            <option value="127">Madagascar</option>
+                            <option value="128">Malawi</option>
+                            <option value="129">Malaysia</option>
+                            <option value="130">Maldives</option>
+                            <option value="131">Mali</option>
+                            <option value="132">Malta</option>
+                            <option value="133">Mariana-Islands</option>
+                            <option value="134">Marshall-Islands</option>
+                            <option value="135">Mauritania</option>
+                            <option value="136">Mauritius</option>
+                            <option value="137">Mexico</option>
+                            <option value="138">Moldova</option>
+                            <option value="139">Monaco</option>
+                            <option value="140">Mongolia</option>
+                            <option value="141">Montenegro</option>
+                            <option value="142">Montserrat</option>
+                            <option value="143">Morocco</option>
+                            <option value="144">Mozambique</option>
+                            <option value="145">Myanmar</option>
+                            <option value="146">Namibia</option>
+                            <option value="147">Nauru</option>
+                            <option value="148">Nepal</option>
+                            <option value="149">Netherlands</option>
+                            <option value="150">New-Zealand</option>
+                            <option value="151">Nicaragua</option>
+                            <option value="152">Niger</option>
+                            <option value="153">Nigeria</option>
+                            <option value="154">Niue</option>
+                            <option value="155">Norfolk-Island</option>
+                            <option value="156">North-Korea</option>
+                            <option value="157">Norway</option>
+                            <option value="158">Oman</option>
+                            <option value="159">Pakistan</option>
+                            <option value="160">Palau</option>
+                            <option value="161">Palestinian-Territory</option>
+                            <option value="162">Panama</option>
+                            <option value="163">Paraguay</option>
+                            <option value="164">Peru</option>
+                            <option value="165">Philippines</option>
+                            <option value="166">PNG</option>
+                            <option value="167">Poland</option>
+                            <option value="168">Portugal</option>
+                            <option value="169">Puerto-Rico</option>
+                            <option value="170">Qatar</option>
+                            <option value="171">Romania</option>
+                            <option value="172">Russian-Federation</option>
+                            <option value="173">Rwanda</option>
+                            <option value="174">Saint-Helena</option>
+                            <option value="175">Saint-kitts-Nevis-Anguilla</option>
+                            <option value="176">Saint-Lucia</option>
+                            <option value="177">Saint-Vincent</option>
+                            <option value="178">Samoa</option>
+                            <option value="179">San-Marino</option>
+                            <option value="180">Sao-Tome</option>
+                            <option value="181">Saudi-Arabia</option>
+                            <option value="182">Scotland</option>
+                            <option value="183">Senegal</option>
+                            <option value="184">Serbia</option>
+                            <option value="185">Seychelles</option>
+                            <option value="186">Sierra-Leone</option>
+                            <option value="187">Singapore</option>
+                            <option value="188">Slovak-Republic</option>
+                            <option value="189">Slovenia</option>
+                            <option value="190">Solomon-Islands</option>
+                            <option value="191">Somalia</option>
+                            <option value="192">South-Africa</option>
+                            <option value="193">South-Georgia</option>
+                            <option value="194">South-Korea</option>
+                            <option value="195">Spain</option>
+                            <option value="196">Sri-Lanka</option>
+                            <option value="197">Sudan</option>
+                            <option value="198">Suriname</option>
+                            <option value="199">Swaziland</option>
+                            <option value="200">Sweden</option>
+                            <option value="201">Switzerland</option>
+                            <option value="202">Syria</option>
+                            <option value="203">Taiwan</option>
+                            <option value="204">Tajikistan</option>
+                            <option value="205">Tanzania</option>
+                            <option value="206">Tenerife</option>
+                            <option value="207">Thailand</option>
+                            <option value="208">Togo</option>
+                            <option value="209">Tokelau</option>
+                            <option value="210">Tonga</option>
+                            <option value="211">Trinidad-Tobago</option>
+                            <option value="212">Tunisia</option>
+                            <option value="213">Turkey</option>
+                            <option value="214">Turkmenistan</option>
+                            <option value="215">Tuvalu</option>
+                            <option value="216">Uganda</option>
+                            <option value="217">UK</option>
+                            <option value="218">Ukraine</option>
+                            <option value="219">United-Arab-Emirates</option>
+                            <option value="220">United-States</option>
+                            <option value="221">Uruguay</option>
+                            <option value="222">Uzbekistan</option>
+                            <option value="223">Vanuatu</option>
+                            <option value="224">Vatican</option>
+                            <option value="225">Venezuela</option>
+                            <option value="227">Virgin-Islands</option>
+                            <option value="228">Wales</option>
+                            <option value="229">White-private</option>
+                            <option value="230">Yemen</option>
+                            <option value="231">Yugoslavia</option>
+                            <option value="232">Zaire</option>
+                            <option value="233">Zambia</option>
+                            <option value="234">Zimbabwe</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Group FB</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Liên quan</td>
+                    <td>
+                        <div class="d-flex align-items-start justify-content-between">
+                          <div>
+                            <span class="text-value hide-when-edit">
+                              Cho bạn biết sau
+                            </span>
+                            <input type="text" class="input-field display-when-edit" />
+                          </div>
+                          <div class="action">
+                            <div class="hide-when-edit">
+                              <a class="edit-button">[Sửa]</a>
+                            </div>
+                            <div class="display-when-edit">
+                              <a class="save-button">[Lưu]</a>
+                              <a class="cancel-button">[Hủy]</a>
+                            </div>
+                          </div>
+                        </div>
+                    </td>
+                    <td>Website/td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Đèn buổi tối</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Không có
+                          </span>
+                          <select class="select-field display-when-edit">
+                            <option value="Có sẵn">Có sẵn</option>
+                            <option value="Không có" selected>Không có</option>
+                          </select>
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Facebook</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Xung quanh </td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Số cố định</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Skype</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mạng xã hội khác</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Điện thoại</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fanpage</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Email</td>
+                    <td>
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                          <span class="text-value hide-when-edit">
+                            Cho bạn biết sau
+                          </span>
+                          <input type="text" class="input-field display-when-edit" />
+                        </div>
+                        <div class="action">
+                          <div class="hide-when-edit">
+                            <a class="edit-button">[Sửa]</a>
+                          </div>
+                          <div class="display-when-edit">
+                            <a class="save-button">[Lưu]</a>
+                            <a class="cancel-button">[Hủy]</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div id="introduce" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="footer-body">
+          <hr style="border-color: #d8d8d8" />
+          <div class="about-gofitness">
+            <ul class="nav">
+              <li><a>Về chúng tôi</a></li>
+              <li><a>Liên hệ</a></li>
+              <li><a>Điều khoản sử dụng</a></li>
+              <li><a>Chính sách bảo mật</a></li>
+              <li><a>Dịch vụ</a></li>
+              <li><a>Hợp tác</a></li>
+            </ul>
+            <ul class="nav flex-row">
+              <li><a class="logo-appstore"></a></li>
+              <li class="mt-0 ml-2"><a class="logo-googleplay"></a></li>
+            </ul>
+            <ul class="nav">
+              <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
+              <li><p>Phòng 1724, tòa nhà HH2B, bán đảo Linh Đàm Hoàng Mai, Hà Nội</p></li>
+              <li><p class="mb-0">Hotline: 0936 968 000</p></li>
+              <li class="mt-0"><p>Email: info@gofitness.vn</p></li>
+              <li><p class="mb-0">Khiếu nại và góp ý: 024 6260 4822</p></li>
+              <li class="mt-0"><p>Làm việc từ 8h - 17h30 từ thứ 2 đến thứ 6</p></li>
+            </ul>
+            <ul class="nav">
+              <li><p class="mb-0">Đăng ký nhận tin để có thể nhận những gói tập <span class="text-orange">với mức giá rẻ bất ngờ</span></p></li>
+              <li class="align-self-stretch">
+                <form class="receive-notify-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nhập địa chỉ email" />
+                    <button class="btn btn--sm submit-button">Đăng ký</button>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-footer">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="copyright">
+            <span>Bản quyền thuộc về gofitness.vn</span>
+            <a class="ministry-of-industry-and-trade"></a>
+          </div>
+          <div class="social-network">
+            <a><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a><i class="fab fa-google-plus-square"></i>GooglePlus</a>
+            <a><i class="fab fa-twitter-square"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.gfn-icon {
+    background: url(./../images/list-icon.gif) no-repeat;
+    display: inline-block;
+}
+.gfn--2x {
+    height: 17px;
+    width: 17px;
+}
+.gfn-user {
+    background-position: -13px -7px;
+}
+.gfn-mail {
+    background-position: -14px -37px;
+}
+.gfn-heart {
+    background-position: -13px -67px;
+}
+.gfn-cart {
+    background-position: -13px -1115px;
+}
+.gfn-coin {
+    background-position: -12px -1087px;
+}
+.gfn-edit {
+    background-position: -11px -878px;
+}
+.gfn-picture {
+    background-position: -12px -845px;
+}
+.gfn-table-color {
+    background-position: -13px -305px;
+}
+.gfn-location-mark {
+    background-position: -13px -366px;
+}
+.gfn-profile {
+    background-position: -12px -1055px;
+}

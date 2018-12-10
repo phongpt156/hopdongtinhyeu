@@ -72,13 +72,13 @@ header.header .navbar-right > li.hotline > a .top-hotline .fa-phone {
 header.header .navbar-right .navbar-right__menu-item > a {
     padding: 0;
 }
-header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle {
+header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle, header.header .navbar-right .navbar-right__menu-item > a {
     color: #222;
     padding: 0;
     transition: all .2s ease-in-out;
     text-transform: uppercase;
 }
-header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle:hover {
+header.header .navbar-right .navbar-right__menu-item > .dropdown-toggle:hover, header.header .navbar-right .navbar-right__menu-item > a:hover {
     color: var(--orange);
 }
 header.header .navbar-right .navbar-right__menu-item.select-option-button .dropdown-toggle, header.header .navbar-right .navbar-right__menu-item.select-option-button.open .dropdown-toggle  {
