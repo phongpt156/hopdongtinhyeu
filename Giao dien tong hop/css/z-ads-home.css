@@ -150,6 +150,9 @@ header.header .navbar-right a:hover {
     background-color: #426e6e;
 }
 
+.content-block-list .title {
+    margin-bottom: 0;
+}
 .content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+6) .title {
     font-size: 1.125rem;
 }
@@ -165,6 +168,9 @@ header.header .navbar-right a:hover {
 
 .content-block-list [class^=content-block]:nth-child(6n+1) .description, .content-block-list [class^=content-block]:nth-child(6n+6) .description , .content-block-list [class^=content-block]:nth-child(6n+3) .description {
     font-size: 1rem;
+}
+.content-block-list [class^=content-block]:nth-child(6n+2) {
+    font-size: 1.125rem;
 }
 .content-block-list [class^=content-block]:nth-child(6n+4) .description {
     font-size: .875rem;
@@ -182,6 +188,10 @@ header.header .navbar-right a:hover {
 
 .section-2 [class^=content-block--] {
     padding: 1.5625em;
+}
+.content-block-list [class^=content-block]:nth-child(6n+4) {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
 }
 .section-2 [class^=content-block] .title {
     text-transform: uppercase;
