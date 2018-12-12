@@ -195,42 +195,6 @@ header.header .navbar-right .navbar-right__menu-item.select-option-button .dropd
     color: #444;
     margin: 1rem 0;
 }
-.authentication-dialog .authentication-form .login-social-network {
-    display: flex;
-    justify-content: space-between;
-}
-.authentication-dialog .authentication-form .login-social-network .login-social-button {
-    align-items: center;
-    border-radius: 5%;
-    display: flex;
-    color: #fff;
-}
-.authentication-dialog .authentication-form .login-social-network .login-facebook-button {
-    background-color: #546fae;
-}
-.authentication-dialog .authentication-form .login-social-network .login-google-button {
-    background-color: #dd4d30;
-}
-.authentication-dialog .authentication-form .login-social-network .login-social-button:hover {
-    opacity: .9;
-    text-decoration: none;
-}
-.authentication-dialog .authentication-form .login-social-network .login-social-button svg {
-    border-right: solid 1px #fff;
-}
-.authentication-dialog .authentication-form .login-social-network .login-facebook-button .fa-facebook-f {
-    height: 2.125rem;
-    padding: .625rem;
-    width: 1.8125rem;
-}
-.authentication-dialog .authentication-form .login-social-network .login-google-button .fa-google {
-    height: 2.125rem;
-    padding: .625rem;
-    width: 2.0625rem;
-}
-.authentication-dialog .authentication-form .login-social-network .login-social-button span {
-    padding: 0 3.75rem 0 .875rem;
-}
 .authentication-dialog .authentication-form .form-group .form-control {
     border-radius: inherit;
     height: 2.5rem;

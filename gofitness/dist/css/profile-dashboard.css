@@ -116,6 +116,25 @@ section.body .main .tab-content {
     color: #ff6600;
 }
 
+#introduce .notification {
+    border-radius: 3px;
+    margin: .3125rem 0;
+    padding: .625rem;
+    padding-left: 2.5rem;
+    background-position: .625rem center;
+    position: relative;
+}
+.notification.info {
+    background-color: #ccecff;
+    background-image: url(./../images/info.png);
+    background-repeat: no-repeat;
+    color: #2773ad;
+}
+.introduce-yourself-form textarea {
+    padding: .625rem;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     section.body > .container {
         display: flex;

@@ -340,6 +340,14 @@ body {
     flex-wrap: wrap;
     display: flex;
 }
+.mainPopupInfoPage .footer .list-Interactive .dislike {
+    border-radius: 0;
+    border-left: none;
+}
+.mainPopupInfoPage .footer .list-Interactive .dislike .sp_CzQQKqd_AHg {
+    transform: rotateZ(-180deg);
+    background-position: -50px -233px;
+}
 
 /*======== document report modal ========*/
 .document-report-modal .modal-header::after, .document-report-modal .modal-header::before {

@@ -358,4 +358,15 @@ $(document).ready(function () {
     suppressScrollX: true,
     wheelPropagation: false
   });
+
+  $('.send-apply-cv-button').click(function () {
+    $('.apply').removeClass('d-none');
+  });
+
+  $(document).on('click', '.sponsor-list .sponsor-item .close', function () {
+    const containerElement = $(this).closest('.sponsor-item');
+    const containerHtml = containerElement.html();
+    containerElement.remove();
+    $('.sponsor-list').append('<li class="sponsor-item">' + containerHtml + '</li>');
+  });
 });

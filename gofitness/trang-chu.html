@@ -112,18 +112,7 @@
                 </div>
                 <div class="dropdown-menu__body">
                   <form class="authentication-form">
-                    <p class="text-uppercase">Bạn có thể sử dụng tài khoản:</p>
-                    <div class="login-social-network">
-                      <a class="login-social-button login-facebook-button">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Facebook</span>
-                      </a>
-                      <a class="login-social-button login-google-button">
-                        <i class="fab fa-google"></i>
-                        <span>Google</span>
-                      </a>
-                    </div>
-                    <p class="text-uppercase">Hoặc đăng nhập sử dụng tài khoản Gofitness:</p>
+                    <p class="text-uppercase">Đăng nhập sử dụng tài khoản Gofitness:</p>
                     <div class="form-group">
                       <input type="text" placeholder="Email" class="form-control" />
                     </div>
@@ -186,7 +175,7 @@
             <li class="hotline navbar-right__menu-item">
               <a>
                 <p class="top-hotline247">Hotline <strong>miễn phí 24/7</strong></p>
-                <p class="top-hotline"><i class="fas fa-phone"></i><strong>1800-2032</strong></p>
+                <p class="top-hotline"><i class="fas fa-phone"></i> <strong>0936 968 000</strong></p>
               </a>
             </li>
           </ul>
@@ -213,13 +202,24 @@
       <label class="title">Tìm phòng tập hoặc huấn luyện viên cho bạn</label>
       <form class="search-form">
         <div class="form-group">
-          <input type="text" placeholder="Tỉnh thành" class="form-control" />
+          <select class="form-control">
+            <option>Tỉnh thành</option>
+          </select>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Quận/ huyện" class="form-control" />
+          <select class="form-control">
+            <option>Quận/ huyện</option>
+          </select>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Môn tập" class="form-control" />
+          <select class="form-control">
+            <option>Phường/ Xã</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option>Môn tập</option>
+          </select>
         </div>
         <button class="btn search-button btn--lg btn--orange">Tìm kiếm</button>
       </form>
@@ -262,7 +262,7 @@
           <div class="reason-item__body">
             <h3 class="title">Hỗ trợ miễn phí 24/7</h3>
             <p class="description">
-              Gọi ngay 1800-2032 kể cả 2h sáng để được hỗ trợ.<br />Hoàn toàn <span class="text-orange">không - mất - phí</span>
+              Gọi ngay 0936 968 000 kể cả 2h sáng để được hỗ trợ.<br />Hoàn toàn <span class="text-orange">không - mất - phí</span>
               <a class="resaon-detail-button">
                 <i class="fas fa-angle-right"></i>
               </a>
@@ -395,7 +395,7 @@
           </form>
           <hr style="border-color: #d8d8d8" />
           <div class="about-gofitness">
-            <ul class="nav">
+            <ul class="nav nowrap">
               <li><a>Về chúng tôi</a></li>
               <li><a>Liên hệ</a></li>
               <li><a>Điều khoản sử dụng</a></li>
@@ -403,9 +403,9 @@
               <li><a>Dịch vụ</a></li>
               <li><a>Hợp tác</a></li>
             </ul>
-            <ul class="nav flex-row">
+            <ul class="nav flex-column">
               <li><a class="logo-appstore"></a></li>
-              <li class="mt-0 ml-2"><a class="logo-googleplay"></a></li>
+              <li class="mt-0 mt-2"><a class="logo-googleplay"></a></li>
             </ul>
             <ul class="nav">
               <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
