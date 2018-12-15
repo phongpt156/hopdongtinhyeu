@@ -2,16 +2,16 @@ footer.footer {
     padding: 1em;
     font-size: 1rem;
 }
-footer.footer__nav {
+footer.footer .footer__nav {
     padding-left: 0;
     list-style-type: none;
     flex-wrap: wrap;
     display: flex;
 }
-footer.footer__nav a {
+footer.footer .footer__nav a {
     font-size: .75rem;
 }
-footer.footer__nav li:not(:last-child) {
+footer.footer .footer__nav li:not(:last-child) {
     margin-right: 1.166667em;
 }
 .language-list li.active a {

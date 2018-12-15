@@ -21,7 +21,7 @@ $(document).ready(function () {
   // conversation event
   function initConversationEvent()
   {
-    $(document).on('click', '.action-list .action-item', function (e) {
+    $(document).on('click', '.conversation__header .action-list .action-item', function (e) {
       e.stopPropagation();
     });
 

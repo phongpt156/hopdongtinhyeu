@@ -137,6 +137,12 @@ i.sn-info-circle {
     background-position: 0 -25px;
     background-image: url(./../images/social-network/list-icon-12.png);
 }
+i.sn-play-video {
+    width: 54px;
+    height: 54px;
+    background-position: 0 0;
+    background-image: url(./../images/social-network/list-icon-13.png);
+}
 
 .sn-emoji {
     width: 30px;

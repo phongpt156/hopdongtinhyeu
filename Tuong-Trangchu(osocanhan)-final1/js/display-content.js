@@ -195,8 +195,8 @@ $(document).ready(function () {
   }).click(function (e) {
     e.stopPropagation();
 
-    $('.comment-action').not($(this)).popover('hide').removeClass('d-inline-block');
-    $(this).toggleClass('d-inline-block');
+    $('.comment-action').not($(this)).popover('hide').removeClass('visible');
+    $(this).toggleClass('visible');
     $(this).popover('toggle');
   });
 
@@ -224,13 +224,13 @@ $(document).ready(function () {
   }).click(function (e) {
     e.stopPropagation();
 
-    $('.comment-action').not($(this)).popover('hide').removeClass('d-inline-block');
-    $(this).toggleClass('d-inline-block');
+    $('.comment-action').not($(this)).popover('hide').removeClass('visible');
+    $(this).toggleClass('visible');
     $(this).popover('toggle');
   });
 
   $(document).on('click', '.comment-action-popover .comment-action-item', function () {
-    $('.comment-action').popover('hide').removeClass('d-inline-block');
+    $('.comment-action').popover('hide').removeClass('visible');
   });
 
   $('.send-cv-button').click(function () {
@@ -367,6 +367,8 @@ $(document).ready(function () {
     const containerElement = $(this).closest('.sponsor-item');
     const containerHtml = containerElement.html();
     containerElement.remove();
-    $('.sponsor-list').append('<li class="sponsor-item">' + containerHtml + '</li>');
+    setTimeout(function () {
+      $('.sponsor-list').append('<li class="sponsor-item">' + containerHtml + '</li>');
+    }, 500);
   });
 });
