@@ -115,6 +115,7 @@ header.header .navbar-right a:hover {
 }
 .content-block-list {
     margin-top: .626em;
+    line-height: 1;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1em;
     display: grid;
@@ -150,7 +151,7 @@ header.header .navbar-right a:hover {
     background-color: #426e6e;
 }
 
-.content-block-list .title, .content-block-list .description {
+.content-block-list .description {
     margin-bottom: 0;
 }
 .content-block-list [class^=content-block]:nth-child(6n+1) .title, .content-block-list [class^=content-block]:nth-child(6n+6) .title {
