@@ -1,0 +1,55 @@
+.create-sport-form {
+    border: 1px solid #d8d8d8;
+    margin-top: 1rem;
+    padding: .8125rem .625rem;
+}
+.create-sport-form .form-control {
+    border-radius: inherit;
+}
+.create-sport-form textarea.form-control {
+    resize: none;
+}
+.create-sport-form input:not([type="file"]).form-control, .create-sport-form select.form-control {
+    height: 1.875rem;
+    padding-bottom: .1875rem;
+    padding-top: .1875rem;
+    width: 9.8125rem;
+}
+.create-sport-form input.form-control[type="file"] {
+    border: none;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+}
+.create-sport-form .form-group .separator {
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+.create-sport-form .form-group.time-select .form-control {
+    width: 5rem;
+}
+.create-sport-form .form-group.time-select .form-control.hour {
+    margin-right: .5rem;
+}
+.create-sport-form .form-group .hint {
+    display: inline-block;
+    margin-top: .1875rem;
+}
+.create-sport-form .submit-button {
+    padding: .625rem 3.125rem;
+}
+
+@media screen and (min-width: 576px) {
+    .create-sport-form {
+        align-items: center;
+        display: grid;
+        grid-gap: .625rem 0;
+        grid-template-columns: auto 1fr;
+    }
+    .create-sport-form label {
+        padding-right: 4.6875rem;
+    }
+    .create-sport-form .form-group, .create-sport-form label {
+        margin-bottom: 0;
+    }
+}
