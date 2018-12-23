@@ -1,5 +1,9 @@
 :root {
     font-size: 1rem;
+    --orange: #ff8916;
+}
+body, .nav-item .dropdown-menu, .form-group .form-control, .btn, a {
+    font-size: .875rem;
 }
 a {
     color: #365899;
@@ -10,6 +14,9 @@ a.no-decoration:hover {
 }
 input[type="radio"] {
     cursor: pointer;
+}
+.text-orange {
+    color: var(--orange) !important;
 }
 
 .svg-inline--fa {
@@ -82,3 +89,19 @@ img.circle {
     vertical-align: middle;
 }
 /* ========= end custom modal ========= */
+
+section.body .city-background {
+    background: url(./../images/sprite-home.png) center -128px no-repeat;
+    border-bottom: 2px solid #ff8917;
+    padding-top: 6.125rem;
+}
+.btn--orange {
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: inherit;
+    transition: all .2s ease-in-out;
+}
+.btn--orange:hover {
+    background-color: #ffc317;
+    color: #fff;
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="./dist/libraries/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./dist/css/common.css" />
+  <link rel="stylesheet" href="./dist/css/utilities.css" />
+  <link rel="stylesheet" href="./dist/css/header.css" />
+  <link rel="stylesheet" href="./dist/css/footer.css" />
+  <link rel="stylesheet" href="./dist/css/customer-profile.css" />
+  <script src="./dist/libraries/jquery/jquery.min.js"></script>
+  <script src="./dist/libraries/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./dist/libraries/font-awesome/js/font-awesome.js"></script>
+  <script src="./dist/libraries/font-awesome/js/solid.js"></script>
+  <script src="./dist/libraries/font-awesome/js/brand.js"></script>
+  <script src="./dist/libraries/jssor/js/jssor-slider.min.js"></script>
+  <script src="./dist/js/header.js"></script>
+  <script src="./dist/js/customer-profile.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">
+            <img src="./dist/images/logo.png" alt="" />
+          </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                Tiếng Việt
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Language
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/vn.svg" alt="Vietnam icon flag" />
+                        Tiếng Việt
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <img class="country-flag-icon" src="./dist/images/country-flag-icons/uk.svg" alt="Vietnam icon flag" />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown select-option-button navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                VNĐ
+                <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-1x">
+                  <path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  Currency
+                </div>
+                <div class="dropdown-menu__body">
+                  <ul class="option-list">
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">VND</span>
+                        Việt Nam Đồng
+                      </a>
+                    </li>
+                    <li class="option-item">
+                      <a>
+                        <span class="text-green">USD</span>
+                        US Dollar
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Đăng nhập
+              </button>
+              <div class="dropdown-menu authentication-dialog">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  <a>Đăng nhập</a>
+                </div>
+                <div class="dropdown-menu__body">
+                  <form class="authentication-form">
+                    <p class="text-uppercase">Đăng nhập sử dụng tài khoản Gofitness:</p>
+                    <div class="form-group">
+                      <input type="text" placeholder="Email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Mật khẩu" class="form-control" />
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                      <div class="save-pass">
+                        <label class="d-flex font-weight-normal">
+                          <input type="checkbox" class="mr-1" />
+                          Lưu mật khẩu
+                        </label>
+                      </div>
+                      <a class="forget-pass">Quên mật khẩu?</a>
+                    </div>
+                    <button class="btn btn--orange submit-button">Đăng nhập</button>
+                    <hr />
+                    <div class="authentication-form__footer">
+                      <p>Chưa có tài khoản? <a class="register">Đăng ký</a></p>
+                      <p>
+                        Bạn là khách hàng doanh nghiệp?
+                        <a class="register">Đăng nhập tại đây</a>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-right__menu-item">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Đăng ký
+              </button>
+              <div class="dropdown-menu authentication-dialog">
+                <div class="arrow"></div>
+                <div class="dropdown-menu__header">
+                  <a>Đăng ký</a>
+                </div>
+                <div class="dropdown-menu__body">
+                  <form class="authentication-form">
+                    <p>Đăng ký mới tài khoản GOFITNESS:</p>
+                    <div class="form-group">
+                      <input type="text" placeholder="Tài khoản, email..." class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Mật khẩu" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="password" placeholder="Nhập lại mật khẩu" class="form-control" />
+                    </div>
+                    <button class="btn btn--orange submit-button">Đăng ký</button>
+                    <hr />
+                    <div class="authentication-form__footer">
+                      <p>Đã có tài khoản? <a class="login">Đăng nhập</a></p>
+                      <p class="term">Qua việc đăng ký tài khoản GOFITNESS, bạn đồng ý hoàn toàn với các <a>Điều khoản Điều kiện</a>&nbsp; cũng như các <a>Chính sách bảo mật</a>&nbsp; của GOFITNESS.</p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="hotline navbar-right__menu-item">
+              <a>
+                <p class="top-hotline247">Hotline <strong>miễn phí 24/7</strong></p>
+                <p class="top-hotline"><i class="fas fa-phone"></i> <strong>0936 968 000</strong></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="body">
+    <div class="container">
+      <div class="banner">
+        <h3 class="title">Embossi Garden</h3>
+        <p class="location">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12">
+            <path fill="currentColor" d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"></path>
+          </svg>
+          Thôn Rùa, xã Vân Hòa, Ba Vì, Hà Nội
+        </p>
+        <div id="jssor-top-slider" style="position:relative;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+          <div data-u="slides" style="position:relative;width:1300px;height:500px;overflow:hidden;">
+            <div>
+              <img data-u="image" src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+            <div>
+              <img data-u="image" src="./dist/images/homepage-banner.jpg" />
+            </div>
+          </div>
+          <div data-u="arrowleft" class="jssora-arrow jssora-arrow__left"data-autocenter="2" data-scale="0.75" data-scale-left="0.75" data-jssor-button="1" data-nofreeze="1">
+            <div class="fas fa-angle-left fa-3x"></div>
+          </div>
+          <div data-u="arrowright" class="jssora-arrow jssora-arrow__right"data-autocenter="2" data-scale="0.75" data-scale-right="0.75" data-jssor-button="1" data-nofreeze="1">
+            <div class="fas fa-angle-right fa-3x"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-list">
+        <article class="class-item">
+          <section class="class-picture">
+            <div class="image__wrapper image-21-9">
+              <img src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+          </section>
+          <section class="class-body">
+            <div class="content">
+              <h4 class="class-name">Lớp yoga giảm cân</h4>
+              <p>Bắt đầu: 17 giờ 30 ngày 29/12/2019</p>
+              <p>Quy mô: 19 người</p>
+              <p>Môn tập: Yoga</p>
+              <a class="view-detail-link">Xem chi tiết <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="price-container">
+              <p class="price">10.500.000 đ</p>
+              <div class="separator"></div>
+              <p>Người</p>
+            </div>
+            <button class="btn btn--orange register-button">
+              Đặt ngay <i class="fas fa-angle-right"></i>
+            </button>
+          </section>
+        </article>
+        <article class="class-item">
+          <section class="class-picture">
+            <div class="image__wrapper image-21-9">
+              <img src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+          </section>
+          <section class="class-body">
+            <div class="content">
+              <h4 class="class-name">Lớp yoga giảm cân</h4>
+              <p>Bắt đầu: 17 giờ 30 ngày 29/12/2019</p>
+              <p>Quy mô: 19 người</p>
+              <p>Môn tập: Yoga</p>
+              <a class="view-detail-link">Xem chi tiết <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="price-container">
+              <p class="price">10.500.000 đ</p>
+              <div class="separator"></div>
+              <p>Người</p>
+            </div>
+            <button class="btn btn--orange register-button">
+              Đặt ngay <i class="fas fa-angle-right"></i>
+            </button>
+          </section>
+        </article>
+      </div>
+
+      <article class="customer-post shadow">
+        <div class="px-3">
+          <div class="banner">
+            <div id="jssor-bottom-slider" style="position:relative;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+              <div data-u="slides" style="position:relative;width:1300px;height:500px;overflow:hidden;">
+                <div>
+                  <img data-u="image" src="./dist/images/customer-profile-banner.jpg" />
+                </div>
+                <div>
+                  <img data-u="image" src="./dist/images/homepage-banner.jpg" />
+                </div>
+              </div>
+              <div data-u="arrowleft" class="jssora-arrow jssora-arrow__left"data-autocenter="2" data-scale="0.75" data-scale-left="0.75" data-jssor-button="1" data-nofreeze="1">
+                <div class="fas fa-angle-left fa-3x"></div>
+              </div>
+              <div data-u="arrowright" class="jssora-arrow jssora-arrow__right"data-autocenter="2" data-scale="0.75" data-scale-right="0.75" data-jssor-button="1" data-nofreeze="1">
+                <div class="fas fa-angle-right fa-3x"></div>
+              </div>
+            </div>
+          </div>
+          <section class="content">
+            <p>
+              CÁC BẠN Ở KHU VỰC Linh Xuan TD& Dĩ An BD HOẶC LÂN CẬN CÓ NHU CẦU HỌC NHẢY COVER KPOP/ VPOP...
+            </p>
+            <p>Dành cho những ai chưa từng nhảy bao giờ cũng có thể trở nên dạn dĩ, quen thuộc với các động tác. Vì thế đừng ai lo lắng rằng: “mình chưa nhảy bao giờ”, “người mình cứng lắm” .... chưa nhảy bao giờ thì bây giờ, cứng thì phải nhảy cho hết cứng :”></p>
+            <p>Khai giảng ( khoảng 10 bạn đăng kí sẽ mở khóa đầu tiên)</p>
+            <p>- Thời gian học: ca1 :8h-9h30 ; ca2:9h30-11h các ngày 2,4,6 hàng tuần</p>
+            <p>ca1:17h-18h30 ; ca2 :18h30- 20h các ngày thứ 3,5,7 hàng tuần</p>
+            <br />
+            <p>15h – 17h chủ nhật hàng tuần</p>
+            <p>NHẬN HỌC VIỆN MỖI NGÀY - LUÔN CÓ LỚP CƠ BẢN DÀNH CHO CÁC BẠN CHƯA BIẾT GÌ</p>
+            <p>
+              - Địa điểm: 37/3 đường 5 khu phố 2 p. linh xuân q. thủ đức
+              <br />
+              ( đối diện TRƯỜNG MẪU GIÁO HOA PHƯỢNG , con hẽm đi xuống chợ LINH XUÂN ,kế bên quán cafe TRÚC)
+            </p>
+            <p>
+              Liên Hệ:012 390 222 79 (gap linh sn 90)
+              <br />
+              đăng kí thì vui lòng Cmt hoặc Inbox cho mình tên & sdt để tiện thông báo nha
+            </p>
+            <p>
+              FB:linlinhousedance
+            </p>
+            <p>
+              - Học phí: 200k/ tháng/12 buổi
+              <br />
+              Đóng theo buổi/học thử: 30k/b
+            </p>
+            <p>Nhân dịp khai trương khuyến mãi hot :Tặng 5 xuất tập miễn phí cho 5 bạn đăng kí đầu tiên mỗi lớp</p>
+            <p>
+              TẶNG 5 XUẤT FREE CHO 10 BẠN ĐĂNG KÍ ĐẦU TIÊN MỖI LỚP
+            </p>
+            <p>GIẢM 50% CHO 10 BẠM ĐĂNG KÍ TIẾP THEO MỖI LỚP</p>
+            <p>
+              GIẢM 10% CHO HỌC VIÊN TIẾP THEO ĐĂNG KÍ CÁC KHÓA HỌC ĐẦU TIÊN
+              <br />
+              GIẢM 10% CHO HỌC VIÊN TIẾP THEO ĐĂNG KÍ CÁC KHÓA HỌC ĐẦU TIÊN
+            </p>
+          </section>
+        </div>
+        <section class="footer"></section>
+      </article>
+
+      <div class="class-list">
+        <article class="class-item">
+          <section class="class-picture">
+            <div class="image__wrapper image-21-9">
+              <img src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+          </section>
+          <section class="class-body">
+            <div class="content">
+              <h4 class="class-name">Lớp yoga giảm cân</h4>
+              <p>Bắt đầu: 17 giờ 30 ngày 29/12/2019</p>
+              <p>Quy mô: 19 người</p>
+              <p>Môn tập: Yoga</p>
+              <a class="view-detail-link">Xem chi tiết <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="price-container">
+              <p class="price">10.500.000 đ</p>
+              <div class="separator"></div>
+              <p>Người</p>
+            </div>
+            <button class="btn btn--orange register-button">
+              Đặt ngay <i class="fas fa-angle-right"></i>
+            </button>
+          </section>
+        </article>
+        <article class="class-item">
+          <section class="class-picture">
+            <div class="image__wrapper image-21-9">
+              <img src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+          </section>
+          <section class="class-body">
+            <div class="content">
+              <h4 class="class-name">Lớp yoga giảm cân</h4>
+              <p>Bắt đầu: 17 giờ 30 ngày 29/12/2019</p>
+              <p>Quy mô: 19 người</p>
+              <p>Môn tập: Yoga</p>
+              <a class="view-detail-link">Xem chi tiết <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="price-container">
+              <p class="price">10.500.000 đ</p>
+              <div class="separator"></div>
+              <p>Người</p>
+            </div>
+            <button class="btn btn--orange register-button">
+              Đặt ngay <i class="fas fa-angle-right"></i>
+            </button>
+          </section>
+        </article>
+        <article class="class-item">
+          <section class="class-picture">
+            <div class="image__wrapper image-21-9">
+              <img src="./dist/images/customer-profile-banner.jpg" />
+            </div>
+          </section>
+          <section class="class-body">
+            <div class="content">
+              <h4 class="class-name">Lớp yoga giảm cân</h4>
+              <p>Bắt đầu: 17 giờ 30 ngày 29/12/2019</p>
+              <p>Quy mô: 19 người</p>
+              <p>Môn tập: Yoga</p>
+              <a class="view-detail-link">Xem chi tiết <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="price-container">
+              <p class="price">10.500.000 đ</p>
+              <div class="separator"></div>
+              <p>Người</p>
+            </div>
+            <button class="btn btn--orange register-button">
+              Đặt ngay <i class="fas fa-angle-right"></i>
+            </button>
+          </section>
+        </article>
+      </div>
+
+      <article class="about-customer">
+        <section class="about-customer__header">
+          <h3 class="title">Thông tin về Khách Sạn Embossi Garden</h3>
+        </section>
+        <section class="about-customer__body">
+          <div class="item">
+            <div class="tile left-tile">
+              Đặc trưng
+            </div>
+            <div class="tile right-tile">
+              <div class="presets-criteria">
+                <div class="row">
+                  <div class="col-md-4">
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Bãi gửi xe: Ô tô</p>
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Phòng tắm: Có sẵn</p>
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Phòng xông: Có sẵn</p>
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Diện tích: 42 m2</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="preset-criteria">Thảm tập: Không có</p>
+                    <p class="preset-criteria">Khăn tập: Không có</p>
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Điều hòa: 02 chiều</p>
+                    <p class="preset-criteria">Tủ đồ: Không có</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="preset-criteria"><i class="fas fa-check"></i>Đèn buổi tối: Có sẵn</p>
+                    <p class="preset-criteria">Giáo viên quốc tế: Không có</p>
+                    <p class="preset-criteria"><i class="fas fa-check"></i>HLV quốc tế: Có sẵn</p>
+                    <p class="preset-criteria">HLV cá nhân: Không có</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="preset-criteria mt-1"><i class="fas fa-check"></i>Xung quanh: Siêu thị BC, Trần Quang Khải, Điện máy chợ lớn, Nhà trẻ vàng anh, Cấp 1 trưng vương</p>
+                    <p class="preset-criteria mt-1"><i class="fas fa-check"></i>Liên quan: Siêu thị BC, Trần Quang Khải, Điện máy chợ lớn, Nhà trẻ vàng anh, Cấp 1 trưng vương</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tile left-tile">
+              Thông tin cần biết
+            </div>
+            <div class="tile right-tile">
+              <p>Chúng ta tập trung vào các bài tập giảm cân, làm đẹp cho cơ thể để có được sức khỏe dẻo dai. Nhưng không nhiều người biết rằng việc chăm sóc và phục hồi và giảm căng cơ lại đóng vai trò rất quan trọng để duy trì thể trạng dẻo dai, sung sức.</p>
+              <p>Mỏi cơ – Bệnh phổ biến của dân văn phòng</p>
+              <br />
+              <p>Mỏi cơ là hiện tượng đau, mỏi, khó chịu ở các vùng cơ ở bất kỳ nhóm cơ nào trên cơ thể. Nguyên nhân gây mỏi cơ có thể là làm việc quá sức hoặc là…không làm việc gì. Tứ chi vận động nhiều cũng gây mỏi cơ, ngồi nhiều ít vận động cũng gây mỏi cơ. Khi cơ nhức mỏi, bạn cảm thấy khó chịu, thiếu sức sống, mọi vận động đều trở nên khó khăn uể oải.</p>
+              <p>Dân văn phòng ngồi làm việc nhiều giờ liền với máy vi tính, cường độ công việc căng thẳng dẫn đến sự mệt mỏi cả thể xác và tinh thần. Nhiều người cố gắng vận động đi lại nhiều hơn nhưng tình trạng mỏi cơ cũng không được cải thiện.</p>
+              <p>Hậu quả của việc đau mỏi, thoái hóa cơ</p>
+              <p>Nhiều người nghĩ rằng tập luyện thể thao có thể giải quyết được tất cả các vấn đề sức khỏe, nhưng tập luyện thiếu quá trình giảm căng cơ thì hiệu quả không cao. Chơi thể thao, ngồi làm việc nhiều, đi giầy cao gót hàng ngày, nằm ngủ tư thế sai, ngồi làm việc tư thế sai trong nhiều năm cũng là nguyên nhân gây nên nhức mỏi, thoái hóa cơ.</p>
+              <p>Khi cơ bị nhức mỏi, lâu dài sẽ dẫn đến tình trạng trùng cơ, nhão cơ dẫn đến một số vùng trên cơ thể bị co lại, teo lại ảnh hưởng đến thẩm mỹ và sức khỏe. Ngoài ra, khi các cơ không được tác động thường xuyên sẽ dẫn đến tình trạng khó lưu thông máu, không cung cấp đủ oxy cho não hoạt động. Sự thoái hóa cơ ảnh hưởng đến sự đàn hồi của da, da bị chảy xệ, nhăn nheo sớm.</p>
+              <p>Giảm căng cơ</p>
+              <br />
+              <p>Là hình thức căng cơ thư giãn kết hợp các nguyên tắc của hoạt động châm cứu , các bài tập khoa học để giúp khôi phục các mối quan hệ tự nhiên bên trong cơ thể. Các bài tập giảm căng cơ sẽ điều chỉnh việc mất cân bằng thông qua hệ thống điều trị vật lý vô cùng thư giãn.</p>
+              <p>Các biện pháp giúp giảm căng cơ:</p>
+              <p>
+                Nên khởi động kỹ trước khi bắt đầu bất kỳ bài tập nào.
+                <br />Tập cường độ tăng dần từ thấp đến cao để cơ thể làm quen, tránh tập quá sức hoặc làm các động tác quá khó dẫn đến căng cơ>
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <div class="city-background"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="footer-body">
+          <hr style="border-color: #d8d8d8" />
+          <div class="about-gofitness">
+            <ul class="nav nowrap">
+              <li><a>Về chúng tôi</a></li>
+              <li><a>Liên hệ</a></li>
+              <li><a>Điều khoản sử dụng</a></li>
+              <li><a>Chính sách bảo mật</a></li>
+              <li><a>Dịch vụ</a></li>
+              <li><a>Hợp tác</a></li>
+            </ul>
+            <ul class="nav flex-column">
+              <li><a class="logo-appstore"></a></li>
+              <li class="mt-0 mt-2"><a class="logo-googleplay"></a></li>
+            </ul>
+            <ul class="nav">
+              <li><h5 class="my-0">Công ty cổ phần đầu tư Nguyễn Tấn</h5></li>
+              <li><p>Phòng 1724, tòa nhà HH2B, bán đảo Linh Đàm Hoàng Mai, Hà Nội</p></li>
+              <li><p class="mb-0">Hotline: 0936 968 000</p></li>
+              <li class="mt-0"><p>Email: info@gofitness.vn</p></li>
+              <li><p class="mb-0">Khiếu nại và góp ý: 024 6260 4822</p></li>
+              <li class="mt-0"><p>Làm việc từ 8h - 17h30 từ thứ 2 đến thứ 6</p></li>
+            </ul>
+            <ul class="nav">
+              <li><p class="mb-0">Đăng ký nhận tin để có thể nhận những gói tập <span class="text-orange">với mức giá rẻ bất ngờ</span></p></li>
+              <li class="align-self-stretch">
+                <form class="receive-notify-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nhập địa chỉ email" />
+                    <button class="btn btn--sm submit-button">Đăng ký</button>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-footer">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="copyright">
+            <span>Bản quyền thuộc về gofitness.vn</span>
+            <a class="ministry-of-industry-and-trade"></a>
+          </div>
+          <div class="social-network">
+            <a><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a><i class="fab fa-google-plus-square"></i>GooglePlus</a>
+            <a><i class="fab fa-twitter-square"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

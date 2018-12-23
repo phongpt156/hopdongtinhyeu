@@ -1,11 +1,4 @@
-body {
-    --orange: #ff8916;
-}
-.text-orange {
-    color: var(--orange) !important;
-}
 .form-group .form-control {
-    border: 1px solid #cccccc;
     border-radius: inherit;
     height: 2.4375rem;
     padding: .625rem .9375rem;
@@ -24,14 +17,6 @@ body {
 .btn--lg {
     line-height: 1.0625rem;
     padding: .625rem 5.75rem;
-}
-.btn--orange {
-    background-color: var(--orange);
-    color: #fff;
-}
-.btn--orange:hover, .btn--orange:focus {
-    background-color: #ffc317;
-    color: #fff;
 }
 
 .banner  {
@@ -79,24 +64,12 @@ body {
     width: 3.75rem;
 }
 .reason-list .reason-item__body .title {
+    color: #333;
     font-size: 1rem;
     text-transform: uppercase;
 }
 .reason-list .reason-item__body .description {
     margin-bottom: 0;
-}
-.reason-list .reason-item__body .resaon-detail-button {
-    background-color: var(--orange);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    color: #fff;
-    padding: .1875rem .5rem;
-    transition: all .2s ease-in-out;
-}
-.reason-list .reason-item__body .resaon-detail-button:hover {
-    background-color: transparent;
-    border-color: var(--orange);
-    color: var(--orange);
 }
 
 .tile-container {
@@ -163,12 +136,6 @@ body {
 .body .register-form .form-group {
     padding-left: .3125rem;
     padding-right: .3125rem;
-}
-
-.body .city-background {
-    background: url(./../images/sprite-home.png) center -128px no-repeat;
-    border-bottom: 2px solid #ff8917;
-    padding-top: 6.125rem;
 }
 
 @media screen and (min-width: 576px) {

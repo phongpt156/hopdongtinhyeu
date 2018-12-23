@@ -203,9 +203,6 @@ header.header .navbar-right .navbar-right__menu-item.select-option-button .dropd
     color: #438dc4;
 }
 .authentication-dialog .authentication-form .submit-button {
-    background-color: var(--orange);
-    border-radius: inherit;
-    color: #fff;
     padding: .5625rem .9375rem;
     text-transform: uppercase;
     width: 100%;
@@ -229,6 +226,34 @@ header.header .navbar-right .navbar-right__menu-item.select-option-button .dropd
     font-size: .75rem;
 }
 
+header.header .forgot-password-modal .modal-dialog .modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 15px 0;
+}
+header.header .forgot-password-modal .modal-dialog .modal-header .close {
+    font-size: 30px;
+    opacity: 1;
+}
+header.header .forgot-password-modal .modal-dialog .modal-title {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+}
+header.header .forgot-password-modal .submit-button {
+    background-color: #ff8917;
+    border-radius: 2px;
+    color: #fff;
+    padding: 9px 15px;
+    width: 100px;
+}
+header.header .forgot-password-modal .modal-dialog .modal-footer {
+    border-top: none;
+    padding-top: 0;
+}
+
 @media screen and (min-width: 768px) {
     header.header {
         padding-top: 1.875rem;
@@ -238,5 +263,8 @@ header.header .navbar-right .navbar-right__menu-item.select-option-button .dropd
     }
     .authentication-dialog {
         width: 25.625rem;
+    }
+    header.header .forgot-password-modal .modal-dialog {
+        width: 420px;
     }
 }

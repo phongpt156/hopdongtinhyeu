@@ -51,9 +51,13 @@ $(document).ready(function () {
     /*#endregion responsive code end*/
   }
 
-  function initJssorBannerSlider() {
-    initJssorSlider('jssor-banner');
+  function initJssorTopSlider() {
+    initJssorSlider('jssor-top-slider');
+  }
+  function initJssorBottomSlider() {
+    initJssorSlider('jssor-bottom-slider');
   }
 
-  initJssorBannerSlider();
+  initJssorTopSlider();
+  initJssorBottomSlider();
 });
