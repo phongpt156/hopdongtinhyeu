@@ -129,6 +129,7 @@ section.body article.customer-post section.footer {
 .order-service-form .form-group label {
     align-items: center;
     display: flex;
+    font-weight: normal;
 }
 .order-service-form .form-group label span {
     flex-shrink: 0;
