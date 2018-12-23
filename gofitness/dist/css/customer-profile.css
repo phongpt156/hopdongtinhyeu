@@ -118,6 +118,29 @@ section.body article.customer-post section.footer {
     position: absolute;
 }
 
+.order-service-form .payment-method .payment-item {
+    vertical-align: top;
+    width: 8.125rem;
+}
+.order-service-form .payment-method .payment-item img {
+    height: 41px;
+    width: 65px;
+}
+.order-service-form .form-group label {
+    align-items: center;
+    display: flex;
+}
+.order-service-form .form-group label span {
+    flex-shrink: 0;
+    width: 5.625rem;
+}
+.order-service-form .form-control {
+    border-radius: inherit;
+}
+.order-service-form .modal-footer .btn {
+    border-radius: inherit;
+}
+
 @media screen and (min-width: 992px) {
     .class-list .class-item {
         display: flex;
