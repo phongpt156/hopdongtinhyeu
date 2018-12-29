@@ -1,11 +1,10 @@
-.detailProfile .photo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./../images/cover.jpg);
+.mb-20 {
+    margin-bottom: 20px;
 }
 .detailProfile .photo .media {
     transform: translateY(-50%);
     top: 50%;
+    margin-top: 0;
 }
 .detailProfile .photo .media .media-body p {
     margin-bottom: 0;
@@ -95,6 +94,10 @@
     position: absolute;
     left: 0;
     height: 20px;
+}
+
+.detailProfile .nda_statis {
+    margin: 0 0 20px;
 }
 /*======== end document report modal ========*/
 

@@ -20,9 +20,6 @@ body {
 .whiteBox .infoDetail .title .left {
     width: auto;
 }
-.right-main {
-    margin-top: 1.25em;
-}
 .list-item-boxSb .item-boxSb .info-item {
     padding-right: 0;
 }
@@ -378,6 +375,15 @@ body {
 }
 .cmtTxt .detailCmt:hover .comment-action {
     visibility: visible;
+}
+.comment > .cmtTxt > .media, .comment > .cmtTxt > .media .replyBox > .media {
+    display: flex;
+}
+.comment > .cmtTxt > .media > .media-body, .comment > .cmtTxt > .media > .media-body .preview-content, .comment > .cmtTxt > .media, .comment > .cmtTxt > .media .replyBox > .media > .media-body {
+    min-width: 0;
+}
+.cmtTxt .media-body img {
+    width: 100%;
 }
 .comment-action-popover {
     max-width: fit-content;

@@ -28,8 +28,11 @@ header .searchUser .form-group {
 header .navbar-header {
     margin: 0 0 0 -5px !important;
 }
-header .setting-menu, header .top-menu {
-    display: none !important;
+header .top-menu {
+    display: none;
+}
+.searchUser {
+    width: auto
 }
 .header-options {
     top: -4px;
@@ -84,13 +87,17 @@ header .setting-menu, header .top-menu {
     .container {
         width: 750px;
     }
-    header .top-menu {
-        display: inline-block !important;
-    }
+
 }
 @media (min-width: 992px) {
+    .searchUser {
+        width: 395px;
+    }
     .container {
         width: 970px;
+    }
+    header .top-menu {
+        display: inline-block !important;
     }
     header .setting-menu {
         display: inline-block;
@@ -110,7 +117,7 @@ header .setting-menu, header .top-menu {
         width: auto;
     }
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 496px) {
     body {
         padding-top: 4.9375em !important;
     }
