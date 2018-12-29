@@ -27,7 +27,7 @@ $(document).ready(function () {
   function initUserInfoTooltip() {
     let userInfo = {};
 
-    $('.contact-list .contact-item').on('mouseenter', async function () {
+    $('.contact-list .contact-item').on('mouseenter', function () {
       userInfo.name = 'Quân Đạt';
 
       $('.contact-list .contact-item').popover({
