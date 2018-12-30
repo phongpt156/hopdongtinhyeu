@@ -26,11 +26,35 @@ $(document).ready(function () {
 
   function initUserInfoTooltip() {
     let userInfo = {};
+    let contacts = [];
+    getContacts();
+
+    function getContacts() {
+      contacts = [
+        {
+          name: 'Hà Bầu',
+          facebookUrl: 'https://www.facebook.com/lazycat87st',
+        },
+        {
+          name: 'Nguyễn Tấn Đạt',
+          facebookUrl: 'https://www.facebook.com/datnt1409',
+        },
+      ];
+    }
 
     $('.contact-list .contact-item').on('mouseenter', function () {
-      userInfo.name = 'Quân Đạt';
+      const self = $(this);
+      // self.tooltip('destroy');
+      
+      // cách 1
+      // userInfo.name = self.data('name');
+      // userInfo.facebookUrl = self.data('facebook-url');
+      
+      // cách 2
+      const index = self.data('index');
+      userInfo = contacts[index];
 
-      $('.contact-list .contact-item').popover({
+      $(this).popover({
         trigger: 'manual',
         html : true,
         container: 'body',
@@ -50,7 +74,7 @@ $(document).ready(function () {
                   </div>
                   <div class="col-md-8 infoRow">
                     <div class="nameUserIf">
-                      <a href="#">${userInfo.name}</a>
+                      <a href="${userInfo.facebookUrl}" target="_blank">${userInfo.name}</a>
                     </div>
                     <span class="flwUsIf">
                       1.000 người theo dõi
