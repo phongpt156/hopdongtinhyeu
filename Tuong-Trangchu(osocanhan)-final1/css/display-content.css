@@ -20,9 +20,6 @@ body {
 .whiteBox .infoDetail .title .left {
     width: auto;
 }
-.list-item-boxSb .item-boxSb .info-item {
-    padding-right: 0;
-}
 .cmtTxt .detailCmt.is-attachment {
     flex-wrap: wrap;
     display: flex;

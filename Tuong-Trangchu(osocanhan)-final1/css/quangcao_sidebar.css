@@ -88,12 +88,30 @@
     border-color: rgb(40, 81, 163);
     background-color: rgb(40, 81, 163);
 }
+.wpPopupInfoPage {
+    display: block;
+}
+.mainPopupInfoPage {
+    top: 15px;
+    left: 0;
+}
 .mainPopupInfoPage .head .overlay {
     width: 100%;
-    top: -20px;
+    top: -25px;
     position: absolute;
     left: 0;
-    height: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+.list-item-boxSb .item-boxSb .info-item {
+    padding-right: 0;
+}
+.list-item-boxSb .item-boxSb .info-item .popover {
+    border: none;
+    background-color: transparent;
+}
+.list-item-boxSb .item-boxSb .info-item .popover .popover-content {
+    padding: 0;
 }
 
 .detailProfile .nda_statis {
