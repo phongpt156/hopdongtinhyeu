@@ -26,33 +26,14 @@ $(document).ready(function () {
 
   function initUserInfoTooltip() {
     let userInfo = {};
-    let contacts = [];
-    getContacts();
-
-    function getContacts() {
-      contacts = [
-        {
-          name: 'Hà Bầu',
-          facebookUrl: 'https://www.facebook.com/lazycat87st',
-        },
-        {
-          name: 'Nguyễn Tấn Đạt',
-          facebookUrl: 'https://www.facebook.com/datnt1409',
-        },
-      ];
-    }
 
     $('.contact-list .contact-item').on('mouseenter', function () {
       const self = $(this);
-      // self.tooltip('destroy');
+      userInfo = {};
       
       // cách 1
-      // userInfo.name = self.data('name');
-      // userInfo.facebookUrl = self.data('facebook-url');
-      
-      // cách 2
-      const index = self.data('index');
-      userInfo = contacts[index];
+      userInfo.name = self.data('name');
+      userInfo.facebookUrl = self.data('facebook-url');
 
       $(this).popover({
         trigger: 'manual',
@@ -106,16 +87,16 @@ $(document).ready(function () {
       });
 
       $(this).popover('show');
-        const scrollTop = $(window).scrollTop();
-        const elementOffset = $(this).offset().top;
-        const currentElementOffset = (elementOffset - scrollTop);
-    
-        if ($(window).height() - currentElementOffset < 200) {
-          $('.listChat .item .infoUserLf').addClass('bottom');
-        }
-        $('.infoUserLf').on('mouseleave', function() {
-          $(this).popover('hide');
-        }.bind(this));
+      const scrollTop = $(window).scrollTop();
+      const elementOffset = $(this).offset().top;
+      const currentElementOffset = (elementOffset - scrollTop);
+  
+      if ($(window).height() - currentElementOffset < 200) {
+        $('.listChat .item .infoUserLf').addClass('bottom');
+      }
+      $('.infoUserLf').on('mouseleave', function() {
+        $(this).popover('hide');
+      }.bind(this));
     });
   }
 
