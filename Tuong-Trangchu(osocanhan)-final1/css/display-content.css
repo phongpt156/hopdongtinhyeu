@@ -3,6 +3,9 @@ body {
     font-size: 1rem;
     background-color: #e9ebee;
 }
+body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
+    font-size: .75rem;
+}
 .text-blue {
     color: #0096ff !important;
 }
