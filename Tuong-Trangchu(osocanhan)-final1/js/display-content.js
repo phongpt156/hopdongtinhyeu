@@ -78,7 +78,7 @@ $(document).ready(function () {
               <div class="profile-cover-container">
                 <div class="profile-cover-container__inner">
                   <div class="profile-cover">
-                    <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t31.0-0/q84/c0.82.853.316/p480x480/18527052_1898323690379740_6713179018005405852_o.jpg?_nc_cat=105&_nc_ht=scontent.fhan5-6.fna&oh=0f8012dcd816318f19ef866960c8cef2&oe=5CAE6EF8" />
+                    <img src="https:preset-report-option-listscontent.fhan5-6.fna.fbcdn.net/v/t31.0-0/q84/c0.82.853.316/p480x480/18527052_1898323690379740_6713179018005405852_o.jpg?_nc_cat=105&_nc_ht=scontent.fhan5-6.fna&oh=0f8012dcd816318f19ef866960c8cef2&oe=5CAE6EF8" />
                   </div>
                   <div class="overlay"></div>
                 </div>
@@ -251,4 +251,11 @@ $(document).ready(function () {
   $('.send-apply-cv-button').click(function () {
     $('.apply').removeClass('d-none');
   });
+
+  $('.preset-report-option-list .preset-report-option-item button').click(function (e) {
+    e.preventDefault();
+
+    $(this).closest('.preset-report-option-list').find('.preset-report-option-item').removeClass('active');
+    $(this).closest('.preset-report-option-item').addClass('active');
+  })
 });
