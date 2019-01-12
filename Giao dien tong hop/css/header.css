@@ -4,7 +4,7 @@ body,
     min-width: auto;
 }
 .container {
-    width: auto;
+    width: auto !important;
 }
 header.navbar-fixed-top .container {
     width: auto;
@@ -85,7 +85,7 @@ header .top-menu {
 }
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 750px !important;
     }
 
 }
@@ -94,7 +94,7 @@ header .top-menu {
         width: 395px;
     }
     .container {
-        width: 970px;
+        width: 970px !important;
     }
     header .top-menu {
         display: inline-block !important;
@@ -108,7 +108,7 @@ header .top-menu {
 }
 @media (min-width: 1200px) {
     .container {
-        width: 1170px;
+        width: 1170px !important;
     }
 }
 

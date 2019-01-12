@@ -143,6 +143,17 @@ i.sn-play-video {
     background-position: 0 0;
     background-image: url(./../images/social-network/list-icon-13.png);
 }
+i.sn-radio-input {
+    background-position: 0 -69px;
+    background-image: url(./../images/social-network/list-icon-14.png);
+}
+i.sn-radio-input.sn-radio-input__active {
+    background-position: -17px -69px;
+}
+i.sn-plus-circle {
+    background-position: -17px -319px;
+    background-image: url(./../images/social-network/list-icon-14.png);
+}
 
 .sn-emoji {
     width: 30px;

@@ -16,9 +16,6 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
 .main .main__inner {
     font-size: 12px;
 }
-.main .main__inner .mainContent {
-    position: relative;
-}
 
 .whiteBox .infoDetail .title .left {
     width: auto;
@@ -442,12 +439,6 @@ footer.footer .whiteBox {
     }
     .cmtTxt .detailCmt > .d-inline-block {
         margin-left: .5em;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .left-main {
-        margin-left: 18px;
-        margin-right: 313px;
     }
 }
 

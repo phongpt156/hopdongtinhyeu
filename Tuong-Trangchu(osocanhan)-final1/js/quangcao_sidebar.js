@@ -138,4 +138,6 @@ $(document).ready(function () {
   $('.send-report-button').click(function () {
     $('#document-report-modal').modal('hide');
   });
+
+  $('.right-main .detailProfile').simpleScrollFollow();
 });
