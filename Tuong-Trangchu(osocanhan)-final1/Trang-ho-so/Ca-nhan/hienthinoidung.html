@@ -1799,44 +1799,38 @@
                       </a>
                     </div>
                     <div class="cmt_nda">
-                      <div class="statistic">
-                        <div class="stt_1">
-                          <span class="nda_stt">NDA 12.989.098</span> - <span>Tuyệt vời (111 bình luận)</span>
-                          <a href=""><span class="share_stt">1 chia sẻ</span></a>
-                        </div>
-                        <div class="dropdown check_dropdown">
-                          <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Bình luận hàng đầu
-                            <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="dLabel">
-                            <li class="active">
-                              <a>
-                                <strong>Bình luận hàng đầu</strong>
-                                <span>Bình luận liên quan nhất sẽ xuất hiện trên cùng.</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <strong>Theo trình tự thời gian</strong>
-                                <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận mới nhất ở dưới cùng.</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <strong>Bình luận hàng đầu (Chưa lọc)</strong>
-                                <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận liên quan nhất ở trên cùng.</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
                       <div class="comment">
                         <div class="type">
                           <span class="active">NDA rank</span>
                           <span>Facebook</span>
                           <span>Google</span>
                           <span>Tweeter</span>
+                          <div class="dropdown check_dropdown">
+                            <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Bình luận hàng đầu
+                              <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                              <li class="active">
+                                <a>
+                                  <strong>Bình luận hàng đầu</strong>
+                                  <span>Bình luận liên quan nhất sẽ xuất hiện trên cùng.</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a>
+                                  <strong>Theo trình tự thời gian</strong>
+                                  <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận mới nhất ở dưới cùng.</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a>
+                                  <strong>Bình luận hàng đầu (Chưa lọc)</strong>
+                                  <span>Tất cả các bình luận, bao gồm spam và bình luận bằng ngôn ngữ khác, với bình luận liên quan nhất ở trên cùng.</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                         <div class="cmtTxt">
                           <div class="media">
@@ -1857,8 +1851,27 @@
                               </div>
                             </div>
                           </div>
+
+                          <div class="confirm-delete-comment-modal modal modal--center fade" role="dialog">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Xóa bình luận</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p class="mb-0">Bạn có chắc muốn xóa bình luận này?</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Hủy</button>
+                                  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Xóa</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                           <div class="media">
-                            <span class="hideCmt" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
+                            <span class="hideCmt hide-when-edit" data-toggle="tooltip" data-placement="left" data-original-title="Ẩn bình luận">×</span>
                             <div class="media-left">
                               <a>
                                 <img class="media-object cmt_avt" src="../../images/cmt1.jpg" alt="..." />
@@ -1867,10 +1880,22 @@
                             <div class="media-body">
                               <div class="detailCmt">
                                 <a><span class="name">Tạ Quang Minh</span></a>
-                                <span>
+                                <div class="display-when-edit inputCmt">
+                                  <form>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Viết bình luận..." />
+                                      <a data-toggle="tooltip" data-placement="left" data-original-title="Đính kèm một ảnh hoặc video"><span class="upImage"></span></a>
+                                      <a data-toggle="tooltip" data-placement="left" data-original-title="Đăng nhãn dán"><span class="emoticon"></span></a>
+                                    </div>
+                                  </form>
+                                  <span class="description">
+                                    Nhấn Esc để hủy
+                                  </span>
+                                </div>
+                                <span class="hide-when-edit">
                                   <span>this is demo text</span>
                                 </span>
-                                <span class="d-inline-block vertical-middle">
+                                <span class="d-inline-block vertical-middle hide-when-edit">
                                   <div class="reaction shadow-sm" data-toggle="tooltip">
                                     <a data-toggle="modal" data-target=".reaction-detail-modal-1"><i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue"></i></a>
                                     <a data-toggle="modal" data-target=".reaction-detail-modal-2"><i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue"></i></a>
@@ -1987,7 +2012,7 @@
                                   </div>
                                 </span>
                               </div>
-                              <p class="line"><a>Thích</a> · <a>Không thích</a> . <a>Trả lời</a>  ·  <span>1 giờ</span></p>
+                              <p class="line hide-when-edit"><a>Thích</a> · <a>Không thích</a> . <a>Trả lời</a>  ·  <span>1 giờ</span></p>
                             </div>
                           </div>
                           <div class="media">

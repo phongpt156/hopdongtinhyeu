@@ -182,11 +182,11 @@ $(document).ready(function () {
     `,
     content: `
       <div class="comment-action-list">
-        <a class="comment-action-item">
+        <a class="comment-action-item edit-comment">
           <i class="fa fa-pencil"></i>
           <span>Chỉnh sửa...</span>
         </a>
-        <a class="comment-action-item">
+        <a data-toggle="modal" data-target=".confirm-delete-comment-modal" class="comment-action-item">
           <i class="fa fa-trash"></i>
           <span>Xóa...</span>
         </a>
@@ -231,6 +231,17 @@ $(document).ready(function () {
 
   $(document).on('click', '.comment-action-popover .comment-action-item', function () {
     $('.comment-action').popover('hide').removeClass('visible');
+  });
+  $(document).on('click', '.comment-action-popover .comment-action-item.edit-comment', function () {
+    const parentEl = $(this).closest('.media');
+
+    parentEl.addClass('is-edit');
+    parentEl.find('.inputCmt input').focus();
+  });
+  $(document).on('keyup', '.cmtTxt .media.is-edit .inputCmt', function (e) {
+    if (e.keyCode === 27) { // if press esc, escape edit mode
+      $(this).closest('.media').removeClass('is-edit');
+    }
   });
 
   $('.send-cv-button').click(function () {

@@ -23,6 +23,30 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
 .list-item-boxSb .item-boxSb .info-item {
     padding-right: 0;
 }
+
+.cmtTxt .display-when-edit {
+    display: none;
+}
+.cmtTxt .media.is-edit .display-when-edit {
+    display: block;
+}
+.cmtTxt .media.is-edit .hide-when-edit {
+    display: none !important;
+}
+.cmtTxt .media.is-edit .detailCmt {
+    align-items: center;
+    display: flex;
+}
+.cmtTxt .media.is-edit .detailCmt .inputCmt {
+    flex-grow: 1;
+    margin-left: .3125rem;
+}
+.cmtTxt .media.is-edit .detailCmt .inputCmt .description {
+    font-size: .625rem;
+    margin-top: .1875rem;
+    position: absolute;
+}
+
 .cmtTxt .detailCmt.is-attachment {
     flex-wrap: wrap;
     display: flex;
@@ -382,23 +406,39 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
 .comment > .cmtTxt > .media > .media-body, .comment > .cmtTxt > .media > .media-body .preview-content, .comment > .cmtTxt > .media, .comment > .cmtTxt > .media .replyBox > .media > .media-body {
     min-width: 0;
 }
+.cmtTxt .media {
+    margin-top: .9375rem;
+}
 .cmtTxt .media-body img {
     width: 100%;
 }
 .comment-action-popover {
     max-width: fit-content;
 }
-.comment-action-popover .comment-action-list a {
-    padding: 3px 0;
+.comment-action-popover .popover-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+.comment-action-popover .comment-action-list .comment-action-item {
+    padding: 3px 9px;
     display: flex;
     color: #72767f;
     align-items: center;
 }
-.comment-action-popover .comment-action-list a:hover {
+.comment-action-popover .comment-action-list .comment-action-item:hover {
+    background-color: #4268b1;
+    color: #fff;
     text-decoration: none;
 }
-.comment-action-popover .comment-action-list a > i {
+.comment-action-popover .comment-action-list .comment-action-item > i {
     margin-right: 5px;
+}
+.comment-action-popover .comment-action-list .comment-action-item:hover > i.sn-close-square {
+    background-position: -68px -252px;
+}
+.confirm-delete-comment-modal .modal-body {
+    padding: .75rem;
+    text-align: left;
 }
 
 .media .replyBox {
