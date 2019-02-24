@@ -212,11 +212,11 @@ $(document).ready(function () {
     `,
     content: `
       <div class="comment-action-list">
-        <a class="comment-action-item">
+        <a class="comment-action-item hide-comment">
           <i class="sn-icon sn-icon--2x sn-close-square"></i>
           <span>Ẩn bình luận</span>
         </a>
-        <a class="comment-action-item">
+        <a class="comment-action-item" data-toggle="modal" data-target="#document-report-modal">
           <span>Gửi phản hồi hoặc báo cáo bình luân này</span>
         </a>
       </div>
@@ -237,6 +237,16 @@ $(document).ready(function () {
 
     parentEl.addClass('is-edit');
     parentEl.find('.inputCmt input').focus();
+  });
+  $(document).on('click', '.comment-action-popover .comment-action-item.hide-comment', function () {
+    const parentEl = $(this).closest('.media');
+
+    parentEl.addClass('is-hide');
+  });
+  $(document).on('click', '.cmtTxt .media .media-body .line .unhide-comment', function () {
+    const parentEl = $(this).closest('.media');
+
+    parentEl.removeClass('is-hide');
   });
   $(document).on('keyup', '.cmtTxt .media.is-edit .inputCmt', function (e) {
     if (e.keyCode === 27) { // if press esc, escape edit mode

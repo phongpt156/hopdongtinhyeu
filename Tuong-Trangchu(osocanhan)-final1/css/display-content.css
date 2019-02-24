@@ -46,6 +46,21 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
     margin-top: .1875rem;
     position: absolute;
 }
+.cmtTxt .media.is-hide .media-left, .cmtTxt .media.is-hide .detailCmt {
+    opacity: .5;
+}
+.cmtTxt .media.is-hide .detailCmt .comment-action {
+    display: none;
+}
+.cmtTxt .media .media-body .line .unhide-comment {
+    display: none;
+}
+.cmtTxt .media.is-hide .media-body .line .unhide-comment {
+    display: inline-block;
+}
+.cmtTxt .media.is-hide .media-body .line .like-comment {
+    display: none;
+}
 
 .cmtTxt .detailCmt.is-attachment {
     flex-wrap: wrap;
