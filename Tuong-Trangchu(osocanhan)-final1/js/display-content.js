@@ -233,10 +233,24 @@ $(document).ready(function () {
     $('.comment-action').popover('hide').removeClass('visible');
   });
   $(document).on('click', '.comment-action-popover .comment-action-item.edit-comment', function () {
-    const parentEl = $(this).closest('.media');
+    const container = $(this).closest('.media');
+    const parentEl = $(this).closest('.detailCmt');
 
+    container.find('> .hideCmt').addClass('d-none');
+    container.find('> .media-body > .line').addClass('d-none');
     parentEl.addClass('is-edit');
+
     parentEl.find('.inputCmt input').focus();
+  });
+  $(document).on('keyup', '.cmtTxt .detailCmt.is-edit .inputCmt', function (e) {
+    if (e.keyCode === 27) { // if press esc, escape edit mode
+      const container = $(this).closest('.media');
+      const parentEl = $(this).closest('.detailCmt');
+
+      container.find('> .hideCmt').removeClass('d-none');
+      container.find('> .media-body > .line').removeClass('d-none');
+      parentEl.removeClass('is-edit');
+    }
   });
   $(document).on('click', '.comment-action-popover .comment-action-item.hide-comment', function () {
     const parentEl = $(this).closest('.media');
@@ -247,11 +261,6 @@ $(document).ready(function () {
     const parentEl = $(this).closest('.media');
 
     parentEl.removeClass('is-hide');
-  });
-  $(document).on('keyup', '.cmtTxt .media.is-edit .inputCmt', function (e) {
-    if (e.keyCode === 27) { // if press esc, escape edit mode
-      $(this).closest('.media').removeClass('is-edit');
-    }
   });
 
   $('.send-cv-button').click(function () {

@@ -24,24 +24,24 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
     padding-right: 0;
 }
 
-.cmtTxt .display-when-edit {
+.cmtTxt .detailCmt .display-when-edit {
     display: none;
 }
-.cmtTxt .media.is-edit .display-when-edit {
+.cmtTxt .detailCmt.is-edit .display-when-edit {
     display: block;
 }
-.cmtTxt .media.is-edit .hide-when-edit {
+.cmtTxt .detailCmt.is-edit .hide-when-edit {
     display: none !important;
 }
-.cmtTxt .media.is-edit .detailCmt {
+.cmtTxt .detailCmt.is-edit {
     align-items: center;
     display: flex;
 }
-.cmtTxt .media.is-edit .detailCmt .inputCmt {
+.cmtTxt .detailCmt.is-edit .inputCmt {
     flex-grow: 1;
     margin-left: .3125rem;
 }
-.cmtTxt .media.is-edit .detailCmt .inputCmt .description {
+.cmtTxt .detailCmt.is-edit .inputCmt .description {
     font-size: .625rem;
     margin-top: .1875rem;
     position: absolute;
