@@ -2,7 +2,7 @@ body {
     font-size: 1rem;
 }
 body.index {
-    padding-top: 88px;
+    padding-top: 2.75rem;
 }
 header.header {
     font-size: .75rem;
@@ -107,6 +107,9 @@ header.header {
 }
 /*======== End search filter sidebar ========*/
 
+.selectCat > li {
+    width: calc(100% / 3);
+}
 .selectCat > li:nth-child(n+6) {
     display: inline-block;
 }
@@ -121,6 +124,9 @@ header.header {
         justify-content: center;
         flex-wrap: wrap;
         display: flex;
+    }
+    .selectCat > li {
+        width: 20%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -151,8 +157,8 @@ header.header {
         padding-left: 14.1875rem;
     }
 }
-@media screen and (max-width: 496px) {
+@media screen and (max-width: 471px) {
     body.index {
-        padding-top: 8.1875rem !important;
+        padding-top: 5rem !important;
     }
 }
