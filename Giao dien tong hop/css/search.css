@@ -2,12 +2,12 @@ body {
     font-size: 1rem;
 }
 body.index {
-    padding-top: 88px;
+    padding-top: 2.75rem;
 }
 header.header {
     font-size: .75rem;
 }
-.contact-list-sidebar {
+.search-page .contact-list-sidebar {
     top: 5.5rem;
 }
 .list-notifi>li .drop-down {
@@ -61,7 +61,7 @@ header.header {
 /*======== Search filter sidebar ========*/
 .search-filter-sidebar {
     display: none;
-    margin-left: 2.9375rem;
+    margin-left: 1.9375rem;
     position: absolute;
     width: 11.25rem;
 }
@@ -107,6 +107,9 @@ header.header {
 }
 /*======== End search filter sidebar ========*/
 
+.selectCat > li {
+    width: calc(100% / 3);
+}
 .selectCat > li:nth-child(n+6) {
     display: inline-block;
 }
@@ -121,6 +124,9 @@ header.header {
         justify-content: center;
         flex-wrap: wrap;
         display: flex;
+    }
+    .selectCat > li {
+        width: 20%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -150,9 +156,16 @@ header.header {
     .search-result-section {
         padding-left: 14.1875rem;
     }
+    .search-page .left-main {
+        margin-left: 3px;
+        margin-right: 368px;
+    }
+    .search-page .right-main .detailProfile {
+        right: 32px;
+    }
 }
-@media screen and (max-width: 496px) {
+@media screen and (max-width: 471px) {
     body.index {
-        padding-top: 8.1875rem !important;
+        padding-top: 5rem !important;
     }
 }

@@ -25,9 +25,6 @@ header .searchUser .form-group {
 .fa-question-square path {
     fill: #949494;
 }
-header .navbar-header {
-    margin: 0 0 0 -5px !important;
-}
 header .top-menu {
     display: none;
 }
@@ -83,18 +80,9 @@ header .top-menu {
         min-width: 400px;
     }
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px !important;
-    }
-
-}
 @media (min-width: 992px) {
     .searchUser {
         width: 395px;
-    }
-    .container {
-        width: 970px !important;
     }
     header .top-menu {
         display: inline-block !important;
@@ -106,18 +94,7 @@ header .top-menu {
         min-width: 750px;
     }
 }
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px !important;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    header .searchUser {
-        width: auto;
-    }
-}
-@media screen and (max-width: 496px) {
+@media screen and (max-width: 471px) {
     body {
         padding-top: 4.9375em !important;
     }
