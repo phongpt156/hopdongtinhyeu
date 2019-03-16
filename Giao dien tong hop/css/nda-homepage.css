@@ -4,6 +4,8 @@ body {
 .header > .navbar {
     background-color: var(--orange);
     margin-bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .header .navbar-brand {
     height: auto;
@@ -302,12 +304,6 @@ footer.footer .nav-list .nav-group {
     }
 }
 @media screen and (min-width: 992px) {
-    .header > .navbar .container-fluid {
-        padding: 0 5.625rem;
-    }
-    .header ul.navbar-nav {
-        padding-left: 8.125rem;
-    }
     .profile-card-list {
         transform: translate(0, -50%);
         display: flex;
@@ -319,8 +315,18 @@ footer.footer .nav-list .nav-group {
     .brand-list {
         grid-template-columns: repeat(5, 1fr);
     }
+    .contact-form {
+        margin: 0 auto;
+        width: 80%;
+    }
 }
 @media (min-width: 1200px) {
+    .header ul.navbar-nav {
+        padding-left: 8.125rem;
+    }
+    .header > .navbar .container-fluid {
+        padding: 0 5.625rem;
+    }
     .profile-card-list {
         padding: 0 12.5em;
     }
