@@ -20,6 +20,7 @@
     <link href="./../../css/contact-list-sidebar.css" rel="stylesheet" />
     <link href="./../../css/conversation-list.css" rel="stylesheet" />
     <link href="./../../css/sponsor-suggestion-sidebar.css" rel="stylesheet" />
+    <link href="./../../../Giao dien tong hop/css/guess-only.css" rel="stylesheet" />
     <link href="./../../css/display-content.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./../../js/bootstrap.min.js"></script>
@@ -1595,12 +1596,22 @@
                     <!-- end success send cv modal -->
 
                     <div class="post-reaction-statistic">
-                      <a class="d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
-                        <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue mr-1"></i> NDArank.com Đánh giá..., Lan lan và 1 người khác
-                      </a>
-                      <a class="ml-2 d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
-                        <i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue mr-1"></i> Nguyễn Tấn Đạt...
-                      </a>
+                      <div class="d-flex">
+                        <a class="d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
+                          <i class="sn-icon sn-icon--2x sn-thumbsup-circle-blue mr-1"></i> NDArank.com Đánh giá..., Lan lan và 1 người khác
+                        </a>
+                        <a class="ml-2 d-flex" data-target=".post-reaction-detail-modal" data-toggle="modal">
+                          <i class="sn-icon sn-icon--2x sn-thumbsdown-circle-blue mr-1"></i> Nguyễn Tấn Đạt...
+                        </a>
+                      </div>
+                      <div class="d-flex">
+                        <div class="comment-count mr-1">
+                          <a>139 bình luận</a>
+                        </div>
+                        <div>
+                          <a>58 lượt chia sẻ</a>
+                        </div>
+                      </div>
                       <div class="reaction-detail-modal post-reaction-detail-modal modal modal--center fade" role="dialog">
                         <div class="modal-dialog">
                           <div class="modal-content">
@@ -3694,6 +3705,17 @@
       </div>
     </div>
     <!-- end document report modal -->
+
+    <section class="navbar-fixed-bottom guess-only-popup">
+      <div class="guess-only-poup__inner">
+        <p class="mb-3 view-more"><b>Xem thêm về Nguyễn Minh Nguyệt trên Facebook</b></p>
+        <div>
+          <button class="signin-button btn">Đăng nhập</button>
+          <span class="mx-3" style="color: #8d949e">hoặc</span>
+          <button class="signup-button btn">Tạo tài khoản mới</button>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>

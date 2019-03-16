@@ -160,8 +160,10 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
 .post-reaction-statistic {
     padding: 15px 0 0;
     margin: 13px 15px 0;
-    display: flex;
     border-top: 1px solid #e1e2e3;
+}
+.post-reaction-statistic > * + * {
+    margin-top: 10px;
 }
 /*======== detail comment reaction tooltip ========*/
 .detail-comment-reaction-item__header {
@@ -278,6 +280,9 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
     padding: 0;
     max-width: 370px;
     border: none;
+}
+.brief-profile-wall-popover.top .content-arrow {
+    display: none;
 }
 .brief-profile-wall-popover .popover-content {
     padding: 0;
@@ -408,6 +413,9 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
 }
 /*======== detail reaction modal ========*/
 
+.cmt_nda {
+    display: none;
+}
 .cmtTxt .detailCmt .comment-action {
     visibility: hidden;
     display: inline-flex;
@@ -494,6 +502,15 @@ footer.footer .whiteBox {
     }
     .cmtTxt .detailCmt > .d-inline-block {
         margin-left: .5em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .post-reaction-statistic {
+        display: flex;
+        justify-content: space-between;
+    }
+    .post-reaction-statistic > * + * {
+        margin-top: 0;
     }
 }
 

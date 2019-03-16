@@ -1,0 +1,44 @@
+.guess-only-popup {
+    padding: 2.5em;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);
+    background: rgba(255, 255, 255, .95);
+}
+.guess-only-poup__inner {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.guess-only-poup__inner .view-more {
+    font-size: 1.2em;
+}
+.guess-only-poup__inner .btn {
+    width: 16.125em;
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color;
+    height: 3em;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+    border-radius: inherit;
+}
+.guess-only-poup__inner > div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.guess-only-poup__inner .signin-button {
+    background-color: #4267b2;
+}
+.guess-only-poup__inner .signin-button:hover {
+    background-color: #365899;
+}
+.guess-only-poup__inner .signup-button {
+    background-color: #42b72a;
+}
+.guess-only-poup__inner .signup-button:hover {
+    background-color: #36a420;
+}
+@media screen and (min-width: 768px) {
+    .guess-only-poup__inner > div {
+        flex-direction: row;
+    }
+}
