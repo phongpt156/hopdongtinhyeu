@@ -155,6 +155,9 @@ section.banner .description p {
 .main .introduce .description {
     font-size: 1.175rem;
 }
+.step-list {
+    margin-bottom: 40px;
+}
 .step .step-img img {
     margin: 0 auto;
     max-height: 10.125rem;
@@ -232,7 +235,7 @@ section.banner .description p {
 
 .contact-form-wrapper {
     background-color: #f3f3f3;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 5rem;;
     text-align: center;
 }
 .contact-form-wrapper .title {
@@ -257,12 +260,14 @@ section.banner .description p {
 .contact-form .form-control {
     border: none;
     border-top: 2px solid #b2c8dd;
+    height: 51px;
 }
 .contact-form .submit-button {
     background-color: #fff;
     border: 1px solid var(--orange);
     color: var(--orange);
     font-weight: 600;
+    height: 51px;
     width: 100%;
 }
 
@@ -322,7 +327,7 @@ footer.footer .nav-list .nav-group {
 }
 @media (min-width: 1200px) {
     .header ul.navbar-nav {
-        padding-left: 8.125rem;
+        padding-left: 1.125rem;
     }
     .header > .navbar .container-fluid {
         padding: 0 5.625rem;
@@ -338,6 +343,14 @@ footer.footer .nav-list .nav-group {
 @media (max-width: 991px) {
     .profile-card-list {
         padding: 0 8.5em;
+    }
+}
+@media (max-width: 767px) {
+    .header .navbar-collapse {
+        margin: 0;
+    }
+    .header .navbar {
+        /* position: static !important; */
     }
 }
 @media (max-width: 575px) {

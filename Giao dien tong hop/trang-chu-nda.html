@@ -17,36 +17,34 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="75">
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="95">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand">
+          <a class="navbar-brand d-md-block d-none">
             <img src="./images/nda-logo.png" />
           </a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse header-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a>Xem mặt kết hôn</a></li>
-            <li><a>Giới thiệu</a></li>
-            <li><a>Tìm kiếm</a></li>
+        <div class="navbar-collapse header-navbar-collapse">
+          <ul class="nav navbar-nav d-none d-md-block">
+            <li><a>Gọi ngay 0942174666 hoặc đăng ký để được tư vấn</a></li>
           </ul>
           <form class="nav navbar-nav navbar-right authentication-form">
             <div>
               <input type="text" placeholder="Họ tên" />
             </div>
             <div>
+              <input type="text" placeholder="Điện thoại" />
+            </div>
+            <div class="d-none d-md-block">
               <input type="text" placeholder="Email" />
             </div>
-            <div>
-              <input type="text" placeholder="Điện thoại" />
+            <div class="d-none d-md-block">
+              <input type="text" placeholder="Năm sinh" />
+            </div>
+            <div class="d-none d-md-block">
+              <input type="text" placeholder="Tỉnh thành" />
             </div>
             <div>
               <button class="btn submit-button">Đăng ký</button>
