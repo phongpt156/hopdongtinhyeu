@@ -7,9 +7,6 @@ body.index {
 header.header {
     font-size: .75rem;
 }
-.search-page .contact-list-sidebar {
-    top: 5.5rem;
-}
 .list-notifi>li .drop-down {
     z-index: 2000;
 }
@@ -22,6 +19,7 @@ header.header {
 }
 #order-criteria-menu {
     padding-bottom: 0;
+    margin-right: 204px;
     border-bottom: 1px solid #d0d1d5;
     background-color: #fff;
 }
