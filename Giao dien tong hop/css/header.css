@@ -25,9 +25,6 @@ header .searchUser .form-group {
 .fa-question-square path {
     fill: #949494;
 }
-header .top-menu {
-    display: none;
-}
 .searchUser {
     width: auto
 }
@@ -68,6 +65,10 @@ header .top-menu {
 .header-options .preset-options > li > a {
     color: #5270a2;
 }
+header.navbar-fixed-top .list-notifi, header.navbar-fixed-top .setting-menu {
+    font-size: 12px;
+}
+
 @media screen and (min-width: 576px) {
     header .navbar-header {
         display: block;

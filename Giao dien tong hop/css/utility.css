@@ -301,9 +301,10 @@
     .d-md-flex {
         display: none !important;
     }
-}
-@media (min-width: 768px) {
     .d-md-block {
+        display: block !important;
+    }
+    .d-md-inline-block {
         display: block !important;
     }
 }
