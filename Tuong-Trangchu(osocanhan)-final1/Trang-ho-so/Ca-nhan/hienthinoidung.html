@@ -1428,52 +1428,62 @@
                         </div>
                       </div> <!--describe-->
                       <div class="block-dt text-right">
-                        <a class="btn btn-primary btn-sm button-pri send-apply-cv-button">Nộp hồ sơ ứng tuyển</a>
+                        <a class="btn btn-primary btn-sm button-pri send-apply-cv-button" data-toggle="modal" data-target=".send-apply-cv-modal">Nộp hồ sơ ứng tuyển</a>
                       </div>
-                      <div class="apply d-none">
-                        <div class="bgApply">
-                          <div class="ap_Oline">
-                            <h4>Nộp hồ sơ trực tuyến</h4>
-                            <p>Bạn đã có hồ sơ tại NDA Rank, <a data-toggle="modal" data-target="#chooseCV">click vào đây để gửi hồ sơ</a></p>
+                      <div class="send-apply-cv-modal modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="apply d-none">
+                                <div class="bgApply">
+                                  <div class="ap_Oline">
+                                    <h4>Nộp hồ sơ trực tuyến</h4>
+                                    <p>Bạn đã có hồ sơ tại NDA Rank, <a data-toggle="modal" data-target="#chooseCV">click vào đây để gửi hồ sơ</a></p>
+                                  </div>
+                                  <form>
+                                    <div class="form-group title">
+                                      <input type="text" class="form-control" placeholder="Tiêu đề hồ sơ" />
+                                    </div>
+                                    <div class="form-group measure">
+                                      <input type="number" class="form-control" placeholder="Mức lương mong muốn" />
+                                      <div class="select_box">
+                                        <select class="sl_brief form-control">
+                                          <option disabled selected>Năm sinh</option>
+                                          <option>1994</option>
+                                        </select>
+                                      </div>
+                                      <div class="select_box">
+                                        <select class="sl_brief form-control">
+                                          <option disabled selected>Hôn nhân</option>
+                                          <option >Độc thân</option>
+                                        </select>
+                                      </div>
+                                      <div class="select_box">
+                                        <select class="sl_brief form-control">
+                                          <option disabled selected>Giới tính</option>
+                                          <option >Nam</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-group contact">
+                                      <input type="text" class="form-control" placeholder="Họ tên" />
+                                      <input type="text" class="form-control" placeholder="Điện thoại liên hệ" />
+                                      <input type="text" class="form-control email" placeholder="Email liên hệ" />
+                                    </div>
+                                    <div class="form-group">
+                                      <textarea placeholder="Nội dung"></textarea>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-between">
+                                      <input type="file" placeholder="Họ tên" />
+                                      <button class="btn btn-primary button-pri" data-dismiss="modal">Ứng tuyển</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <form>
-                            <div class="form-group title">
-                              <input type="text" class="fomr-control" placeholder="Tiêu đề hồ sơ" />
-                            </div>
-                            <div class="form-group measure">
-                              <input type="number" class="fomr-control" placeholder="Mức lương mong muốn" />
-                              <div class="select_box">
-                                <select class="sl_brief form-control">
-                                  <option disabled selected>Năm sinh</option>
-                                  <option>1994</option>
-                                </select>
-                              </div>
-                              <div class="select_box">
-                                <select class="sl_brief form-control">
-                                  <option disabled selected>Hôn nhân</option>
-                                  <option >Độc thân</option>
-                                </select>
-                              </div>
-                              <div class="select_box">
-                                <select class="sl_brief form-control">
-                                  <option disabled selected>Giới tính</option>
-                                  <option >Nam</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form-group contact">
-                              <input type="text" class="fomr-control" placeholder="Họ tên" />
-                              <input type="text" class="fomr-control" placeholder="Điện thoại liên hệ" />
-                              <input type="text" class="fomr-control email" placeholder="Email liên hệ" />
-                            </div>
-                            <div class="form-group">
-                              <textarea placeholder="Nội dung"></textarea>
-                            </div>
-                            <div class="form-group">
-                              <input type="file" class="fomr-control" placeholder="Họ tên" />
-                              <button class="btn btn-primary button-pri">Ứng tuyển</button>
-                            </div>
-                          </form>
                         </div>
                       </div>
                       <div class="modal fade chooseCV" id="chooseCV" tabindex="-1" role="dialog">

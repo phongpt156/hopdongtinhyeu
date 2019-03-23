@@ -156,6 +156,23 @@ body .mainContent .scroll-to-fixed-fixed, .create-ads-modal {
     font-size: .6875rem;
     color: #a3a3a3;
 }
+.send-apply-cv-modal .modal-lg {
+    width: 100%;
+}
+.send-apply-cv-modal .modal-body {
+    padding: 0;
+    text-align: left;
+}
+.send-apply-cv-modal .modal-body .form-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.send-apply-cv-modal .modal-body .form-group .form-control {
+    margin-bottom: 10px;
+}
+.send-apply-cv-modal .modal-body .form-group > *:not(:last-child) {
+    margin-right: 5px;
+}
 
 .post-reaction-statistic {
     padding: 15px 0 0;
@@ -513,9 +530,24 @@ footer.footer .whiteBox {
         margin-top: 0;
     }
 }
+@media screen and (min-width: 992px) {
+    .send-apply-cv-modal .modal-lg {
+        width: 900px;
+    }
+    .send-apply-cv-modal .modal-body .form-group .form-control {
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .reaction-detail-modal .modal-dialog {
         width: 100%;
+    }
+}
+@media screen and (max-width: 568px) {
+    .list-notifi > li .drop-down {
+        position: fixed;
+        right: 0 !important;
+        top: 78px;
     }
 }
