@@ -7,6 +7,12 @@ body {
     width: 100%;
     z-index: 1000;
 }
+.header.header-affix {
+    display: none;
+}
+.header.header-affix .affix {
+    top: 0;
+}
 .header .navbar-brand {
     height: auto;
 }

@@ -13,11 +13,43 @@
   <link rel="stylesheet" href="./css/nda-homepage.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/nda-homepage.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="95">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <img src="./images/nda-logo.png" />
+          </a>
+        </div>
+    
+        <div class="navbar-collapse header-navbar-collapse" style="border: none">
+          <ul class="nav navbar-nav">
+            <li><a>Gọi ngay 0942174666 hoặc đăng ký để được tư vấn</a></li>
+          </ul>
+          <form class="nav navbar-nav navbar-right authentication-form">
+            <div>
+              <input type="text" placeholder="Họ tên" />
+            </div>
+            <div>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Điện thoại" />
+            </div>
+            <div>
+              <button class="btn submit-button">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <header class="header header-affix">
+    <nav class="navbar navbar-default affix">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand d-md-block d-none">
